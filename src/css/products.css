@@ -3,6 +3,10 @@ body {
     height: 4000px;
 }
 
+.body {
+    overflow: hidden;
+}
+
 
 .navBar {
     position: fixed !important;

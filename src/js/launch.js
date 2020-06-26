@@ -1,6 +1,7 @@
+import $ from 'jquery';
 
-var locationSwiper;
 
+export default function Init() {
 
 var locationData = {
   "chennai" : [0,1,2,3,4,5],
@@ -54,5 +55,5 @@ $(document).ready( function() {
 
 });
 
-
+}
 

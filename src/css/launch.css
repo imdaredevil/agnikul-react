@@ -143,6 +143,16 @@
 
     .location-swiper {
       width: 100vw;
+      text-align: center;
+    }
+
+    .location-swiper .swiper-wrapper {
+      text-align: center;
+    }
+
+    .location__swiper-slide{
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .location__slide-desc {
@@ -153,9 +163,6 @@
       border: solid 1px #4d8c52 !important;
     }
 
-    .location-swiper-slide {
-        height: 30% !important;
-    }
 
   }
   

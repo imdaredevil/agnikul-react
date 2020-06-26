@@ -1,3 +1,9 @@
+import $ from 'jquery';
+
+
+export default function Init() {    
+
+
 var _containerHeight = 4000;
 var _width, _height, _scrollHeight;
 var _movingElements = [];
@@ -648,8 +654,8 @@ function constructTransformInProgress(transforms, effectScrollPercent) {
 
 function loop() {
 
-    _scrollOffset = window.pageYOffset || window.scrollTop;
-    _scrollPercent = _scrollOffset / _scrollHeight || 0;
+   var _scrollOffset = window.pageYOffset || window.scrollTop;
+   var  _scrollPercent = _scrollOffset / _scrollHeight || 0;
 
     for (var transition in transitions) {
         transition = transitions[transition];
@@ -710,3 +716,4 @@ $(document).ready(function () {
 
 });
 
+}
