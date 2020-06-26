@@ -1,7 +1,7 @@
 import React from 'react';
+import "./css/products.css";
 import Init from './js/products';
 import navBar from './js/common';
-import "./css/products.css";
 import log from "./images/logo.png";
 import truck from "./images/Launchpad_V6.png";
 import rocket1 from "./images/rocket-1.png";
@@ -9,6 +9,7 @@ import rocket2 from "./images/rocket-2.png";
 import rocket3 from "./images/rocket-3.png";
 import homepage from "./images/homepage.jpeg";
 
+import { Link } from 'react-router-dom';
 
 function Product(){
 
@@ -16,44 +17,44 @@ function Product(){
 
     return (
         <div class="body">
-         <div class="navBar">
+       <div class="navBar">
         <div class="topnav row" id="myTopnav">
             <div class="column-lg nav-brandc">
-                <a href="./"><img class="logo" src={log}/></a>
+                <Link  to="/"><img class="logo" src={log}/></Link>
             </div>
             <div class="column">
-                <a href="./about" class="nav-itemc nav-linkc">
+                <Link to="/about" class="nav-itemc nav-linkc">
                     About
-                </a>
+                </Link>
             </div>
             <div class="column">
-                <a href="./products" class="nav-itemc nav-linkc active">
+                <Link to="/products" class="nav-itemc nav-linkc">
                     Products
-                </a>
+                </Link>
             </div>
             <div class="column-md">
-                <a href="./launch-sites" class="nav-itemc nav-linkc">
+                <Link to="/launch-sites" class="nav-itemc nav-linkc">
                     Launch Sites
-                </a>
+                </Link>
             </div>
             <div class="column-md">
-                <a href="./team" class="nav-itemc nav-linkc">
+                <Link to="/team" class="nav-itemc nav-linkc">
                     Meet the Team
-                </a>
+                </Link>
             </div>
             <div class="column">
-                <a href="./" class="nav-itemc nav-linkc">
+                <Link to="/" class="nav-itemc nav-linkc">
                     Career
-                </a>
+                </Link>
             </div>
             <div class="column-md">
-                <a href="./" class="nav-itemc nav-linkc">
+                <Link to="/" class="nav-itemc nav-linkc">
                     Contact Us
-                </a>
+                </Link>
             </div>
             <div id="navButtonDiv" class="column-lg">
                 <button  class="nav-itemc nav-buttonc">
-                   <a href="./book"> BUILD YOUR LAUNCH</a>
+                   <Link to="/book"> BUILD YOUR LAUNCH</Link>
                 </button>
             </div>
             <div class="col-sm iconc">
@@ -63,7 +64,7 @@ function Product(){
             </div>
         </div>
     </div>
-     
+       
     <div class="originalDiv">
         <div class="first-scroll-content">
             <p class="first-scroll-heading">REVOLUTIONARY DESIGN</p>

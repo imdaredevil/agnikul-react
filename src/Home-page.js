@@ -1,7 +1,7 @@
 import React from 'react';
+import "./css/home.css";
 import ScrollHover from './js/home';
 import { Link } from 'react-router-dom';
-import "./css/home.css";
 import log from "./images/logo.png";
 import agnibaan from "./images/Agnibaan.png";
 import satelite from "./images/spaceship.png";

@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 import "./css/styles.css";
@@ -13,7 +13,7 @@ const Launch = lazy(() => import('./Launch-page'));
 const Product = lazy(() => import('./Product-page'));
 
 const App = () => (
-  <Router basename="/agnikul-react">
+  <Router>
     <Suspense fallback={<div>Loading...</div>}>
       <Switch>
         <Route exact path="/" component={Home}/>

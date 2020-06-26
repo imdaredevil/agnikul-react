@@ -5,50 +5,51 @@ import  navBar from "./js/common";
 import placeHolder from "./images/homepage.jpeg";
 
 
+import { Link } from 'react-router-dom';
 
 function Team(){
 
 
     return (
         <div class="body">
-          <div class="navBar">
+     <div class="navBar">
         <div class="topnav row" id="myTopnav">
             <div class="column-lg nav-brandc">
-                <a href="./"><img class="logo" src={log}/></a>
+                <Link  to="/"><img class="logo" src={log}/></Link>
             </div>
             <div class="column">
-                <a href="./about" class="nav-itemc nav-linkc">
+                <Link to="/about" class="nav-itemc nav-linkc">
                     About
-                </a>
+                </Link>
             </div>
             <div class="column">
-                <a href="./products" class="nav-itemc nav-linkc">
+                <Link to="/products" class="nav-itemc nav-linkc">
                     Products
-                </a>
+                </Link>
             </div>
             <div class="column-md">
-                <a href="./launch-sites" class="nav-itemc nav-linkc">
+                <Link to="/launch-sites" class="nav-itemc nav-linkc">
                     Launch Sites
-                </a>
+                </Link>
             </div>
             <div class="column-md">
-                <a href="./team" class="nav-itemc nav-linkc active">
+                <Link to="/team" class="nav-itemc nav-linkc">
                     Meet the Team
-                </a>
+                </Link>
             </div>
             <div class="column">
-                <a href="./" class="nav-itemc nav-linkc">
+                <Link to="/" class="nav-itemc nav-linkc">
                     Career
-                </a>
+                </Link>
             </div>
             <div class="column-md">
-                <a href="./" class="nav-itemc nav-linkc">
+                <Link to="/" class="nav-itemc nav-linkc">
                     Contact Us
-                </a>
+                </Link>
             </div>
             <div id="navButtonDiv" class="column-lg">
                 <button  class="nav-itemc nav-buttonc">
-                   <a href="./book"> BUILD YOUR LAUNCH</a>
+                   <Link to="/book"> BUILD YOUR LAUNCH</Link>
                 </button>
             </div>
             <div class="col-sm iconc">
@@ -58,7 +59,7 @@ function Team(){
             </div>
         </div>
     </div>
-    
+        
     <div class="TeamBanner">
         <div class="banner-content">
             <p class="banner-first-line">Our Team</p>
