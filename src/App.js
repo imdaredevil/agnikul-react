@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 import "./css/styles.css";
-import { Lazy } from 'swiper/js/swiper.esm';
 
 const Home = lazy(() => import('./Home-page'));
 const About = lazy(() => import('./About-page'));
@@ -14,7 +13,7 @@ const Launch = lazy(() => import('./Launch-page'));
 const Product = lazy(() => import('./Product-page'));
 
 const App = () => (
-  <Router>
+  <Router basename="/agnikul-react">
     <Suspense fallback={<div>Loading...</div>}>
       <Switch>
         <Route exact path="/" component={Home}/>
