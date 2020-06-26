@@ -16,44 +16,44 @@ function Home(){
 
     return (
         <div class="body">
-            <div class="navBar">
+              <div class="navBar">
         <div class="topnav row" id="myTopnav">
             <div class="column-lg nav-brandc">
-                <img class="logo" src={log}/>
+                <a href="./"><img class="logo" src={log}/></a>
             </div>
             <div class="column">
-                <a href="#" class="nav-itemc nav-linkc">
+                <a href="./about" class="nav-itemc nav-linkc active">
                     About
                 </a>
             </div>
             <div class="column">
-                <a href="/" class="nav-itemc nav-linkc">
+                <a href="./products" class="nav-itemc nav-linkc">
                     Products
                 </a>
             </div>
             <div class="column-md">
-                <a href="/" class="nav-itemc nav-linkc">
+                <a href="./launch-sites" class="nav-itemc nav-linkc">
                     Launch Sites
                 </a>
             </div>
             <div class="column-md">
-                <a href="/" class="nav-itemc nav-linkc">
+                <a href="./team" class="nav-itemc nav-linkc">
                     Meet the Team
                 </a>
             </div>
             <div class="column">
-                <a href="/" class="nav-itemc nav-linkc">
+                <a href="./" class="nav-itemc nav-linkc">
                     Career
                 </a>
             </div>
             <div class="column-md">
-                <a href="/" class="nav-itemc nav-linkc">
+                <a href="./" class="nav-itemc nav-linkc">
                     Contact Us
                 </a>
             </div>
             <div id="navButtonDiv" class="column-lg">
-                <button href="/" class="nav-itemc nav-buttonc">
-                    BUILD YOUR LAUNCH
+                <button  class="nav-itemc nav-buttonc">
+                   <a href="./book"> BUILD YOUR LAUNCH</a>
                 </button>
             </div>
             <div class="col-sm iconc">

@@ -90,6 +90,11 @@ body{
 
   }
 
+  .nav-buttonc a {
+    color: white;
+    text-decoration: none;
+  }
+
   
   .nav-linkc:hover , .nav-linkc.active {
     color: #4d8c52 !important;
