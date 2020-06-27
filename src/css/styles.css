@@ -368,6 +368,7 @@ body{
 }
 
 .custom-form-options {
+  margin: 2%  0% !important;
   border-radius: 12px;
   box-shadow: 0 6px 16px 0 rgba(218, 215, 215, 0.5);
   border: solid 1px #b7b7b7;

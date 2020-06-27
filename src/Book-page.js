@@ -111,7 +111,7 @@ function Book(){
                                     <span className="form-control-name">PAYLOAD MASS</span>
                                     <i className="arrow fa fa-arrow-down"></i>
                                 </Dropdown.Toggle>
-                                <Dropdown.Menu className="dropdown-menu">
+                                <Dropdown.Menu className="dropdown-menu custom-form-options">
                                 <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
                                 <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
                                 <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
