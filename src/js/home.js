@@ -4,15 +4,15 @@ var diff = 0.25;
 var upId,downId;
 
 function setTransform(value){
-    $(".right-within").css("transform", "translateY(" + value + "%)");
+    $(".home__right-within").css("transform", "translateY(" + value + "%)");
 }
 
 function getTransform(){
-    var value = $(".right-within").css("transform");
+    var value = $(".home__right-within").css("transform");
     value = value.split(",")[5];
     value = value.split(")")[0];
     
-    var height = $(".right-within").css("height");
+    var height = $(".home__right-within").css("height");
     height = height.split("p")[0];
     height = Number.parseFloat(height);
     value = Number.parseFloat(value);
@@ -52,7 +52,9 @@ function moveDown() {
 export default function ScrollHover(){
 
     $(document).ready(function(){
-        $(".right-image").hover(
+        
+    $("body").removeClass("products");
+        $(".home__right-image").hover(
             function(){
                 cancelAnimationFrame(downId);
                 upId = requestAnimationFrame(moveUp);

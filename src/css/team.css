@@ -1,4 +1,4 @@
-.TeamBanner {
+.team__TeamBanner {
     background: url("../images/teampage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,7 +8,7 @@
     position:  relative;
 }
 
-.banner-content {
+.team__banner-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-.banner-first-line {
+.team__banner-first-line {
     font-family: "Poppins Bold";
   font-size: 42px;
   font-weight: bold;
@@ -28,11 +28,11 @@
   color: #252526;
 }
 
-.banner-first-line span {
+.team__banner-first-line span {
   color : #4d8c52;
 }
 
-.banner-text {
+.team__banner-text {
     font-family: "Poppins Regular";
     font-size: 16px;
     font-weight: normal;
@@ -45,24 +45,24 @@
 }
 
 @media screen and (max-width : 768px ) {
-  .banner-first-line{
+  .team__banner-first-line{
       font-size: 21px;
   }
   
-  .banner-text{
+  .team__banner-text{
       font-size: 14px;
   }
   
 }
 
-.second-section{
+.team__second-section{
     margin-top: 3%;
     padding: 3% 8% !important;
     margin-bottom: 10%;
     width: 80%;
 }
 
-.second-section-heading {
+.team__second-section-heading {
 
     font-family: "Poppins ExtraBold";
   font-size: 32px;
@@ -74,7 +74,7 @@
   color: #4d8c52;
 }
 
-.second-section-text {
+.team__second-section-text {
   font-family: "Poppins Regular";
   font-size: 16px;
   font-weight: normal;
@@ -87,16 +87,16 @@
 
 @media screen and (max-width : 768px) {
 
-    .second-section {
+    .team__second-section {
         margin-top: 7%;
         width: 90%;
     
     }
-    .second-section-heading {
+    .team__second-section-heading {
         font-size : 18px;
     }
 
-    .second-section-text {
+    .team__second-section-text {
         font-size: 14px;
     }
 }
@@ -106,7 +106,7 @@
     background: linear-gradient(to bottom, #e7f6e8, #ffffff);
 }
 
-.third-section .founder-card{
+.team__third-section .founder-card{
     width: 5%;
     padding: 0% 8% 0% 0%;
     margin-bottom: -10%;
@@ -165,7 +165,7 @@
 }
 
 @media screen and (max-width : 768px) {
-    .third-section .founder-card{
+    .team__third-section .founder-card{
         width: 100%;
         margin-bottom: 25%;
         transform: none;

@@ -6,6 +6,7 @@ export default function Init() {
 
 var mySwiper,advSwiper,partSwiper,busiSwiper;
 $(document).ready(function () {
+    $("body").removeClass("products");
     //initialize swiper when document ready
     mySwiper = new Swiper ('.timeline-swiper', {
         direction: 'vertical',
@@ -40,6 +41,9 @@ $(document).ready(function () {
       slidesPerView: 'auto',
       centeredSlides: true,
       simulateTouch: false,
+      keyboard: {
+        enabled: true,
+      },
       pagination: {
         el: '.advisor__swiper-pagination',
         clickable: true,

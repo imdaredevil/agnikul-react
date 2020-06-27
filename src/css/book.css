@@ -1,4 +1,4 @@
-.heading {
+.book_heading {
     margin-top : 5%;
     margin-bottom: 5%;
     text-align: center;
@@ -15,12 +15,12 @@
 }
 
 
-.form-content{
+.book_form-content{
     padding: 0% 15%;
     text-align: center;
 }
 
-.step {
+.book_step {
     margin-left: 2%;
     font-family: "Poppins Bold";
   font-size: 18px;
@@ -35,22 +35,22 @@
   text-align: left;
 }
 
-.custom-form-control {
+.book_form-content .custom-form-control {
     margin-bottom: 2%;
 }
 
-.custom-button {
+.book_form-content .custom-button {
     margin-bottom : 5%;
 }
 
 
 
 @media screen and (max-width: 768px) {
-    .heading {
+    .book_heading {
         font-size:20px;
     }
 
-    .step {
+    .book_step {
         font-size: 13px;
     }
 }

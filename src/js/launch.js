@@ -15,15 +15,15 @@ var locationData = {
 
 $(document).ready( function() {
 
-
-  $(".location__slide-content").each(function(){
+  $("body").removeClass("products");
+  $(".launch__location__slide-content").each(function(){
     $(this).click(
     function() {
 
       // Now you can use all slider methods like
        //$(this).css("border","solid 1px #4d8c52");
         var key = $(this).attr('id');
-        var selectorDesc = "#" + key + " .location__slide-desc";
+        var selectorDesc = "#" + key + " .launch__location__slide-desc";
         var selectorContent = "#" + key;
         if($(selectorContent).hasClass("active"))
         {

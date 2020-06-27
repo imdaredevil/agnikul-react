@@ -12,6 +12,7 @@ import spaceshipWhite from "./images/spaceship-copy.png";
 import flag from "./images/flag.png";
 import orbit from "./images/pennant.png";
 import payload from "./images/scale-4.png";
+import { dropdown, Dropdown } from "react-bootstrap";
 
 
 
@@ -20,143 +21,143 @@ function Home(){
     ScrollHover();
 
     return (
-        <div class="body">
-          <div class="navBar">
-        <div class="topnav row" id="myTopnav">
-            <div class="column-lg nav-brandc">
-                <Link  to="/"><img class="logo" src={log}/></Link>
+        <div className="body">
+          <div className="navBar">
+        <div className="topnav row" id="myTopnav">
+            <div className="column-lg nav-brandc">
+                <Link  to="/"><img className="logo" src={log}/></Link>
             </div>
-            <div class="column">
-                <Link to="/about" class="nav-itemc nav-linkc">
+            <div className="column">
+                <Link to="/about" className="nav-itemc nav-linkc">
                     About
                 </Link>
             </div>
-            <div class="column">
-                <Link to="/products" class="nav-itemc nav-linkc">
+            <div className="column">
+                <Link to="/products" className="nav-itemc nav-linkc">
                     Products
                 </Link>
             </div>
-            <div class="column-md">
-                <Link to="/launch-sites" class="nav-itemc nav-linkc">
+            <div className="column-md">
+                <Link to="/launch-sites" className="nav-itemc nav-linkc">
                     Launch Sites
                 </Link>
             </div>
-            <div class="column-md">
-                <Link to="/team" class="nav-itemc nav-linkc">
+            <div className="column-md">
+                <Link to="/team" className="nav-itemc nav-linkc">
                     Meet the Team
                 </Link>
             </div>
-            <div class="column">
-                <Link to="/" class="nav-itemc nav-linkc">
+            <div className="column">
+                <Link to="/" className="nav-itemc nav-linkc">
                     Career
                 </Link>
             </div>
-            <div class="column-md">
-                <Link to="/" class="nav-itemc nav-linkc">
+            <div className="column-md">
+                <Link to="/" className="nav-itemc nav-linkc">
                     Contact Us
                 </Link>
             </div>
-            <div id="navButtonDiv" class="column-lg">
-                <button  class="nav-itemc nav-buttonc">
+            <div id="navButtonDiv" className="column-lg">
+                <button  className="nav-itemc nav-buttonc">
                    <Link to="/book"> BUILD YOUR LAUNCH</Link>
                 </button>
             </div>
-            <div class="col-sm iconc">
+            <div className="col-sm iconc">
                 <a onClick={navBar}>
-                    <i class="fa fa-bars"></i>
+                    <i className="fa fa-bars"></i>
                 </a>
             </div>
         </div>
     </div>
     
-       <div class="HomeBanner">
-        <div class="banner-content">
-            <i class="fa fa-bars banner-icon"></i>
-            <h1 class="banner-first-line">Bringing Space Within</h1>
-            <h1 class="banner-second-line">Everyone's Reach</h1>
-            <p class="banner-text">
+       <div className="home__HomeBanner">
+        <div className="home__banner-content">
+            <i className="home__fa fa-bars banner-icon"></i>
+            <h1 className="home__banner-first-line">Bringing Space Within</h1>
+            <h1 className="home__banner-second-line">Everyone's Reach</h1>
+            <p className="home__banner-text">
                 Getting there shouldn't be the hardest part of<br/>
                 being space-faring. So, why not design and build<br/>
-                an orbital-class launch vehicle?
+                an orbital-clas launch vehicle?
             </p>
-            <a class="banner-link">Go To Products</a>
+            <a className="home__banner-link">Go To Products</a>
         </div>
     </div>
 
-    <div class="second-section">
-        <div class="second-content">
-            <img src={satelite} class="second-section-icon"/>
-            <h3 class="second-section-heading">
+    <div className="home__second-section">
+        <div className="home__second-content">
+            <img src={satelite} className="home__second-section-icon"/>
+            <h3 className="home__second-section-heading">
                 A 2 stage LOX/Kerosene vehicle with a third "baby stage"
             </h3>
-            <p class="second-section-text">
+            <p className="home__second-section-text">
                 Agnibaan is a launch vehicle capable of carrying up to 100 kg of payload,
                 to low Earth orbits up to 700 km with a plug-and-play engine
                 configuration launched from a mobile launch vehicle
             </p>
-            <p class="second-section-text">
+            <p className="home__second-section-text">
                 Engineering Research Board, Dept. of Science and Technology (DST),
                 Government of India. A similar centre has also been established at
                 Indian Institute of Science, Bangalore (IISc).
             </p>
         </div>
-        <div class="right-image">
-            <img class="right-within" src={agnibaan}/>
+        <div className="home__right-image">
+            <img className="home__right-within" src={agnibaan}/>
         </div>
     </div>
 
-    <div class="container-fluid third-section">
-        <div class="third-content">
-            <img src={fingersnap}class="third-section-icon"/>
-            <h3 class="second-section-heading">
+    <div className="container-fluid home__third-section">
+        <div className="home__third-content">
+            <img src={fingersnap} className="home__third-section-icon"/>
+            <h3 className="home__second-section-heading">
                 Facts about us
             </h3>
-            <p class="second-section-text">
+            <p className="home__second-section-text">
                 Agnibaan is a launch vehicle capable of carrying up to 100 kg of payload, to low
                 Earth orbits up to 700 km with
             </p>
         </div>
-        <div class="row">
-            <div class="col-sm">
-                <div class="card">
-                    <img class="back-icon" src={cardback} />
-                    <div class="card-body">
-                        <h1 class="card-head"><b>05</b></h1>
-                        <h3 class="card-title"><b>Configurations</b></h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+        <div className="row">
+            <div className="col-sm">
+                <div className="card">
+                    <img className="home__back-icon" src={cardback} />
+                    <div className="card-body">
+                        <h1 className="card-head"><b>05</b></h1>
+                        <h3 className="card-title"><b>Configurations</b></h3>
+                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img class="back-icon" src={cardback} />
-                    <div class="card-body">
-                        <h1 class="card-head"><b>3200</b></h1>
-                        <h3 class="card-title"><b>Mass</b></h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+            <div className="col-sm">
+                <div className="card">
+                    <img className="home__back-icon" src={cardback} />
+                    <div className="card-body">
+                        <h1 className="card-head"><b>3200</b></h1>
+                        <h3 className="card-title"><b>Mass</b></h3>
+                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img class="back-icon" src={cardback} />
-                    <div class="card-body">
-                        <h1 class="card-head"><b>05</b></h1>
-                        <h3 class="card-title"><b>Launch Parts</b></h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+            <div className="col-sm">
+                <div className="card">
+                    <img className="home__back-icon" src={cardback} />
+                    <div className="card-body">
+                        <h1 className="card-head"><b>05</b></h1>
+                        <h3 className="card-title"><b>Launch Parts</b></h3>
+                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img class="back-icon" src={cardback} />
-                    <div class="card-body">
-                        <h1 class="card-head"><b>05</b></h1>
-                        <h3 class="card-title"><b>Launch Ports</b></h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+            <div className="col-sm">
+                <div className="card">
+                    <img className="home__back-icon" src={cardback} />
+                    <div className="card-body">
+                        <h1 className="card-head"><b>05</b></h1>
+                        <h3 className="card-title"><b>Launch Ports</b></h3>
+                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
                     </div>
                 </div>
@@ -164,80 +165,65 @@ function Home(){
         </div>
     </div>
 
-    <div class="fourth-section">
-        <div class="fourth-head">
+    <div className="home__fourth-section">
+        <div className="home__fourth-head">
             <h3><b>Ready To Launch ?</b></h3>
-            <p class="fourth-section-text">
+            <p className="home__fourth-section-text">
                 The National Centre for Combustion Research and Development (NCCRD), scheduled to be
                 inaugurated on 13th October 2017, is supported by Science and Engineering Research Board,
             </p>
             <form>
-                <div class="container-fluid custom-form">
-                    <div class="row">
-                        <div class="col-sm">
-                            <div class="dropdown">
-                                <button class="custom-form-control dropdown-toggle" type="button"
-                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <img src={flag} class="custom"></img>
-                                    <span class="form-control-name">LAUNCH LOCATION</span>
-                                    <i class="arrow fa fa-arrow-down"></i>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
-                        </div>
+                <div className="container-fluid custom-form">
+                    <div className="row">
+                        <div className="col-sm">
+                        <Dropdown>
+                                <Dropdown.Toggle className="custom-form-control">
+                                    <img src={orbit} className="custom"></img>
+                                    <span className="form-control-name">ORIENTAL INCLINATION</span>
+                                    <i className="arrow fa fa-arrow-down"></i>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu className="dropdown-menu">
+                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
+                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
+                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+                                                    </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm">
-                            <div class="dropdown">
-                                <button class="custom-form-control-half dropdown-toggle" type="button"
-                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <img src={orbit} class="custom"></img>
-                                    <span class="form-control-name">ORIENTAL INCLINATION</span>
-                                    <i class="arrow fa fa-arrow-down"></i>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
+                    <div className="row">
+                        <div className="col-sm">
+                            <Dropdown>
+                                <Dropdown.Toggle className="custom-form-control-half">
+                                    <img src={orbit} className="custom"></img>
+                                    <span className="form-control-name">ORIENTAL INCLINATION</span>
+                                    <i className="arrow fa fa-arrow-down"></i>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu className="dropdown-menu">
+                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
+                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
+                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </div>
-                        <div class="col-sm">
-                            <div class="dropdown">
-                                <button class="custom-form-control-half dropdown-toggle" type="button"
-                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <img src={payload} class="custom"></img>
-                                    <span class="form-control-name">PAYLOAD MASS</span>
-                                    <i class="arrow fa fa-arrow-down"></i>
-                                </button>
-                                <div class="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
+                        <div className="col-sm">
+                        <Dropdown>
+                                <Dropdown.Toggle className="custom-form-control-half">
+                                    <img src={payload} className="custom"></img>
+                                    <span className="form-control-name">PAYLOAD MASS</span>
+                                    <i className="arrow fa fa-arrow-down"></i>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu className="dropdown-menu">
+                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
+                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
+                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>                      
                             </div>
-                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <button class="custom-button">
+                <div className="row">
+                    <div className="col">
+                        <button className="custom-button">
                             <img src={spaceshipWhite}></img>
                             <span>  BUILD MY VEHICLE</span>
                         </button>
@@ -247,67 +233,67 @@ function Home(){
         </div>
     </div>
 
-    <div class="fifth-section">
-        <p class="fifth-content">
+    <div className="home__fifth-section">
+        <p className="home__fifth-content">
             Drop us a note. We will revert.
             Yes, we actually do.
         </p>
-        <p class="fifth-section-link">
+        <p className="home__fifth-section-link">
             <a>CONTACT US</a>
         </p>
     </div>
     
-    <div class="footer">
-        <div class="first-row"></div>
-        <div class="container-fluid">
-            <div class="row border-row">
-                <div class="col-sm">
-                    <p class="footer-normal">Phone</p>
-                    <p class="footer-bolder">+32 50 31 28 32</p>
+    <div className="footer">
+        <div className="home__first-row"></div>
+        <div className="container-fluid">
+            <div className="row border-row">
+                <div className="col-sm">
+                    <p className="footer-normal">Phone</p>
+                    <p className="footer-bolder">+32 50 31 28 32</p>
                 </div>
-                <div class="col-sm">
-                    <p class="footer-normal">Address</p>
-                    <p class="footer-bolder">491 Merlin Crest Suite 963</p>
+                <div className="col-sm">
+                    <p className="footer-normal">Address</p>
+                    <p className="footer-bolder">491 Merlin Crest Suite 963</p>
                 </div>
-                <div class="col-sm">
+                <div className="col-sm">
 
                 </div>
-                <div class="col-sm">
+                <div className="col-sm">
 
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm">
-                    <p class="footer-bold">Services</p>
-                    <p class="footer-normal">Strategy Design</p>
-                    <p class="footer-normal">Product Design</p>
-                    <p class="footer-normal">Content Strategy</p>
-                    <p class="footer-normal">Brand Strategy</p>
-                    <p class="footer-normal">Development</p>
+            <div className="row">
+                <div className="col-sm">
+                    <p className="footer-bold">Services</p>
+                    <p className="footer-normal">Strategy Design</p>
+                    <p className="footer-normal">Product Design</p>
+                    <p className="footer-normal">Content Strategy</p>
+                    <p className="footer-normal">Brand Strategy</p>
+                    <p className="footer-normal">Development</p>
                 </div>
-                <div class="col-sm">
-                    <p class="footer-bold">Help and Advice</p>
-                    <p class="footer-normal">How it Works</p>
-                    <p class="footer-normal">Contact Support</p>
-                    <p class="footer-normal">Privacy Policy</p>
-                    <p class="footer-normal">FAQ</p>
+                <div className="col-sm">
+                    <p className="footer-bold">Help and Advice</p>
+                    <p className="footer-normal">How it Works</p>
+                    <p className="footer-normal">Contact Support</p>
+                    <p className="footer-normal">Privacy Policy</p>
+                    <p className="footer-normal">FAQ</p>
                 </div>
-                <div class="col-sm border-column">
-                    <p class="footer-bold">Company</p>
-                    <p class="footer-normal">About</p>
-                    <p class="footer-normal">Blog</p>
-                    <p class="footer-normal">Contact</p>
-                    <p class="footer-normal">Jobs</p>
+                <div className="col-sm border-column">
+                    <p className="footer-bold">Company</p>
+                    <p className="footer-normal">About</p>
+                    <p className="footer-normal">Blog</p>
+                    <p className="footer-normal">Contact</p>
+                    <p className="footer-normal">Jobs</p>
                 </div>
-                <div class="col-sm">
-                    <p class="footer-bold">Get in Touch</p>
-                    <p class="footer-normal">Feel free to get in touch with us via email</p>
-                    <p class="footer-email">info.agnikul@gmail.com</p>
-                    <div class="footer-social-logos">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <i class="fa fa-google-plus" aria-hidden="true"></i>
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <div className="col-sm">
+                    <p className="footer-bold">Get in Touch</p>
+                    <p className="footer-normal">Feel free to get in touch with us via email</p>
+                    <p className="footer-email">info.agnikul@gmail.com</p>
+                    <div className="footer-social-logos">
+                        <i className="fa fa-facebook" aria-hidden="true"></i>
+                        <i className="fa fa-google-plus" aria-hidden="true"></i>
+                        <i className="fa fa-twitter" aria-hidden="true"></i>
+                        <i className="fa fa-linkedin" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>

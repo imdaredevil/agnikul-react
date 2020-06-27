@@ -11,81 +11,81 @@ import worldmap from "./images/bitmap.png";
 import { Link } from 'react-router-dom';
 
 
-function Home(){
+function About(){
 
     Init();
 
     return (
-        <div class="body">
-      <div class="navBar">
-        <div class="topnav row" id="myTopnav">
-            <div class="column-lg nav-brandc">
-                <Link  to="/"><img class="logo" src={log}/></Link>
+        <div className="body">
+      <div className="navBar">
+        <div className="topnav row" id="myTopnav">
+            <div className="column-lg nav-brandc">
+                <Link  to="/"><img className="logo" src={log}/></Link>
             </div>
-            <div class="column">
-                <Link to="/about" class="nav-itemc nav-linkc">
+            <div className="column">
+                <Link to="/about" className="nav-itemc nav-linkc">
                     About
                 </Link>
             </div>
-            <div class="column">
-                <Link to="/products" class="nav-itemc nav-linkc">
+            <div className="column">
+                <Link to="/products" className="nav-itemc nav-linkc">
                     Products
                 </Link>
             </div>
-            <div class="column-md">
-                <Link to="/launch-sites" class="nav-itemc nav-linkc">
+            <div className="column-md">
+                <Link to="/launch-sites" className="nav-itemc nav-linkc">
                     Launch Sites
                 </Link>
             </div>
-            <div class="column-md">
-                <Link to="/team" class="nav-itemc nav-linkc">
+            <div className="column-md">
+                <Link to="/team" className="nav-itemc nav-linkc">
                     Meet the Team
                 </Link>
             </div>
-            <div class="column">
-                <Link to="/" class="nav-itemc nav-linkc">
+            <div className="column">
+                <Link to="/" className="nav-itemc nav-linkc">
                     Career
                 </Link>
             </div>
-            <div class="column-md">
-                <Link to="/" class="nav-itemc nav-linkc">
+            <div className="column-md">
+                <Link to="/" className="nav-itemc nav-linkc">
                     Contact Us
                 </Link>
             </div>
-            <div id="navButtonDiv" class="column-lg">
-                <button  class="nav-itemc nav-buttonc">
+            <div id="navButtonDiv" className="column-lg">
+                <button  className="nav-itemc nav-buttonc">
                    <Link to="/book"> BUILD YOUR LAUNCH</Link>
                 </button>
             </div>
-            <div class="col-sm iconc">
+            <div className="col-sm iconc">
                 <a onClick={navBar}>
-                    <i class="fa fa-bars"></i>
+                    <i className="fa fa-bars"></i>
                 </a>
             </div>
         </div>
     </div>
        
    
-    <div class="AboutBanner">
-        <div class="banner-content">
-            <p class="banner-first-line">Who <span>we</span> are ? </p>
-            <p class="banner-text">AgniKul is a derivative of the Sanskrit word "gurukul" and can be interpreted to mean "a place where
+    <div className="about__AboutBanner">
+        <div className="about__banner-content">
+            <p className="about__banner-first-line">Who <span>we</span> are ? </p>
+            <p className="about__banner-text">AgniKul is a derivative of the Sanskrit word "gurukul" and can be interpreted to mean "a place where
                 people learn to use fire</p>
         </div>
     </div>
 
-    <div class="Timeline">
-        <div class="timeline-swiper  swiper-container">
-            <div class="timeline__swiper-pagination  swiper-pagination"></div>
-            <div class="vertical-line"></div>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="slide-content">
-                        <div class="slide-year">
+    <div className="Timeline">
+        <div className="timeline-swiper  swiper-container">
+            <div className="timeline__swiper-pagination  swiper-pagination"></div>
+            <div className="vertical-line"></div>
+            <div className="swiper-wrapper">
+                <div className="swiper-slide">
+                    <div className="slide-content">
+                        <div className="slide-year">
                             <p>2010</p>
                         </div>
-                        <p class="slide-head">NCCRD</p>
-                        <p class="slide-text">
+                        <p className="slide-head">NCCRD</p>
+                        <p className="slide-text">
                             The National Centre for Combustion Research and Development (NCCRD), scheduled to be
                             inaugurated on 13th October 2017, is supported by Science and Engineering Research Board,
                             Dept. of Science and Technology (DST), Government of India. A similar centre has also been
@@ -96,13 +96,13 @@ function Home(){
                         </p>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="slide-content">
-                        <div class="slide-year">
+                <div className="swiper-slide">
+                    <div className="slide-content">
+                        <div className="slide-year">
                             <p>2010</p>
                         </div>
-                        <p class="slide-head">NCCRD</p>
-                        <p class="slide-text">
+                        <p className="slide-head">NCCRD</p>
+                        <p className="slide-text">
                             The National Centre for Combustion Research and Development (NCCRD), scheduled to be
                             inaugurated on 13th October 2017, is supported by Science and Engineering Research Board,
                             Dept. of Science and Technology (DST), Government of India. A similar centre has also been
@@ -113,13 +113,13 @@ function Home(){
                         </p>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="slide-content">
-                        <div class="slide-year">
+                <div className="swiper-slide">
+                    <div className="slide-content">
+                        <div className="slide-year">
                             <p>2010</p>
                         </div>
-                        <p class="slide-head">NCCRD</p>
-                        <p class="slide-text">
+                        <p className="slide-head">NCCRD</p>
+                        <p className="slide-text">
                             The National Centre for Combustion Research and Development (NCCRD), scheduled to be
                             inaugurated on 13th October 2017, is supported by Science and Engineering Research Board,
                             Dept. of Science and Technology (DST), Government of India. A similar centre has also been
@@ -133,200 +133,200 @@ function Home(){
             </div>
         </div>
     </div>
-    <img class="centered-image" src={centeredimage}/>
+    <img className="centered-image" src={centeredimage}/>
     
-    <div class="third-section">
-        <div class="curved-line"></div>
-        <p class="section-head">Advisors of Agnikul</p>
+    <div className="about__third-section">
+        <div className="curved-line"></div>
+        <p className="about__section-head">Advisors of Agnikul</p>
     </div>
 
-    <div class="advisors">
-        <div class="advisor-swiper swiper-container">
+    <div className="advisors">
+        <div className="advisor-swiper swiper-container">
 
-            <div class="swiper-wrapper">
-                <div class="advisor__swiper-slide swiper-slide">
-                    <div class="advisor__slide-content">
-                        <img class="advisor__slide-img" src={homepage}/>
-                        <p class="advisor__name">Initial. Name</p>  
-                        <p class="advisor__award">Padma Bushan</p>
-                        <p class="advisor__desi">Honarary Professor - India Space Research Organization</p> 
+            <div className="swiper-wrapper">
+                <div className="advisor__swiper-slide swiper-slide">
+                    <div className="advisor__slide-content">
+                        <img className="advisor__slide-img" src={homepage}/>
+                        <p className="advisor__name">Initial. Name</p>  
+                        <p className="advisor__award">Padma Bushan</p>
+                        <p className="advisor__desi">Honarary Professor - India Space Research Organization</p> 
                      </div>
                 </div>
-                <div class="advisor__swiper-slide swiper-slide">
-                    <div class="advisor__slide-content">
-                        <img class="advisor__slide-img" src={homepage}/>    
-                        <p class="advisor__name">Initial. Name</p>  
-                        <p class="advisor__award">Padma Bushan</p>
-                        <p class="advisor__desi">Senior Research fellow, EEE, Nanyang Tech University, Singapore & Professor ( Retd.)</p>
+                <div className="advisor__swiper-slide swiper-slide">
+                    <div className="advisor__slide-content">
+                        <img className="advisor__slide-img" src={homepage}/>    
+                        <p className="advisor__name">Initial. Name</p>  
+                        <p className="advisor__award">Padma Bushan</p>
+                        <p className="advisor__desi">Senior Research fellow, EEE, Nanyang Tech University, Singapore & Professor ( Retd.)</p>
                      </div>
                 </div>
-                <div class="advisor__swiper-slide swiper-slide">
-                    <div class="advisor__slide-content">
-                        <img class="advisor__slide-img" src={homepage}/>  
-                        <p class="advisor__name">Initial. Name</p>  
-                        <p class="advisor__award">Padma Bushan</p>
-                        <p class="advisor__desi">Honarary Professor - India Space Research Organization</p> 
+                <div className="advisor__swiper-slide swiper-slide">
+                    <div className="advisor__slide-content">
+                        <img className="advisor__slide-img" src={homepage}/>  
+                        <p className="advisor__name">Initial. Name</p>  
+                        <p className="advisor__award">Padma Bushan</p>
+                        <p className="advisor__desi">Honarary Professor - India Space Research Organization</p> 
                      </div>
                 </div>
-                <div class="advisor__swiper-slide swiper-slide">
-                    <div class="advisor__slide-content">
-                        <img class="advisor__slide-img" src={homepage}/>
-                        <p class="advisor__name">Initial. Name</p>  
-                        <p class="advisor__award">Padma Bushan</p>
-                        <p class="advisor__desi">Honarary Professor - India Space Research Organization</p> 
+                <div className="advisor__swiper-slide swiper-slide">
+                    <div className="advisor__slide-content">
+                        <img className="advisor__slide-img" src={homepage}/>
+                        <p className="advisor__name">Initial. Name</p>  
+                        <p className="advisor__award">Padma Bushan</p>
+                        <p className="advisor__desi">Honarary Professor - India Space Research Organization</p> 
                      </div>
                 </div>
             </div>
-            <div class="advisor__swiper-pagination swiper-pagination"></div>
+            <div className="advisor__swiper-pagination swiper-pagination"></div>
         </div>
     </div>
 
-    <div class="IntermediateBanner">
-        <img class="intermediate-img" src={worldmap}/>
-        <div class="intermediate-banner-content">
-            <p class="intermediate-banner-title">Bringing space withing <br/> everyone's reach </p>
-            <a class="intermediate-banner-link">GO TO PRODUCTS</a>          
+    <div className="IntermediateBanner">
+        <img className="intermediate-img" src={worldmap}/>
+        <div className="intermediate-banner-content">
+            <p className="intermediate-banner-title">Bringing space withing <br/> everyone's reach </p>
+            <a className="intermediate-banner-link">GO TO PRODUCTS</a>          
         </div>
     </div>
 
-    <div class="fourth-section">
-        <p class="section-head">Partners of Agnikul</p>
+    <div className="about__fourth-section">
+        <p className="about__section-head">Partners of Agnikul</p>
     </div>
 
-    <div class="partners">
-        <div class="partner-swiper swiper-container">
+    <div className="partners">
+        <div className="partner-swiper swiper-container">
 
-            <div class="swiper-wrapper">
-                <div class="partner__swiper-slide swiper-slide">
-                    <div class="partner__slide-content">
-                        <img class="partner__slide-img" src={homepage}/>
-                        <p class="partner__name">Initial. Name</p>  
-                        <p class="partner__award">Padma Bushan</p>
-                        <p class="partner__desi">Honarary Professor - India Space Research Organization</p> 
+            <div className="swiper-wrapper">
+                <div className="partner__swiper-slide swiper-slide">
+                    <div className="partner__slide-content">
+                        <img className="partner__slide-img" src={homepage}/>
+                        <p className="partner__name">Initial. Name</p>  
+                        <p className="partner__award">Padma Bushan</p>
+                        <p className="partner__desi">Honarary Professor - India Space Research Organization</p> 
                     </div>
                 </div>
-                <div class="partner__swiper-slide swiper-slide">
-                    <div class="partner__slide-content">
-                        <img class="partner__slide-img" src={homepage}/>    
-                        <p class="partner__name">Initial. Name</p>  
-                        <p class="partner__award">Padma Bushan</p>
-                        <p class="partner__desi">Senior Research fellow, EEE, Nanyang Tech University, Singapore & Professor ( Retd.)</p> 
+                <div className="partner__swiper-slide swiper-slide">
+                    <div className="partner__slide-content">
+                        <img className="partner__slide-img" src={homepage}/>    
+                        <p className="partner__name">Initial. Name</p>  
+                        <p className="partner__award">Padma Bushan</p>
+                        <p className="partner__desi">Senior Research fellow, EEE, Nanyang Tech University, Singapore & Professor ( Retd.)</p> 
                     </div>
                 </div>
-                <div class="partner__swiper-slide swiper-slide">
-                    <div class="partner__slide-content">
-                        <img class="partner__slide-img" src={homepage}/>  
-                        <p class="partner__name">Initial. Name</p>  
-                        <p class="partner__award">Padma Bushan</p>
-                        <p class="partner__desi">Honarary Professor - India Space Research Organization</p> 
+                <div className="partner__swiper-slide swiper-slide">
+                    <div className="partner__slide-content">
+                        <img className="partner__slide-img" src={homepage}/>  
+                        <p className="partner__name">Initial. Name</p>  
+                        <p className="partner__award">Padma Bushan</p>
+                        <p className="partner__desi">Honarary Professor - India Space Research Organization</p> 
                     </div>
                 </div>
-                <div class="partner__swiper-slide swiper-slide">
-                    <div class="partner__slide-content">
-                        <img class="partner__slide-img" src={homepage}/>  
-                        <p class="partner__name">Initial. Name</p>  
-                        <p class="partner__award">Padma Bushan</p>
-                        <p class="partner__desi">Honarary Professor - India Space Research Organization</p> 
+                <div className="partner__swiper-slide swiper-slide">
+                    <div className="partner__slide-content">
+                        <img className="partner__slide-img" src={homepage}/>  
+                        <p className="partner__name">Initial. Name</p>  
+                        <p className="partner__award">Padma Bushan</p>
+                        <p className="partner__desi">Honarary Professor - India Space Research Organization</p> 
                     </div>
                 </div>
             </div>
-            <div class="partner__swiper-pagination swiper-pagination"></div>
+            <div className="partner__swiper-pagination swiper-pagination"></div>
 
         </div>
     </div>
 
-    <div class="fifth-section">
-        <p class="fifth-section-title">Why businesses love our solution</p>
+    <div className="about__fifth-section">
+        <p className="about__fifth-section-title">Why businesses love our solution</p>
     </div>
 
-    <div class="businesses">
-        <div class="business-swiper swiper-container">
-            <div class="swiper-wrapper">
-                <div class="business__swiper-slide swiper-slide">
-                    <div class="business__slide-content">
-                        <p class="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>  
-                        <p class="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p> 
-                        <img class="business__slide-img" src={spacex}/>
+    <div className="businesses">
+        <div className="business-swiper swiper-container">
+            <div className="swiper-wrapper">
+                <div className="business__swiper-slide swiper-slide">
+                    <div className="business__slide-content">
+                        <p className="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>  
+                        <p className="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p> 
+                        <img className="business__slide-img" src={spacex}/>
                     </div>
                 </div>
-                <div class="business__swiper-slide swiper-slide">
-                    <div class="business__slide-content">
-                        <p class="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>  
-                        <p class="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p> 
-                        <img class="business__slide-img" src={spacex}/>
+                <div className="business__swiper-slide swiper-slide">
+                    <div className="business__slide-content">
+                        <p className="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>  
+                        <p className="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p> 
+                        <img className="business__slide-img" src={spacex}/>
                     </div>
                 </div>
-                <div class="business__swiper-slide swiper-slide">
-                    <div class="business__slide-content">
-                        <p class="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>  
-                        <p class="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p> 
-                        <img class="business__slide-img" src={spacex}/>
+                <div className="business__swiper-slide swiper-slide">
+                    <div className="business__slide-content">
+                        <p className="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>  
+                        <p className="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p> 
+                        <img className="business__slide-img" src={spacex}/>
                     </div>
                 </div>
-                <div class="business__swiper-slide swiper-slide">
-                    <div class="business__slide-content">
-                        <p class="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>  
-                        <p class="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p> 
-                        <img class="business__slide-img" src={spacex}/>
+                <div className="business__swiper-slide swiper-slide">
+                    <div className="business__slide-content">
+                        <p className="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>  
+                        <p className="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p> 
+                        <img className="business__slide-img" src={spacex}/>
                     </div>
                 </div>  
             </div>
-                <div class="business__swiper-pagination swiper-pagination"></div>              
+                <div className="business__swiper-pagination swiper-pagination"></div>              
     </div>
 </div>
 
        
-    <div class="footer">
-        <div class="first-row"></div>
-        <div class="container-fluid">
-            <div class="row border-row">
-                <div class="col-sm">
-                    <p class="footer-normal">Phone</p>
-                    <p class="footer-bolder">+32 50 31 28 32</p>
+    <div className="footer">
+        <div className="first-row"></div>
+        <div className="container-fluid">
+            <div className="row border-row">
+                <div className="col-sm">
+                    <p className="footer-normal">Phone</p>
+                    <p className="footer-bolder">+32 50 31 28 32</p>
                 </div>
-                <div class="col-sm">
-                    <p class="footer-normal">Address</p>
-                    <p class="footer-bolder">491 Merlin Crest Suite 963</p>
+                <div className="col-sm">
+                    <p className="footer-normal">Address</p>
+                    <p className="footer-bolder">491 Merlin Crest Suite 963</p>
                 </div>
-                <div class="col-sm">
+                <div className="col-sm">
 
                 </div>
-                <div class="col-sm">
+                <div className="col-sm">
 
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm">
-                    <p class="footer-bold">Services</p>
-                    <p class="footer-normal">Strategy Design</p>
-                    <p class="footer-normal">Product Design</p>
-                    <p class="footer-normal">Content Strategy</p>
-                    <p class="footer-normal">Brand Strategy</p>
-                    <p class="footer-normal">Development</p>
+            <div className="row">
+                <div className="col-sm">
+                    <p className="footer-bold">Services</p>
+                    <p className="footer-normal">Strategy Design</p>
+                    <p className="footer-normal">Product Design</p>
+                    <p className="footer-normal">Content Strategy</p>
+                    <p className="footer-normal">Brand Strategy</p>
+                    <p className="footer-normal">Development</p>
                 </div>
-                <div class="col-sm">
-                    <p class="footer-bold">Help and Advice</p>
-                    <p class="footer-normal">How it Works</p>
-                    <p class="footer-normal">Contact Support</p>
-                    <p class="footer-normal">Privacy Policy</p>
-                    <p class="footer-normal">FAQ</p>
+                <div className="col-sm">
+                    <p className="footer-bold">Help and Advice</p>
+                    <p className="footer-normal">How it Works</p>
+                    <p className="footer-normal">Contact Support</p>
+                    <p className="footer-normal">Privacy Policy</p>
+                    <p className="footer-normal">FAQ</p>
                 </div>
-                <div class="col-sm border-column">
-                    <p class="footer-bold">Company</p>
-                    <p class="footer-normal">About</p>
-                    <p class="footer-normal">Blog</p>
-                    <p class="footer-normal">Contact</p>
-                    <p class="footer-normal">Jobs</p>
+                <div className="col-sm border-column">
+                    <p className="footer-bold">Company</p>
+                    <p className="footer-normal">About</p>
+                    <p className="footer-normal">Blog</p>
+                    <p className="footer-normal">Contact</p>
+                    <p className="footer-normal">Jobs</p>
                 </div>
-                <div class="col-sm">
-                    <p class="footer-bold">Get in Touch</p>
-                    <p class="footer-normal">Feel free to get in touch with us via email</p>
-                    <p class="footer-email">info.agnikul@gmail.com</p>
-                    <div class="footer-social-logos">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <i class="fa fa-google-plus" aria-hidden="true"></i>
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <div className="col-sm">
+                    <p className="footer-bold">Get in Touch</p>
+                    <p className="footer-normal">Feel free to get in touch with us via email</p>
+                    <p className="footer-email">info.agnikul@gmail.com</p>
+                    <div className="footer-social-logos">
+                        <i className="fa fa-facebook" aria-hidden="true"></i>
+                        <i className="fa fa-google-plus" aria-hidden="true"></i>
+                        <i className="fa fa-twitter" aria-hidden="true"></i>
+                        <i className="fa fa-linkedin" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
@@ -338,4 +338,4 @@ function Home(){
 
 }
 
-export default Home;
+export default About;

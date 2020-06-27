@@ -3,168 +3,173 @@ import "./css/team.css";
 import log from "./images/logo.png";
 import  navBar from "./js/common";
 import placeHolder from "./images/homepage.jpeg";
+import $ from "jquery";
 
 
 import { Link } from 'react-router-dom';
 
 function Team(){
 
+    
+    $(document).ready(function(){
+        $("body").removeClass("products");
+    });
 
     return (
-        <div class="body">
-     <div class="navBar">
-        <div class="topnav row" id="myTopnav">
-            <div class="column-lg nav-brandc">
-                <Link  to="/"><img class="logo" src={log}/></Link>
+        <div className="body">
+     <div className="navBar">
+        <div className="topnav row" id="myTopnav">
+            <div className="column-lg nav-brandc">
+                <Link  to="/"><img className="logo" src={log}/></Link>
             </div>
-            <div class="column">
-                <Link to="/about" class="nav-itemc nav-linkc">
+            <div className="column">
+                <Link to="/about" className="nav-itemc nav-linkc">
                     About
                 </Link>
             </div>
-            <div class="column">
-                <Link to="/products" class="nav-itemc nav-linkc">
+            <div className="column">
+                <Link to="/products" className="nav-itemc nav-linkc">
                     Products
                 </Link>
             </div>
-            <div class="column-md">
-                <Link to="/launch-sites" class="nav-itemc nav-linkc">
+            <div className="column-md">
+                <Link to="/launch-sites" className="nav-itemc nav-linkc">
                     Launch Sites
                 </Link>
             </div>
-            <div class="column-md">
-                <Link to="/team" class="nav-itemc nav-linkc">
+            <div className="column-md">
+                <Link to="/team" className="nav-itemc nav-linkc">
                     Meet the Team
                 </Link>
             </div>
-            <div class="column">
-                <Link to="/" class="nav-itemc nav-linkc">
+            <div className="column">
+                <Link to="/" className="nav-itemc nav-linkc">
                     Career
                 </Link>
             </div>
-            <div class="column-md">
-                <Link to="/" class="nav-itemc nav-linkc">
+            <div className="column-md">
+                <Link to="/" className="nav-itemc nav-linkc">
                     Contact Us
                 </Link>
             </div>
-            <div id="navButtonDiv" class="column-lg">
-                <button  class="nav-itemc nav-buttonc">
+            <div id="navButtonDiv" className="column-lg">
+                <button  className="nav-itemc nav-buttonc">
                    <Link to="/book"> BUILD YOUR LAUNCH</Link>
                 </button>
             </div>
-            <div class="col-sm iconc">
+            <div className="col-sm iconc">
                 <a onClick={navBar}>
-                    <i class="fa fa-bars"></i>
+                    <i className="fa fa-bars"></i>
                 </a>
             </div>
         </div>
     </div>
         
-    <div class="TeamBanner">
-        <div class="banner-content">
-            <p class="banner-first-line">Our Team</p>
-            <p class="banner-text">Pavel is a writer and researcher who studied digital humanities and new media. 
+    <div className="team__TeamBanner">
+        <div className="team__banner-content">
+            <p className="team__banner-first-line">Our Team</p>
+            <p className="team__banner-text">Pavel is a writer and researcher who studied digital humanities and new media. 
                 Being addicted to large amount of information, he produces an appropriate.</p>
         </div>
     </div>
 
-    <div class="second-section">
-        <div class="second-content">
-            <h3 class="second-section-heading">
+    <div className="team__second-section">
+        <div className="team__second-content">
+            <h3 className="team__second-section-heading">
                 Executive Team
             </h3>
-            <p class="second-section-text">
+            <p className="team__second-section-text">
                 Our executive team draws on decades of experience across multiple successful technology startups and helps guide the company towards its strategic goals.
             </p>
         </div>
     </div>
 
-    <div class="third-section container-fluid">
-        <div class="row justify-content-center founders">
-            <div class="col-sm founder-card">
-                <img class="founder-image" src={placeHolder}/>
-                <p class="founder-name">First Name</p>
-                <p class="founder-desi">FOUNDER</p>
-                <p class="founder-text">
+    <div className="team__third-section container-fluid">
+        <div className="row justify-content-center founders">
+            <div className="col-sm founder-card">
+                <img className="founder-image" src={placeHolder}/>
+                <p className="founder-name">First Name</p>
+                <p className="founder-desi">FOUNDER</p>
+                <p className="founder-text">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                 </p>
-                <div class="founder-logos">
-                    <a><i class="fa fa-twitter fa-lg"></i></a>
-                    <a><i class="fa fa-linkedin fa-lg"></i></a>
-                    <a><i class="fa fa-instagram fa-lg"></i></a>
-                    <a><i class="fa fa-facebook fa-lg"></i></a>
+                <div className="founder-logos">
+                    <a><i className="fa fa-twitter fa-lg"></i></a>
+                    <a><i className="fa fa-linkedin fa-lg"></i></a>
+                    <a><i className="fa fa-instagram fa-lg"></i></a>
+                    <a><i className="fa fa-facebook fa-lg"></i></a>
                 </div>
             </div>
-            <div class="col-sm founder-card">
-                <img class="founder-image" src={placeHolder}/>
-                <p class="founder-name">First Name</p>
-                <p class="founder-desi">FOUNDER</p>
-                <p class="founder-text">
+            <div className="col-sm founder-card">
+                <img className="founder-image" src={placeHolder}/>
+                <p className="founder-name">First Name</p>
+                <p className="founder-desi">FOUNDER</p>
+                <p className="founder-text">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                 </p>
-                <div class="founder-logos">
-                    <a><i class="fa fa-twitter fa-lg"></i></a>
-                    <a><i class="fa fa-linkedin fa-lg"></i></a>
-                    <a><i class="fa fa-instagram fa-lg"></i></a>
-                    <a><i class="fa fa-facebook fa-lg"></i></a>
+                <div className="founder-logos">
+                    <a><i className="fa fa-twitter fa-lg"></i></a>
+                    <a><i className="fa fa-linkedin fa-lg"></i></a>
+                    <a><i className="fa fa-instagram fa-lg"></i></a>
+                    <a><i className="fa fa-facebook fa-lg"></i></a>
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="footer">
-        <div class="first-row"></div>
-        <div class="container-fluid">
-            <div class="row border-row">
-                <div class="col-sm">
-                    <p class="footer-normal">Phone</p>
-                    <p class="footer-bolder">+32 50 31 28 32</p>
+    <div className="footer">
+        <div className="first-row"></div>
+        <div className="container-fluid">
+            <div className="row border-row">
+                <div className="col-sm">
+                    <p className="footer-normal">Phone</p>
+                    <p className="footer-bolder">+32 50 31 28 32</p>
                 </div>
-                <div class="col-sm">
-                    <p class="footer-normal">Address</p>
-                    <p class="footer-bolder">491 Merlin Crest Suite 963</p>
+                <div className="col-sm">
+                    <p className="footer-normal">Address</p>
+                    <p className="footer-bolder">491 Merlin Crest Suite 963</p>
                 </div>
-                <div class="col-sm">
+                <div className="col-sm">
 
                 </div>
-                <div class="col-sm">
+                <div className="col-sm">
 
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm">
-                    <p class="footer-bold">Services</p>
-                    <p class="footer-normal">Strategy Design</p>
-                    <p class="footer-normal">Product Design</p>
-                    <p class="footer-normal">Content Strategy</p>
-                    <p class="footer-normal">Brand Strategy</p>
-                    <p class="footer-normal">Development</p>
+            <div className="row">
+                <div className="col-sm">
+                    <p className="footer-bold">Services</p>
+                    <p className="footer-normal">Strategy Design</p>
+                    <p className="footer-normal">Product Design</p>
+                    <p className="footer-normal">Content Strategy</p>
+                    <p className="footer-normal">Brand Strategy</p>
+                    <p className="footer-normal">Development</p>
                 </div>
-                <div class="col-sm">
-                    <p class="footer-bold">Help and Advice</p>
-                    <p class="footer-normal">How it Works</p>
-                    <p class="footer-normal">Contact Support</p>
-                    <p class="footer-normal">Privacy Policy</p>
-                    <p class="footer-normal">FAQ</p>
+                <div className="col-sm">
+                    <p className="footer-bold">Help and Advice</p>
+                    <p className="footer-normal">How it Works</p>
+                    <p className="footer-normal">Contact Support</p>
+                    <p className="footer-normal">Privacy Policy</p>
+                    <p className="footer-normal">FAQ</p>
                 </div>
-                <div class="col-sm border-column">
-                    <p class="footer-bold">Company</p>
-                    <p class="footer-normal">About</p>
-                    <p class="footer-normal">Blog</p>
-                    <p class="footer-normal">Contact</p>
-                    <p class="footer-normal">Jobs</p>
+                <div className="col-sm border-column">
+                    <p className="footer-bold">Company</p>
+                    <p className="footer-normal">About</p>
+                    <p className="footer-normal">Blog</p>
+                    <p className="footer-normal">Contact</p>
+                    <p className="footer-normal">Jobs</p>
                 </div>
-                <div class="col-sm">
-                    <p class="footer-bold">Get in Touch</p>
-                    <p class="footer-normal">Feel free to get in touch with us via email</p>
-                    <p class="footer-email">info.agnikul@gmail.com</p>
-                    <div class="footer-social-logos">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <i class="fa fa-google-plus" aria-hidden="true"></i>
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <div className="col-sm">
+                    <p className="footer-bold">Get in Touch</p>
+                    <p className="footer-normal">Feel free to get in touch with us via email</p>
+                    <p className="footer-email">info.agnikul@gmail.com</p>
+                    <div className="footer-social-logos">
+                        <i className="fa fa-facebook" aria-hidden="true"></i>
+                        <i className="fa fa-google-plus" aria-hidden="true"></i>
+                        <i className="fa fa-twitter" aria-hidden="true"></i>
+                        <i className="fa fa-linkedin" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-.HomeBanner {
+.home__HomeBanner {
     background: url("../images/group-14.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,19 +8,19 @@
     position:  relative;
 }
 
-.banner-content {
+.home__banner-content {
     position: absolute;
     top: 50%;
     transform: translate(0,-50%);
 }
 
 
-.banner-icon {
+.home__banner-icon {
     color: white; 
     padding-bottom:3%;
 }
 
-.banner-first-line {
+.home__banner-first-line {
     font-family: "Poppins Bold";
     font-size: 45px;
     font-weight: bold;
@@ -31,7 +31,7 @@
     color: #ffffff;
 }
 
-.banner-second-line {
+.home__banner-second-line {
     font-family: "Poppins Bold";
     font-size: 45px;
     font-weight: bold;
@@ -42,7 +42,7 @@
     color: #328e4b;
 }
 
-.banner-text {
+.home__banner-text {
     font-family: "Poppins Regular";
   font-size: 18px;
   font-weight: normal;
@@ -53,7 +53,7 @@
   color: #ffffff;
 }
 
-.banner-link {
+.home__banner-link {
     font-family: "Poppins Regular";
   font-size: 16px;
   font-weight: bold;
@@ -68,45 +68,45 @@
 
 
 @media screen and (max-width : 768px ) {
-    .banner-first-line{
+    .home__banner-first-line{
         font-size: 24px;
     }
-    .banner-second-line{
+    .home__banner-second-line{
         font-size: 24px;
     }
-    .banner-text{
+    .home__banner-text{
         font-size: 14px;
     }
-    .banner-link{
+    .home__banner-link{
         font-size: 12px;
     }
 }
 
 
-.second-section {
+.home__second-section {
     padding-top: 10%;
     padding-bottom: 5%;
 }
 
-.second-content {
+.home__second-content {
     width: 70%;
     padding: 0% 5%;
     float: left;
 }
 
-.second-section-icon {
+.home__second-section-icon {
     color: #4d8c52;
     width: 38px;
     height: 38px;
 }
 
-.third-section-icon {
+.home__third-section-icon {
     color: #4d8c52;
     width: 38px;
     height: 38px;
 }
 
-.second-section-heading {
+.home__second-section-heading {
     font-family: "Poppins Bold";
   font-size: 36px;
   font-weight: bold;
@@ -117,7 +117,7 @@
   color: #4d533c;
 }
 
-.second-section-text {
+.home__second-section-text {
     font-family: "Poppins Regular";
   font-size: 20px;
   font-weight: normal;
@@ -129,7 +129,7 @@
 }
 
 
-.right-image {
+.home__right-image {
     max-width: 70vw;
     max-height: 70vh;
     margin-right: 5%;
@@ -138,7 +138,7 @@
     text-align: right;
 }
 
-.right-within {
+.home__right-within {
     transform : translateY(0%);
     width: 90%;
     height: 250vh;
@@ -148,25 +148,25 @@
 
 @media screen and (max-width : 768px) {
 
-    .second-content {
+    .home__second-content {
         width: 60%;
     }
 
-    .second-section-heading {
+    .home__second-section-heading {
         font-size: 16px;
     }
-    .second-section-text {
+    .home__second-section-text {
         font-size: 14px;
     }
 
 
     
-    .second-section-icon {
+    .home__second-section-icon {
         width: 20px;
         height: 20px;
     }
 
-    .third-section-icon {
+    .home__third-section-icon {
         width: 20px;
         height: 20px;
     }
@@ -174,26 +174,26 @@
 
 }
 
-.third-content {
+.home__third-content {
     width: 100%;
     float: left;
     padding: 0% 0% 5% 0%;
 }
 
-.third-section {
+.home__third-section {
     padding: 0% 5% 5% 5% !important;
 }
 
 
 
 
-.card {
+.home__third-section .card {
     box-shadow: 5px 10px 10px grey;
     border-radius: 12px !important;
     margin-bottom: 5%;
 }
 
-.card:hover {
+.home__third-section .card:hover {
     border-radius: 12px;
     -webkit-backdrop-filter: blur(8.9px);
     backdrop-filter: blur(8.9px);
@@ -201,7 +201,7 @@
     background: linear-gradient( rgba(75,136,80,0.7),rgba(75,136,80,0.7));
 }
 
-.back-icon {
+.home__back-icon {
     opacity: 1;
     position: absolute;
     left: 70%;
@@ -210,11 +210,11 @@
 }
 
 
-.card:hover .back-icon {
+.home__third-section .card:hover .back-icon {
     opacity: 1.0;
 }
 
-.card-head {
+.home__third-section .card-head {
     color:  #4d8c52;
     font-family: "Poppins Bold";
   font-size: 36px;
@@ -226,7 +226,7 @@
 
 }
 
-.card-title {
+.home__third-section .card-title {
     font-family: "Poppins Medium";
   font-size: 24px;
   font-weight: 500;
@@ -237,7 +237,7 @@
   color: #4d533c;
 }
 
-.card-text {
+.home__third-section .card-text {
     opacity: 0.5;
   font-family: "Poppins Medium";
   font-size: 16px;
@@ -251,40 +251,40 @@
 
 
 
-.card-body:hover, .card-body:hover * {
+.home__third-section .card-body:hover,.home__third-section .card-body:hover * {
     color: white;
 }
 
 
 @media screen and (max-width : 768px) {
-    .third-content{
+    .home__third-content{
         text-align: center;
     }
-    .card-head {
+    .home__third-section .card-head {
         font-size: 16px;
     }
-    .card-title {
+    .home__third-section .card-title {
         font-size: 14px;
     }
-    .card-text {
+    .home__third-section .card-text {
         font-size: 12px;
     }
 }
 
-.fourth-section {
+.home__fourth-section {
     width: 100%;
     border-top: 3px solid #4d8c52;
     margin-top: 5%;
     margin-bottom: 10%;
 }
 
-.fourth-head {
+.home__fourth-head {
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
 }
 
-.fourth-head h3 {
+.home__fourth-head h3 {
     margin-left: 50%;
     transform: translate(-50%,-50%);
     background-color: white;
@@ -299,7 +299,7 @@
   color: #4d533c;
 }
 
-.fourth-section-text {
+.home__fourth-section-text {
     font-family: "Poppins Regular"; 
   font-size: 20px;
   font-weight: normal;
@@ -313,18 +313,18 @@
 }
 
 @media screen and (max-width : 768px){
-    .fourth-head h3{
+    .home__fourth-head h3{
         font-size: 16px;
     }
 
-    .fourth-section-text {
+    .home__fourth-section-text {
         font-size : 12px;
     }
 }
 
 
 
-.fifth-section {
+.home__fifth-section {
     position: relative;
     padding: 5%;
     width: 70%;
@@ -336,7 +336,7 @@
 }
 
 
-.fifth-content {
+.home__fifth-content {
     font-family: "Poppins Bold";
     font-size: 60px;
     font-weight: bold;
@@ -348,7 +348,7 @@
 }
 
 
-.fifth-section-link {
+.home__fifth-section-link {
     font-family: "Poppins Bold";
   font-size: 16px;
   font-weight: bold;
@@ -360,18 +360,18 @@
 }
 
 
-.first-row {
+.home__first-row {
     padding-top: 10%;
 }
 
 @media screen and (max-width: 768px) {
-    .fifth-section {
+    .home__fifth-section {
         box-shadow : none;
         margin-bottom: 0%;
         margin-left: 15%;
         text-align: center;
     }
-    .fifth-content {
+    .home__fifth-content {
         font-size : 16px;
     }
 }

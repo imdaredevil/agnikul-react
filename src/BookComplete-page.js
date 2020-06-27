@@ -1,10 +1,14 @@
 import React from 'react';
 import "./css/book-finish.css";
 import satellite from "./images/satilite.png";
-
+import $ from "jquery";
 
 function BookComplete(){
 
+    
+    $(document).ready(function(){
+        $("body").removeClass("products");
+    });
 
     return (
         <div class="body">

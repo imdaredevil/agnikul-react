@@ -1,14 +1,14 @@
-body {
+body.products {
     overflow-y: scroll;
     height: 4000px;
 }
 
-.body {
+body.products .body {
     overflow: hidden;
 }
 
 
-.navBar {
+.navFixed {
     position: fixed !important;
     width: 100%;
 }

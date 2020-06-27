@@ -704,6 +704,7 @@ function loop() {
 }
 
 $(document).ready(function () {
+    $("body").addClass("products");
     pre = prefix();
     _jsPrefix = pre.lowercase;
     if (_jsPrefix == 'moz')

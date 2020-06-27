@@ -191,10 +191,11 @@ body{
   }
   
   
-.custom-form-control,.custom-form-control-half {
+.custom-form-control,.custom-form-control-half, .show > .custom-form-control, .show > .custom-form-control-half {
   border-radius: 6px;
-  border: solid 1px #979797;
+  border: solid 1px #979797 !important;
   text-decoration: none;
+  box-shadow: none !important;
 
   font-family: "Poppins Bold";
   font-size: 20px;
@@ -203,8 +204,8 @@ body{
   font-style: normal;
   line-height: 1.7;
   letter-spacing: 1px;
-  color: #d2d3d0;
-  background: none;
+  color: #d2d3d0 !important;
+  background: none !important;
   width: 100%;
   text-align: left;
 }
@@ -340,13 +341,15 @@ body{
   border: none;
   color: white;
   display: inline-block;
+  width: 300px;
   padding: 1% 2%;
 }
 
 .custom-button span {
   padding-left: 5%;
+  width: auto;
   font-family: "Poppins Bold";
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -421,7 +424,9 @@ body{
   .custom-form-control,.custom-form-control-half,
   .custom-form-control input,
   .custom-form-control input::placeholder,
-  .custom-form-check-label
+  .custom-form-check-label,
+  .show > .custom-form-control,
+  .show > .custom-form-control-half
   {
     font-size : 12px;
   }
@@ -446,6 +451,9 @@ body{
       width: 15px;
   }
   
+  .custom-button {
+    width: 200px;
+  }
 
   .custom-form-control-half i.arrow {
     padding: 2% 2%;

@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 import "./css/styles.css";
 
+
 const Home = lazy(() => import('./Home-page'));
 const About = lazy(() => import('./About-page'));
 const Team = lazy(() => import('./Team-page'));
