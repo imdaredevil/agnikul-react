@@ -12,6 +12,7 @@ const Book = lazy(() => import('./Book-page'));
 const BookComplete = lazy(() => import('./BookComplete-page'));
 const Launch = lazy(() => import('./Launch-page'));
 const Product = lazy(() => import('./Product-page'));
+const Career = lazy(() => import('./Career-page'));
 
 const App = () => (
   <Router>
@@ -24,6 +25,7 @@ const App = () => (
         <Route path="/book-complete" component={BookComplete}/>
         <Route path="/launch-sites" component={Launch}/>
         <Route path="/products" component={Product}/>
+        <Route path="/career" component={Career}/>
       </Switch>
     </Suspense>
   </Router>

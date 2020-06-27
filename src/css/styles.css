@@ -1,6 +1,10 @@
 @import "poppins/style.css";
 
 
+p,h1,h2,h3 {
+  cursor: pointer !important;
+}
+
 #root {
   font-family: "Poppins Regular" !important;
   z-index: 0;
@@ -42,17 +46,21 @@ body{
   }
 
 .column {
-  margin: 0% 1.5%;
+  margin: 0% 20px 0% 0%;
   width: 5%;
+  text-align: left;
 }
 
 .column-md {
-   margin: 0% 1.5%;
+  margin: 0% 20px 0% 0%;
   width: 11%;
+  text-align: left;
 }
 
 .column-lg {
+  margin: 0% 20px 0% 0%;
   width: 15%;
+  text-align: left;
 }
   
 .nav-brandc img {
