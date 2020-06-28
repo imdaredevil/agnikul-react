@@ -28,7 +28,7 @@ function Product(){
                 </Link>
             </div>
             <div className="column">
-                <Link to="/products" className="nav-itemc nav-linkc">
+                <Link to="/products" className="nav-itemc nav-linkc active">
                     Products
                 </Link>
             </div>
@@ -43,13 +43,13 @@ function Product(){
                 </Link>
             </div>
             <div className="column">
-                <Link to="/" className="nav-itemc nav-linkc">
+                <Link to="/career" className="nav-itemc nav-linkc">
                     Career
                 </Link>
             </div>
             <div className="column-md">
-                <Link to="/" className="nav-itemc nav-linkc">
-                    Contact Us
+                <Link to="/news" className="nav-itemc nav-linkc">
+                    News
                 </Link>
             </div>
             <div id="navButtonDiv" className="column-lg">

@@ -12,7 +12,7 @@ import spaceshipWhite from "./images/spaceship-copy.png";
 import flag from "./images/flag.png";
 import orbit from "./images/pennant.png";
 import payload from "./images/scale-4.png";
-import { dropdown, Dropdown } from "react-bootstrap";
+import { Dropdown } from "react-bootstrap";
 
 
 
@@ -48,13 +48,13 @@ function Home(){
                 </Link>
             </div>
             <div className="column">
-                <Link to="/" className="nav-itemc nav-linkc">
+                <Link to="/career" className="nav-itemc nav-linkc">
                     Career
                 </Link>
             </div>
             <div className="column-md">
-                <Link to="/" className="nav-itemc nav-linkc">
-                    Contact Us
+                <Link to="/news" className="nav-itemc nav-linkc">
+                    News
                 </Link>
             </div>
             <div id="navButtonDiv" className="column-lg">
@@ -63,9 +63,9 @@ function Home(){
                 </button>
             </div>
             <div className="col-sm iconc">
-                <a onClick={navBar}>
+                <div onClick={navBar}>
                     <i className="fa fa-bars"></i>
-                </a>
+                </div>
             </div>
         </div>
     </div>
@@ -178,8 +178,8 @@ function Home(){
                         <div className="col-sm">
                         <Dropdown>
                                 <Dropdown.Toggle className="custom-form-control">
-                                    <img src={orbit} className="custom"></img>
-                                    <span className="form-control-name">ORIENTAL INCLINATION</span>
+                                    <img src={flag} className="custom"></img>
+                                    <span className="form-control-name">LAUNCH LOCATION</span>
                                     <i className="arrow fa fa-arrow-down"></i>
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu className="dropdown-menu custom-form-options">
