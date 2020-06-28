@@ -4,6 +4,7 @@ import navBar from './js/common';
 import Init from './js/news';
 import log from "./images/logo.png";
 import "swiper/css/swiper.min.css";
+import newsHolder from "./images/news-placeholder.jpg";
 
 import { Link } from 'react-router-dom';
 
@@ -66,38 +67,43 @@ function News(){
     <div className="news__location-swiper swiper-container">
         <div className="swiper-wrapper">
             <div className="news__location__swiper-slide swiper-slide">
-                <div id="chennai" className="news__location__slide-content active">
-                <p className="news__location__slide-number">01</p>
-                <p className="news__location__slide-name">Chennai</p>
-                <p className="news__location__slide-country">INDIA</p>
+                <img className="news__location___slide-image" src={newsHolder}/>
+                <div id="chennai" className="news__location__slide-content">
+                <p className="news__location__slide-title">Microsoft is closing all of its stores
+</p>
+                <p className="news__location__slide-paper">Indian Express</p>
             </div>
             </div>
             <div className="news__location__swiper-slide swiper-slide">
-                <div id="beijing" className="news__location__slide-content">
-                <p className="news__location__slide-number">02</p>
-                <p className="news__location__slide-name">Beijing</p>
-                <p className="news__location__slide-country">INDIA</p>
+                <img className="news__location___slide-image" src={newsHolder}/>
+                <div id="chennai" className="news__location__slide-content">
+                <p className="news__location__slide-title">Microsoft is closing all of its stores
+</p>
+                <p className="news__location__slide-paper">NewYork Times</p>
             </div>
             </div>
             <div className="news__location__swiper-slide swiper-slide">
-                <div id="kolkata" className="news__location__slide-content">
-                <p className="news__location__slide-number">03</p>
-                <p className="news__location__slide-name">Kolkata</p>
-                <p className="news__location__slide-country">INDIA</p>
+                <img className="news__location___slide-image" src={newsHolder}/>
+                <div id="chennai" className="news__location__slide-content">
+                <p className="news__location__slide-title">Microsoft is closing all of its stores
+</p>
+                <p className="news__location__slide-paper">Times of India</p>
             </div>
             </div>
             <div className="news__location__swiper-slide swiper-slide">
-                <div id="ahmedabad" className="news__location__slide-content">
-                <p className="news__location__slide-number">04</p>
-                <p className="news__location__slide-name">Ahmedabad</p>
-                <p className="news__location__slide-country">INDIA</p>
+                <img className="news__location___slide-image" src={newsHolder}/>
+                <div id="chennai" className="news__location__slide-content">
+                <p className="news__location__slide-title">Microsoft is closing all of its stores
+</p>
+                <p className="news__location__slide-paper">The Hindu</p>
             </div>
             </div>
             <div className="news__location__swiper-slide swiper-slide">
-                <div id="rajastan" className="news__location__slide-content">
-                <p className="news__location__slide-number">05</p>
-                <p className="news__location__slide-name">Rajastan</p>
-                <p className="news__location__slide-country">INDIA</p>
+                <img className="news__location___slide-image" src={newsHolder}/>
+                <div id="chennai" className="news__location__slide-content">
+                <p className="news__location__slide-title">Microsoft is closing all of its stores
+</p>
+                <p className="news__location__slide-paper">The News Minute</p>
             </div>
             </div>
         </div>
