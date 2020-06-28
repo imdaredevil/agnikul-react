@@ -73,20 +73,25 @@ body.products .body {
 
 
 .rocket-1 {
-    width: 15.76%;
+    width: 22.5%;
+    height: auto;
+    margin-right: -4.5%;
+    /* height: 100px; */
+   
 }
 .rocket-2 {
-    width: 22.55%;
+    width: 22.5%;
+    height: auto;
+    margin-right: -6.9%;
+    /* height: 100px; */
 }
 .rocket-3 {
-    width: 64.4%;
+    width: 70%;
+    height: auto;
+    /* height: 100px; */
+    
 }
 
-
-
-.rocket-2 {
-    margin-right: -1.7%; 
-}
 
 .first-scroll-specs {
     width: 75.7%;
@@ -133,6 +138,14 @@ body.products .body {
     width: 40%;
     position: absolute;
     opacity: 0;
+}
+
+.stand {
+    width: 40%;
+    transform-origin: 84% 50%;
+    position: absolute;
+    left: 67%;
+    top: 59%;
 }
 
 

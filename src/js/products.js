@@ -342,11 +342,11 @@ var transitions = [
         ],
         after: [
             ["left",55],
-            ["top",50]
+            ["top",53]
         ],
         on: [
             ["left",{start: 52, end: 55}],
-            ["top",{start: 40, end: 50}]   
+            ["top",{start: 40, end: 53}]   
         ]
     },
     {
@@ -358,15 +358,15 @@ var transitions = [
 
         before: [
             ["left",55],
-            ["top",50]
+            ["top",53]
         ],
         after: [
             ["left",55],
-            ["top",65]
+            ["top",68]
         ],
         on: [
             ["left",{start: 55, end: 55}],
-            ["top",{start: 50, end: 65}]   
+            ["top",{start: 53, end: 68}]   
         ]
     },
     {
@@ -415,6 +415,35 @@ var transitions = [
         ]
         ],
         percentStart: 0.855,
+        percentBefore: 0.805,
+        percentAfter: 1.1,
+        percentEnd: 0.975
+    },
+    {
+        selector: ".stand",
+        before:  [
+            ["transform",[
+                ["rotate",0],
+            ],
+        ]
+        ],
+        on: [
+            ["transform",[
+            ["rotate",{
+                    start: 0,
+                    end: 90
+            }
+        ]
+            ]
+        ]
+        ],
+        after: [
+            ["transform",[
+                ["rotate",90]
+            ]
+        ]
+        ],
+        percentStart: 0.857,
         percentBefore: 0.805,
         percentAfter: 1.1,
         percentEnd: 0.975
@@ -565,6 +594,25 @@ var transitions = [
         percentAfter: 1.1
     },
     {
+        selector: '.stand',
+        before: [
+            ["opacity",0],
+        ],
+        on: [
+            ["opacity",{
+                start: 0,
+                end: 1
+            }]
+        ],
+        after: [
+            ["opacity",1]
+        ],
+        percentStart: 0.405,
+        percentEnd: 0.555,
+        percentBefore: -1,
+        percentAfter: 1.1
+    },
+    {
         selector: ".truck",
         percentStart: 0.735,
         percentBefore: -1,
@@ -573,15 +621,35 @@ var transitions = [
 
         before: [
             ["left",100],
-            ["top",67]
+            ["top",70]
         ],
         after: [
             ["left",52],
-            ["top",67]
+            ["top",70]
         ],
         on: [
             ["left",{start: 100, end: 52}],
-            ["top",{start: 67, end: 67}]   
+            ["top",{start: 70, end: 70}]   
+        ]
+    },
+    {
+        selector: ".stand",
+        percentStart: 0.735,
+        percentBefore: -1,
+        percentAfter: 1.1,
+        percentEnd: 0.815,
+
+        before: [
+            ["left",100],
+            ["top",69.5]
+        ],
+        after: [
+            ["left",58],
+            ["top",69.5]
+        ],
+        on: [
+            ["left",{start: 100, end: 58}],
+            ["top",{start: 69.5, end: 69.5}]   
         ]
     }
 

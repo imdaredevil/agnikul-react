@@ -3,7 +3,8 @@ import "./css/products.css";
 import Init from './js/products';
 import navBar from './js/common';
 import log from "./images/logo.png";
-import truck from "./images/Launchpad_V6.png";
+import truck from "./images/truck.png";
+import stand from "./images/stand.png";
 import rocket1 from "./images/rocket-1.png";
 import rocket2 from "./images/rocket-2.png";
 import rocket3 from "./images/rocket-3.png";
@@ -75,6 +76,7 @@ function Product(){
         </div>
         
             <img src={truck} className="truck"/>
+            <img src={stand} className="stand"/>
 
         <div className="first-scroll-specs">
             <div className="row justify-content-around">
