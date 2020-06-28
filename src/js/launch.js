@@ -16,6 +16,22 @@ var locationData = {
 $(document).ready( function() {
 
   $("body").removeClass("products");
+
+  $(".body").scroll(function(){
+      var locSlider = document.getElementsByClassName("launch__location-swiper")[0];
+      var bot = locSlider.getBoundingClientRect().bottom;
+      if(bot < $(".body").scrollTop() + (0.4)*window.screen.height)
+      {
+         $(".launch__world-map").removeClass("fixed"); 
+      }
+      else
+      {
+        $(".launch__world-map").addClass("fixed"); 
+      }
+  });
+
+  var prev = undefined;
+
   $(".launch__location__slide-content").each(function(){
     $(this).click(
     function() {
@@ -25,16 +41,15 @@ $(document).ready( function() {
         var key = $(this).attr('id');
         var selectorDesc = "#" + key + " .launch__location__slide-desc";
         var selectorContent = "#" + key;
-        if($(selectorContent).hasClass("active"))
+        if(prev != undefined)
         {
-          $(selectorContent).removeClass("active");
-          $(selectorDesc).removeClass("active");
+          var prevDesc = "#" + prev + " .launch__location__slide-desc";
+          var prevContent = "#" + prev;
+          $(prevContent).removeClass("active");
+          $(prevDesc).removeClass("active");
         }
-        else
-        {
             $(selectorContent).addClass("active");
             $(selectorDesc).addClass("active");
-        }
 
         //console.log(locationData[key]);
         var dots = document.getElementsByTagName("circle");
@@ -42,13 +57,12 @@ $(document).ready( function() {
         {
              if(locationData[key].indexOf(i) != -1)
              {
-                //console.log(dots[i].style.fill);
-                if(dots[i].style.fill != "rgb(77, 140, 82)")
                 dots[i].style.fill = "#4d8c52";
+             }
                 else
                 dots[i].style.fill = "rgba(0,0,0,0.3)";
-             }
         }
+        prev = key;
     },
     );
   });

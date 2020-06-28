@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 import "./css/styles.css";
+import logo from "./images/group-10.png";
 
 
 const Home = lazy(() => import('./Home-page'));
@@ -15,11 +16,22 @@ const Product = lazy(() => import('./Product-page'));
 const Career = lazy(() => import('./Career-page'));
 const News = lazy(() => import('./News-page'));
 
+
+function load() {
+  return  (<div className="loader d-flex justify-content-center align-items-center">
+  <div className="spinner-grow" role="status">
+    <span className="sr-only">Loading...</span>
+  </div>
+  <img src={logo} className="loader-img"></img>
+</div>);
+}
+
 const App = () => (
   <Router>
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={load}>
       <Switch>
         <Route exact path="/" component={Home}/>
+        <Route path="/load" component={load}/>
         <Route path="/about" component={About}/>
         <Route path="/team" component={Team}/>
         <Route path="/book" component={Book}/>

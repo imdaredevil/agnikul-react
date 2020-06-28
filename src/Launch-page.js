@@ -13,8 +13,8 @@ function Launch(){
 
     return (
         <div className="body">
-      <div className="navBar">
-        <div className="topnav row" id="myTopnav">
+    <div className="navBar">
+        <div className="topnav row justify-content-around align-items-baseline" id="myTopnav">
             <div className="column-lg nav-brandc">
                 <Link  to="/"><img className="logo" src={log}/></Link>
             </div>
@@ -43,24 +43,19 @@ function Launch(){
                     Career
                 </Link>
             </div>
-            <div className="column-md">
-                <Link to="/news" className="nav-itemc nav-linkc">
-                    News
-                </Link>
-            </div>
             <div id="navButtonDiv" className="column-lg">
                 <button  className="nav-itemc nav-buttonc">
                    <Link to="/book"> BUILD YOUR LAUNCH</Link>
                 </button>
             </div>
-            <div className="col-sm iconc">
-                <a onClick={navBar}>
-                    <i className="fa fa-bars"></i>
-                </a>
-            </div>
         </div>
+        <div className="iconc">
+                <div onClick={navBar}>
+                    <i className="fa fa-bars fa-lg"></i>
+                </div>
+            </div>
     </div>
-     
+         
     <p className="launch__section-head">Launch-Sites</p>
     <p className="launch__section-head-text">Pavel is a writer and researcher who studied digital humanities and new media. 
         Being addicted to large amount of information, he produces an appropriate.</p>
@@ -120,7 +115,7 @@ function Launch(){
             </div>
         </div>
     </div>
-    <div className="launch__world-map">
+    <div className="launch__world-map fixed">
         <svg id="world" width="772px" height="379px" viewBox="0 0 782 379" version="1.1">
             <g id="continents">
                 <g id="south-america" transform="translate(184.000000, 215.000000)" fill="#F70044">

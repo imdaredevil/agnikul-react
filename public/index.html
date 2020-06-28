@@ -25,10 +25,29 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Agnikul</title>
+    <style>
+      .loader{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        background-color: #4d8c52;
+      }
+      .loader-img {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="loader">
+        <img src="%PUBLIC_URL%/group-10.png" class="loader-img"></img>
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

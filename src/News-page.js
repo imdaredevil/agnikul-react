@@ -15,8 +15,8 @@ function News(){
 
     return (
         <div className="body">
-      <div className="navBar">
-        <div className="topnav row" id="myTopnav">
+    <div className="navBar">
+        <div className="topnav row justify-content-around align-items-baseline" id="myTopnav">
             <div className="column-lg nav-brandc">
                 <Link  to="/"><img className="logo" src={log}/></Link>
             </div>
@@ -45,24 +45,19 @@ function News(){
                     Career
                 </Link>
             </div>
-            <div className="column-md">
-                <Link to="/news" className="nav-itemc nav-linkc active">
-                    News
-                </Link>
-            </div>
             <div id="navButtonDiv" className="column-lg">
                 <button  className="nav-itemc nav-buttonc">
                    <Link to="/book"> BUILD YOUR LAUNCH</Link>
                 </button>
             </div>
-            <div className="col-sm iconc">
-                <a onClick={navBar}>
-                    <i className="fa fa-bars"></i>
-                </a>
-            </div>
         </div>
+        <div className="iconc">
+                <div onClick={navBar}>
+                    <i className="fa fa-bars fa-lg"></i>
+                </div>
+            </div>
     </div>
-     
+         
   <div className="news__overall-div">
     <div className="news__location-swiper swiper-container">
         <div className="swiper-wrapper">

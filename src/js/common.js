@@ -1,11 +1,15 @@
+import $ from "jquery";
+
+
 function navBar() {
     var x = document.getElementById("myTopnav");
-    console.log(x.className);
     if (x.classList.contains("responsive") === false){
       x.classList.add("responsive");
+      $(".navBar").addClass("responsive");
     } 
       else {
       x.classList.remove("responsive");
+      $(".navBar").removeClass("responsive");
     }
   }
 

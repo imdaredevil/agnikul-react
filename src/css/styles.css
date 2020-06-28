@@ -1,7 +1,7 @@
 @import "poppins/style.css";
 
 
-p,h1,h2,h3 {
+p,h1,h2,h3,a {
   cursor: pointer !important;
 }
 
@@ -16,6 +16,24 @@ p,h1,h2,h3 {
   overflow: hidden;
 }
 
+.spinner-grow {
+  animation-duration: 1.5s;
+  background-color: #b5b5b5;
+  width: 178px;
+  height: 178px;
+}
+
+.loader-img {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+
+.loader {
+  height: 100%;
+  background-color: #4d8c52;
+}
 
 .body {
     font-family: "Poppins Regular" !important;
@@ -35,37 +53,36 @@ body{
 
 .navBar {
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .topnav {
     margin-top: 2%;
     margin-bottom: 1%;
     text-align: center;
-    margin-left: 3%;
     width : 100%;
   }
 
 .column {
-  margin: 0% 20px 0% 0%;
-  width: 5%;
+  width: 7%;
   text-align: left;
 }
 
 .column-md {
-  margin: 0% 20px 0% 0%;
-  width: 11%;
+  width: 9%;
   text-align: left;
 }
 
 .column-lg {
-  margin: 0% 20px 0% 0%;
-  width: 15%;
+  width: 17%;
   text-align: left;
 }
   
 .nav-brandc img {
   width: 70%;
-  padding-top: 1%;
+  vertical-align: baseline;
 }
 
   .nav-linkc {
@@ -88,7 +105,6 @@ body{
       background-color: #4d8c52;
       border-radius: 15px;
       border: none;
-      margin-top: -2%;
       font-family: "Poppins Semibold";
       font-weight: normal;
   font-stretch: normal;
@@ -115,7 +131,7 @@ body{
   }
   
 
-  .topnav .iconc {
+  .navBar .iconc {
     display: none;
   }
   
@@ -126,17 +142,13 @@ body{
       margin-bottom: 4%;
     }
     .nav-itemc{display: none;}
-    .topnav .iconc {
-      position: absolute;
+    .navBar .iconc {
       display: block;
-      padding: 0%;
-      right: 10%;
       width: auto;
-    }
-    .iconc div {
-      width: auto;
+      margin: 3%;
       position: absolute;
-      right: 5%;
+      top: 1%;
+      right: 3%;
     }
 
     .column {
@@ -149,10 +161,13 @@ body{
     .column-lg {
       width : 100%;
     }
+
+    .nav-brandc {
+      width: 90%;
+    }
     
     .topnav .nav-brandc img {
         width: 50%;
-        margin-top: -2%;
     }
   }
 
@@ -160,12 +175,12 @@ body{
     .topnav.responsive {position: relative;
       width: 100%;
     }
-    .topnav.responsive .iconc {
+     .navBar.responsive .iconc {
       position: absolute;
-      right: 13%;
-      padding: 0%;
-      width: auto;
-    }
+      top: 1%;
+      right: 3%;
+    } 
+
 
     
 
@@ -195,6 +210,8 @@ body{
         display: block;
         text-align: left;
     }
+
+
 
   }
   
