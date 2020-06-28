@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "feb9183c85c06a3bfa190a7fe7b76d2b",
+    "revision": "a2b212253d214ea7011acae1fef63a9a",
     "url": "/agnikul-react/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/css/11.0e9c4eb4.chunk.css"
   },
   {
-    "revision": "d041733c2ea949dfb77c",
-    "url": "/agnikul-react/static/css/12.dce09d79.chunk.css"
+    "revision": "58904b8c6c4eccf16eb6",
+    "url": "/agnikul-react/static/css/12.4677c1a7.chunk.css"
   },
   {
     "revision": "aa54d2cec6f4c4c25cbd",
@@ -36,7 +36,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/css/6.01fb2e74.chunk.css"
   },
   {
-    "revision": "dea882a77f34063af736",
+    "revision": "cd3f61e49ae5dafa419d",
     "url": "/agnikul-react/static/css/7.bf58f1af.chunk.css"
   },
   {
@@ -72,7 +72,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/11.f1beb033.chunk.js"
   },
   {
-    "revision": "d041733c2ea949dfb77c",
+    "revision": "58904b8c6c4eccf16eb6",
     "url": "/agnikul-react/static/js/12.0b8d70d6.chunk.js"
   },
   {
@@ -104,8 +104,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/6.b7849dfb.chunk.js"
   },
   {
-    "revision": "dea882a77f34063af736",
-    "url": "/agnikul-react/static/js/7.bb36334b.chunk.js"
+    "revision": "cd3f61e49ae5dafa419d",
+    "url": "/agnikul-react/static/js/7.71120c0a.chunk.js"
   },
   {
     "revision": "220a56aa05a981f51fcd",
@@ -120,8 +120,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/main.b709b207.chunk.js"
   },
   {
-    "revision": "5a2545779ed311690c6b",
-    "url": "/agnikul-react/static/js/runtime-main.9547d607.js"
+    "revision": "da598a68ac11f08b74cb",
+    "url": "/agnikul-react/static/js/runtime-main.7f0a5dd2.js"
   },
   {
     "revision": "49882afbfc3f126ca6a05783b400669e",
