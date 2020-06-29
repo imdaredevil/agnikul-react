@@ -4,7 +4,7 @@ import ScrollHover from './js/home';
 import { Link } from 'react-router-dom';
 import log from "./images/logo.png";
 import agnibaan from "./images/home-agni.jpg";
-import satelite from "./images/spaceship.png";
+import satelite from "./images/small-logo.png";
 import  navBar from "./js/common";
 import fingersnap from "./images/finger-snap.png";
 import cardback from "./images/api.png";
@@ -73,11 +73,12 @@ function Home(){
             <h1 className="home__banner-first-line">Bringing Space Within</h1>
             <h1 className="home__banner-second-line">Everyone's Reach</h1>
             <p className="home__banner-text">
-                Getting there shouldn't be the hardest part of<br/>
-                being space-faring. So, why not design and build<br/>
-                an orbital-clas launch vehicle?
+            Going to space shouldn’t be the hardest part of utilizing, living
+in or working from space. So, why not design & build a product
+that makes the earth-to-space journey as simple, as quick and
+as affordable as possible?
             </p>
-            <Link className="home__banner-link" to="/products">GO TO PRODUCTS</Link>
+            <Link className="home__banner-link" to="/products">CHECK OUT AGNIBAAN</Link>
         </div>
     </div>
 
@@ -85,18 +86,25 @@ function Home(){
         <div className="home__second-content">
             <img src={satelite} className="home__second-section-icon"/>
             <h3 className="home__second-section-heading">
-                A 2 stage LOX/Kerosene vehicle with a third "baby stage"
+            Agnibaan is a highly customizable, 2 stage launch vehicle
             </h3>
             <p className="home__second-section-text">
-                Agnibaan is a launch vehicle capable of carrying up to 100 kg of payload,
-                to low Earth orbits up to 700 km with a plug-and-play engine
-                configuration launched from a mobile launch vehicle
+            Capable of taking upto 100 kgs to orbits around 700 km high,
+Agnibaan can access both low and high inclination orbits and is
+completely mobile - designed for accessing more than 25
+launchports.
             </p><br></br>
             <p className="home__second-section-text">
-                Engineering Research Board, Dept. of Science and Technology (DST),
-                Government of India. A similar centre has also been established at
-                Indian Institute of Science, Bangalore (IISc).
+            Driven by LOX/Kerosene engines in all its stages, Agnibaan is
+configurable by the customer. Yes, Agnibaan doesn’t fly with
+the same number of engines all the time. The mission, the
+satellite and the launchport itself would decide how many
+engines go on the first stage.
             </p>
+            <p className="home__second-section-text">
+            How is this possible? What about controllability? Assembly?
+            </p>
+            <Link to="/products" className="home__second-section-link">TELL ME MORE</Link>
         </div>
         <div className="home__right-image">
             <img className="home__right-within" src={agnibaan}/>
@@ -106,13 +114,14 @@ function Home(){
     <div className="container-fluid home__third-section">
         <div className="home__third-content">
         <img src={quote} className="home__quote"></img>
-            <img src={fingersnap} className="home__third-section-icon"/>
+            <img src={satelite} className="home__third-section-icon"/>
             <h3 className="home__second-section-heading">
-                Facts about us
+                Facts & Figures
             </h3>
             <p className="home__second-section-text">
-                Agnibaan is a launch vehicle capable of carrying up to 100 kg of payload, to low
-                Earth orbits up to 700 km with
+            Agnibaan’s first stage could have 4 / 5 / 6 or 7 engines. An
+optional third “baby” stage might be available for select
+missions.
             </p>
         </div>
         <div className="row">
@@ -120,10 +129,10 @@ function Home(){
                 <div className="card">
                     <img className="home__back-icon" src={cardback} />
                     <div className="card-body">
-                        <h1 className="card-head"><b>05</b></h1>
+                        <h1 className="card-head"><b>5</b></h1>
                         <h3 className="card-title"><b>Configurations</b></h3>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p className="card-text">A first stage with 4 / 5 / 6 or 7 engines. A “baby” stage
+could be made available for select missions.</p>
                     </div>
                 </div>
             </div>
@@ -131,10 +140,10 @@ function Home(){
                 <div className="card">
                     <img className="home__back-icon" src={cardback} />
                     <div className="card-body">
-                        <h1 className="card-head"><b>3200</b></h1>
-                        <h3 className="card-title"><b>Mass</b></h3>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h1 className="card-head"><b>2</b></h1>
+                        <h3 className="card-title"><b>Weeks</b></h3>
+                        <p className="card-text">Payload integration to launch won’t take more than a 
+                        fortnight. Yes, launch-when-you-want</p>
                     </div>
                 </div>
             </div>
@@ -142,10 +151,11 @@ function Home(){
                 <div className="card">
                     <img className="home__back-icon" src={cardback} />
                     <div className="card-body">
-                        <h1 className="card-head"><b>05</b></h1>
+                        <h1 className="card-head"><b>10+</b></h1>
                         <h3 className="card-title"><b>Launch Parts</b></h3>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p className="card-text">Access to 10+ launchports today. Access to 25+ coming
+soon. Yes, launch-where-you-want.
+</p>
                     </div>
                 </div>
             </div>
@@ -153,10 +163,10 @@ function Home(){
                 <div className="card">
                     <img className="home__back-icon" src={cardback} />
                     <div className="card-body">
-                        <h1 className="card-head"><b>05</b></h1>
-                        <h3 className="card-title"><b>Launch Ports</b></h3>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h1 className="card-head"><b>100 Kg</b></h1>
+                        <h3 className="card-title"><b>Mass</b></h3>
+                        <p className="card-text">Same price per kg for any payload in the 25-100 kg
+range. Yes, pay-for-what-you-launch.</p>
                     </div>
                 </div>
             </div>
@@ -167,8 +177,8 @@ function Home(){
         <div className="home__fourth-head">
             <p className="home__midText">Ready To Launch ?</p><br></br><br></br>
             <p className="home__fourth-section-text">
-                The National Centre for Combustion Research and Development (NCCRD), scheduled to be
-                inaugurated on 13th October 2017, is supported by Science and Engineering Research Board,
+            Yes, Agnibaan is configurable! (If you have not picked that up
+already). So, let’s go to space together.
             </p>
             <form>
                 <div className="container-fluid custom-form">
@@ -234,11 +244,10 @@ function Home(){
 
     <div className="home__fifth-section">
         <p className="home__fifth-content">
-            Drop us a note. We will revert.
-            Yes, we actually do.
+           I am curious
         </p>
         <p className="home__fifth-section-link">
-            <a>CONTACT US</a>
+            <a>If you have a question, please reach out.</a>
         </p>
     </div>
     
@@ -249,13 +258,25 @@ function Home(){
                 <div className="col-sm">
                     <p className="footer-normal">Phone</p>
                     <p className="footer-bolder">+32 50 31 28 32</p>
+                    <p className="footer-bolder">+91 99625 07524</p>
+                    <p className="footer-bolder">+91 96772 82356</p>
+                    <p className="footer-bolder">+1 551 689 2314</p>
                 </div>
                 <div className="col-sm">
                     <p className="footer-normal">Address</p>
-                    <p className="footer-bolder">491 Merlin Crest Suite 963</p>
+                    <p className="footer-bolder">Agnikul Cosmos Private Limited.</p>
+                    <p className="footer-bolder">National Center for Combustion R&D,</p>
+                    <p className="footer-bolder">3rd floor,</p>
+                    <p className="footer-bolder">IIT Madras</p>
+                    <p className="footer-bolder">Chennai 600036</p>
                 </div>
                 <div className="col-sm">
-
+                    <p className="footer-normal">Address</p>
+                    <p className="footer-bolder">Agnikul Cosmos Launch Vehicles Private Limited</p>
+                    <p className="footer-bolder">Kerala Startup Mission,</p>
+                    <p className="footer-bolder">Technopark, Thejaswini,</p>
+                    <p className="footer-bolder">G3B, Technopark Rd, Karyavattom,</p>
+                    <p className="footer-bolder">Thiruvananthapuram, Kerala 695581</p>
                 </div>
                 <div className="col-sm">
 
@@ -263,31 +284,21 @@ function Home(){
             </div>
             <div className="row">
                 <div className="col-sm">
-                    <p className="footer-bold">Services</p>
-                    <p className="footer-normal">Strategy Design</p>
-                    <p className="footer-normal">Product Design</p>
-                    <p className="footer-normal">Content Strategy</p>
-                    <p className="footer-normal">Brand Strategy</p>
-                    <p className="footer-normal">Development</p>
+                    <p className="footer-bold">Launch Services</p>
+                    <p className="footer-normal">payloadpeople@gnikul.in</p>
                 </div>
                 <div className="col-sm">
-                    <p className="footer-bold">Help and Advice</p>
-                    <p className="footer-normal">How it Works</p>
-                    <p className="footer-normal">Contact Support</p>
-                    <p className="footer-normal">Privacy Policy</p>
-                    <p className="footer-normal">FAQ</p>
+                    <p className="footer-bold">Careers</p>
+                    <p className="footer-normal">humancapital@agnikul.in</p>
                 </div>
                 <div className="col-sm border-column">
-                    <p className="footer-bold">Company</p>
-                    <p className="footer-normal">About</p>
-                    <p className="footer-normal">Blog</p>
-                    <p className="footer-normal">Contact</p>
-                    <p className="footer-normal">Jobs</p>
+                    <p className="footer-bold">Media</p>
+                    <p className="footer-normal">News</p>
                 </div>
                 <div className="col-sm">
-                    <p className="footer-bold">Get in Touch</p>
-                    <p className="footer-normal">Feel free to get in touch with us via email</p>
-                    <p className="footer-email">info.agnikul@gmail.com</p>
+                <p className="footer-normal">About</p>
+                <p className="footer-normal">Blog</p>
+                <p className="footer-normal">Videos</p>
                     <div className="footer-social-logos">
                         <i className="fa fa-facebook" aria-hidden="true"></i>
                         <i className="fa fa-google-plus" aria-hidden="true"></i>

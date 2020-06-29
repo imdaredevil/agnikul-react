@@ -58,6 +58,7 @@ function Career(){
             </div>
     </div>
         <div className="container-fluid custom-form career__form">
+            <p class="career__section-head">Careers</p>
             <form>
             <div className="row">
                         <div className="col-sm">

@@ -562,6 +562,7 @@ form {
 
 .footer-bolder {
   font-family: "Poppins Bold";
+  white-space: nowrap;
 
 }
 

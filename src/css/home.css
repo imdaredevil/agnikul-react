@@ -11,6 +11,7 @@
 .home__banner-content {
     position: absolute;
     top: 50%;
+    width: 100%;
     transform: translate(0,-50%);
 }
 
@@ -19,7 +20,6 @@
     color: white; 
     width: 30px;
     height: 32px;
-    margin-bottom: 3%;
 }
 
 .home__banner-first-line {
@@ -53,6 +53,7 @@
   line-height: 1.78;
   letter-spacing: normal;
   color: #ffffff;
+  width: 56.79%;
 }
 
 .home__banner-link {
@@ -67,6 +68,14 @@
   text-decoration-line: underline !important;
 
 }
+
+.home__second-section-link {
+  letter-spacing: normal;
+  color:   rgba(33, 56, 66, 0.6) !important;
+  text-decoration-line: underline !important;
+
+}
+
 
 
 @media screen and (max-width : 768px ) {
@@ -140,6 +149,7 @@
     max-width: 70vw;
     height: 500px;
     margin-right: 5%;
+    margin-top: 6%;
     overflow: hidden;
     text-align: right;
 }
@@ -216,7 +226,6 @@
     border-radius: 12px;
     -webkit-backdrop-filter: blur(8.9px);
     backdrop-filter: blur(8.9px);
-    box-shadow: 11px 11px 35px 0 #eaffec;
     background: linear-gradient( rgba(75,136,80,0.7),rgba(75,136,80,0.7));
 }
 
@@ -372,7 +381,7 @@
 .home__fifth-section {
     position: relative;
     padding: 5% 25% 5% 10%;
-    width: 88.5%;
+    width: 60%;
     margin-left: 0%;
     margin-bottom: -10%;
     box-shadow: 50px 130px 100px 0 rgba(0, 0, 0, 0.15), 0 0 12px 0 rgba(0, 0, 0, 0.05);
