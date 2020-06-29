@@ -362,11 +362,11 @@ var transitions = [
         ],
         after: [
             ["left",55],
-            ["top",68]
+            ["top",66]
         ],
         on: [
             ["left",{start: 55, end: 55}],
-            ["top",{start: 53, end: 68}]   
+            ["top",{start: 53, end: 66}]   
         ]
     },
     {

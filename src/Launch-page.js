@@ -45,7 +45,7 @@ function Launch(){
             </div>
             <div id="navButtonDiv" className="column-lg">
                 <button  className="nav-itemc nav-buttonc">
-                   <Link to="/book"> BUILD YOUR LAUNCH</Link>
+                   <Link to="/book"> BOOK YOUR LAUNCH</Link>
                 </button>
             </div>
         </div>
@@ -115,7 +115,7 @@ function Launch(){
             </div>
         </div>
     </div>
-    <div className="launch__world-map fixed">
+    <div className="launch__world-map">
         <svg id="world" width="772px" height="379px" viewBox="0 0 782 379" version="1.1">
             <g id="continents">
                 <g id="south-america" transform="translate(184.000000, 215.000000)" fill="#F70044">

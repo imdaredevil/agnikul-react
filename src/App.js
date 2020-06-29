@@ -28,7 +28,7 @@ function load() {
 
 const App = () => (
   <Router>
-    <Suspense fallback={load}>
+    <Suspense fallback={load()}>
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/load" component={load}/>

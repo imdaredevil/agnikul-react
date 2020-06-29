@@ -3,7 +3,7 @@ import "./css/home.css";
 import ScrollHover from './js/home';
 import { Link } from 'react-router-dom';
 import log from "./images/logo.png";
-import agnibaan from "./images/Agnibaan.png";
+import agnibaan from "./images/home-agni.jpg";
 import satelite from "./images/spaceship.png";
 import  navBar from "./js/common";
 import fingersnap from "./images/finger-snap.png";
@@ -13,7 +13,9 @@ import flag from "./images/flag.png";
 import orbit from "./images/pennant.png";
 import payload from "./images/scale-4.png";
 import { Dropdown } from "react-bootstrap";
-
+import bannericon from "./images/combined-shape.png";
+import quote from "./images/group-5.png";
+import dots from "./images/rectangle-2.png";
 
 
 function Home(){
@@ -54,7 +56,7 @@ function Home(){
             </div>
             <div id="navButtonDiv" className="column-lg">
                 <button  className="nav-itemc nav-buttonc">
-                   <Link to="/book"> BUILD YOUR LAUNCH</Link>
+                   <Link to="/book"> BOOK YOUR LAUNCH</Link>
                 </button>
             </div>
         </div>
@@ -67,7 +69,7 @@ function Home(){
     
        <div className="home__HomeBanner">
         <div className="home__banner-content">
-            <i className="home__fa fa-bars banner-icon"></i>
+            <img src={bannericon} className="home__banner-icon"/>
             <h1 className="home__banner-first-line">Bringing Space Within</h1>
             <h1 className="home__banner-second-line">Everyone's Reach</h1>
             <p className="home__banner-text">
@@ -75,7 +77,7 @@ function Home(){
                 being space-faring. So, why not design and build<br/>
                 an orbital-clas launch vehicle?
             </p>
-            <a className="home__banner-link">Go To Products</a>
+            <Link className="home__banner-link" to="/products">GO TO PRODUCTS</Link>
         </div>
     </div>
 
@@ -89,7 +91,7 @@ function Home(){
                 Agnibaan is a launch vehicle capable of carrying up to 100 kg of payload,
                 to low Earth orbits up to 700 km with a plug-and-play engine
                 configuration launched from a mobile launch vehicle
-            </p>
+            </p><br></br>
             <p className="home__second-section-text">
                 Engineering Research Board, Dept. of Science and Technology (DST),
                 Government of India. A similar centre has also been established at
@@ -103,6 +105,7 @@ function Home(){
 
     <div className="container-fluid home__third-section">
         <div className="home__third-content">
+        <img src={quote} className="home__quote"></img>
             <img src={fingersnap} className="home__third-section-icon"/>
             <h3 className="home__second-section-heading">
                 Facts about us
@@ -162,20 +165,20 @@ function Home(){
 
     <div className="home__fourth-section">
         <div className="home__fourth-head">
-            <h3><b>Ready To Launch ?</b></h3>
+            <p className="home__midText">Ready To Launch ?</p><br></br><br></br>
             <p className="home__fourth-section-text">
                 The National Centre for Combustion Research and Development (NCCRD), scheduled to be
                 inaugurated on 13th October 2017, is supported by Science and Engineering Research Board,
             </p>
             <form>
                 <div className="container-fluid custom-form">
-                    <div className="row">
+                    <div className="row justify-cotent-center">
                         <div className="col-sm">
                         <Dropdown>
                                 <Dropdown.Toggle className="custom-form-control">
                                     <img src={flag} className="custom"></img>
                                     <span className="form-control-name">LAUNCH LOCATION</span>
-                                    <i className="arrow fa fa-arrow-down"></i>
+                                    {/* <i className="arrow fa fa-arrow-down"></i> */}
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu className="dropdown-menu custom-form-options">
                                 <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
@@ -191,7 +194,7 @@ function Home(){
                                 <Dropdown.Toggle className="custom-form-control-half">
                                     <img src={orbit} className="custom"></img>
                                     <span className="form-control-name">ORIENTAL INCLINATION</span>
-                                    <i className="arrow fa fa-arrow-down"></i>
+                                    {/* <i className="arrow fa fa-arrow-down"></i> */}
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu className="dropdown-menu custom-form-options">
                                 <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
@@ -205,7 +208,7 @@ function Home(){
                                 <Dropdown.Toggle className="custom-form-control-half">
                                     <img src={payload} className="custom"></img>
                                     <span className="form-control-name">PAYLOAD MASS</span>
-                                    <i className="arrow fa fa-arrow-down"></i>
+                                    {/* <i className="arrow fa fa-arrow-down"></i> */}
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu className="dropdown-menu custom-form-options">
                                 <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
@@ -226,6 +229,7 @@ function Home(){
                 </div>
             </form>
         </div>
+        <img src={dots} className="form-back"/>
     </div>
 
     <div className="home__fifth-section">

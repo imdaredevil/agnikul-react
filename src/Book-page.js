@@ -52,7 +52,7 @@ function Book(){
             </div>
             <div id="navButtonDiv" className="column-lg">
                 <button  className="nav-itemc nav-buttonc">
-                   <Link to="/book"> BUILD YOUR LAUNCH</Link>
+                   <Link to="/book"> BOOK YOUR LAUNCH</Link>
                 </button>
             </div>
         </div>
@@ -63,7 +63,7 @@ function Book(){
             </div>
     </div>
             
-        <p className="book_heading">BOOK YOUR LAUNCH</p>
+        <p className="book_heading">Book your launch</p>
 
 <div className="book_form-content">
 <form>
@@ -75,7 +75,6 @@ function Book(){
                                 <Dropdown.Toggle className="custom-form-control" id="dropdown-button-drop-down">
                                     <img src={flag} className="custom"></img>
                                     <span className="form-control-name">LAUNCH LOCATION</span>
-                                    <i className="arrow fa fa-arrow-down"></i>
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu className="dropdown-menu custom-form-options">
                                 <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
@@ -91,7 +90,6 @@ function Book(){
                                 <Dropdown.Toggle className="custom-form-control-half">
                                     <img src={orbit} className="custom"></img>
                                     <span className="form-control-name">ORIENTAL INCLINATION</span>
-                                    <i className="arrow fa fa-arrow-down"></i>
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu className="dropdown-menu custom-form-options">
                                 <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
@@ -105,7 +103,6 @@ function Book(){
                                 <Dropdown.Toggle className="custom-form-control-half">
                                     <img src={payload} className="custom"></img>
                                     <span className="form-control-name">PAYLOAD MASS</span>
-                                    <i className="arrow fa fa-arrow-down"></i>
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu className="dropdown-menu custom-form-options">
                                 <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
@@ -121,18 +118,22 @@ function Book(){
 <div className="container-fluid custom-form">
     <div className="row">
     <div className="col-sm">
-        <button className="custom-form-control" type="button">
-            <i className="custom fa fa-bars"></i>
+    <div className="dropdown">
+        <div className="custom-form-control"> 
+        <img src={orbit} className="custom"></img>
             <input placeholder="NAME"/>
-        </button>
+        </div>
+    </div>
     </div>
 </div>
 <div className="row">
     <div className="col-sm">
-        <button className="custom-form-control" type="button">
-            <i className="custom fa fa-bars"></i>
+    <div className="dropdown">
+        <div className="custom-form-control"> 
+        <img src={orbit} className="custom"></img>
             <input placeholder="COMPANY / ORGANISATION"/>
-        </button>
+        </div>
+    </div>
     </div>
 </div>
 <div className="row">
@@ -141,7 +142,6 @@ function Book(){
                                 <Dropdown.Toggle className="custom-form-control">
                                     <img src={orbit} className="custom"></img>
                                     <span className="form-control-name">COUNTRY OF ORIGIN</span>
-                                    <i className="arrow fa fa-arrow-down"></i>
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu className="dropdown-menu custom-form-options">
                                 <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
@@ -153,26 +153,32 @@ function Book(){
 </div>
 <div className="row">
     <div className="col-sm">
-        <button className="custom-form-control" type="button">
-            <i className="custom fa fa-bars"></i>
-            <input placeholder="EMAIL ADDRESS"/>
-        </button>
+        <div className="dropdown">
+        <div className="custom-form-control" type="button">
+        <img src={orbit} className="custom"></img>
+        <input placeholder="EMAIL ADDRESS"/>
+        </div>
+        </div>
     </div>
 </div>
 <div className="row">
     <div className="col-sm">
-        <button className="custom-form-control" type="button">
-            <i className="custom fa fa-bars"></i>
-            <input placeholder="PHONE NUMBER"/>
-        </button>
+        <div className="dropdown">
+        <div className="custom-form-control">
+        <img src={orbit} className="custom"></img>
+         <input placeholder="PHONE NUMBER"/>
+        </div>
+        </div>
     </div>
 </div>
 <div className="row">
     <div className="col-sm">
-        <button className="custom-form-control" type="button">
-            <i className="custom fa fa-bars"></i>
-            <input placeholder="ALTITUDE"/>
-        </button>
+        <div className="dropdown">
+        <div className="custom-form-control">
+        <img src={orbit} className="custom"></img>
+          <input placeholder="ALTITUDE"/>
+        </div>
+        </div>
     </div>
 </div>
 <div className="custom-form-check-group">

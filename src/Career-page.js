@@ -3,8 +3,9 @@ import "./css/career.css";
 import navBar from './js/common';
 import Init from './js/career';
 import log from "./images/logo.png";
-import "swiper/css/swiper.min.css";
-
+import { Dropdown } from 'react-bootstrap';
+import orbit from "./images/pennant.png";
+import payload from "./images/scale-4.png";
 import { Link } from 'react-router-dom';
 
 
@@ -46,7 +47,7 @@ function Career(){
             </div>
             <div id="navButtonDiv" className="column-lg">
                 <button  className="nav-itemc nav-buttonc">
-                   <Link to="/book"> BUILD YOUR LAUNCH</Link>
+                   <Link to="/book"> BOOK YOUR LAUNCH</Link>
                 </button>
             </div>
         </div>
@@ -56,8 +57,49 @@ function Career(){
                 </div>
             </div>
     </div>
+        <div className="container-fluid custom-form career__form">
+            <form>
+            <div className="row">
+                        <div className="col-sm">
+                            <Dropdown>
+                                <Dropdown.Toggle className="custom-form-control-half">
+                                    <img src={orbit} className="custom"></img>
+                                    <span className="form-control-name">SCHEME</span>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu className="dropdown-menu custom-form-options">
+                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
+                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
+                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+                        </div>
+                        <div className="col-sm">
+                        <Dropdown>
+                                <Dropdown.Toggle className="custom-form-control-half">
+                                    <img src={payload} className="custom"></img>
+                                    <span className="form-control-name">JOB TITLE</span>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu className="dropdown-menu custom-form-options">
+                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
+                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
+                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>                      
+                            </div>
+                    </div>
+            </form>
+            <div class="career__description">
+            The National Centre for Combustion Research and Development (NCCRD), scheduled to be
+        inaugurated on 13th October 2017, is supported by Science and Engineering Research Board,
+        Dept. of Science and Technology (DST), Government of India. A similar centre has also been
+    established at Indian Institute of Science, Bangalore (IISc).
+
+ Note from designer : We can Accomodate Darpa Qualification and Airbus Accelerator according
+ to timeline as we scroll through this page
+            </div>
+        </div>
         
-  <div className="career__overall-div">
+  {/* <div className="career__overall-div">
     <div className="career__location-swiper swiper-container">
         <div className="swiper-wrapper">
             <div className="career__location__swiper-slide swiper-slide">
@@ -180,7 +222,7 @@ function Career(){
 
 
 </div>
-    
+     */}
     <div className="footer">
         <div className="first-row"></div>
         <div className="container-fluid">

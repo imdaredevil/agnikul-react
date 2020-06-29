@@ -44,6 +44,10 @@ $(document).ready(function () {
       keyboard: {
         enabled: true,
       },
+      navigation: {
+        nextEl: '.advisor__swiper-button-next',
+        prevEl: '.advisor__swiper-button-prev',
+      },
       pagination: {
         el: '.advisor__swiper-pagination',
         clickable: true,
@@ -62,18 +66,22 @@ $(document).ready(function () {
               if(this.activeIndex == 1)
               {
                   this.allowSlidePrev = false;
+                  this.navigation.prevEl.classList.add("swiper-button-disabled");
               }
               else
               {
                 this.allowSlidePrev = true;
+                this.navigation.prevEl.classList.remove("swiper-button-disabled");
               }
                if(this.activeIndex == this.slides.length - 2)
                {
                   this.allowSlideNext = false;
+                  this.navigation.nextEl.classList.add("swiper-button-disabled");
                }
               else
               {
-              this.allowSlideNext = true;
+                  this.allowSlideNext = true;
+                  this.navigation.nextEl.classList.remove("swiper-button-disabled");
               }
             }
               
@@ -90,6 +98,10 @@ $(document).ready(function () {
       centeredSlides: true,
       keyboard: {
         enabled: true,
+      },
+      navigation: {
+        nextEl: '.partner__swiper-button-next',
+        prevEl: '.partner__swiper-button-prev',
       },
       simulateTouch: false,
       pagination: {
@@ -110,18 +122,22 @@ $(document).ready(function () {
               if(this.activeIndex == 1)
               {
                   this.allowSlidePrev = false;
+                  this.navigation.prevEl.classList.add("swiper-button-disabled");
               }
               else
               {
                 this.allowSlidePrev = true;
+                this.navigation.prevEl.classList.remove("swiper-button-disabled");
               }
                if(this.activeIndex == this.slides.length - 2)
                {
                   this.allowSlideNext = false;
+                  this.navigation.nextEl.classList.add("swiper-button-disabled");
                }
               else
               {
               this.allowSlideNext = true;
+              this.navigation.nextEl.classList.remove("swiper-button-disabled");
               }
             }
               

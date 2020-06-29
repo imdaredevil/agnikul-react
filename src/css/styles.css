@@ -71,7 +71,7 @@ body{
 }
 
 .column-md {
-  width: 9%;
+  width: 11%;
   text-align: left;
 }
 
@@ -79,9 +79,14 @@ body{
   width: 17%;
   text-align: left;
 }
+
+.nav-brandc {
+  width: 19%;
+}
   
 .nav-brandc img {
-  width: 70%;
+  width: 60%;
+  margin-left: 23%;
   vertical-align: baseline;
 }
 
@@ -90,7 +95,7 @@ body{
     margin-left: 1%;
     text-align: center;
     text-decoration: none;
-    font-family: "Poppins Semibold";
+    font-family: "Poppins Regular";
   font-size: 14px;
   color: #5b5b5b;
   }
@@ -135,49 +140,51 @@ body{
     display: none;
   }
   
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 768px) {
 
-    .topnav {
-      margin-top: 4%;
-      margin-bottom: 4%;
-    }
+    
     .nav-itemc{display: none;}
     .navBar .iconc {
       display: block;
       width: auto;
-      margin: 3%;
+      margin: 1%;
       position: absolute;
-      top: 1%;
+      top: 0.5%;
       right: 3%;
     }
 
     .column {
       width: 100%;
+      font-size: 12px;
     }
     .column-md {
       width: 100%;
+      font-size: 12px;
+      
     }
 
     .column-lg {
       width : 100%;
+      font-size: 12px;
     }
 
     .nav-brandc {
-      width: 90%;
+      margin-left: 10%;
+      width: 80%;
     }
     
     .topnav .nav-brandc img {
-        width: 50%;
+        width: 40%;
     }
   }
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 768px) {
     .topnav.responsive {position: relative;
       width: 100%;
     }
      .navBar.responsive .iconc {
       position: absolute;
-      top: 1%;
+      top: 0.5%;
       right: 3%;
     } 
 
@@ -221,9 +228,10 @@ body{
   border: solid 1px #979797 !important;
   text-decoration: none;
   box-shadow: none !important;
+  white-space: normal !important;
 
   font-family: "Poppins Bold";
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -233,11 +241,18 @@ body{
   background: none !important;
   width: 100%;
   text-align: left;
+  align-items: center;
+  display: inline-block;
+  padding: 0.375em 0.75em;
+  background-color: white;
 }
 
 .custom-form {
-  margin-left : 5%;
-  margin-right: 5%;
+  width: 55.55%;
+}
+
+form {
+  text-align: center;
 }
 
 .custom-form-control img.custom {
@@ -256,7 +271,7 @@ body{
 
 .custom-form-control-half img.custom {
   width: 20px;
-  margin: 4% 2%;
+  margin: 4% 4%;
 }
 
 .custom-form-control-half i.arrow {
@@ -272,7 +287,7 @@ body{
   text-decoration: none;
   border: none;
   font-family: "Poppins Bold";
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -282,7 +297,7 @@ body{
 }
 
 .custom-form-control input {
-  color: #b0b1a8;
+  color: #484848;
 }
 
 .custom-form-control input::placeholder {
@@ -293,20 +308,20 @@ body{
 
 .custom-form-control-half input::placeholder {
   font-family: "Poppins Bold";
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.7;
   letter-spacing: 1px;
-  color: #d2d3d0; 
+  color: #d2d3d0;
 }
 
 .custom-form-control-half input {
   text-decoration: none;
   border: none;
   font-family: "Poppins Bold";
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -344,7 +359,6 @@ body{
 }
 
 
-
 .dropdown-menu{
   width: 100%;
 }
@@ -361,13 +375,14 @@ body{
 .custom-button {
   text-decoration: none;
   border-radius: 30px;
-  box-shadow: 0 10px 36px 0 rgba(29, 113, 35, 0.2);
+  box-shadow: 0 7px 20px 0 rgba(29, 113, 35, 0.2);
   background-color: #4d8c52;
   border: none;
   color: white;
   display: inline-block;
   width: 300px;
   padding: 1% 2%;
+  margin-top: 1%;
 }
 
 .custom-button span {
@@ -431,7 +446,7 @@ body{
 
 .custom-form-check-label {
   font-family: "Poppins Regular";
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -456,8 +471,23 @@ body{
     font-size : 12px;
   }
 
+  .custom-form-control input,
+  .custom-form-control input::placeholder,
+  .custom-form-control-half input,
+  .custom-form-control-half input::placeholder
+  {
+      width: auto;
+  }
+
+  .custom-form {
+    width: 70%;
+  }
+
+
+  
+
   .custom-form-control .form-control-name {
-    margin: 0% 2%;
+    margin: 0% 0%;
   }
 
   .custom-form-control-half .form-control-name {
@@ -466,6 +496,7 @@ body{
 
   .custom-form-control-half img.custom {
     width: 15px;
+    margin: 2% 2%;
   }
 
   .custom-form-control img.custom {
@@ -493,7 +524,7 @@ body{
 .footer{
   background-color: #4d8c52;
   width: 100%;
-  padding-top: 10%;
+  padding-top: 2%;
   position: relative;
   padding-left: 5%;
   padding-right: 5%;
@@ -515,7 +546,7 @@ body{
 
 .footer .row {
   padding: 2% 0% 2% 2%; 
-  font-size: 16px;
+  font-size: 14px;
   font-stretch: normal;
   font-style: normal;
   line-height: 2.38;
@@ -540,7 +571,7 @@ body{
 }
 
 .footer-email {
-  font-size : 18px;
+  font-size : 16px;
   font-family : "Poppins Bold";
   word-wrap: break-word;
 }

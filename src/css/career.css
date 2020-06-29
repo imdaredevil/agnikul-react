@@ -1,4 +1,4 @@
-
+/* 
 .career__section-head {
     font-family: "Poppins Bold";
     font-size: 42px;
@@ -33,7 +33,7 @@
   }
   
   .career__location-swiper {
-    margin: 5% 2%!important;
+    margin: 5% 2% 5% 3.37%!important;
     height: 70vh;
     width: 30vw;
   }
@@ -147,7 +147,7 @@
     border: solid 1px #4d8c52;
   }
   
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 500px) {
   
   
       .career__location-swiper {
@@ -252,4 +252,29 @@
         display: block;
       }
 
+    } */
+
+    .career__form {
+      padding: 5% 0%;
     }
+
+    .career__description {
+      font-family: "Poppins Regular";
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.6;
+      letter-spacing: normal;
+      color: rgba(33, 56, 66, 0.6);
+      margin-left: 3%;    
+    }
+
+  @media screen and (max-width : 768px) {
+
+    .career__form{
+    padding: 7% 0%;
+    text-align: center;
+    }
+  }
+

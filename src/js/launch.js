@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import Swiper from 'swiper';
 
 
 export default function Init() {
@@ -12,23 +13,32 @@ var locationData = {
   "moscow" : [60,61,62,63,64,65],
 } 
 
+function loop() {
+  // //console.log($(".body").scrollTop());
+  // var world = document.getElementById("world");
+  // var rect = world.getBoundingClientRect();
+  // var swipeRect = document.getElementsByClassName("launch__location-swiper")[0].getBoundingClientRect();
+  // if(rect.bottom < $(".body").height())
+  // $(".launch__world-map").css("top",0.6*$(".body").height() - rect.bottom);
+  // requestAnimationFrame(loop); 
+}
 
 $(document).ready( function() {
 
   $("body").removeClass("products");
-
-  $(".body").scroll(function(){
-      var locSlider = document.getElementsByClassName("launch__location-swiper")[0];
-      var bot = locSlider.getBoundingClientRect().bottom;
-      if(bot < $(".body").scrollTop() + (0.4)*window.screen.height)
-      {
-         $(".launch__world-map").removeClass("fixed"); 
-      }
-      else
-      {
-        $(".launch__world-map").addClass("fixed"); 
-      }
-  });
+  loop();
+  // $(".body").scroll(function(){
+  //     var locSlider = document.getElementsByClassName("launch__location-swiper")[0];
+  //     var bot = locSlider.getBoundingClientRect().bottom;
+  //     if(bot < $(".body").scrollTop() + (0.4)*window.screen.height)
+  //     {
+  //        $(".launch__world-map").removeClass("fixed"); 
+  //     }
+  //     else
+  //     {
+  //       $(".launch__world-map").addClass("fixed"); 
+  //     }
+  // });
 
   var prev = undefined;
 

@@ -4,7 +4,7 @@
     text-align: center;
     width: 100%;
     font-family: "Poppins Bold";
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -16,14 +16,13 @@
 
 
 .book_form-content{
-    padding: 0% 15%;
     text-align: center;
 }
 
 .book_step {
-    margin-left: 2%;
+    margin-left: 23.1%;
     font-family: "Poppins Bold";
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;

@@ -2,9 +2,8 @@
     background: url("../images/teampage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding-left: 5%;
     width: 100%;
-    height: 85%;
+    height: 76.4%;
     position:  relative;
 }
 
@@ -12,13 +11,14 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-80%);
+    transform: translate(-50%,-70%);
+    width: 53.33%;
     text-align: center;
 }
 
 .team__banner-first-line {
     font-family: "Poppins Bold";
-  font-size: 42px;
+  font-size: 36px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -34,7 +34,7 @@
 
 .team__banner-text {
     font-family: "Poppins Regular";
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -57,15 +57,15 @@
 
 .team__second-section{
     margin-top: 3%;
-    padding: 3% 8% !important;
+    padding: 3% 11.8% !important;
     margin-bottom: 10%;
-    width: 80%;
+    width: 82.56%;
 }
 
 .team__second-section-heading {
 
     font-family: "Poppins ExtraBold";
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -76,7 +76,7 @@
 
 .team__second-section-text {
   font-family: "Poppins Regular";
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -90,6 +90,7 @@
     .team__second-section {
         margin-top: 7%;
         width: 90%;
+        text-align: center;
     
     }
     .team__second-section-heading {
@@ -102,7 +103,7 @@
 }
 
 .founders {
-    padding : 5% 4% 5% 8% !important;
+    padding : 5% 11% 5% 11.86% !important;
     background: linear-gradient(to bottom, #e7f6e8, #ffffff);
 }
 
@@ -117,12 +118,12 @@
 .founder-image {
     width: 100%;
     margin-bottom: 5%;
-    height: 300px;
+    height: 270px;
 }
 
 .founder-name {
     font-family: "Poppins Bold";
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -134,7 +135,7 @@
 
 .founder-desi {
     font-family: "Poppins Regular";
-  font-size: 21px;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -146,7 +147,8 @@
 .founder-text {
     opacity: 0.7;
   font-family: "Poppins Regular";
-  font-size: 20px;
+  font-size: 16px;
+  width: 90%;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;

@@ -49,7 +49,7 @@ function Team(){
             </div>
             <div id="navButtonDiv" className="column-lg">
                 <button  className="nav-itemc nav-buttonc">
-                   <Link to="/book"> BUILD YOUR LAUNCH</Link>
+                   <Link to="/book"> BOOK YOUR LAUNCH</Link>
                 </button>
             </div>
         </div>

@@ -49,7 +49,7 @@ function About(){
             </div>
             <div id="navButtonDiv" className="column-lg">
                 <button  className="nav-itemc nav-buttonc">
-                   <Link to="/book"> BUILD YOUR LAUNCH</Link>
+                   <Link to="/book"> BOOK YOUR LAUNCH</Link>
                 </button>
             </div>
         </div>
@@ -131,9 +131,7 @@ function About(){
     <img className="centered-image" src={centeredimage}/>
     
     <div className="about__third-section">
-        <div className="curved-line"></div>
         <p className="about__section-head">Advisors of Agnikul</p>
-    </div>
 
     <div className="advisors">
         <div className="advisor-swiper swiper-container">
@@ -173,14 +171,17 @@ function About(){
                 </div>
             </div>
             <div className="advisor__swiper-pagination swiper-pagination"></div>
+            <div class="advisor__swiper-button-prev swiper-button-prev"></div>
+            <div class="advisor__swiper-button-next swiper-button-next"></div>
         </div>
+    </div>
     </div>
 
     <div className="IntermediateBanner">
         <img className="intermediate-img" src={worldmap}/>
         <div className="intermediate-banner-content">
-            <p className="intermediate-banner-title">Bringing space withing <br/> everyone's reach </p>
-            <a className="intermediate-banner-link">GO TO PRODUCTS</a>          
+            <p className="intermediate-banner-title">Bringing space within everyone's reach </p>
+            <Link className="intermediate-banner-link" to="/products">GO TO PRODUCTS</Link>          
         </div>
     </div>
 
@@ -226,7 +227,8 @@ function About(){
                 </div>
             </div>
             <div className="partner__swiper-pagination swiper-pagination"></div>
-
+            <div class="partner__swiper-button-prev swiper-button-prev"></div>
+            <div class="partner__swiper-button-next swiper-button-next"></div>
         </div>
     </div>
 

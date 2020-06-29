@@ -2,9 +2,9 @@
     background: url("../images/group-14.png");
     background-size: cover;
     background-repeat: no-repeat;
-    padding-left: 5%;
+    padding-left: 6.86%;
     width: 100%;
-    height: 85%;
+    height: 76.54%;
     position:  relative;
 }
 
@@ -17,7 +17,9 @@
 
 .home__banner-icon {
     color: white; 
-    padding-bottom:3%;
+    width: 30px;
+    height: 32px;
+    margin-bottom: 3%;
 }
 
 .home__banner-first-line {
@@ -84,13 +86,12 @@
 
 
 .home__second-section {
-    padding-top: 10%;
-    padding-bottom: 5%;
+    padding-top: 9.87%;
 }
 
 .home__second-content {
     width: 70%;
-    padding: 0% 5%;
+    padding: 6.86% 5%;
     float: left;
 }
 
@@ -98,6 +99,12 @@
     color: #4d8c52;
     width: 38px;
     height: 38px;
+}
+
+.home__quote {
+    position: absolute;
+    right: 3%;
+    z-index: -10000;
 }
 
 .home__third-section-icon {
@@ -131,9 +138,8 @@
 
 .home__right-image {
     max-width: 70vw;
-    max-height: 70vh;
+    height: 500px;
     margin-right: 5%;
-    padding: 0%;
     overflow: hidden;
     text-align: right;
 }
@@ -149,7 +155,12 @@
 @media screen and (max-width : 768px) {
 
     .home__second-content {
-        width: 60%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home__right-image {
+        display: none;
     }
 
     .home__second-section-heading {
@@ -171,26 +182,34 @@
         height: 20px;
     }
 
+    .home__quote {
+        display: none;
+    }
+
 
 }
 
 .home__third-content {
     width: 100%;
     float: left;
-    padding: 0% 0% 5% 0%;
+    padding: 0% 30% 5% 0%;
 }
 
 .home__third-section {
-    padding: 0% 5% 5% 5% !important;
+    padding: 0% 8.88% 5% 6.86% !important;
 }
 
 
 
 
 .home__third-section .card {
-    box-shadow: 5px 10px 10px grey;
+    -webkit-backdrop-filter: blur(8.9px);
+  backdrop-filter: blur(8.9px);
+  box-shadow: 11px 11px 35px 0 rgba(121, 121, 121, 0.3);
+  background-color: rgba(255, 255, 255, 0.95);
     border-radius: 12px !important;
     margin-bottom: 5%;
+    height: 100%;
 }
 
 .home__third-section .card:hover {
@@ -250,6 +269,13 @@
 }
 
 
+.form-back {
+    width: 80%;
+    position: absolute;
+    transform: translate3D(-50%,-60%,-42px);
+    z-index: -100000;
+    left: 50%;
+}
 
 .home__third-section .card-body:hover,.home__third-section .card-body:hover * {
     color: white;
@@ -259,7 +285,23 @@
 @media screen and (max-width : 768px) {
     .home__third-content{
         text-align: center;
+        padding-right: 0%;
+        padding-left: 0%;
     }
+
+    .form-back {
+        width: 120%;
+    }
+
+    .home__third-section{
+        padding: 6.86% 5%;
+    }
+
+    .home__third-section .card {
+        margin-bottom: 5%;
+        height: 95%;
+    }
+
     .home__third-section .card-head {
         font-size: 16px;
     }
@@ -273,19 +315,18 @@
 
 .home__fourth-section {
     width: 100%;
-    border-top: 3px solid #4d8c52;
+    border-top: 1px solid #4d8c52;
     margin-top: 5%;
     margin-bottom: 10%;
 }
 
 .home__fourth-head {
-    padding-left: 5%;
-    padding-right: 5%;
     text-align: center;
 }
 
-.home__fourth-head h3 {
-    margin-left: 50%;
+.home__fourth-head .home__midText {
+    position: absolute;
+    left: 50%;
     transform: translate(-50%,-50%);
     background-color: white;
     font-family: "Poppins Bold";
@@ -297,6 +338,8 @@
   letter-spacing: normal;
   text-align: center;
   color: #4d533c;
+  padding: 0;
+  width: 42.55%;
 }
 
 .home__fourth-section-text {
@@ -310,10 +353,12 @@
   text-align: center;
   color: rgba(97, 97, 97, 0.6);
   margin-bottom: 5%;
+  margin-left: 15.2%;
+  margin-right: 15.2%;
 }
 
 @media screen and (max-width : 768px){
-    .home__fourth-head h3{
+    .home__fourth-head .home__midText{
         font-size: 16px;
     }
 
@@ -326,8 +371,8 @@
 
 .home__fifth-section {
     position: relative;
-    padding: 5%;
-    width: 70%;
+    padding: 5% 25% 5% 10%;
+    width: 88.5%;
     margin-left: 0%;
     margin-bottom: -10%;
     box-shadow: 50px 130px 100px 0 rgba(0, 0, 0, 0.15), 0 0 12px 0 rgba(0, 0, 0, 0.05);
@@ -338,7 +383,7 @@
 
 .home__fifth-content {
     font-family: "Poppins Bold";
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
