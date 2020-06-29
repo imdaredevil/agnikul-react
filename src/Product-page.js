@@ -63,10 +63,18 @@ function Product(){
            
     <div className="originalDiv">
         <div className="first-scroll-content">
-            <p className="first-scroll-heading">REVOLUTIONARY DESIGN</p>
+            <p className="first-scroll-heading">A CONFIGURABLE & NIMBLE DESIGN</p>
             <p className="first-scroll-text">
-                Our payload fairing is designed to decouple payload integration from the main assembly. 
-                The all–carbon composite payload fairing is designed and manufactured in-house at Rocket Lab.
+            Agnibaan is a customizable vehicle. When we were at the
+drawing board, we carefully analyzed what our customers really
+needed. We then engineered enough flexibility into the vehicle
+while carefully designing to ensure reliability. Removing a few
+engines and flying is more involved than it sounds. We had to
+ensure vehicle controllability, stability, lift off thrust-to-weight
+ratio (& many other parameters) made sense for each of these
+versions. “Agnibaan” is a Sanksrit word that translates to mean
+“an arrow of fire”.
+
             </p>
         </div>
         <div className="rocket-horizontal">
@@ -80,25 +88,25 @@ function Product(){
 
         <div className="first-scroll-specs">
             <div className="row justify-content-around">
-                <div className="col-auto">
+                <div className="col-xs">
                     <i className="fa fa-bars"></i>
                     <p className="spec-name">MAX PAYLOAD</p>
-                    <p className="spec-value">100 KG</p>
+                    <p className="spec-value">100 KG to 700 km.LEO</p>
                 </div>
-                <div className="col-auto">
+                <div className="col-xs">
                     <i className="fa fa-bars"></i>
-                    <p className="spec-name">MAX PAYLOAD</p>
-                    <p className="spec-value">100 KG</p>
+                    <p className="spec-name">HEIGHT</p>
+                    <p className="spec-value">18 M</p>
                 </div>
-                <div className="col-auto">
+                <div className="col-xs">
                     <i className="fa fa-bars"></i>
-                    <p className="spec-name">MAX PAYLOAD</p>
-                    <p className="spec-value">100 KG</p>
+                    <p className="spec-name">DIAMETER</p>
+                    <p className="spec-value">1.3 M</p>
                 </div>
-                <div className="col-auto">
+                <div className="col-xs">
                     <i className="fa fa-bars"></i>
-                    <p className="spec-name">MAX PAYLOAD</p>
-                    <p className="spec-value">100 KG</p>
+                    <p className="spec-name">LIFT OFF MASS</p>
+                    <p className="spec-value">14 TONS</p>
                 </div>
             </div>
         </div>
@@ -108,29 +116,29 @@ function Product(){
         </div>
 
         <div className="second-scroll second-scroll-2">
-            <p className="heading">A NEW PROPULSION CYCLE</p>
-            <p className="text">Rutherford is an oxygen/kerosene pump fed engine specifically
-                 designed in-house for Electron using an entirely new propulsion cycle.</p>
+            {/* <p className="heading">A NEW PROPULSION CYCLE</p> */}
+            <p className="text">An optional baby stage sits inside the payload fairing with an envelope
+large enough for almost all small satellite needs.</p>
         </div>
 
         <div className="second-scroll second-scroll-3">
             <div className="row justify-content-around">
         <div className="col">
             <i className="fa fa-bars icon"></i>
-            <p className="heading">3D PRINTING</p>
-            <p className="text">Electron’s first stage is powered by nine Rutherford engines.</p>
+            <p className="heading">PAYLOAD ENVELOPE</p>
+            <p className="text">2 m x 1.5 m envelope with the ability to take one or many satellites.</p>
         </div>
 
         <div className="col">
             <i className="fa fa-bars icon"></i>
-            <p className="heading">LIFT OFF THRUST</p>
-            <p className="text">Its unique high-performance electric propellant pumps reduce mass</p>
+            <p className="heading">1 - 100 Kgs</p>
+            <p className="text">Flat costing for any payload between 20 - 100 kgs</p>
         </div>
 
         <div className="col">
             <i className="fa fa-bars icon"></i>
-            <p className="heading">ISP</p>
-            <p className="text">Massive customization of function while retaining commonality</p>
+            <p className="heading">Payload Guide</p>
+            <p className="text">For more information, please request our payload guide</p>
         </div>
     </div>
     </div>

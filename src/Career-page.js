@@ -90,13 +90,37 @@ function Career(){
                     </div>
             </form>
             <div class="career__description">
-            The National Centre for Combustion Research and Development (NCCRD), scheduled to be
-        inaugurated on 13th October 2017, is supported by Science and Engineering Research Board,
-        Dept. of Science and Technology (DST), Government of India. A similar centre has also been
-    established at Indian Institute of Science, Bangalore (IISc).
-
- Note from designer : We can Accomodate Darpa Qualification and Airbus Accelerator according
- to timeline as we scroll through this page
+                <p class="career__head">Eligibility</p>
+                <p class="career__text">
+                We strongly prefer working with individuals
+                 who are passionate about aerospace and are willing to work with us for the long term.
+                </p>
+                <p class="career__head">RESPONSIBILITIES</p>
+                <p class="career__text">
+                Responsible for overseeing the build and
+                 inspection process for the structural assembly and integration of the Flight systems
+                </p>
+                <p class="career__text">
+                Develop, qualify, and refine manufacturing 
+                processes to bring vehicle hardware from prototype to flight quality.
+                </p>
+                <p class="career__text">
+                Work with design engineers & Senior Manufacturing Buff to evaluate designs for 
+                manufacturability and implementation in a rapidly-evolving production environment
+                </p>
+                <p class="career__text">
+                Quickly resolve non-conformances and work with the Quality team 
+                to implement root cause corrective actions.
+                </p>
+                <p class="career__head">
+                    BASIC QUALIFICATIONS
+                </p>
+                <p class="career__text">
+                Diploma degree in mechanical or aerospace engineering
+                <br></br>or<br></br>
+                3+ years of experience in a manufacturing environment 
+                (internship/co-op experience will be considered)
+                </p>
             </div>
         </div>
         

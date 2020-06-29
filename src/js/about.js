@@ -17,7 +17,7 @@ $(document).ready(function () {
           el: '.timeline__swiper-pagination',
           clickable: true,
           renderBullet: function (index, className) {
-             return '<span class="' + className + '"> <p class="pagination-text">' + (index + 2010) + '</p></span>';
+             return '<span class="' + className + '"> <p class="pagination-text">' + (index + 2016) + '</p></span>';
           }
         },
         mousewheel: {

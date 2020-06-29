@@ -63,9 +63,16 @@ function About(){
    
     <div className="about__AboutBanner">
         <div className="about__banner-content">
-            <p className="about__banner-first-line">Who <span>we</span> are ? </p>
-            <p className="about__banner-text">AgniKul is a derivative of the Sanskrit word "gurukul" and can be interpreted to mean "a place where
-                people learn to use fire</p>
+            <p className="about__banner-first-line">Who are we? </p>
+            <p className="about__banner-text">“Agnikul” is a derivative of the Sanskrit word - “Gurukul” and it
+could be interpreted to mean “a place where people learn to
+use fire”.
+<br>
+</br>
+We are a group of enthusiasts, rocket scientists, engineers,
+programmers, lawyers and more - all of us just love enabling
+space access to everyone!
+</p>
         </div>
     </div>
 
@@ -77,52 +84,87 @@ function About(){
                 <div className="swiper-slide">
                     <div className="slide-content">
                         <div className="slide-year">
-                            <p>2010</p>
+                            <p>2016</p>
                         </div>
-                        <p className="slide-head">NCCRD</p>
+                        {/* <p className="slide-head">NCCRD</p> */}
                         <p className="slide-text">
-                            The National Centre for Combustion Research and Development (NCCRD), scheduled to be
-                            inaugurated on 13th October 2017, is supported by Science and Engineering Research Board,
-                            Dept. of Science and Technology (DST), Government of India. A similar centre has also been
-                            established at Indian Institute of Science, Bangalore (IISc).
-
-                            Note from designer : We can Accomodate Darpa Qualification and Airbus Accelerator according
-                            to timeline as we scroll through this page
+                        Inception ! - This was when Agnikul was an idea on paper and in dreams
                         </p>
                     </div>
                 </div>
                 <div className="swiper-slide">
                     <div className="slide-content">
                         <div className="slide-year">
-                            <p>2010</p>
+                            <p>2017</p>
                         </div>
-                        <p className="slide-head">NCCRD</p>
+                        {/* <p className="slide-head">NCCRD</p> */}
                         <p className="slide-text">
-                            The National Centre for Combustion Research and Development (NCCRD), scheduled to be
-                            inaugurated on 13th October 2017, is supported by Science and Engineering Research Board,
-                            Dept. of Science and Technology (DST), Government of India. A similar centre has also been
-                            established at Indian Institute of Science, Bangalore (IISc).
-
-                            Note from designer : We can Accomodate Darpa Qualification and Airbus Accelerator according
-                            to timeline as we scroll through this page
+                        Formation! - Agnikul Cosmos was formally incorporated as a
+company in Chennai, India.
+                        </p>
+                        <p className="slide-text">
+                        Agnikul moved into the National Center for Combustion R&D at IIT Madras, Chennai, India.
                         </p>
                     </div>
                 </div>
                 <div className="swiper-slide">
                     <div className="slide-content">
                         <div className="slide-year">
-                            <p>2010</p>
+                            <p>2018</p>
                         </div>
-                        <p className="slide-head">NCCRD</p>
+                        {/* <p className="slide-head">NCCRD</p> */}
                         <p className="slide-text">
-                            The National Centre for Combustion Research and Development (NCCRD), scheduled to be
-                            inaugurated on 13th October 2017, is supported by Science and Engineering Research Board,
-                            Dept. of Science and Technology (DST), Government of India. A similar centre has also been
-                            established at Indian Institute of Science, Bangalore (IISc).
-
-                            Note from designer : We can Accomodate Darpa Qualification and Airbus Accelerator according
-                            to timeline as we scroll through this page
+                        Incubation & Acceleration - Agnikul incubated at IIT Madras. Agnikul became a part of the Airbus Accelerator
                         </p>
+                        <p className="slide-text">
+                        First series of hot firings - Agnikul fired it’s first set of igniters
+and single injector element based thrusters.
+                        </p>
+                    </div>
+                </div>
+                <div className="swiper-slide">
+                    <div className="slide-content">
+                        <div className="slide-year">
+                            <p>2019</p>
+                        </div>
+                        {/* <p className="slide-head">NCCRD</p> */}
+                        <p className="slide-text">
+                        Cash Infusion - Agnikul raised its seed round of funding from Speciale Invest
+                        </p>
+                        <p className="slide-text">
+                        Agnikul grew to have a presence in Kerala as well and became
+a part of the Kerala Startup mission startup community.
+                        </p>
+                        <p className="slide-text">
+                        Agnikul realized it’s single piece, fully 3d printed, higher stage engine.
+                        </p>
+                        <p className="slide-text">
+                        Agnikul realized it’s single piece, fully 3d printed, higher stage engine.
+                        </p>
+                        <p className="slide-text">
+                        Commercialization - Agnikul started signing agreements with potential customers!
+                        </p>
+                    </div>
+                </div>
+                <div className="swiper-slide">
+                    <div className="slide-content">
+                        <div className="slide-year">
+                            <p>2020</p>
+                        </div>
+                        {/* <p className="slide-head">NCCRD</p> */}
+                        <p className="slide-text">
+                        More cash infusion - Agnikul raised its pre-series A round from
+highly reputed institutional investors.
+                        </p>
+                        <p className="slide-text">
+                        More commercialization - Agreements with Launchpads, more
+customers and significant vendor-partners.
+
+                        </p>
+                        <p className="slide-text">
+                        A lot more to come .. watch for updates
+                        </p>
+
                     </div>
                 </div>
             </div>
@@ -131,7 +173,7 @@ function About(){
     <img className="centered-image" src={centeredimage}/>
     
     <div className="about__third-section">
-        <p className="about__section-head">Advisors of Agnikul</p>
+        <p className="about__section-head">Advisors in Agnikul</p>
 
     <div className="advisors">
         <div className="advisor-swiper swiper-container">
@@ -140,33 +182,41 @@ function About(){
                 <div className="advisor__swiper-slide swiper-slide">
                     <div className="advisor__slide-content">
                         <img className="advisor__slide-img" src={homepage}/>
-                        <p className="advisor__name">Initial. Name</p>  
-                        <p className="advisor__award">Padma Bushan</p>
-                        <p className="advisor__desi">Honarary Professor - India Space Research Organization</p> 
+                        <p className="advisor__name">SR Chakravarthy</p>  
+                        <p className="advisor__award">Professor & Head - Combustion R&D Center, IIT Madras
+</p>
+                        <p className="advisor__desi">An accomplished rocket scientist, combustion expert with over
+25 years of experience, cofounder of 3 IIT Madras startups.</p> 
                      </div>
                 </div>
                 <div className="advisor__swiper-slide swiper-slide">
                     <div className="advisor__slide-content">
                         <img className="advisor__slide-img" src={homepage}/>    
-                        <p className="advisor__name">Initial. Name</p>  
-                        <p className="advisor__award">Padma Bushan</p>
-                        <p className="advisor__desi">Senior Research fellow, EEE, Nanyang Tech University, Singapore & Professor ( Retd.)</p>
+                        <p className="advisor__name">RV Perumal, Padma Bhushan</p>  
+                        <p className="advisor__award">(Retd.) GSLV Project Director & ISRO Veteran</p>
+                        <p className="advisor__desi">An accomplished rocket scientist and the Project Director of
+India’s first GSLV rocket. Over 40 years of experience in rocket
+building.
+</p>
                      </div>
                 </div>
                 <div className="advisor__swiper-slide swiper-slide">
                     <div className="advisor__slide-content">
                         <img className="advisor__slide-img" src={homepage}/>  
-                        <p className="advisor__name">Initial. Name</p>  
-                        <p className="advisor__award">Padma Bushan</p>
-                        <p className="advisor__desi">Honarary Professor - India Space Research Organization</p> 
+                        <p className="advisor__name">PV Ramakrishnan</p>  
+                        <p className="advisor__award">Prof. (Emeritus) - Electronics and Communication Engineering.</p>
+                        <p className="advisor__desi">Project Director of ANUSAT - 1. Over 35 years of experience in
+electronics and avionics design.</p> 
                      </div>
                 </div>
                 <div className="advisor__swiper-slide swiper-slide">
                     <div className="advisor__slide-content">
                         <img className="advisor__slide-img" src={homepage}/>
-                        <p className="advisor__name">Initial. Name</p>  
-                        <p className="advisor__award">Padma Bushan</p>
-                        <p className="advisor__desi">Honarary Professor - India Space Research Organization</p> 
+                        <p className="advisor__name">N Shekar</p>  
+                        <p className="advisor__award">Head of Aerospace Industry Development Association of Tamil
+Nadu, (Retd.) MD CDG - Boeing, India</p>
+                        <p className="advisor__desi">Accomplished aerospace industry veteran with over 40 years of
+experience in building and scaling industry products.</p> 
                      </div>
                 </div>
             </div>
@@ -180,8 +230,10 @@ function About(){
     <div className="IntermediateBanner">
         <img className="intermediate-img" src={worldmap}/>
         <div className="intermediate-banner-content">
-            <p className="intermediate-banner-title">Bringing space within everyone's reach </p>
-            <Link className="intermediate-banner-link" to="/products">GO TO PRODUCTS</Link>          
+            <p className="intermediate-banner-title">Our story wouldn’t have started and isn’t complete without our
+academic partners.
+</p>
+            {/* <Link className="intermediate-banner-link" to="/products">GO TO PRODUCTS</Link>           */}
         </div>
     </div>
 
@@ -196,7 +248,7 @@ function About(){
                 <div className="partner__swiper-slide swiper-slide">
                     <div className="partner__slide-content">
                         <img className="partner__slide-img" src={homepage}/>
-                        <p className="partner__name">Initial. Name</p>  
+                        <p className="partner__name">IIT Madras</p>  
                         <p className="partner__award">Padma Bushan</p>
                         <p className="partner__desi">Honarary Professor - India Space Research Organization</p> 
                     </div>
@@ -204,7 +256,7 @@ function About(){
                 <div className="partner__swiper-slide swiper-slide">
                     <div className="partner__slide-content">
                         <img className="partner__slide-img" src={homepage}/>    
-                        <p className="partner__name">Initial. Name</p>  
+                        <p className="partner__name">College Of Engineering, Guindy, Anna University</p>  
                         <p className="partner__award">Padma Bushan</p>
                         <p className="partner__desi">Senior Research fellow, EEE, Nanyang Tech University, Singapore & Professor ( Retd.)</p> 
                     </div>
@@ -212,15 +264,7 @@ function About(){
                 <div className="partner__swiper-slide swiper-slide">
                     <div className="partner__slide-content">
                         <img className="partner__slide-img" src={homepage}/>  
-                        <p className="partner__name">Initial. Name</p>  
-                        <p className="partner__award">Padma Bushan</p>
-                        <p className="partner__desi">Honarary Professor - India Space Research Organization</p> 
-                    </div>
-                </div>
-                <div className="partner__swiper-slide swiper-slide">
-                    <div className="partner__slide-content">
-                        <img className="partner__slide-img" src={homepage}/>  
-                        <p className="partner__name">Initial. Name</p>  
+                        <p className="partner__name">IIM Ahmedabad’s CIIE</p>  
                         <p className="partner__award">Padma Bushan</p>
                         <p className="partner__desi">Honarary Professor - India Space Research Organization</p> 
                     </div>
@@ -233,7 +277,7 @@ function About(){
     </div>
 
     <div className="about__fifth-section">
-        <p className="about__fifth-section-title">Why businesses love our solution</p>
+        <p className="about__fifth-section-title">Why our partners like us</p>
     </div>
 
     <div className="businesses">
@@ -260,6 +304,20 @@ function About(){
                         <img className="business__slide-img" src={spacex}/>
                     </div>
                 </div>
+                <div className="business__swiper-slide swiper-slide">
+                    <div className="business__slide-content">
+                        <p className="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>  
+                        <p className="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p> 
+                        <img className="business__slide-img" src={spacex}/>
+                    </div>
+                </div>  
+                <div className="business__swiper-slide swiper-slide">
+                    <div className="business__slide-content">
+                        <p className="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>  
+                        <p className="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p> 
+                        <img className="business__slide-img" src={spacex}/>
+                    </div>
+                </div>  
                 <div className="business__swiper-slide swiper-slide">
                     <div className="business__slide-content">
                         <p className="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>  

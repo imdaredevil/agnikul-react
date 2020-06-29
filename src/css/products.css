@@ -29,7 +29,7 @@ body.products .body {
 }
 
 .first-scroll-content {
-    padding: 5.23% 21.67% 2.61%;
+    padding: 5.23% 11.67% 2.61%;
     left: 50%;
     top: 0%;
     transform:  translateX(-50%);
@@ -39,7 +39,7 @@ body.products .body {
 
 .first-scroll-heading {
     font-family: "Poppins SemiBold";
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -51,7 +51,7 @@ body.products .body {
 
 .first-scroll-text {
     font-family: "Poppins Regular";
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -215,7 +215,7 @@ body.products .body {
 
 
 .second-scroll-3 {
-    top: 63%;
+    top: 67%;
     left: 50%;
     transform: translateX(-50%);
     width: 86%;
@@ -356,11 +356,11 @@ body.products .body {
 
     
     .first-scroll-heading {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .first-scroll-text {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .first-scroll-content {
@@ -369,14 +369,13 @@ body.products .body {
 
     .first-scroll-specs {
         width: 83.3%;
-        margin: 5% 5%;
     }
     .spec-name {
-        font-size : 14px;
+        font-size : 12px;
     }
 
     .spec-value {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .number {
@@ -398,7 +397,7 @@ body.products .body {
     }
 
     .second-scroll-3{
-        top: 53%;
+        top: 57%;
     }
 
     .fourth-scroll-3 {
@@ -444,6 +443,27 @@ body.products .body {
     .heading,.text {
         font-size: 11px;
     }
+
+    .first-scroll-content{
+        padding:2.61% 5.82% 0% 5.82%;
+    }
+
+    .first-scroll-heading {
+        margin-bottom: 1%;
+    }
+
+    .first-scroll-specs  {
+        top: 55%;
+        width: 90%;
+        margin-left: 5.82%;
+
+    }
+
+    .first-scroll-specs .col-xs {
+        width: 150px ;
+    }
+
+
 
 }
 
