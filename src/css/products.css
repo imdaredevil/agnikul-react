@@ -22,6 +22,9 @@ body.products .body {
     position: fixed;
     height: 100vh;
     overflow-y:  hidden;
+    background-image: url("../images/hex-back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .originalDiv > div {
@@ -66,7 +69,7 @@ body.products .body {
     left: 50%;
     display: inline-flex;
     transform: translateX(-50%);
-    transform-origin: 98% 50%;
+    transform-origin: 100% 100%;
     margin-bottom: 2%;
     width: 75.76%;
 }
@@ -135,13 +138,14 @@ body.products .body {
     width: 40%;
     position: absolute;
     opacity: 0;
+    transform-origin: 100% 100%;
 }
 
 .stand {
-    width: 40%;
-    transform-origin: 84% 50%;
+    width: 30%;
+    transform-origin: 91% 90%;
     position: absolute;
-    left: 67%;
+    left: 80%;
     top: 59%;
 }
 
@@ -480,3 +484,6 @@ body.products .body {
 
 }
 
+.third-image-1, .third-image-2, .fourth-image {
+    display: none;
+}

@@ -221,8 +221,8 @@ experience in building and scaling industry products.</p>
                 </div>
             </div>
             <div className="advisor__swiper-pagination swiper-pagination"></div>
-            <div class="advisor__swiper-button-prev swiper-button-prev"></div>
-            <div class="advisor__swiper-button-next swiper-button-next"></div>
+            <div className="advisor__swiper-button-prev swiper-button-prev"></div>
+            <div className="advisor__swiper-button-next swiper-button-next"></div>
         </div>
     </div>
     </div>
@@ -271,8 +271,8 @@ academic partners.
                 </div>
             </div>
             <div className="partner__swiper-pagination swiper-pagination"></div>
-            <div class="partner__swiper-button-prev swiper-button-prev"></div>
-            <div class="partner__swiper-button-next swiper-button-next"></div>
+            <div className="partner__swiper-button-prev swiper-button-prev"></div>
+            <div className="partner__swiper-button-next swiper-button-next"></div>
         </div>
     </div>
 

@@ -188,13 +188,13 @@ could be made available for select missions.</p>
                                     <div className="dropdown">
                                         <button className="dropdown-toggle custom-form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <img src={flag} className="custom"></img>
-                                            <span className="form-control-name">LAUNCH LOCATON</span>
+                                            <span className="form-control-name" id="location-field">LAUNCH LOCATON</span>
                                             <img className="arrow" src={down}/>
                                         </button>
-                                        <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton">
-                                            <a className="dropdown-item" href="#">Action</a>
-                                            <a className="dropdown-item" href="#">Another action</a>
-                                            <a className="dropdown-item" href="#">Something else here</a>
+                                        <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="location">
+                                        <p className="dropdown-item">Action</p>
+                                            <p className="dropdown-item">Another action</p>
+                                            <p className="dropdown-item">Something else here</p>
                                         </div>
                                     </div>
 
@@ -205,13 +205,13 @@ could be made available for select missions.</p>
                                     <div className="dropdown">
                                         <button className=" custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <img src={orbit} className="custom"></img>
-                                            <span className="form-control-name">ORBITAL INCLINATION</span>
+                                            <span className="form-control-name" id="inclination-field">ORBITAL INCLINATION</span>
                                             <img className="arrow" src={down}/>
                                         </button>
-                                        <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton">
-                                            <a className="dropdown-item" href="#">Action</a>
-                                            <a className="dropdown-item" href="#">Another action</a>
-                                            <a className="dropdown-item" href="#">Something else here</a>
+                                        <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="inclination"> 
+                                        <p className="dropdown-item">Action</p>
+                                            <p className="dropdown-item">Another action</p>
+                                            <p className="dropdown-item">Something else here</p>
                                         </div>
                                     </div>
                                     </div>
@@ -219,13 +219,13 @@ could be made available for select missions.</p>
                                         <div className="dropdown">
                                             <button className="custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <img src={payload} className="custom"></img>
-                                                <span className="form-control-name">PAYLOAD MASS</span>
+                                                <span className="form-control-name" id="payload-field">PAYLOAD MASS</span>
                                                 <img className="arrow" src={down}/>
                                             </button>
-                                            <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton">
-                                                <a className="dropdown-item" href="#">Action</a>
-                                                <a className="dropdown-item" href="#">Another action</a>
-                                                <a className="dropdown-item" href="#">Something else here</a>
+                                            <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="payload">
+                                            <p className="dropdown-item">Action</p>
+                                            <p className="dropdown-item">Another action</p>
+                                            <p className="dropdown-item">Something else here</p>
                                               </div>
                                         </div>
                                     </div>

@@ -402,7 +402,15 @@ form {
 .custom-form-control .form-control-name {
   padding: 0%;
   margin: 0%;
+  display: inline;
 }
+
+.custom-form-control-half .form-control-name {
+  padding: 0%;
+  margin: 0%;
+}
+
+
 
 .custom-form-options {
   margin: 2%  0% !important;
@@ -416,6 +424,11 @@ form {
   scrollbar-width: thin;
   scrollbar-arrow-color: rgba(225,225,225,0);
   z-index: 1000000000;
+}
+
+.custom-form-options .dropdown-item {
+  width: 100%;
+  white-space: normal;
 }
 
 .custom-form-options::-webkit-scrollbar {

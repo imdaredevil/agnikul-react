@@ -93,6 +93,12 @@
     }
 }
 
+@media screen and (max-width: 576px) {
+    .home__HomeBanner {
+        background-position: 60% 0%;
+    }
+}
+
 
 .home__second-section {
     padding-top: 9.87%;

@@ -6,7 +6,7 @@ import spaceshipWhite from "./images/spaceship-copy.png";
 import flag from "./images/flag.png";
 import orbit from "./images/pennant.png";
 import payload from "./images/scale-4.png";
-import $ from 'jquery';
+import Init from "./js/book";
 import { Link } from 'react-router-dom';
 import phone from "./images/call-doctor.png";
 import mail from "./images/letter.png";
@@ -20,9 +20,7 @@ import down from "./images/down-arrow.png";
 
 function Book(){
 
-    $(document).ready(function(){
-        $("body").removeClass("products");
-    });
+    Init();
 
     return (
         <div className="body">
@@ -68,7 +66,7 @@ function Book(){
                 </div>
             </div>
     </div>
-            
+<div className="book__overallDiv">
         <p className="book_heading">Book your launch</p>
 
 <div className="book_form-content">
@@ -80,13 +78,13 @@ function Book(){
                         <div className="dropdown">
                                         <button className="dropdown-toggle custom-form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <img src={flag} className="custom"></img>
-                                            <span className="form-control-name">LAUNCH LOCATON</span>
+                                            <span className="form-control-name" id="location-field">LAUNCH LOCATON</span>
                                             <img className="arrow" src={down}/>
                                         </button>
-                                        <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton">
-                                            <a className="dropdown-item" href="#">Action</a>
-                                            <a className="dropdown-item" href="#">Another action</a>
-                                            <a className="dropdown-item" href="#">Something else here</a>
+                                        <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="location">
+                                            <p className="dropdown-item">Action</p>
+                                            <p className="dropdown-item">Another action</p>
+                                            <p className="dropdown-item">Something else here</p>
                                         </div>
                                     </div>
                                                     </div>
@@ -96,13 +94,13 @@ function Book(){
                         <div className="dropdown">
                                         <button className=" custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <img src={orbit} className="custom"></img>
-                                            <span className="form-control-name">ORBITAL INCLINATION</span>
+                                            <span className="form-control-name" id="inclination-field">ORBITAL INCLINATION</span>
                                             <img className="arrow" src={down}/>
                                         </button>
-                                        <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton">
-                                            <a className="dropdown-item" href="#">Action</a>
-                                            <a className="dropdown-item" href="#">Another action</a>
-                                            <a className="dropdown-item" href="#">Something else here</a>
+                                        <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="inclination">
+                                        <p className="dropdown-item">Action</p>
+                                            <p className="dropdown-item">Another action</p>
+                                            <p className="dropdown-item">Something else here</p>
                                         </div>
                                     </div>
                         </div>
@@ -110,13 +108,13 @@ function Book(){
                         <div className="dropdown">
                                             <button className="custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <img src={payload} className="custom"></img>
-                                                <span className="form-control-name">PAYLOAD MASS</span>
+                                                <span className="form-control-name" id="payload-field">PAYLOAD MASS</span>
                                                 <img className="arrow" src={down}/>
                                             </button>
-                                            <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton">
-                                                <a className="dropdown-item" href="#">Action</a>
-                                                <a className="dropdown-item" href="#">Another action</a>
-                                                <a className="dropdown-item" href="#">Something else here</a>
+                                            <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="payload">
+                                            <p className="dropdown-item">Action</p>
+                                            <p className="dropdown-item">Another action</p>
+                                            <p className="dropdown-item">Something else here</p>
                                               </div>
                                         </div>                    
                             </div>
@@ -150,13 +148,13 @@ function Book(){
     <div className="dropdown">
                                         <button className="dropdown-toggle custom-form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <img src={location} className="custom"></img>
-                                            <span className="form-control-name">COUNTRY OF ORIGIN</span>
+                                            <span className="form-control-name" id="country-field">COUNTRY OF ORIGIN</span>
                                             <img className="arrow" src={down}/>
                                         </button>
-                                        <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton">
-                                            <a className="dropdown-item" href="#">Action</a>
-                                            <a className="dropdown-item" href="#">Another action</a>
-                                            <a className="dropdown-item" href="#">Something else here</a>
+                                        <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="country">
+                                        <p className="dropdown-item">Action</p>
+                                            <p className="dropdown-item">Another action</p>
+                                            <p className="dropdown-item">Something else here</p>
                                         </div>
                                     </div>
                              </div>
@@ -208,6 +206,7 @@ function Book(){
     </div>
 </div>
 </form>
+</div>
 </div>
     
     <div className="footer">

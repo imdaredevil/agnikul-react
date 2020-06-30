@@ -307,11 +307,11 @@ var transitions = [
             ],
             ["scale",{
                 start: 1.9,
-                end: 0.45
+                end: 0.35
             },
             {
                 start: 1.65,
-                end: 0.45
+                end: 0.35
             }
         ]
             ]
@@ -320,7 +320,7 @@ var transitions = [
         after: [
             ["transform",[
                 ["translate",-50,0],
-                ["scale",0.45,0.45]
+                ["scale",0.35,0.35]
             ]
         ]
         ],
@@ -341,11 +341,11 @@ var transitions = [
             ["top",40]
         ],
         after: [
-            ["left",55],
+            ["left",54],
             ["top",53]
         ],
         on: [
-            ["left",{start: 52, end: 55}],
+            ["left",{start: 52, end: 54}],
             ["top",{start: 40, end: 53}]   
         ]
     },
@@ -357,16 +357,16 @@ var transitions = [
         percentEnd: 0.855,
 
         before: [
-            ["left",55],
+            ["left",54],
             ["top",53]
         ],
         after: [
-            ["left",55],
-            ["top",66]
+            ["left",54],
+            ["top",60]
         ],
         on: [
-            ["left",{start: 55, end: 55}],
-            ["top",{start: 53, end: 66}]   
+            ["left",{start: 54, end: 54}],
+            ["top",{start: 53, end: 60}]   
         ]
     },
     {
@@ -374,7 +374,7 @@ var transitions = [
         before:  [
             ["transform",[
                 ["translate",-50,0],
-                ["scale",0.45,0.45]
+                ["scale",0.35,0.35]
             ],
         ]
         ],
@@ -390,12 +390,12 @@ var transitions = [
                 }
             ],
             ["scale",{
-                start: 0.45,
-                end: 0.45
+                start: 0.35,
+                end: 0.35
             },
             {
-                start: 0.45,
-                end: 0.45
+                start: 0.35,
+                end: 0.35
             },
         ],
             ["rotate",{
@@ -409,7 +409,7 @@ var transitions = [
         after: [
             ["transform",[
                 ["translate",-50,0],
-                ["scale",0.45,0.45],
+                ["scale",0.35,0.35],
                 ["rotate",90]
             ]
         ]
@@ -457,12 +457,12 @@ var transitions = [
             ["opacity",
                 {
                     start: 1.0,
-                    end: 0.5
+                    end: 0.1
                 }
             ]
         ],
         after: [
-            ["opacity", 0.5]
+            ["opacity", 0.1]
         ],
         percentStart: 0.015,
         percentEnd: 0.135,
@@ -472,12 +472,12 @@ var transitions = [
     {
         selector: ".rocket-3",
         before: [
-            ["opacity", 0.5]
+            ["opacity", 0.1]
         ],
         on: [
             ["opacity",
                 {
-                    start: 0.5,
+                    start: 0.1,
                     end: 1.0
                 }
             ]
@@ -499,12 +499,12 @@ var transitions = [
             ["opacity",
                 {
                     start: 1.0,
-                    end: 0.5
+                    end: 0.1
                 }
             ]
         ],
         after: [
-            ["opacity", 0.5]
+            ["opacity", 0.1]
         ],
         percentStart: 0.015,
         percentEnd: 0.135,
@@ -514,12 +514,12 @@ var transitions = [
     {
         selector: ".rocket-2",
         before: [
-            ["opacity", 0.5]
+            ["opacity", 0.1]
         ],
         on: [
             ["opacity",
                 {
-                    start: 0.5,
+                    start: 0.1,
                     end: 1.0
                 }
             ]
@@ -541,12 +541,12 @@ var transitions = [
             ["opacity",
                 {
                     start: 1.0,
-                    end: 0.5
+                    end: 0.1
                 }
             ]
         ],
         after: [
-            ["opacity", 0.5]
+            ["opacity", 0.1]
         ],
         percentStart: 0.255,
         percentEnd: 0.375,
@@ -556,12 +556,12 @@ var transitions = [
     {
         selector: ".rocket-1",
         before: [
-            ["opacity", 0.5]
+            ["opacity", 0.1]
         ],
         on: [
             ["opacity",
                 {
-                    start: 0.5,
+                    start: 0.1,
                     end: 1.0
                 }
             ]
@@ -640,16 +640,16 @@ var transitions = [
         percentEnd: 0.815,
 
         before: [
-            ["left",100],
-            ["top",69.5]
+            ["left",112.5],
+            ["top",72]
         ],
         after: [
-            ["left",58],
-            ["top",69.5]
+            ["left",64.5],
+            ["top",72]
         ],
         on: [
-            ["left",{start: 100, end: 58}],
-            ["top",{start: 69.5, end: 69.5}]   
+            ["left",{start: 112.5, end: 64.5}],
+            ["top",{start: 72, end: 72}]   
         ]
     }
 

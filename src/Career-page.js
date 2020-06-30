@@ -3,10 +3,10 @@ import "./css/career.css";
 import navBar from './js/common';
 import Init from './js/career';
 import log from "./images/logo.png";
-import { Dropdown } from 'react-bootstrap';
 import orbit from "./images/pennant.png";
 import payload from "./images/scale-4.png";
 import { Link } from 'react-router-dom';
+import  down  from './images/down-arrow.png';
 
 
 function Career(){
@@ -59,38 +59,51 @@ function Career(){
     </div>
         <div className="container-fluid custom-form career__form">
             <p className="career__section-head">Careers</p>
-            <form className="form__fixed">
+            <form>
             <div className="row">
                         <div className="col-sm">
-                            <Dropdown>
-                                <Dropdown.Toggle className="custom-form-control-half">
-                                    <img src={orbit} className="custom"></img>
-                                    <span className="form-control-name">SCHEME</span>
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu className="dropdown-menu custom-form-options">
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
+                        <div className="dropdown">
+                                            <button className="custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src={payload} className="custom"></img>
+                                                <p className="form-control-name" id="crew-field">CREW</p>
+                                                <img className="arrow" src={down}/>
+                                            </button>
+                                            <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="crew">
+                                                <p className="dropdown-item" id="elec">Electrical & Electronics Crew</p>
+                                                <p className="dropdown-item" id="sw">Software Crew</p>
+                                                <p className="dropdown-item" id="sws">Structural Systems Crew</p>
+                                                <p className="dropdown-item" id="fls">Fluid Systems Crew</p>
+                                                <p className="dropdown-item" id="op">Operations Crew</p>
+                                                <p className="dropdown-item" id="lase">Launch Services Crew</p>
+                                                <p className="dropdown-item" id="fiac">Finance and Accounting Crew</p>
+                                              </div>
+                                        </div>          
                         </div>
                         <div className="col-sm">
-                        <Dropdown>
-                                <Dropdown.Toggle className="custom-form-control-half">
-                                    <img src={payload} className="custom"></img>
-                                    <span className="form-control-name">JOB TITLE</span>
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu className="dropdown-menu custom-form-options">
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>                      
+                        <div className="dropdown">
+                                            <button className="custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src={payload} className="custom"></img>
+                                                <span className="form-control-name" id="job-field">JOB</span>
+                                                <img className="arrow" src={down}/>
+                                            </button>
+                                            <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="job">
+                                                <p className="dropdown-item" href="#">Action</p>
+                                                <p className="dropdown-item" href="#">Another action</p>
+                                                <p className="dropdown-item" href="#">Something else here</p>
+                                              </div>
+                                        </div>                             
                             </div>
                     </div>
             </form>
-            <div className="career__description">
-                <p class="career__job">Associate Fabricator</p>
+            <div className="career__description visible" id="blank">
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+            </div>
+            <div className="career__description" id="maker-or-fabricator-mechanical-desc">
+                <p className="career__job">Associate Fabricator</p>
                 <div className="career__section">
                 <p className="career__head">Eligibility</p>
                 <p className="career__text">
@@ -100,22 +113,22 @@ function Career(){
                 </div>
                 <div className="career__section">
                 <p className="career__head">RESPONSIBILITIES</p>
-                <p className="career__text">
+                <li className="career__text">
                 Responsible for overseeing the build and
                  inspection process for the structural assembly and integration of the Flight systems
-                </p>
-                <p className="career__text">
+                </li>
+                <li className="career__text">
                 Develop, qualify, and refine manufacturing 
                 processes to bring vehicle hardware from prototype to flight quality.
-                </p>
-                <p className="career__text">
+                </li>
+                <li className="career__text">
                 Work with design engineers & Senior Manufacturing Buff to evaluate designs for 
                 manufacturability and implementation in a rapidly-evolving production environment
-                </p>
-                <p className="career__text">
+                </li>
+                <li className="career__text">
                 Quickly resolve non-conformances and work with the Quality team 
                 to implement root cause corrective actions.
-                </p>
+                </li>
                 </div>
                 <div className="career__section">
                 <p className="career__head">
@@ -186,13 +199,1013 @@ function Career(){
                         </li>
                     </ul>
                 </div>
-                <p className="career__head">Location: </p>
-                <span className="career__text">IIT Madras, Chennai, India</span>
-                <p className="career__head">Employment Type: </p>
-                <span className="career__text">Full Time</span>
+                <p className="career__head">Location:  <span className="career__text">IIT Madras, Chennai, India</span></p>
+               
+                <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>
+               
                 
             </div>
-        </div>
+            <div className="career__description" id="maker-or-fabricator-avionics-desc">
+                <p className="career__job">Associate Fabricator</p>
+                <div className="career__section">
+                <p className="career__head">Eligibility</p>
+                <p className="career__text">
+                We strongly prefer working with individuals 
+                who are passionate about aerospace and are willing to work with us for the long term.
+                </p>
+                </div>
+                <div className="career__section">
+                <p className="career__head">RESPONSIBILITIES</p>
+                <li className="career__text">
+                Responsible for overseeing the build and inspection process for the electrical and electronics assembly for the integration of flight systems
+                </li>
+                <li className="career__text">
+                Develop, qualify, and refine manufacturing processes to bring vehicle computer hardware from prototype to flight quality.
+                </li>
+                <li className="career__text">
+                Responsible for interfacing the data acquisitions systems with the flight hardware and control systems.
+                </li>
+                <li className="career__text">
+                Work with design engineers & Senior Manufacturing Buff to evaluate designs for 
+                manufacturability and implementation in a rapidly-evolving production environment
+                </li>
+                <li className="career__text">
+                Quickly resolve non-conformances and work with the Quality team 
+                to implement root cause corrective actions.
+                </li>
+                </div>
+                <div className="career__section">
+                <p className="career__head">
+                    BASIC QUALIFICATIONS
+                </p>
+                <p className="career__text">
+                Diploma degree in Electronics or Mechatronics engineering
+                <br></br>or<br></br>
+                A minimum of 2 year of maintenance technician experience
+                </p>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    PREFERRED SKILLS AND EXPERIENCE
+                    </p>
+                    <ul>
+                    <li className="careers__text">
+                    Bachelor’s degree in electronics engineering technology degree
+                    </li>
+                    <li className="careers__text">
+                    Experience with thermal vacuum testing
+                    </li>
+                    <li className="careers__text">
+                    Experience with vibration and shock testing.
+                    </li>
+                    <li className="careers__text">
+                    Ability to write detailed repair reports (advanced MS Office skills)
+                    </li>
+                    <li className="careers__text">
+                    Some experience in space, aviation, military or other high-reliability operating environments is highly desirable.
+                    </li>
+                    <li className="careers__text">
+                    Software skills- LabVIEW or Python desired
+                    </li>
+                    <li className="careers__text">
+                    Capable of working with diverse electrical test equipment analog and digital and RF.
+                    </li>
+                    <li className="career__text">
+                    Strong team working skills.
+                    </li>
+                    <li className="career__text">
+                    Excellent attention to detail.
+                    </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    ADDITIONAL REQUIREMENTS
+                    </p>
+                    <ul>
+                    <li className="careers__text">
+                    Must be available to work extended hours and weekends as needed
+                    </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    What you could take away?
+                    </p>
+                    <ul>
+                        <li className="career__text">
+                        Your work will directly impact the company's (and the rocket's) trajectory
+                        </li>
+                        <li className="career__text">
+                        You will learn rocket science from some of the most senior and respected minds in ISRO 
+                        </li>
+                    </ul>
+                </div>
+                <p className="career__head">Location:  <span className="career__text">IIT Madras, Chennai, India</span></p>
+               
+                <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>
+               
+                
+            </div>
+            <div className="career__description" id="electric-motor-designer-desc">
+                <p className="career__job">Electric Motor Designer</p>
+                <div className="career__section">
+                <p className="career__head">Eligibility</p>
+                <p className="career__text">
+                We strongly prefer working with individuals
+                 who are passionate about aerospace and are willing to work with us for the long term.
+                </p>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">WHAT IT TAKES</p>
+                    <p className="career__text">If you like to think what goes around, comes around - this is for you</p>
+                    <p className="career__text">If you have wondered why magnetic poles are never lonely - this is for you</p>
+                    <p className="career__text">If you have wondered if every motor is a Faraday's cage - this is for you</p>
+                </div>
+                <div className="career__section">
+                <p className="career__head">RESPONSIBILITIES</p>
+                <li className="career__text">
+                Leads/owns the electromagnetic development of custom high-performance electric motors and actuators across PMDC, AC Inductor Motors and/or brushless DC motor.
+                </li>
+                <li className="career__text">
+                Design of all aspects of AC universal motor (magnetic circuit, winding, brushes, brush holder, commutator, material selection.)
+                </li>
+                <li className="career__text">
+                Understand the development of alternate motor types such as High Voltage PM DC and Brushless DC motors, high frequency induction motors etc.
+                </li>
+                <li className="career__text">
+                Support in selection of Brushless DC electric motor and PMDC motors.
+                </li>
+                <li className="career__text">
+                Ownership of all aspects of motor design including motor system mechanical and electrical components such as armature, output shaft, terminals, etc.Aids in the creation of CAD and 2D drawings for stators, rotors and assemblies</li>
+                <li className="career__text">
+                Develops the design for winding architecture, magnetic architecture, flux carrier stamping and lamination joining,</li>
+                <li className="career__text">
+                Creates framework for insulation systems, interconnections, thermal systems, sensing, Identifying and qualifying suppliers of raw materials, components, and assemblies</li>
+                <li className="career__text">
+                Validates performance and derives and delivers a durability testing profile
+                </li>
+                <li className="career__text">
+                Designs keeping in mind - DFM, cost reductions, and second</li>
+                <li className="career__text">
+                Architects and performs thermal performance analysis for magnetic designs</li>
+                <li className="career__text">
+                Be able to perform : GD&T, 3D & 2D Drawings, DFMEA, PFMEA, structural & thermal FEA
+                </li>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    EXPERIENCE
+                    </p>
+                    <ul>
+                    <li className="careers__text">
+                    BS or MS in Mechanical or Electrical Engineering or similar discipline
+                    </li>
+                    <li className="careers__text">
+                    2+ years’ work experience in motor design or electrical machines
+                    </li>
+                    <li className="careers__text">
+                    Experience and familiarity with Finite Element Analysis, 
+                    </li>
+                    <li className="careers__text">
+                    Experience and familiarity with electro-magnetics, 3 phase power systems
+                    </li>
+                    <li className="careers__text">
+                    Experience with building of prototypes 
+                    </li>
+                    <li className="careers__text">
+                    Experience with SolidWorks is a plus
+                    </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    ADDITIONAL REQUIREMENTS
+                    </p>
+                    <ul>
+                    <li className="careers__text">
+                    Must be available to work extended hours and weekends as needed
+                    </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    What you could take away?
+                    </p>
+                    <ul>
+                        <li className="career__text">
+                        You might have designed one of the most compact electric motors in the world!
+                        </li>
+                        <li className="career__text">
+                        Your work will directly impact the company's (and the rocket's) trajectory
+                        </li>
+                        <li className="career__text">
+                        You will learn rocket science from some of the most senior and respected minds in ISRO
+                        </li>
+                        <li className="career__text">
+                        You will work on shaping space policy in India
+                        </li>
+                        <li className="career__text">
+                        You will dirty your hands in a global supply/chain optimization problem
+                        </li>
+                    </ul>
+                </div>
+                <p className="career__head">Location:  <span className="career__text">Chennai, India</span></p>
+               
+                <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>
+               
+                
+            </div>
+            <div className="career__description" id="embedded-systems-software-developer-desc">
+                <p className="career__job">Embedded Software Engineer</p>
+                <div className="career__section">
+                <p className="career__head">Eligibility</p>
+                <p className="career__text">
+                We strongly prefer working with individuals
+                 who are passionate about aerospace and are willing to work with us for the long term.
+                </p>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                        WHAT IT TAKES
+                    </p>
+                    <ul>
+                        <li className="career__text">
+                        If you make typos such as  “keil down” instead of “kneel down” - this is for you
+                        </li>
+                        <li className="career__text">
+                        If “assembly line” means one line of code  - this is for you
+                        </li>
+                        <li className="career__text">
+                        If you think the next cricket match version should be “8080” - this is for you
+                        </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                <p className="career__head">RESPONSIBILITIES</p>
+                <li className="career__text">
+                Design, develop and test (not necessarily space hardened) avionics firmware that will support the functions of our launch vehicles and test systems.
+                </li>
+                <li className="career__text">
+                Strong firmware debugging capabilities with respect to embedded system issues
+                </li>
+                <li className="career__text">
+                Create firmware systems with efficiency, modularity, extensibility, and robustness
+                </li>
+                <li className="career__text">
+                Design communication protocols and demonstrate the ability to work with I2C, SPI, UART, USB, CAN and Ethernet.
+                </li>
+                <li className="career__text">
+                Support through production and testing phase is expected
+                </li>
+                <li className="career__text">
+                Design and lead boards with different MCUs(Cortex M4, MSP), peripherals, features, and development environments.
+                </li>
+                <li className="career__text">
+                Define board schematics and know EE fundamentals
+                </li>
+                </div>
+                <div className="career__section">
+                <p className="career__head">
+                    BASIC QUALIFICATIONS
+                </p>
+                <ul>
+                    <li className="career__text">
+                    Bachelor of Science Degree in Electrical Engineering, Computer Engineering or Physics.
+                    </li>
+                    <li className="career__text">
+                    Proficient in C and C++ embedded firmware development   
+                    </li>
+                    <li className="career__text">
+                    Experience with FPGA programming is a plus   
+                    </li>
+                    <li className="career__text">
+                    Simple soldering and rework experience is a plus   
+                    </li>
+                    <li className="career__text">
+                    Professional experience with experience in fast-paced projects (non-aerospace is okay); 
+                    CPU-based circuit cards, consumer electronics, wireless devices, and/or low power platforms.   
+                    </li>
+                    <li className="career__text">
+                    Professional experience with analog, digital or mixed-signal design principles 
+                    including designs using operational amplifiers, filters, and transistors.   
+                    </li>
+                </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    PREFERRED SKILLS AND EXPERIENCE
+                    </p>
+                    <ul>
+                    <li className="careers__text">
+                    Masters of Science Degree in Electrical Engineering, Computer Engineering or equivalent area of focus.
+                    </li>
+                    <li className="careers__text">
+                    2+ years of board level experience designing hardware from concept through production; strong emphasis on 
+                    full lifecycle development of new hardware systems -- not small incremental updates to legacy hardware
+                    </li>
+                    <li className="careers__text">
+                    Strong understanding of computers and programming languages (C/C++, Matlab, Assembly language).
+                    </li>
+                    <li className="careers__text">
+                    Ability to work in a fast paced, autonomously driven, and demanding start-up atmosphere
+                    </li>
+                    <li className="careers__text">
+                    Excellent communication skills both written and verbal.
+                    </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    ADDITIONAL REQUIREMENTS
+                    </p>
+                    <ul>
+                    <li className="careers__text">
+                    Must be available to work extended hours and weekends as needed
+                    </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    What you could take away?
+                    </p>
+                    <ul>
+                        <li className="career__text">
+                        You might have designed one of the most compact electric motors in the world!
+                        </li>
+                        <li className="career__text">
+                        Your work will directly impact the company's (and the rocket's) trajectory
+                        </li>
+                        <li className="career__text">
+                        You will learn rocket science from some of the most senior and respected minds in ISRO
+                        </li>
+                        <li className="career__text">
+                        You will work on shaping space policy in India
+                        </li>
+                        <li className="career__text">
+                        You will dirty your hands in a global supply/chain optimization problem
+                        </li>
+                    </ul>
+                </div>
+                <p className="career__head">Location:  <span className="career__text">Chennai, India</span></p>
+               
+                <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>
+               
+                
+            </div>
+            <div className="career__description" id="launch-vehicle-structural-engineer-desc">
+                <p className="career__job">Launch Vehicle Structural Vehicle Engineer</p>
+                <div className="career__section">
+                <p className="career__head">Eligibility</p>
+                <p className="career__text">
+                We strongly prefer working with individuals
+                 who are passionate about aerospace and are willing to work with us for the long term.
+                </p>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">WHAT IT TAKES ?</p>
+                    <ul>
+                        <li className="career__text">
+                        If you have wondered where the center of gravity of the Penrose Stairs lies, this is for you.
+                        </li>
+                        <li className="career__text">
+                        Even better if you have spent more than 100 hours trying to figure out the best material for Space Elevator Tethers.
+                        </li>
+                        <li className="career__text">
+                        Preferably, you have also googled: "Inconel vs. carbon composites for 3d printing"
+                        </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                <p className="career__head">RESPONSIBILITIES</p>
+                <li className="career__text">
+                Responsible for build of initial development hardware, ensuring efficient manufacturability 
+                and modifying design as needed (Can’t “stress” this point enough - pun intended)
+                </li>
+                <li className="career__text">
+                Perform, document, and present static, dynamic, modal, thermo-mechanical,
+                 fatigue and fracture analyses
+                </li>
+                <li className="career__text">
+                Perform initial sizing analyses by hand calculation, detailed structural analysis
+                 using Finite element analysis tools
+                </li>
+                <li className="career__text">
+                Perform detailed fluid system layout and/or mechanical design
+                 utilizing CAD and understanding of materials
+                </li>
+                <li className="career__text">
+                Seek out and evaluate state-of-the-art analysis techniques and tools
+                </li>
+                <li className="career__text">
+                Identify and procure long lead items such as machining parts, seals, forgings, etc.
+                </li>
+                <li className="career__text">
+                Coordinate and perform development and qualification efforts of hardware
+                </li>
+                <li className="career__text">
+                Design and build testing equipment or stands
+                </li>
+                <li className="career__text">
+                Manage the transition from development to production for flight quality hardware
+                </li>
+                </div>
+                <div className="career__section">
+                <p className="career__head">
+                    BASIC QUALIFICATIONS
+                </p>
+                <ul>
+                    <li className="career__text">
+                    Bachelor’s degree in an engineering discipline
+                    </li>
+                    <li className="career__text">
+                    Experience with Finite Element Analysis (FEA) and commercial tools   
+                    </li>
+                    <li className="career__text">
+                    Excellent understanding of fatigue and fracture mechanics principles   
+                    </li>
+                    <li className="career__text">
+                    Ability to work extended hours and weekends as needed  
+                    </li>
+                </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    PREFERRED SKILLS AND EXPERIENCE
+                    </p>
+                    <ul>
+                    <li className="careers__text">
+                    Master’s degree or PhD in an engineering discipline
+                    </li>
+                    <li className="careers__text">
+                    Strong background in solid mechanics and structural dynamics
+                     (modal, transient, and random vibration analysis)
+                    </li>
+                    <li className="careers__text">
+                    Expert on fatigue, crack initiation, propagation mechanisms and metallic failure prevention
+                    </li>
+                    <li className="careers__text">
+                    Familiar with crack growth analysis codes
+                    </li>
+                    <li className="careers__text">
+                    Excellent oral and written communication skills   
+                    </li>
+                    <li className="careers__text">
+                    Ability to deliver against an aggressive schedule
+                    </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    ADDITIONAL REQUIREMENTS
+                    </p>
+                    <ul>
+                    <li className="careers__text">
+                    Must be available to work extended hours and weekends as needed
+                    </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    What you could take away?
+                    </p>
+                    <ul>
+                        <li className="career__text">
+                        Your work will directly impact the company's (and the rocket's) trajectory
+                        </li>
+                        <li className="career__text">
+                        You will learn rocket science from some of the most senior and respected minds in ISRO 
+                        </li>
+                        <li className="career__text">
+                        You will work on shaping space policy in India
+                        </li>
+                        <li className="career__text">
+                        You will dirty your hands in a global supply/chain optimization problem
+                        </li>
+                    </ul>
+                </div>
+                <p className="career__head">Location:  <span className="career__text">Chennai, India</span></p>
+               
+                <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>
+               
+                
+            </div>
+            <div className="career__description" id="mission-design-software-developer-desc">
+                <p className="career__job">Mission Design Software Developer</p>
+                <div className="career__section">
+                <p className="career__head">Eligibility</p>
+                <p className="career__text">
+                We strongly prefer working with individuals
+                 who are passionate about aerospace and are willing to work with us for the long term.
+                </p>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">WHAT IT TAKES</p>
+                    <ul>
+                        <li className="career__text">
+                        If you belong to the category of typing a semicolon instead of a full stop, this is for you;
+//(We are syntax agnostic in our search though (any language experience is okay!);)
+                        </li>
+                        <li className="career__text">
+                        If you see a car's headlights and wonder what happened to your ability for abstraction, this is for you   
+                        </li>
+                        <li className="career__text">
+                        If you can see a launch vehicle as a 21st century robot, this is for you   
+                        </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                <p className="career__head">RESPONSIBILITIES</p>
+                <li className="career__text">
+                Optimize trajectories the launch vehicle will have to fly in to get to orbit
+                </li>
+                <li className="career__text">
+                Work with Propulsion and GNC Engineers to code engine characterization, carry out simulations, and integrate programs into flight control algorithms;
+                </li>
+                <li className="career__text">
+                Work interdisciplinary trades (e.g. with Avionics, GNC, Thermal, and Structures) that result in the most optimal vehicle level configuration;
+                </li>
+                </div>
+                <div className="career__section">
+                <p className="career__head">
+                    BASIC QUALIFICATIONS
+                </p>
+                <ul>
+                    <li className="career__text">
+                    Bachelor’s degree in computer science, physics,
+                     electrical engineering, or equivalent engineering discipline;
+                    </li>
+                    <li className="career__text">
+                    Understands the basic physics behind projectile motion; 
+                    </li>
+                    <li className="career__text">
+                    Applied experience coding in an object-oriented language;   
+                    </li>
+                    <li className="career__text">
+                    Ability to work long hours, weekends etc. if needed (almost always!);   
+                    </li>
+                </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    PREFERRED SKILLS AND EXPERIENCE
+                    </p>
+                    <ul>
+                    <li className="career__text">
+                    Ability to design and implement robust and scalable systems with flexible and scalable UI 
+                    </li>
+                    <li className="career__text">
+                    Professional experience with standard front-end technologies like modern HTML, CSS, JavaScript (we use AngularJS, Polymer, Backbone.js, React, and more), REST, JSON
+                    </li>
+                    <li className="career__text">
+                    Deep understanding of object oriented programming
+                    </li>
+                    <li className="career__text">
+                    Deep understanding of distributed, horizontally scalable systems
+                    </li>
+                    <li className="career__text">
+                    Experiences with cloud technologies such as AWS, Azure or Google Cloud Engine  
+                    </li>
+                    <li className="career__text">
+                    Focus on performance bottlenecks and performance improvement techniques
+                    </li>
+                    <li className="career__text">
+                    Familiar with basic principles of compressible and incompressible flow, thermodynamics, thermochemistry, mechanics, materials, and electrical circuits
+                    </li>
+                    <li className="career__text">
+                    A background in scientific computing, high-performance computing, or mathematics</li>
+                    <li className="career__text">
+                    Strong skills with debuggers, profilers, and unit testing</li>
+                    <li className="career__text">
+                    Interest in/competence with multiple languages and technologies (Python, C++, MATLAB, SQL)
+                    </li>
+                    <li className="career__text">
+                    Familiar with Agile software development techniques, particularly Test-Driven Development, and Continuous Integration
+                    </li>
+                    <li className="career__text">
+                    Experience with database management
+                    </li>
+                    <li className="career__text">
+                    Able to prioritize and execute tasks in a high-pressure environment with ongoing drive for continuous improvement in all aspects of work
+                    </li>
+                    <li className="career__text">
+                    Excellent communication skills and ability to succinctly present recommendations to stakeholders, the customer, and management
+                    </li>
+                    <li className="career__text">
+                    Able to work well in an integrated collaborative team environment, including frequent interactions with technicians, other engineers, and managers
+                    </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    ADDITIONAL REQUIREMENTS
+                    </p>
+                    <ul>
+                    <li className="careers__text">
+                    Must be available to work extended hours and weekends as needed
+                    </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    What you could take away?
+                    </p>
+                    <ul>
+                        <li className="career__text">
+                        Your work will directly impact the company's (and the rocket's) trajectory
+                        </li>
+                        <li className="career__text">
+                        You will learn rocket science from some of the most senior and respected minds in ISRO 
+                        </li>
+                        <li className="career__text">
+                        You will work on shaping space policy in India
+                        </li>
+                        <li className="career__text">
+                        You will dirty your hands in a global supply/chain optimization problem
+                        </li>
+                    </ul>
+                </div>
+                <p className="career__head">Location:  <span className="career__text">Chennai, India</span></p>
+               
+                <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>
+               
+                
+            </div>
+            <div className="career__description" id="power-electronics-engineer-desc">
+                <p className="career__job">Power Electronics Engineer</p>
+                <div className="career__section">
+                <p className="career__head">Eligibility</p>
+                <p className="career__text">
+                We strongly prefer working with individuals
+                 who are passionate about aerospace and are willing to work with us for the long term.
+                </p>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">WHAT IT TAKES</p>
+                    <ul>
+                        <li className="career__text">
+                        If you end up saying "SMPS me" instead of "SMS me" when you want someone to message you - this is for you.
+                        </li>
+                        <li className="career__text">
+                        If you understand jokes like "Life is a bunch of bucks and boosts" - this is for you.</li>
+                        <li className="career__text">
+                        If you wished MOSFET's were current controlled devices or BJTs are voltage controlled devices - this is definitely for you.
+                         </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                <p className="career__head">RESPONSIBILITIES</p>
+                <li className="career__text">
+                Create the fundamental power electronics architecture and associated software and hardware systems for Agnikul's vehicle
+                </li>
+                <li className="career__text">
+                Contribute engineering expertise in design, study, and testing of DC-DC power converters for harsh environments
+                </li>
+                <li className="career__text">
+                Deliver on power system and sub-system level design trades and develop requirements at a system level and a component level.
+                </li>
+                <li className="career__text">
+                Design DC-DC topologies and select optimal architectures and components for board level power
+                </li>
+                <li className="career__text">
+                Design, handle and test systems with lithium-ion battery with due respect for their safety, and usage
+                </li>
+                <li className="career__text">
+                Design AC-DC converters for both flight and ground systems
+                </li>
+                <li className="career__text">
+                Design extremely compact AC-DC converters with a special focus on mechanical design
+                </li>
+                </div>
+                <div className="career__section">
+                <p className="career__head">
+                    BASIC QUALIFICATIONS
+                </p>
+                <ul>
+                    <li className="career__text">
+                    Bachelors / Master's degree in electrical engineering, power systems or electronics engineering or any degree that enhanced your ability to model and deal with power electronics
+                    </li>
+                    <li className="career__text">
+                    Ability to work long hours and weekends as needed.
+                    </li>
+                    <li className="career__text">
+                    Experience in modeling, simulation, and testing of power electronics   
+                    </li>
+                    <li className="career__text">
+                    Working experience in voltage and current mode control and compensator.   
+                    </li>
+                    <li className="career__text">
+                    Familiarity with power supply testing and packaging for harsh environments
+                    </li>
+                </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    ADDITIONAL REQUIREMENTS
+                    </p>
+                    <ul>
+                    <li className="careers__text">
+                    Must be available to work extended hours and weekends as needed
+                    </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    What you could take away?
+                    </p>
+                    <ul>
+                        <li className="career__text">
+                        You might have designed one of the most compact electric drives in the world!
+                        </li>
+                        <li className="career__text">
+                        Your work will directly impact the company's (and the rocket's) trajectory
+                        </li>
+                        <li className="career__text">
+                        You will learn rocket science from some of the most senior and respected minds in ISRO 
+                        </li>
+                        <li className="career__text">
+                        You will work on shaping space policy in India
+                        </li>
+                        <li className="career__text">
+                        You will dirty your hands in a global supply/chain optimization problem
+                        </li>
+                    </ul>
+                </div>
+                <p className="career__head">Location:  <span className="career__text">Chennai, India</span></p>
+               
+                <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>               
+                
+            </div>
+            <div className="career__description" id="space-robotics-and-control-engineer-desc">
+                <p className="career__job">Space Robotics and Controls Engineer</p>
+                <div className="career__section">
+                <p className="career__head">Eligibility</p>
+                <p className="career__text">
+                We strongly prefer working with individuals
+                 who are passionate about aerospace and are willing to work with us for the long term.
+                </p>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">WHAT IT TAKES</p>
+                    <ul>
+                        <li className="career__text">
+                        If you like to think the other extreme of the north pole is north “zero” - this is for you </li>
+                        <li className="career__text">
+                        If you don’t need someone to tell you LQR is good enough - this is for you
+                        </li>
+                        <li className="career__text">
+                        If you believe lead-lag compensation is the essence of all human interactions - this is for you
+                         </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                <p className="career__head">RESPONSIBILITIES</p>
+                <li className="career__text">
+                Works on independent sections of controller design and integration process for launch vehicle control systems and related components in the vehicle’s guidance systems 
+                 </li>
+                <li className="career__text">
+                Specifically,
+                    <ul>
+                        <li className="career__text">
+                        Aid in the development of Autopilot linear stability testing and analysis
+                        </li>
+                        <li className="career__text">
+                        Design Non-linear 6DOF simulation analysis and scenario analysis
+                        </li>
+                        <li className="career__text">
+                        Review system level and launch vehicle requirements
+                        </li>
+                        <li className="career__text">
+                        Lead development and maintenance of software tools that predict pre-flight performance under nominal, off-nominal conditions
+                        </li>
+                        <li className="career__text">
+                        Perform post flight verification of simulation predictions and Monte Carlo through multiple flight conditions
+                        </li>
+                        <li className="career__text">
+                        Create hazards assessment programs and tools to understand probability of impact and expected damage from off-nominal and failure modes
+                        </li>
+                        <li className="career__text">
+                        Support design reviews and milestones as necessary
+                        </li>
+                    </ul>
+                </li>
+                <li className="career__text">
+                Assists independent sections of propulsion control systems
+                 </li>
+                <li className="career__text">
+                Aid specifically, the development of some or all of the following
+                <ul>
+                    <li className="career__text">
+                    Design of Mixture ratio control & stability analysis
+                    </li>
+                    <li className="career__text">
+                    Integration of mixture ratio control, electric motor speed control and propellant utilization loops   
+                    </li>
+                    <li className="career__text">
+                    Development of system level requirements for cross coupled dynamics between propellant utilization algorithms and vehicle guidance / autopilot algorithms   
+                    </li>
+                    <li className="career__text">
+                    Support design reviews and milestones as necessary  
+                    </li>
+                </ul>
+                </li>
+                <li className="career__text">
+                Supports hardware design & implementation of the vehicle across multiple control systems
+                    <ul>
+                        <li className="career__text">
+                        Analog and mixed signal design with focus on launch vehicle hardware
+                        </li>
+                        <li className="career__text">
+                        Board level design for both ground checkout systems and flight hardware
+                        </li>
+                        <li className="career__text">
+                        Support design reviews and milestones as necessary
+                        </li>
+                    </ul>
+                </li>
+                </div>
+                <div className="career__section">
+                <p className="career__head">
+                    BASIC QUALIFICATIONS
+                </p>
+                <ul>
+                    <li className="career__text">
+                    Bachelors / Master’s Degree in Controls Engineering, Electrical engineering, Electronics & Communications engineering
+                    </li>
+                    <li className="career__text">
+                    Highly developed computer skills using EE design/analysis software
+                    </li>
+                    <li className="career__text">
+                    Decent software programming skills
+                    </li>
+                </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">PREFERRED SKILLS AND EXPERIENCE</p>
+                    <ul>
+                        <li className="career__text">
+                        Ph.D. in Electrical engineering, Electronics & Communications engineering
+                        </li>
+                        <li className="career__text">
+                        Good understanding of product development and Control network (CAN)
+                        </li>
+                        <li className="career__text">
+                        1+ experience with mechanical systems and engines
+                        </li>
+                        <li className="career__text">
+                        Good understanding of engine controller design and implementation.
+                        </li>
+                        <li className="career__text">
+                        Good understanding of orbital mechanics, multi-body dynamics, and controls-structures interaction
+                        </li>
+                        <li className="career__text">
+                        Experience with static constrained optimization, calculus of variations, dynamic optimization, maximum principle
+                        </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    ADDITIONAL REQUIREMENTS
+                    </p>
+                    <ul>
+                    <li className="careers__text">
+                    Must be available to work extended hours and weekends as needed
+                    </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    What you could take away?
+                    </p>
+                    <ul>
+                        <li className="career__text">
+                        Your work will directly impact the company's (and the rocket's) trajectory
+                        </li>
+                        <li className="career__text">
+                        You will learn rocket science from some of the most senior and respected minds in ISRO 
+                        </li>
+                        <li className="career__text">
+                        You will work on shaping space policy in India
+                        </li>
+                        <li className="career__text">
+                        You will dirty your hands in a global supply/chain optimization problem
+                        </li>
+                    </ul>
+                </div>
+                <p className="career__head">Location:  <span className="career__text">Chennai, India</span></p>
+               
+                <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>               
+                
+            </div>
+            <div className="career__description" id="vehicle-dynamics-engineer-desc">
+                <p className="career__job">Vehicle Dynamics Engineer</p>
+                <div className="career__section">
+                <p className="career__head">Eligibility</p>
+                <p className="career__text">
+                We strongly prefer working with individuals
+                 who are passionate about aerospace and are willing to work with us for the long term.
+                </p>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">WHAT IT TAKES</p>
+                    <ul>
+                        <li className="career__text">
+                        If you know why water tanker lorries in India have their tops open - this is for you.
+(Even better if you have tried to model slosh dynamics of a water tanker lorry)
+</li>
+                        <li className="career__text">
+                        If you can mathematically predict the instantaneous position and velocity of how your life will evolve - this is for you.
+                        </li>
+                        <li className="career__text">
+                        If you like designing autopilots - this is definitely for you.
+                         </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                <p className="career__head">RESPONSIBILITIES</p>
+                <li className="career__text">
+                Design, analyze and build flight dynamics models for launch vehicles
+                </li>
+                <li className="career__text">
+                Design high fidelity simulations of hypersonic flight systems, deriving from experience in  flight dynamics, navigation, guidance, and control.
+                </li>
+                </div>
+                <div className="career__section">
+                <p className="career__head">
+                    BASIC QUALIFICATIONS
+                </p>
+                <ul>
+                    <li className="career__text">
+                    Bachelors / Master's degree in controls engineering, aerospace or mechanical engineering or any degree that enhanced your ability to model systems mathematically
+                    </li>
+                    <li className="career__text">
+                    2-3 years of experience in mathematically modeling system dynamics
+                    </li>
+                    <li className="career__text">
+                    A fascination to bring space closer to everyone on earth
+                    </li>
+                </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                        PREFERRED SKILLS AND EXPERIENCE
+                    </p>
+                    <ul>
+                        <li className="career__text">
+                        Master's degree in aeronautical/astronautical, aerospace or mechanical engineering
+                        </li>
+                        <li className="career__text">
+                        Understanding of software-in-the-loop and hardware-in-the-loop development
+                         </li>
+                        <li className="career__text">
+                        Design and analyze control approaches for complex vehicle systems, leveraging modern synthesis and analysis methods. 
+                        </li>
+                        <li className="career__text">
+                        Be able to understand vehicle plant dynamics and select appropriate control methods
+                        </li>
+                        <li className="career__text">
+                        Research and create launch vehicle guidance algorithm
+                        </li>
+                        <li className="career__text">
+                        Understanding of system dynamics, trajectory optimization to develop algorithms suitable for simulation and onboard use. 
+                        </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    ADDITIONAL REQUIREMENTS
+                    </p>
+                    <ul>
+                    <li className="careers__text">
+                    Must be available to work extended hours and weekends as needed
+                    </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    What you could take away?
+                    </p>
+                    <ul>
+                        <li className="career__text">
+                        Your work will directly impact the company's (and the rocket's) trajectory
+                        </li>
+                        <li className="career__text">
+                        You will learn rocket science from some of the most senior and respected minds in ISRO 
+                        </li>
+                        <li className="career__text">
+                        You will work on shaping space policy in India
+                        </li>
+                        <li className="career__text">
+                        You will dirty your hands in a global supply/chain optimization problem
+                        </li>
+                    </ul>
+                </div>
+                <p className="career__head">Location:  <span className="career__text">Chennai, India</span></p>
+               
+                <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>               
+                
+            </div>
+               </div>
         
   {/* <div className="career__overall-div">
     <div className="career__location-swiper swiper-container">

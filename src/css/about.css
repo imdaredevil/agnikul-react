@@ -462,6 +462,7 @@
 
     .intermediate-banner-content{
       width: auto;
+      top: 30%;
     }
     .intermediate-banner-title{
       font-size: 20px;
@@ -469,6 +470,10 @@
 
     .intermediate-banner-link{
       font-size: 14px;
+    }
+
+    .IntermediateBanner {
+      height: 60%;
     }
 
 } 

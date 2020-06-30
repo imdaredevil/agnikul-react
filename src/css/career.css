@@ -260,7 +260,7 @@
     }
 
     .career__section {
-      padding: 2% 0%;
+      padding: 1% 0%;
     }
 
     .career__job {
@@ -285,8 +285,13 @@
       line-height: 1.6;
       letter-spacing: normal;
       color: rgba(33, 56, 66, 0.8); 
+      display:  none;
       /* overflow-y: scroll;
       height: 50vh;   */
+    }
+
+    .career__description.visible {
+      display: block;
     }
 
     .career__section-head {

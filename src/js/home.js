@@ -54,6 +54,16 @@ export default function ScrollHover(){
     $(document).ready(function(){
         
     $("body").removeClass("products");
+
+    $("#location .dropdown-item").click(function() {
+        document.getElementById("location-field").innerHTML = this.innerHTML;
+    });
+    $("#inclination .dropdown-item").click(function() {
+        document.getElementById("inclination-field").innerHTML = this.innerHTML;
+    });
+    $("#payload .dropdown-item").click(function() {
+        document.getElementById("payload-field").innerHTML = this.innerHTML;
+    });
         $(".home__right-image").hover(
             function(){
                 cancelAnimationFrame(downId);
