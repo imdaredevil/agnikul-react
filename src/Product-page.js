@@ -149,19 +149,20 @@ large enough for almost all small satellite needs.</p>
     </div>
 
     <div className="third-scroll third-scroll-2">
-        <p className="text">Electron's second stage is powered by a variant of the Rutherford Engine 
-            providing improved. Electron makes use of advanced carbon composite materials.</p>
+        <p className="text">Our second stage is powered by the Agnite vacuum optimized engine</p>
     </div>
 
     <div className="third-scroll third-scroll-3">
         <i className="fa fa-bars"></i>
         <p className="spec-name">TOTAL THRUST</p>
-        <p className="spec-value">22 kN (5,000 lbf)</p>
+        <p className="spec-value">Sea Level Thrust - 25 kN</p>
     </div>
 
     <div className="third-scroll third-scroll-4">
-        <p className="text">Through an extensive research program, Rocket Lab has developed carbon composite
-             tanks that are compatible with liquid oxygen, providing impressive weight savings.</p>
+        <p className="text">Agnite is the same engine that powers our first stage as well. It
+can deliver upto 355 seconds of Isp in vacuum. Running an
+electric pump fed engine offers greater & finer propellant
+utilization techniques to enhance payload capacity.</p>
     </div>
 
     <div className="third-scroll  third-image-1">
@@ -177,7 +178,7 @@ large enough for almost all small satellite needs.</p>
     </div>
 
     <div className="third-scroll  third-image-2">
-        <svg viewBox="0 0 275 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 185 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
                 <image href={homepage} x="-25" width="150" height="100" />
@@ -185,7 +186,6 @@ large enough for almost all small satellite needs.</p>
             </defs>
             <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)"/>
             <polygon points="140 1 185 25 185 75 140 99 95 75 95 25" fill="url(#img)"/>
-            <polygon points="230 1 275 25 275 75 230 99 185 75 185 25" fill="url(#img)"/>
             
           </svg>
     </div>
@@ -198,17 +198,20 @@ large enough for almost all small satellite needs.</p>
 
     <div className="fourth-scroll fourth-scroll-2">
         <p className="text">
-            Powered by Rocket Lab's 3D printed liquid propellant
-             Curie engine capable of 120N of thrust and multiple burns.
+        Agnibaan’s first stage is powered by 7 Agnite engines each
+delivering 25 kN of thrust at sea level. All of these engines are
+electric pump fed engines allowing for simplified engine design
+and highly configurable engine clustering architectures.
+
         </p>
     </div>
 
     <div className="fourth-scroll fourth-scroll-3">
         <p className="text">
-            An optional apogee kick stage that can execute 
-            multiple burns to place numerous payloads into different, circularized orbits. 
-            It opens up significantly more orbital options, particularly for rideshare customers 
-            that have traditionally been limited to the primary payload’s designated orbit. 
+        Capable of operating with a sea level of Isp of 285 seconds, the
+entire combustion section here is a single piece assembly and
+100% 3d printed.
+
         </p>
     </div>
 
@@ -237,25 +240,39 @@ large enough for almost all small satellite needs.</p>
 
         <div className="fifth-scroll fifth-scroll-1">
             <p className="number">04</p>
-            <p className="content">LAUNCHPAD</p>
+            <p className="content">LAUNCH PEDESTAL - DHANUSH</p>
         </div>
 
         <div className="fifth-scroll fifth-scroll-2">
-            <p className="text">Rocket Lab offers the world’s only private orbital 
-                launch range in Mahia, New Zealand. This FAA compliant site can accommodate..</p>
+            <p className="text">Agnibaan was built keeping in mind the capability to launch
+from multiple launchports across the world. So, we built
+“Dhanush” - the launch pedestal - to support full mobility across
+all configurations of Agnibaan. As opposed to (current versions
+of) Agnibaan, Dhanush is meant for multiple uses and is built
+with durability and transportability in mind. “Dhanush” is a
+Sanskrit word that translates to “a celestial bow (from which
+arrows are launched)”. So yes, Agnibaan is launched from
+Dhanush!
+</p>
         </div>
 
         <div className="fifth-scroll fifth-scroll-3">
             <div className="roww">
         <div className="column">
             <i className="fa fa-bars icon"></i>
-            <p className="heading">3D PRINTING</p>
-            <p className="text">Electron’s first stage is powered by nine Rutherford engines.</p>
+            <p className="heading">Access to multiple launchports</p>
+            <p className="text">Dhanush was built and conceived as a separate product
+that enables the process of launching to be reliable and
+repeatable with consistency.
+</p>
         </div>
         <div className="column">
             <i className="fa fa-bars icon"></i>
-            <p className="heading">3D PRINTING</p>
-            <p className="text">Electron’s first stage is powered by nine Rutherford engines.</p>
+            <p className="heading">Mobility</p>
+            <p className="text">Dimensions of Dhanush were designed keeping in mind
+road dimensions and transportability restrictions
+globally.
+</p>
         </div>
     </div>
     </div>

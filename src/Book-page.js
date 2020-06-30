@@ -8,7 +8,13 @@ import orbit from "./images/pennant.png";
 import payload from "./images/scale-4.png";
 import $ from 'jquery';
 import { Link } from 'react-router-dom';
-import { Dropdown } from 'react-bootstrap';
+import phone from "./images/call-doctor.png";
+import mail from "./images/letter.png";
+import mountain from "./images/mountain.png";
+import office from "./images/office.png";
+import location from "./images/property-location.png";
+import person from "./images/single-01.png";
+import down from "./images/down-arrow.png";
 
 
 
@@ -71,45 +77,48 @@ function Book(){
     <div className="container-fluid custom-form">
                     <div className="row">
                         <div className="col-sm">
-                        <Dropdown drop="down">
-                                <Dropdown.Toggle className="custom-form-control" id="dropdown-button-drop-down">
-                                    <img src={flag} className="custom"></img>
-                                    <span className="form-control-name">LAUNCH LOCATION</span>
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu className="dropdown-menu custom-form-options">
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
+                        <div className="dropdown">
+                                        <button className="dropdown-toggle custom-form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src={flag} className="custom"></img>
+                                            <span className="form-control-name">LAUNCH LOCATON</span>
+                                            <img className="arrow" src={down}/>
+                                        </button>
+                                        <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton">
+                                            <a className="dropdown-item" href="#">Action</a>
+                                            <a className="dropdown-item" href="#">Another action</a>
+                                            <a className="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
                                                     </div>
                     </div>
                     <div className="row">
                         <div className="col-sm">
-                            <Dropdown>
-                                <Dropdown.Toggle className="custom-form-control-half">
-                                    <img src={orbit} className="custom"></img>
-                                    <span className="form-control-name">ORIENTAL INCLINATION</span>
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu className="dropdown-menu custom-form-options">
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
+                        <div className="dropdown">
+                                        <button className=" custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src={orbit} className="custom"></img>
+                                            <span className="form-control-name">ORBITAL INCLINATION</span>
+                                            <img className="arrow" src={down}/>
+                                        </button>
+                                        <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton">
+                                            <a className="dropdown-item" href="#">Action</a>
+                                            <a className="dropdown-item" href="#">Another action</a>
+                                            <a className="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
                         </div>
                         <div className="col-sm">
-                        <Dropdown>
-                                <Dropdown.Toggle className="custom-form-control-half">
-                                    <img src={payload} className="custom"></img>
-                                    <span className="form-control-name">PAYLOAD MASS</span>
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu className="dropdown-menu custom-form-options">
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>                      
+                        <div className="dropdown">
+                                            <button className="custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src={payload} className="custom"></img>
+                                                <span className="form-control-name">PAYLOAD MASS</span>
+                                                <img className="arrow" src={down}/>
+                                            </button>
+                                            <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton">
+                                                <a className="dropdown-item" href="#">Action</a>
+                                                <a className="dropdown-item" href="#">Another action</a>
+                                                <a className="dropdown-item" href="#">Something else here</a>
+                                              </div>
+                                        </div>                    
                             </div>
                     </div>
                 </div>
@@ -120,7 +129,7 @@ function Book(){
     <div className="col-sm">
     <div className="dropdown">
         <div className="custom-form-control"> 
-        <img src={orbit} className="custom"></img>
+        <img src={person} className="custom"></img>
             <input placeholder="NAME"/>
         </div>
     </div>
@@ -130,7 +139,7 @@ function Book(){
     <div className="col-sm">
     <div className="dropdown">
         <div className="custom-form-control"> 
-        <img src={orbit} className="custom"></img>
+        <img src={office} className="custom"></img>
             <input placeholder="COMPANY / ORGANISATION"/>
         </div>
     </div>
@@ -138,24 +147,25 @@ function Book(){
 </div>
 <div className="row">
     <div className="col-sm">
-    <Dropdown>
-                                <Dropdown.Toggle className="custom-form-control">
-                                    <img src={orbit} className="custom"></img>
-                                    <span className="form-control-name">COUNTRY OF ORIGIN</span>
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu className="dropdown-menu custom-form-options">
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
+    <div className="dropdown">
+                                        <button className="dropdown-toggle custom-form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src={location} className="custom"></img>
+                                            <span className="form-control-name">COUNTRY OF ORIGIN</span>
+                                            <img className="arrow" src={down}/>
+                                        </button>
+                                        <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton">
+                                            <a className="dropdown-item" href="#">Action</a>
+                                            <a className="dropdown-item" href="#">Another action</a>
+                                            <a className="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
                              </div>
 </div>
 <div className="row">
     <div className="col-sm">
         <div className="dropdown">
         <div className="custom-form-control" type="button">
-        <img src={orbit} className="custom"></img>
+        <img src={mail} className="custom"></img>
         <input placeholder="EMAIL ADDRESS"/>
         </div>
         </div>
@@ -165,7 +175,7 @@ function Book(){
     <div className="col-sm">
         <div className="dropdown">
         <div className="custom-form-control">
-        <img src={orbit} className="custom"></img>
+        <img src={phone} className="custom"></img>
          <input placeholder="PHONE NUMBER"/>
         </div>
         </div>
@@ -175,7 +185,7 @@ function Book(){
     <div className="col-sm">
         <div className="dropdown">
         <div className="custom-form-control">
-        <img src={orbit} className="custom"></img>
+        <img src={mountain} className="custom"></img>
           <input placeholder="ALTITUDE"/>
         </div>
         </div>

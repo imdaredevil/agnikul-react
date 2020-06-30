@@ -254,6 +254,7 @@
 
     } */
 
+
     .career__form {
       padding: 2% 0% 5%;
     }
@@ -266,7 +267,9 @@
       font-style: normal;
       line-height: 1.6;
       letter-spacing: normal;
-      color: rgba(33, 56, 66, 0.8);   
+      color: rgba(33, 56, 66, 0.8); 
+      /* overflow-y: scroll;
+      height: 50vh;   */
     }
 
     .career__section-head {

@@ -58,8 +58,8 @@ function Career(){
             </div>
     </div>
         <div className="container-fluid custom-form career__form">
-            <p class="career__section-head">Careers</p>
-            <form>
+            <p className="career__section-head">Careers</p>
+            <form className="form__fixed">
             <div className="row">
                         <div className="col-sm">
                             <Dropdown>
@@ -89,38 +89,107 @@ function Career(){
                             </div>
                     </div>
             </form>
-            <div class="career__description">
-                <p class="career__head">Eligibility</p>
-                <p class="career__text">
+            <div className="career__description">
+                <div className="career__section">
+                <p className="career__head">Eligibility</p>
+                <p className="career__text">
                 We strongly prefer working with individuals
                  who are passionate about aerospace and are willing to work with us for the long term.
                 </p>
-                <p class="career__head">RESPONSIBILITIES</p>
-                <p class="career__text">
+                </div>
+                <div className="career__section">
+                <p className="career__head">RESPONSIBILITIES</p>
+                <p className="career__text">
                 Responsible for overseeing the build and
                  inspection process for the structural assembly and integration of the Flight systems
                 </p>
-                <p class="career__text">
+                <p className="career__text">
                 Develop, qualify, and refine manufacturing 
                 processes to bring vehicle hardware from prototype to flight quality.
                 </p>
-                <p class="career__text">
+                <p className="career__text">
                 Work with design engineers & Senior Manufacturing Buff to evaluate designs for 
                 manufacturability and implementation in a rapidly-evolving production environment
                 </p>
-                <p class="career__text">
+                <p className="career__text">
                 Quickly resolve non-conformances and work with the Quality team 
                 to implement root cause corrective actions.
                 </p>
-                <p class="career__head">
+                </div>
+                <div className="career__section">
+                <p className="career__head">
                     BASIC QUALIFICATIONS
                 </p>
-                <p class="career__text">
+                <p className="career__text">
                 Diploma degree in mechanical or aerospace engineering
                 <br></br>or<br></br>
                 3+ years of experience in a manufacturing environment 
                 (internship/co-op experience will be considered)
                 </p>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    PREFERRED SKILLS AND EXPERIENCE
+                    </p>
+                    <ul>
+                    <li className="careers__text">
+                    Bachelor’s degree in mechanical, chemical, or aerospace engineering
+                    </li>
+                    <li className="careers__text">
+                    Knowledge of metallic manufacturing techniques, processes, 
+                    and equipment related to machining, welding, drilling, and automation
+                    </li>
+                    <li className="careers__text">
+                    Mechanical component and/or tooling design and analysis (3D computer-aided design)
+                    </li>
+                    <li className="careers__text">
+                    Ability to write detailed repair reports (advanced MS Office skills)
+                    </li>
+                    <li className="careers__text">
+                    Experience with process development from R&D to high-volume manufacturing   
+                    </li>
+                    <li className="careers__text">
+                    Experience writing work instructions and procedures for critical aerospace parts
+                    </li>
+                    <li className="careers__text">
+                    Experience in a production environment within the aerospace industry
+                    </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    ADDITIONAL REQUIREMENTS
+                    </p>
+                    <ul>
+                    <li className="careers__text">
+                    Position may require extended work hours
+                    </li>
+                    <li className="careers__text">
+                    Position requires working directly with hardware on the floor for extended periods of time
+                    </li>
+                    <li className="careers__text">
+                    Must be available to work extended hours and weekends as needed
+                    </li>
+                    </ul>
+                </div>
+                <div className="career__section">
+                    <p className="career__head">
+                    What you could take away?
+                    </p>
+                    <ul>
+                        <li className="career__text">
+                        Your work will directly impact the company's (and the rocket's) trajectory
+                        </li>
+                        <li className="career__text">
+                        You will learn rocket science from some of the most senior and respected minds in ISRO 
+                        </li>
+                    </ul>
+                </div>
+                <p className="career__head">Location: </p>
+                <span className="career__text">IIT Madras, Chennai, India</span>
+                <p className="career__head">Employment Type: </p>
+                <span className="career__text">Full Time</span>
+                
             </div>
         </div>
         

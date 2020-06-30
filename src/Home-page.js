@@ -5,312 +5,314 @@ import { Link } from 'react-router-dom';
 import log from "./images/logo.png";
 import agnibaan from "./images/home-agni.jpg";
 import satelite from "./images/small-logo.png";
-import  navBar from "./js/common";
+import navBar from "./js/common";
 import fingersnap from "./images/finger-snap.png";
 import cardback from "./images/api.png";
 import spaceshipWhite from "./images/spaceship-copy.png";
 import flag from "./images/flag.png";
 import orbit from "./images/pennant.png";
 import payload from "./images/scale-4.png";
-import { Dropdown } from "react-bootstrap";
 import bannericon from "./images/combined-shape.png";
 import quote from "./images/group-5.png";
 import dots from "./images/rectangle-2.png";
+import down from "./images/down-arrow.png";
 
 
-function Home(){
+function Home() {
 
     ScrollHover();
 
     return (
         <div className="body">
-          <div className="navBar">
-        <div className="topnav row justify-content-around align-items-baseline" id="myTopnav">
-            <div className="column-lg nav-brandc">
-                <Link  to="/"><img className="logo" src={log}/></Link>
-            </div>
-            <div className="column">
-                <Link to="/about" className="nav-itemc nav-linkc">
-                    About
+            <div className="navBar">
+                <div className="topnav row justify-content-around align-items-baseline" id="myTopnav">
+                    <div className="column-lg nav-brandc">
+                        <Link to="/"><img className="logo" src={log} /></Link>
+                    </div>
+                    <div className="column">
+                        <Link to="/about" className="nav-itemc nav-linkc">
+                            About
                 </Link>
-            </div>
-            <div className="column">
-                <Link to="/products" className="nav-itemc nav-linkc">
-                    Products
+                    </div>
+                    <div className="column">
+                        <Link to="/products" className="nav-itemc nav-linkc">
+                            Products
                 </Link>
-            </div>
-            <div className="column-md">
-                <Link to="/launch-sites" className="nav-itemc nav-linkc">
-                    Launch Sites
+                    </div>
+                    <div className="column-md">
+                        <Link to="/launch-sites" className="nav-itemc nav-linkc">
+                            Launch Sites
                 </Link>
-            </div>
-            <div className="column-md">
-                <Link to="/team" className="nav-itemc nav-linkc">
-                    Meet the Team
+                    </div>
+                    <div className="column-md">
+                        <Link to="/team" className="nav-itemc nav-linkc">
+                            Meet the Team
                 </Link>
-            </div>
-            <div className="column">
-                <Link to="/career" className="nav-itemc nav-linkc">
-                    Career
+                    </div>
+                    <div className="column">
+                        <Link to="/career" className="nav-itemc nav-linkc">
+                            Career
                 </Link>
-            </div>
-            <div id="navButtonDiv" className="column-lg">
-                <button  className="nav-itemc nav-buttonc">
-                   <Link to="/book"> BOOK YOUR LAUNCH</Link>
-                </button>
-            </div>
-        </div>
-        <div className="iconc">
-                <div onClick={navBar}>
-                    <i className="fa fa-bars fa-lg"></i>
-                </div>
-            </div>
-    </div>
-    
-       <div className="home__HomeBanner">
-        <div className="home__banner-content">
-            <img src={bannericon} className="home__banner-icon"/>
-            <h1 className="home__banner-first-line">Bringing Space Within</h1>
-            <h1 className="home__banner-second-line">Everyone's Reach</h1>
-            <p className="home__banner-text">
-            Going to space shouldn’t be the hardest part of utilizing, living
-in or working from space. So, why not design & build a product
-that makes the earth-to-space journey as simple, as quick and
-as affordable as possible?
-            </p>
-            <Link className="home__banner-link" to="/products">CHECK OUT AGNIBAAN</Link>
-        </div>
-    </div>
-
-    <div className="home__second-section">
-        <div className="home__second-content">
-            <img src={satelite} className="home__second-section-icon"/>
-            <h3 className="home__second-section-heading">
-            Agnibaan is a highly customizable, 2 stage launch vehicle
-            </h3>
-            <p className="home__second-section-text">
-            Capable of taking upto 100 kgs to orbits around 700 km high,
-Agnibaan can access both low and high inclination orbits and is
-completely mobile - designed for accessing more than 25
-launchports.
-            </p><br></br>
-            <p className="home__second-section-text">
-            Driven by LOX/Kerosene engines in all its stages, Agnibaan is
-configurable by the customer. Yes, Agnibaan doesn’t fly with
-the same number of engines all the time. The mission, the
-satellite and the launchport itself would decide how many
-engines go on the first stage.
-            </p>
-            <p className="home__second-section-text">
-            How is this possible? What about controllability? Assembly?
-            </p>
-            <Link to="/products" className="home__second-section-link">TELL ME MORE</Link>
-        </div>
-        <div className="home__right-image">
-            <img className="home__right-within" src={agnibaan}/>
-        </div>
-    </div>
-
-    <div className="container-fluid home__third-section">
-        <div className="home__third-content">
-        <img src={quote} className="home__quote"></img>
-            <img src={satelite} className="home__third-section-icon"/>
-            <h3 className="home__second-section-heading">
-                Facts & Figures
-            </h3>
-            <p className="home__second-section-text">
-            Agnibaan’s first stage could have 4 / 5 / 6 or 7 engines. An
-optional third “baby” stage might be available for select
-missions.
-            </p>
-        </div>
-        <div className="row">
-            <div className="col-sm">
-                <div className="card">
-                    <img className="home__back-icon" src={cardback} />
-                    <div className="card-body">
-                        <h1 className="card-head"><b>5</b></h1>
-                        <h3 className="card-title"><b>Configurations</b></h3>
-                        <p className="card-text">A first stage with 4 / 5 / 6 or 7 engines. A “baby” stage
-could be made available for select missions.</p>
                     </div>
-                </div>
-            </div>
-            <div className="col-sm">
-                <div className="card">
-                    <img className="home__back-icon" src={cardback} />
-                    <div className="card-body">
-                        <h1 className="card-head"><b>2</b></h1>
-                        <h3 className="card-title"><b>Weeks</b></h3>
-                        <p className="card-text">Payload integration to launch won’t take more than a 
-                        fortnight. Yes, launch-when-you-want</p>
-                    </div>
-                </div>
-            </div>
-            <div className="col-sm">
-                <div className="card">
-                    <img className="home__back-icon" src={cardback} />
-                    <div className="card-body">
-                        <h1 className="card-head"><b>10+</b></h1>
-                        <h3 className="card-title"><b>Launch Parts</b></h3>
-                        <p className="card-text">Access to 10+ launchports today. Access to 25+ coming
-soon. Yes, launch-where-you-want.
-</p>
-                    </div>
-                </div>
-            </div>
-            <div className="col-sm">
-                <div className="card">
-                    <img className="home__back-icon" src={cardback} />
-                    <div className="card-body">
-                        <h1 className="card-head"><b>100 Kg</b></h1>
-                        <h3 className="card-title"><b>Mass</b></h3>
-                        <p className="card-text">Same price per kg for any payload in the 25-100 kg
-range. Yes, pay-for-what-you-launch.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div className="home__fourth-section">
-        <div className="home__fourth-head">
-            <p className="home__midText">Ready To Launch ?</p><br></br><br></br>
-            <p className="home__fourth-section-text">
-            Yes, Agnibaan is configurable! (If you have not picked that up
-already). So, let’s go to space together.
-            </p>
-            <form>
-                <div className="container-fluid custom-form">
-                    <div className="row justify-cotent-center">
-                        <div className="col-sm">
-                        <Dropdown>
-                                <Dropdown.Toggle className="custom-form-control">
-                                    <img src={flag} className="custom"></img>
-                                    <span className="form-control-name">LAUNCH LOCATION</span>
-                                    {/* <i className="arrow fa fa-arrow-down"></i> */}
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu className="dropdown-menu custom-form-options">
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
-                                                    </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-sm">
-                            <Dropdown>
-                                <Dropdown.Toggle className="custom-form-control-half">
-                                    <img src={orbit} className="custom"></img>
-                                    <span className="form-control-name">ORIENTAL INCLINATION</span>
-                                    {/* <i className="arrow fa fa-arrow-down"></i> */}
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu className="dropdown-menu custom-form-options">
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
-                        </div>
-                        <div className="col-sm">
-                        <Dropdown>
-                                <Dropdown.Toggle className="custom-form-control-half">
-                                    <img src={payload} className="custom"></img>
-                                    <span className="form-control-name">PAYLOAD MASS</span>
-                                    {/* <i className="arrow fa fa-arrow-down"></i> */}
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu className="dropdown-menu custom-form-options">
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                <Dropdown.Item className="dropdown-item" href="#">Action</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>                      
-                            </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col">
-                        <button className="custom-button">
-                            <img src={spaceshipWhite}></img>
-                            <span>  BUILD MY VEHICLE</span>
+                    <div id="navButtonDiv" className="column-lg">
+                        <button className="nav-itemc nav-buttonc">
+                            <Link to="/book"> BOOK YOUR LAUNCH</Link>
                         </button>
                     </div>
                 </div>
-            </form>
-        </div>
-        <img src={dots} className="form-back"/>
-    </div>
-
-    <div className="home__fifth-section">
-        <p className="home__fifth-content">
-           I am curious
-        </p>
-        <p className="home__fifth-section-link">
-            <a>If you have a question, please reach out.</a>
-        </p>
-    </div>
-    
-    <div className="footer">
-        <div className="home__first-row"></div>
-        <div className="container-fluid">
-            <div className="row border-row">
-                <div className="col-sm">
-                    <p className="footer-normal">Phone</p>
-                    <p className="footer-bolder">+32 50 31 28 32</p>
-                    <p className="footer-bolder">+91 99625 07524</p>
-                    <p className="footer-bolder">+91 96772 82356</p>
-                    <p className="footer-bolder">+1 551 689 2314</p>
-                </div>
-                <div className="col-sm">
-                    <p className="footer-normal">Address</p>
-                    <p className="footer-bolder">Agnikul Cosmos Private Limited.</p>
-                    <p className="footer-bolder">National Center for Combustion R&D,</p>
-                    <p className="footer-bolder">3rd floor,</p>
-                    <p className="footer-bolder">IIT Madras</p>
-                    <p className="footer-bolder">Chennai 600036</p>
-                </div>
-                <div className="col-sm">
-                    <p className="footer-normal">Address</p>
-                    <p className="footer-bolder">Agnikul Cosmos Launch Vehicles Private Limited</p>
-                    <p className="footer-bolder">Kerala Startup Mission,</p>
-                    <p className="footer-bolder">Technopark, Thejaswini,</p>
-                    <p className="footer-bolder">G3B, Technopark Rd, Karyavattom,</p>
-                    <p className="footer-bolder">Thiruvananthapuram, Kerala 695581</p>
-                </div>
-                <div className="col-sm">
-
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-sm">
-                    <p className="footer-bold">Launch Services</p>
-                    <p className="footer-normal">payloadpeople@gnikul.in</p>
-                </div>
-                <div className="col-sm">
-                    <p className="footer-bold">Careers</p>
-                    <p className="footer-normal">humancapital@agnikul.in</p>
-                </div>
-                <div className="col-sm border-column">
-                    <p className="footer-bold">Media</p>
-                    <p className="footer-normal">News</p>
-                </div>
-                <div className="col-sm">
-                <p className="footer-normal">About</p>
-                <p className="footer-normal">Blog</p>
-                <p className="footer-normal">Videos</p>
-                    <div className="footer-social-logos">
-                        <i className="fa fa-facebook" aria-hidden="true"></i>
-                        <i className="fa fa-google-plus" aria-hidden="true"></i>
-                        <i className="fa fa-twitter" aria-hidden="true"></i>
-                        <i className="fa fa-linkedin" aria-hidden="true"></i>
+                <div className="iconc">
+                    <div onClick={navBar}>
+                        <i className="fa fa-bars fa-lg"></i>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
+            <div className="home__HomeBanner">
+                <div className="home__banner-content">
+                    <img src={bannericon} className="home__banner-icon" />
+                    <h1 className="home__banner-first-line">Bringing Space Within</h1>
+                    <h1 className="home__banner-second-line">Everyone's Reach</h1>
+                    <p className="home__banner-text">
+                        Going to space shouldn’t be the hardest part of utilizing, living
+                        in or working from space. So, why not design & build a product
+                        that makes the earth-to-space journey as simple, as quick and
+                        as affordable as possible?
+            </p>
+                    <Link className="home__banner-link" to="/products">CHECK OUT AGNIBAAN</Link>
+                </div>
+            </div>
+
+
+            <div className="home__second-section">
+                <div className="home__second-content">
+                    <img src={satelite} className="home__second-section-icon" />
+                    <h3 className="home__second-section-heading">
+                        Agnibaan is a highly customizable, 2 stage launch vehicle
+            </h3>
+                    <p className="home__second-section-text">
+                        Capable of taking upto 100 kgs to orbits around 700 km high,
+                        Agnibaan can access both low and high inclination orbits and is
+                        completely mobile - designed for accessing more than 25
+                        launchports.
+            </p><br></br>
+                    <p className="home__second-section-text">
+                        Driven by LOX/Kerosene engines in all its stages, Agnibaan is
+                        configurable by the customer. Yes, Agnibaan doesn’t fly with
+                        the same number of engines all the time. The mission, the
+                        satellite and the launchport itself would decide how many
+                        engines go on the first stage.
+            </p>
+                    <p className="home__second-section-text">
+                        How is this possible? What about controllability? Assembly?
+            </p>
+                    <Link to="/products" className="home__second-section-link">TELL ME MORE</Link>
+                </div>
+                <div className="home__right-image">
+                    <img className="home__right-within" src={agnibaan} />
+                </div>
+            </div>
+
+            <div className="container-fluid home__third-section">
+                <div className="home__third-content">
+                    <img src={quote} className="home__quote"></img>
+                    <img src={satelite} className="home__third-section-icon" />
+                    <h3 className="home__second-section-heading">
+                        Facts & Figures
+            </h3>
+                    <p className="home__second-section-text">
+                        Agnibaan’s first stage could have 4 / 5 / 6 or 7 engines. An
+                        optional third “baby” stage might be available for select
+                        missions.
+            </p>
+                </div>
+                <div className="row">
+                    <div className="col-sm">
+                        <div className="card">
+                            <img className="home__back-icon" src={cardback} />
+                            <div className="card-body">
+                                <h1 className="card-head"><b>5</b></h1>
+                                <h3 className="card-title"><b>Configurations</b></h3>
+                                <p className="card-text">A first stage with 4 / 5 / 6 or 7 engines. A “baby” stage
+could be made available for select missions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm">
+                        <div className="card">
+                            <img className="home__back-icon" src={cardback} />
+                            <div className="card-body">
+                                <h1 className="card-head"><b>2</b></h1>
+                                <h3 className="card-title"><b>Weeks</b></h3>
+                                <p className="card-text">Payload integration to launch won’t take more than a
+                        fortnight. Yes, launch-when-you-want</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm">
+                        <div className="card">
+                            <img className="home__back-icon" src={cardback} />
+                            <div className="card-body">
+                                <h1 className="card-head"><b>10+</b></h1>
+                                <h3 className="card-title"><b>Launch Parts</b></h3>
+                                <p className="card-text">Access to 10+ launchports today. Access to 25+ coming
+                                soon. Yes, launch-where-you-want.
+</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm">
+                        <div className="card">
+                            <img className="home__back-icon" src={cardback} />
+                            <div className="card-body">
+                                <h1 className="card-head"><b>100 Kg</b></h1>
+                                <h3 className="card-title"><b>Mass</b></h3>
+                                <p className="card-text">Same price per kg for any payload in the 25-100 kg 
+                                range. Yes, pay-for-what-you-launch.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="home__fourth-section">
+                <div className="home__fourth-head">
+                    <p className="home__midText">Ready To Launch ?</p><br></br><br></br>
+                    <p className="home__fourth-section-text">
+                        Yes, Agnibaan is configurable! (If you have not picked that up
+                        already). So, let’s go to space together.
+            </p>
+                    <form>
+                        <div className="container-fluid custom-form">
+                            <div className="row justify-content-center">
+                                <div className="col-sm">
+                                    <div className="dropdown">
+                                        <button className="dropdown-toggle custom-form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src={flag} className="custom"></img>
+                                            <span className="form-control-name">LAUNCH LOCATON</span>
+                                            <img className="arrow" src={down}/>
+                                        </button>
+                                        <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton">
+                                            <a className="dropdown-item" href="#">Action</a>
+                                            <a className="dropdown-item" href="#">Another action</a>
+                                            <a className="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-sm">
+                                    <div className="dropdown">
+                                        <button className=" custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src={orbit} className="custom"></img>
+                                            <span className="form-control-name">ORBITAL INCLINATION</span>
+                                            <img className="arrow" src={down}/>
+                                        </button>
+                                        <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton">
+                                            <a className="dropdown-item" href="#">Action</a>
+                                            <a className="dropdown-item" href="#">Another action</a>
+                                            <a className="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div className="col-sm">
+                                        <div className="dropdown">
+                                            <button className="custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src={payload} className="custom"></img>
+                                                <span className="form-control-name">PAYLOAD MASS</span>
+                                                <img className="arrow" src={down}/>
+                                            </button>
+                                            <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton">
+                                                <a className="dropdown-item" href="#">Action</a>
+                                                <a className="dropdown-item" href="#">Another action</a>
+                                                <a className="dropdown-item" href="#">Something else here</a>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div className="row">
+                                <div className="col">
+                                    <button className="custom-button">
+                                        <img src={spaceshipWhite}></img>
+                                        <span>  BUILD MY VEHICLE</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+            </form>
         </div>
+                    <img src={dots} className="form-back" />
+                </div>
+
+                <div className="home__fifth-section">
+                    <p className="home__fifth-content">
+                        I am curious
+        </p>
+                    <p className="home__fifth-section-link">
+                        <a>If you have a question, please reach out.</a>
+                    </p>
+                </div>
+
+                <div className="footer">
+                    <div className="home__first-row"></div>
+                    <div className="container-fluid">
+                        <div className="row border-row">
+                            <div className="col-sm">
+                                <p className="footer-normal">Phone</p>
+                                <p className="footer-bolder">+32 50 31 28 32</p>
+                                <p className="footer-bolder">+91 99625 07524</p>
+                                <p className="footer-bolder">+91 96772 82356</p>
+                                <p className="footer-bolder">+1 551 689 2314</p>
+                            </div>
+                            <div className="col-sm">
+                                <p className="footer-normal">Address</p>
+                                <p className="footer-bolder">Agnikul Cosmos Private Limited.</p>
+                                <p className="footer-bolder">National Center for Combustion R&D,</p>
+                                <p className="footer-bolder">3rd floor,</p>
+                                <p className="footer-bolder">IIT Madras</p>
+                                <p className="footer-bolder">Chennai 600036</p>
+                            </div>
+                            <div className="col-sm">
+                                <p className="footer-normal">Address</p>
+                                <p className="footer-bolder">Agnikul Cosmos Launch Vehicles Private Limited</p>
+                                <p className="footer-bolder">Kerala Startup Mission,</p>
+                                <p className="footer-bolder">Technopark, Thejaswini,</p>
+                                <p className="footer-bolder">G3B, Technopark Rd, Karyavattom,</p>
+                                <p className="footer-bolder">Thiruvananthapuram, Kerala 695581</p>
+                            </div>
+                            <div className="col-sm">
+
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-sm">
+                                <p className="footer-bold">Launch Services</p>
+                                <p className="footer-normal">payloadpeople@gnikul.in</p>
+                            </div>
+                            <div className="col-sm">
+                                <p className="footer-bold">Careers</p>
+                                <p className="footer-normal">humancapital@agnikul.in</p>
+                            </div>
+                            <div className="col-sm border-column">
+                                <p className="footer-bold">Media</p>
+                                <p className="footer-normal">News</p>
+                            </div>
+                            <div className="col-sm">
+                                <p className="footer-normal">About</p>
+                                <p className="footer-normal">Blog</p>
+                                <p className="footer-normal">Videos</p>
+                                <div className="footer-social-logos">
+                                    <i className="fa fa-facebook" aria-hidden="true"></i>
+                                    <i className="fa fa-google-plus" aria-hidden="true"></i>
+                                    <i className="fa fa-twitter" aria-hidden="true"></i>
+                                    <i className="fa fa-linkedin" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
     );
 
 }

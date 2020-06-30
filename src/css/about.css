@@ -254,9 +254,11 @@
   .about__third-section {
     margin-bottom: 0%;
     margin-top: -62px;
-    padding-top: 164px;
+    padding-top: 134px;
     text-align: center;
-    background: linear-gradient(to bottom,rgba(200,255,255,0.4), #ffffff);
+    background-image: url("../images/advisors_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   
@@ -270,9 +272,17 @@
       }
 
       .about__third-section {
-        padding-top: 124px;
+        padding-top: 104px;
+        
       }
     
+  }
+
+  @media screen and (max-width: 576px)
+  {
+      .about__third-section {
+        background-image: url("../images/advisors_background-mobile.png");
+      }
   }
 
 

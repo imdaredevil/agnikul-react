@@ -95,7 +95,7 @@ body{
     margin-left: 1%;
     text-align: center;
     text-decoration: none;
-    font-family: "Poppins Regular";
+    font-family: "Poppins SemiBold";
   font-size: 14px;
   color: #5b5b5b;
   }
@@ -244,11 +244,11 @@ body{
   align-items: center;
   display: inline-block;
   padding: 0.375em 0.75em;
-  background-color: white;
 }
 
 .custom-form {
   width: 55.55%;
+  background-color: white;
 }
 
 form {
@@ -260,28 +260,25 @@ form {
   margin: 2% 2%;
 }
 
-.custom-form-control i.arrow {
-  padding: 2%;
+.custom-form-control img.arrow {
+  margin: 2%;
+  width: 20px;
   float: right;
 }
 
-.custom-form-control i {
-  color: black;
-}
+
 
 .custom-form-control-half img.custom {
   width: 20px;
   margin: 4% 4%;
 }
 
-.custom-form-control-half i.arrow {
-  padding: 4%;
+.custom-form-control-half img.arrow {
+  margin: 4%;
+  width: 20px;
   float: right;
 }
 
-.custom-form-control-half i {
-  color: black;
-}
 
 .custom-form-control input::placeholder, .custom-form-control input {
   text-decoration: none;
@@ -494,12 +491,12 @@ form {
     margin: 0% 0%;
   }
 
-  .custom-form-control-half img.custom {
+  .custom-form-control-half img.custom,.custom-form-control-half img.arrow {
     width: 15px;
-    margin: 2% 2%;
+    margin: 4% 2%;
   }
 
-  .custom-form-control img.custom {
+  .custom-form-control img.custom,.custom-form-control img.arrow {
     width: 15px;
   }
 
@@ -511,14 +508,23 @@ form {
     width: 200px;
   }
 
-  .custom-form-control-half i.arrow {
-    padding: 2% 2%;
-  }
 
   .custom-form-control-half input {
       margin-top: 0.5%;
       padding: 0%;
-  }  
+  } 
+}
+
+@media screen and (max-width : 768px) {
+
+  .custom-form-control-half img.custom,.custom-form-control-half img.arrow {
+    width: 11px;
+  }
+
+  .custom-form-control img.custom,.custom-form-control img.arrow {
+    width: 11px;
+  }
+
 }
 
 .footer{
