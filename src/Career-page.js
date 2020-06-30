@@ -90,6 +90,7 @@ function Career(){
                     </div>
             </form>
             <div className="career__description">
+                <p class="career__job">Associate Fabricator</p>
                 <div className="career__section">
                 <p className="career__head">Eligibility</p>
                 <p className="career__text">
