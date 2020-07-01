@@ -77,9 +77,17 @@ function Book(){
                         <div className="col-sm">
                         <div className="dropdown">
                                         <button className="dropdown-toggle custom-form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src={flag} className="custom"></img>
-                                            <span className="form-control-name" id="location-field">LAUNCH LOCATON</span>
-                                            <img className="arrow" src={down}/>
+                                        <div className="row justify-content-between align-items-center">
+                                                <div className="col-xs">
+                                                <img src={flag} className="custom"></img>
+                                                </div>
+                                                <div className="col">
+                                                <p className="form-control-name" id="location-field">LAUNCH LOCATION</p>
+                                                </div>
+                                                <div className="col-xs">
+                                                <img className="arrow" src={down}/>
+                                                </div>
+                                            </div>
                                         </button>
                                         <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="location">
                                             <p className="dropdown-item">Action</p>
@@ -93,9 +101,17 @@ function Book(){
                         <div className="col-sm">
                         <div className="dropdown">
                                         <button className=" custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src={orbit} className="custom"></img>
-                                            <span className="form-control-name" id="inclination-field">ORBITAL INCLINATION</span>
-                                            <img className="arrow" src={down}/>
+                                        <div className="row justify-content-between align-items-center">
+                                                <div className="col-xs">
+                                                <img src={orbit} className="custom"></img>
+                                                </div>
+                                                <div className="col">
+                                                <p className="form-control-name" id="inclination-field">ORBITAL INCLINATION</p>
+                                                </div>
+                                                <div className="col-xs">
+                                                <img className="arrow" src={down}/>
+                                                </div>
+                                            </div>
                                         </button>
                                         <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="inclination">
                                         <p className="dropdown-item">Action</p>
@@ -107,9 +123,17 @@ function Book(){
                         <div className="col-sm">
                         <div className="dropdown">
                                             <button className="custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <div className="row justify-content-between align-items-center">
+                                                <div className="col-xs">
                                                 <img src={payload} className="custom"></img>
-                                                <span className="form-control-name" id="payload-field">PAYLOAD MASS</span>
+                                                </div>
+                                                <div className="col">
+                                                <p className="form-control-name" id="payload-field">PAYLOAD MASS</p>
+                                                </div>
+                                                <div className="col-xs">
                                                 <img className="arrow" src={down}/>
+                                                </div>
+                                            </div>
                                             </button>
                                             <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="payload">
                                             <p className="dropdown-item">Action</p>
@@ -127,8 +151,14 @@ function Book(){
     <div className="col-sm">
     <div className="dropdown">
         <div className="custom-form-control"> 
-        <img src={person} className="custom"></img>
-            <input placeholder="NAME"/>
+        <div className="row justify-content-between align-items-center">
+                                                <div className="col-xs">
+                                                <img src={person} className="custom"></img>
+                                                </div>
+                                                <div className="col">
+                                                <input className="form-control-name" placeholder="NAME"/>
+                                                </div>
+                                            </div>
         </div>
     </div>
     </div>
@@ -137,8 +167,14 @@ function Book(){
     <div className="col-sm">
     <div className="dropdown">
         <div className="custom-form-control"> 
-        <img src={office} className="custom"></img>
-            <input placeholder="COMPANY / ORGANISATION"/>
+        <div className="row justify-content-between align-items-center">
+                                                <div className="col-xs">
+                                                <img src={office} className="custom"></img>
+                                                </div>
+                                                <div className="col">
+                                                <input className="form-control-name" placeholder="COMPANY"/>
+                                                </div>
+                                            </div>
         </div>
     </div>
     </div>
@@ -147,9 +183,17 @@ function Book(){
     <div className="col-sm">
     <div className="dropdown">
                                         <button className="dropdown-toggle custom-form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src={location} className="custom"></img>
-                                            <span className="form-control-name" id="country-field">COUNTRY OF ORIGIN</span>
-                                            <img className="arrow" src={down}/>
+                                        <div className="row justify-content-between align-items-center">
+                                                <div className="col-xs">
+                                                <img src={location} className="custom"></img>
+                                                </div>
+                                                <div className="col">
+                                                <p className="form-control-name" id="country-field">COUNTRY OF ORIGIN</p>
+                                                </div>
+                                                <div className="col-xs">
+                                                <img className="arrow" src={down}/>
+                                                </div>
+                                            </div>
                                         </button>
                                         <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="country">
                                         <p className="dropdown-item">Action</p>
@@ -163,8 +207,14 @@ function Book(){
     <div className="col-sm">
         <div className="dropdown">
         <div className="custom-form-control" type="button">
-        <img src={mail} className="custom"></img>
-        <input placeholder="EMAIL ADDRESS"/>
+        <div className="row justify-content-between align-items-center">
+                                                <div className="col-xs">
+                                                <img src={mail} className="custom"></img>
+                                                </div>
+                                                <div className="col">
+                                                <input className="form-control-name" placeholder="EMAIL ADDRESS"/>
+                                                </div>
+                                            </div>
         </div>
         </div>
     </div>
@@ -173,8 +223,14 @@ function Book(){
     <div className="col-sm">
         <div className="dropdown">
         <div className="custom-form-control">
-        <img src={phone} className="custom"></img>
-         <input placeholder="PHONE NUMBER"/>
+        <div className="row justify-content-between align-items-center">
+                                                <div className="col-xs">
+                                                <img src={phone} className="custom"></img>
+                                                </div>
+                                                <div className="col">
+                                                <input className="form-control-name" placeholder="PHONE NUMBER"/>
+                                                </div>
+                                            </div>
         </div>
         </div>
     </div>
@@ -183,16 +239,23 @@ function Book(){
     <div className="col-sm">
         <div className="dropdown">
         <div className="custom-form-control">
-        <img src={mountain} className="custom"></img>
-          <input placeholder="ALTITUDE"/>
+        <div className="row justify-content-between align-items-center">
+                                                <div className="col-xs">
+                                                <img src={mountain} className="custom"></img>
+                                                </div>
+                                                <div className="col">
+                                                <input className="form-control-name" placeholder="ALTITUDE"/>
+                                                </div>
+                                            </div>
         </div>
         </div>
     </div>
 </div>
 <div className="custom-form-check-group">
+<label className="custom-form-check-label" htmlFor="tac">
 <input className="custom-form-check" type="checkbox" id="tac"/>
-<label className="custom-form-check-label" htmlFor="tac">Terms and Conditions agreements act as a legal contract between you (the company) who has the website or mobile app and the user who access your website and mobile app.
-
+<span className="custom-form-check-span"></span>
+    Terms and Conditions agreements act as a legal contract between you (the company) who has the website or mobile app and the user who access your website and mobile app.
     Having a Terms and Conditions agreement is completely optional. No laws require you to have one. Not even the super-strict and wide-reaching General Data Protection Regulation (GDPR).
 </label>
 </div>

@@ -187,9 +187,17 @@ could be made available for select missions.</p>
                                 <div className="col-sm">
                                     <div className="dropdown">
                                         <button className="dropdown-toggle custom-form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src={flag} className="custom"></img>
-                                            <span className="form-control-name" id="location-field">LAUNCH LOCATON</span>
-                                            <img className="arrow" src={down}/>
+                                        <div className="row justify-content-between align-items-center">
+                                                <div className="col-xs">
+                                                <img src={flag} className="custom"></img>
+                                                </div>
+                                                <div className="col">
+                                                <p className="form-control-name" id="location-field">LAUNCH LOCATION</p>
+                                                </div>
+                                                <div className="col-xs">
+                                                <img className="arrow" src={down}/>
+                                                </div>
+                                            </div>
                                         </button>
                                         <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="location">
                                         <p className="dropdown-item">Action</p>
@@ -204,9 +212,17 @@ could be made available for select missions.</p>
                                 <div className="col-sm">
                                     <div className="dropdown">
                                         <button className=" custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src={orbit} className="custom"></img>
-                                            <span className="form-control-name" id="inclination-field">ORBITAL INCLINATION</span>
-                                            <img className="arrow" src={down}/>
+                                        <div className="row justify-content-between align-items-center">
+                                                <div className="col-xs">
+                                                <img src={orbit} className="custom"></img>
+                                                </div>
+                                                <div className="col">
+                                                <p className="form-control-name" id="inclination-field">ORBITAL INCLINATION</p>
+                                                </div>
+                                                <div className="col-xs">
+                                                <img className="arrow" src={down}/>
+                                                </div>
+                                            </div>
                                         </button>
                                         <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="inclination"> 
                                         <p className="dropdown-item">Action</p>
@@ -218,9 +234,17 @@ could be made available for select missions.</p>
                                     <div className="col-sm">
                                         <div className="dropdown">
                                             <button className="custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <div className="row justify-content-between align-items-center">
+                                                <div className="col-xs">
                                                 <img src={payload} className="custom"></img>
-                                                <span className="form-control-name" id="payload-field">PAYLOAD MASS</span>
+                                                </div>
+                                                <div className="col">
+                                                <p className="form-control-name" id="payload-field">PAYLOAD MASS</p>
+                                                </div>
+                                                <div className="col-xs">
                                                 <img className="arrow" src={down}/>
+                                                </div>
+                                            </div>
                                             </button>
                                             <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="payload">
                                             <p className="dropdown-item">Action</p>

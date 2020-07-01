@@ -63,10 +63,18 @@ function Career(){
             <div className="row">
                         <div className="col-sm">
                         <div className="dropdown">
-                                            <button className="custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <button className="custom-form-control dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                               <div className="row justify-content-between align-items-center">
+                                                <div className="col-xs">
                                                 <img src={payload} className="custom"></img>
+                                                </div>
+                                                <div className="col">
                                                 <p className="form-control-name" id="crew-field">CREW</p>
+                                                </div>
+                                                <div className="col-xs">
                                                 <img className="arrow" src={down}/>
+                                                </div>
+                                            </div>
                                             </button>
                                             <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="crew">
                                                 <p className="dropdown-item" id="elec">Electrical & Electronics Crew</p>
@@ -79,17 +87,25 @@ function Career(){
                                               </div>
                                         </div>          
                         </div>
+                        </div>
+                        <div className="row">
                         <div className="col-sm">
                         <div className="dropdown">
-                                            <button className="custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <button className="custom-form-control dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <div className="row justify-content-between align-items-center">
+                                                <div className="col-xs">
                                                 <img src={payload} className="custom"></img>
-                                                <span className="form-control-name" id="job-field">JOB</span>
+                                                </div>
+                                                <div className="col">
+                                                <p className="form-control-name" id="job-field">JOB</p>
+                                                </div>
+                                                <div className="col-xs">
                                                 <img className="arrow" src={down}/>
+                                                </div>
+                                            </div>
                                             </button>
                                             <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="job">
-                                                <p className="dropdown-item" href="#">Action</p>
-                                                <p className="dropdown-item" href="#">Another action</p>
-                                                <p className="dropdown-item" href="#">Something else here</p>
+                                                <p className="dropdown-item" href="#">Select a Crew</p>
                                               </div>
                                         </div>                             
                             </div>
@@ -113,6 +129,7 @@ function Career(){
                 </div>
                 <div className="career__section">
                 <p className="career__head">RESPONSIBILITIES</p>
+                <ul>
                 <li className="career__text">
                 Responsible for overseeing the build and
                  inspection process for the structural assembly and integration of the Flight systems
@@ -129,6 +146,7 @@ function Career(){
                 Quickly resolve non-conformances and work with the Quality team 
                 to implement root cause corrective actions.
                 </li>
+                </ul>
                 </div>
                 <div className="career__section">
                 <p className="career__head">
@@ -216,6 +234,7 @@ function Career(){
                 </div>
                 <div className="career__section">
                 <p className="career__head">RESPONSIBILITIES</p>
+                <ul>
                 <li className="career__text">
                 Responsible for overseeing the build and inspection process for the electrical and electronics assembly for the integration of flight systems
                 </li>
@@ -233,6 +252,7 @@ function Career(){
                 Quickly resolve non-conformances and work with the Quality team 
                 to implement root cause corrective actions.
                 </li>
+                </ul>
                 </div>
                 <div className="career__section">
                 <p className="career__head">
@@ -324,6 +344,7 @@ function Career(){
                 </div>
                 <div className="career__section">
                 <p className="career__head">RESPONSIBILITIES</p>
+                <ul>
                 <li className="career__text">
                 Leads/owns the electromagnetic development of custom high-performance electric motors and actuators across PMDC, AC Inductor Motors and/or brushless DC motor.
                 </li>
@@ -352,6 +373,7 @@ function Career(){
                 <li className="career__text">
                 Be able to perform : GD&T, 3D & 2D Drawings, DFMEA, PFMEA, structural & thermal FEA
                 </li>
+                </ul>
                 </div>
                 <div className="career__section">
                     <p className="career__head">
@@ -443,6 +465,7 @@ function Career(){
                 </div>
                 <div className="career__section">
                 <p className="career__head">RESPONSIBILITIES</p>
+                <ul>
                 <li className="career__text">
                 Design, develop and test (not necessarily space hardened) avionics firmware that will support the functions of our launch vehicles and test systems.
                 </li>
@@ -464,6 +487,7 @@ function Career(){
                 <li className="career__text">
                 Define board schematics and know EE fundamentals
                 </li>
+                </ul>
                 </div>
                 <div className="career__section">
                 <p className="career__head">
@@ -578,6 +602,7 @@ function Career(){
                 </div>
                 <div className="career__section">
                 <p className="career__head">RESPONSIBILITIES</p>
+                <ul>
                 <li className="career__text">
                 Responsible for build of initial development hardware, ensuring efficient manufacturability 
                 and modifying design as needed (Can’t “stress” this point enough - pun intended)
@@ -609,6 +634,7 @@ function Career(){
                 <li className="career__text">
                 Manage the transition from development to production for flight quality hardware
                 </li>
+                </ul>
                 </div>
                 <div className="career__section">
                 <p className="career__head">
@@ -716,6 +742,7 @@ function Career(){
                 </div>
                 <div className="career__section">
                 <p className="career__head">RESPONSIBILITIES</p>
+                <ul>
                 <li className="career__text">
                 Optimize trajectories the launch vehicle will have to fly in to get to orbit
                 </li>
@@ -725,6 +752,7 @@ function Career(){
                 <li className="career__text">
                 Work interdisciplinary trades (e.g. with Avionics, GNC, Thermal, and Structures) that result in the most optimal vehicle level configuration;
                 </li>
+                </ul>
                 </div>
                 <div className="career__section">
                 <p className="career__head">
@@ -855,6 +883,7 @@ function Career(){
                 </div>
                 <div className="career__section">
                 <p className="career__head">RESPONSIBILITIES</p>
+                <ul>
                 <li className="career__text">
                 Create the fundamental power electronics architecture and associated software and hardware systems for Agnikul's vehicle
                 </li>
@@ -876,6 +905,7 @@ function Career(){
                 <li className="career__text">
                 Design extremely compact AC-DC converters with a special focus on mechanical design
                 </li>
+                </ul>
                 </div>
                 <div className="career__section">
                 <p className="career__head">
@@ -960,6 +990,7 @@ function Career(){
                 </div>
                 <div className="career__section">
                 <p className="career__head">RESPONSIBILITIES</p>
+                <ul>
                 <li className="career__text">
                 Works on independent sections of controller design and integration process for launch vehicle control systems and related components in the vehicle’s guidance systems 
                  </li>
@@ -1023,6 +1054,7 @@ function Career(){
                         </li>
                     </ul>
                 </li>
+                </ul>
                 </div>
                 <div className="career__section">
                 <p className="career__head">
@@ -1123,12 +1155,14 @@ function Career(){
                 </div>
                 <div className="career__section">
                 <p className="career__head">RESPONSIBILITIES</p>
+                <ul>
                 <li className="career__text">
                 Design, analyze and build flight dynamics models for launch vehicles
                 </li>
                 <li className="career__text">
                 Design high fidelity simulations of hypersonic flight systems, deriving from experience in  flight dynamics, navigation, guidance, and control.
                 </li>
+                </ul>
                 </div>
                 <div className="career__section">
                 <p className="career__head">

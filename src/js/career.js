@@ -127,6 +127,8 @@ function addEvents() {
     var key = $(this).attr("id");
     console.log(this);
     document.getElementById("job-field").innerHTML = this.innerHTML;
+    if(!document.getElementById("job-field").classList.contains("selected"))
+    document.getElementById("job-field").classList.add("selected");
 
     var contents = document.getElementsByClassName("career__description");
     for(var cont in contents)
@@ -209,6 +211,9 @@ $(document).ready( function() {
   $("#crew .dropdown-item").click(function(){
       var key = $(this).attr("id");
       document.getElementById("crew-field").innerHTML = this.innerHTML;
+      if(!document.getElementById("crew-field").classList.contains("selected"))
+    document.getElementById("crew-field").classList.add("selected");
+
       var currCat = jobs[key];
       if(currCat == undefined)
         return;

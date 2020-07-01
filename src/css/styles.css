@@ -222,6 +222,17 @@ body{
 
   }
   
+
+.custom-form-control-half .row {
+  height: 100% !important;
+  margin: 2% 2%;
+}
+
+.custom-form-control .row {
+  margin: 1% 1%;
+}
+
+
   
 .custom-form-control,.custom-form-control-half, .show > .custom-form-control, .show > .custom-form-control-half {
   border-radius: 6px;
@@ -246,6 +257,10 @@ body{
   padding: 0.375em 0.75em;
 }
 
+.custom-form-control-half .selected,.custom-form-control .selected {
+  color: #484848;
+}
+
 .custom-form {
   width: 55.55%;
   background-color: white;
@@ -257,11 +272,9 @@ form {
 
 .custom-form-control img.custom {
   width: 20px;
-  margin: 2% 2%;
 }
 
 .custom-form-control img.arrow {
-  margin: 2%;
   width: 20px;
   float: right;
 }
@@ -270,11 +283,9 @@ form {
 
 .custom-form-control-half img.custom {
   width: 20px;
-  margin: 4% 4%;
 }
 
 .custom-form-control-half img.arrow {
-  margin: 4%;
   width: 20px;
   float: right;
 }
@@ -289,9 +300,16 @@ form {
   font-stretch: normal;
   font-style: normal;
   line-height: 1.7;
+  width: 100%;
   letter-spacing: 1px;
-  width: 90%;
 }
+
+.dropdown p {
+  background: rgba(225,225,225,0) !important; }
+  
+
+
+
 
 .custom-form-control input {
   color: #484848;
@@ -299,6 +317,7 @@ form {
 
 .custom-form-control input::placeholder {
   color: #d2d3d0;
+  white-space: normal !important;
 }
 
 
@@ -327,8 +346,7 @@ form {
   color: #b0b1a8;
   background: none;
   margin-top: 2.4%;
-  width: 90%;
-  float: right;
+  width: 100%;
   text-align: left;
 }
 
@@ -402,7 +420,6 @@ form {
 .custom-form-control .form-control-name {
   padding: 0%;
   margin: 0%;
-  display: inline;
 }
 
 .custom-form-control-half .form-control-name {
@@ -442,19 +459,17 @@ form {
   border-radius: 20px;
 }
 
-
-.custom-form-check {
-  margin-top: 1%;
-}
-
 .custom-form-check-group{
-  display: inline-flex;
   text-align: left;
   width: 100%;
   margin-bottom: 3%;
+  margin-top: -1%;
 }
 
+
 .custom-form-check-label {
+  display: block;
+  position: relative;
   font-family: "Poppins Regular";
   font-size: 16px;
   font-weight: normal;
@@ -463,9 +478,68 @@ form {
   line-height: 1.6;
   letter-spacing: normal;
   color: rgba(33, 56, 66, 0.6);
-  margin-left: 3%;
-
+  padding-left: 25px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
+.custom-form-check {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.custom-form-check-span {
+  position: absolute;
+  top: 3.5%;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #979797;
+  border-radius: 3px;
+}
+
+.custom-form-check-label:hover input ~ .custom-form-check-span {
+  background-color: #fff;
+}
+
+.custom-form-check-label input:checked ~ .custom-form-check-span {
+  background-color: #4d8c52;
+}
+
+.custom-form-check-span:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-form-check-label input:checked ~ .custom-form-check-span:after {
+  display: block;
+}
+
+ .custom-form-check-label .custom-form-check-span:after {
+  left: 4.4px;
+  top: 2px;
+  width: 5px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2.4px 2.4px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+
+
+
 
 
 @media screen and (max-width : 768px) {
@@ -481,13 +555,13 @@ form {
     font-size : 12px;
   }
 
-  .custom-form-control input,
+  /* .custom-form-control input,
   .custom-form-control input::placeholder,
   .custom-form-control-half input,
   .custom-form-control-half input::placeholder
   {
       width: auto;
-  }
+  } */
 
   .custom-form {
     width: 70%;
@@ -506,7 +580,6 @@ form {
 
   .custom-form-control-half img.custom,.custom-form-control-half img.arrow {
     width: 15px;
-    margin: 4% 2%;
   }
 
   .custom-form-control img.custom,.custom-form-control img.arrow {
@@ -522,10 +595,7 @@ form {
   }
 
 
-  .custom-form-control-half input {
-      margin-top: 0.5%;
-      padding: 0%;
-  } 
+  
 }
 
 @media screen and (max-width : 768px) {

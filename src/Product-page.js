@@ -82,6 +82,12 @@ versions. “Agnibaan” is a Sanksrit word that translates to mean
             <img src={rocket2} className="rocket-2"/>
             <img src={rocket3} className="rocket-3"/>
         </div>
+
+        <div className="rocket-horizontal-2">
+            <img src={rocket1} className="rocket-1"/>
+            <img src={rocket2} className="rocket-2"/>
+            <img src={rocket3} className="rocket-3"/>
+        </div>
         
             <img src={truck} className="truck"/>
             <img src={stand} className="stand"/>

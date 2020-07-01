@@ -57,16 +57,45 @@ function News(){
                 </div>
             </div>
     </div>
-         
+<div className="news__titleDiv">
+<p className="news__heading">News & Updates</p>
+<p className="news__text">
+Our executive team draws on decades of experience 
+across multiple successful technology startups and helps guide the company towards its strategic goals.
+
+</p>
+</div>
   <div className="news__overall-div">
     <div className="news__location-swiper swiper-container">
         <div className="swiper-wrapper">
             <div className="news__location__swiper-slide swiper-slide">
                 <img className="news__location___slide-image" src={newsHolder}/>
                 <div id="chennai" className="news__location__slide-content">
-                <p className="news__location__slide-title">Microsoft is closing all of its stores
+                <p className="news__location__slide-title">Starlink to provide high-speed, low-latency
 </p>
-                <p className="news__location__slide-paper">Indian Express</p>
+                <p className="news__location__slide-text">The first unit is flying on the next launch, and by flight 9 
+                in June all future Starlink satellites will have sun visors.</p>
+                <a className="news__location__slide-link">READ ARTICLE</a>
+            </div>
+            </div>
+            <div className="news__location__swiper-slide swiper-slide">
+                <img className="news__location___slide-image" src={newsHolder}/>
+                <div id="chennai" className="news__location__slide-content">
+                <p className="news__location__slide-title">Making the satellites generally invisible
+</p>
+<p className="news__location__slide-text">The first unit is flying on the next launch, and by flight 9 
+                in June all future Starlink satellites will have sun visors.</p>
+                <a className="news__location__slide-link">READ ARTICLE</a>
+            </div>
+            </div>
+            <div className="news__location__swiper-slide swiper-slide">
+                <img className="news__location___slide-image" src={newsHolder}/>
+                <div id="chennai" className="news__location__slide-content">
+                <p className="news__location__slide-title">Minimizing Starlink's impact on astronomy
+</p>
+<p className="news__location__slide-text">The first unit is flying on the next launch, and by flight 9 
+                in June all future Starlink satellites will have sun visors.</p>
+                <a className="news__location__slide-link">READ ARTICLE</a>
             </div>
             </div>
             <div className="news__location__swiper-slide swiper-slide">
@@ -74,7 +103,9 @@ function News(){
                 <div id="chennai" className="news__location__slide-content">
                 <p className="news__location__slide-title">Microsoft is closing all of its stores
 </p>
-                <p className="news__location__slide-paper">NewYork Times</p>
+<p className="news__location__slide-text">The first unit is flying on the next launch, and by flight 9 
+                in June all future Starlink satellites will have sun visors.</p>
+                <a className="news__location__slide-link">READ ARTICLE</a>
             </div>
             </div>
             <div className="news__location__swiper-slide swiper-slide">
@@ -82,23 +113,9 @@ function News(){
                 <div id="chennai" className="news__location__slide-content">
                 <p className="news__location__slide-title">Microsoft is closing all of its stores
 </p>
-                <p className="news__location__slide-paper">Times of India</p>
-            </div>
-            </div>
-            <div className="news__location__swiper-slide swiper-slide">
-                <img className="news__location___slide-image" src={newsHolder}/>
-                <div id="chennai" className="news__location__slide-content">
-                <p className="news__location__slide-title">Microsoft is closing all of its stores
-</p>
-                <p className="news__location__slide-paper">The Hindu</p>
-            </div>
-            </div>
-            <div className="news__location__swiper-slide swiper-slide">
-                <img className="news__location___slide-image" src={newsHolder}/>
-                <div id="chennai" className="news__location__slide-content">
-                <p className="news__location__slide-title">Microsoft is closing all of its stores
-</p>
-                <p className="news__location__slide-paper">The News Minute</p>
+<p className="news__location__slide-text">The first unit is flying on the next launch, and by flight 9 
+                in June all future Starlink satellites will have sun visors.</p>
+                <a className="news__location__slide-link">READ ARTICLE</a>
             </div>
             </div>
         </div>

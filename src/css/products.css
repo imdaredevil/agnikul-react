@@ -68,10 +68,20 @@ body.products .body {
     top: 40%;
     left: 50%;
     display: inline-flex;
-    transform: translateX(-50%);
-    transform-origin: 100% 100%;
+    transform-origin: 0% 0%;
     margin-bottom: 2%;
     width: 75.76%;
+    z-index: -100000;
+}
+
+.rocket-horizontal-2 {
+    left: 66%;
+    top: 70.4%;
+    display: inline-flex;
+    transform-origin: 103% 112%;
+    margin-bottom: 2%;
+    width: 25%;
+    z-index: -100000;
 }
 
 
@@ -142,11 +152,12 @@ body.products .body {
 }
 
 .stand {
-    width: 30%;
+    width: 27%;
     transform-origin: 91% 90%;
     position: absolute;
     left: 80%;
     top: 59%;
+    z-index: -1000;
 }
 
 
@@ -397,7 +408,7 @@ body.products .body {
     
 
     .second-scroll-1,.second-scroll-2, .fourth-scroll-1,.fourth-scroll-2{
-        top: 10%;
+        top: 7%;
     }
 
     .second-scroll-3{
@@ -424,6 +435,18 @@ body.products .body {
 
 
 @media screen and (max-width : 576px){
+
+    .rocket-horizontal-2 {      
+    top: 79.4%;
+    }
+    .spec-name {
+        font-size : 10px;
+    }
+
+    .spec-value {
+        font-size: 12px;
+    }
+
     .fifth-scroll-2,.second-scroll-2 {
         word-wrap: break-word;
         width: 40%;
@@ -449,7 +472,7 @@ body.products .body {
     }
 
     .first-scroll-content{
-        padding:2.61% 5.82% 0% 5.82%;
+        padding:0% 5.82% 0% 5.82%;
     }
 
     .first-scroll-heading {
@@ -480,8 +503,51 @@ body.products .body {
         left: 40%;
     }
 
+    .spec-value {
+        margin-top: 1%;
+    }
+
+    .spec-name{
+        margin-bottom: 0%;
+    }
+
+    .first-scroll-specs {
+        top: 60%;
+    }
 
 
+}
+
+
+@media screen and (max-width: 320px) {
+    .number {
+        font-size: 12px;
+    }
+
+    .content {
+        font-size: 10px;
+    }
+
+    .heading,.text {
+        font-size: 8px;
+    }
+
+    .spec-name {
+        font-size : 10px;
+    }
+
+    .spec-value {
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .third-scroll-3 {
+        width: 30%;
+    }
+
+
+
+   
 }
 
 .third-image-1, .third-image-2, .fourth-image {
