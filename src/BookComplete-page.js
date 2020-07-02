@@ -21,6 +21,7 @@ function BookComplete(){
         <p className="middle-text">We have received your request. Terms and Conditions agreements act as a legal contract between you 
             (the company) who has t. Our dedicateed team will soon be touch with you.</p>
         <button className="middle-button">GO BACK TO PRODUCTS</button>
+
     </div>
    
         </div>
