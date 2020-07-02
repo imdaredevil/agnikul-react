@@ -5,6 +5,7 @@ import $ from 'jquery';
 export default function Init() {
     $(document).ready(function(){
         $("body").removeClass("products");
+    $(".first-row").removeClass("home__first-row");
 
         $("#location .dropdown-item").click(function() {
             document.getElementById("location-field").innerHTML = this.innerHTML;

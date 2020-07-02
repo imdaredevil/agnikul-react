@@ -26,6 +26,8 @@ function loop() {
 $(document).ready( function() {
 
   $("body").removeClass("products");
+  
+  $(".first-row").removeClass("home__first-row");
   loop();
   // $(".body").scroll(function(){
   //     var locSlider = document.getElementsByClassName("launch__location-swiper")[0];

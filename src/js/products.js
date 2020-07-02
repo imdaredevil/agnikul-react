@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import hydraulicM from "../images/hydraulicM.png";
 
 
 export default function Init() {    
@@ -417,6 +418,43 @@ var transitions = [
         percentEnd: 0.975
     },
     {
+        selector: ".hydraulic",
+        percentStart: 0.855,
+        percentBefore: -1,
+        percentAfter: 1.1,
+        percentEnd: 0.855,
+
+        before: [
+            ["opacity",0]
+        ],
+        after: [
+            ["opacity",1]
+        ],
+        on: [
+            ["opacity",{
+                start: 0,
+                end: 1
+            }]  
+        ]
+    },
+    {
+        selector: ".hydraulic",
+        before: [
+            ["bezier",7.7,4.1,0]
+        ],
+        on: [
+            ["bezier",7.7,4.1,{start: 0,end: 90}]
+        // ["width",{start: 3.3,end: 8.7}],
+        ],
+        after: [
+            ["bezier",7.7,4.1,90]
+        ],
+        percentStart: 0.855,
+        percentBefore: 0.805,
+        percentAfter: 1.1,
+        percentEnd: 0.975
+    },
+    {
         selector: ".stand",
         before:  [
             ["transform",[
@@ -676,6 +714,19 @@ function resize() {
     _scrollHeight = _containerHeight - _height;
 }
 
+function pos() {
+   // console.log("resized");
+    var truck = document.getElementsByClassName("truck")[0];
+    var styles = window.getComputedStyle(truck);
+    var t = styles.top.split("p")[0];
+    var h = styles.height.split("p")[0];
+    t = Number.parseFloat(t);
+    h = Number.parseFloat(h);
+    //console.log(0.1*styles.height);
+    $(".hydraulic").css("top",(t + 0.6*h) + "px");
+    $(".hydraulicM").css("top",(t + 0.6*h) + "px");
+}
+
 function constructTransform(transforms) {
     var result = "";
     for (var transform in transforms) {
@@ -717,6 +768,25 @@ function constructTransformInProgress(transforms, effectScrollPercent) {
         return result;
 }
 
+function calculateBezierWidth(z,x,theta){
+
+    theta = theta*(Math.PI / 180);
+    var y = z*z + x*x - 2*x*z*Math.cos(theta);
+    return Math.sqrt(y);
+}
+
+function calcualteBezierAngle(y,theta,z,x)
+{
+    theta = theta*(Math.PI/180);
+    theta = Math.sin(theta);
+    var angle = (theta*z)/y;
+    angle = Math.asin(angle);
+    angle = angle*(180/Math.PI);
+    if(x*x + y*y > z*z)
+        angle = 180 - angle;
+    return angle;
+}
+
 function loop() {
 
    var _scrollOffset = window.pageYOffset || window.scrollTop;
@@ -729,7 +799,13 @@ function loop() {
                 effect = transition.before[effect];
                 if (effect[0] == "transform")
                     $(transition.selector).css(effect[0], constructTransform(effect[1]));
-                else if(effect[0] == "left" || effect[0] == "top")
+                    else if(effect[0] == "bezier")
+                    {
+                        var y = calculateBezierWidth(effect[1],effect[2],effect[3]);
+                        $(transition.selector).css("width",y + "%");
+                        $(transition.selector).css("transform","rotate(" + calcualteBezierAngle(y,effect[3],effect[1],effect[2]) + "deg)");
+                    }
+                else if(effect[0] == "left" || effect[0] == "top" || effect[0] == "width")
                 $(transition.selector).css(effect[0], effect[1] + "%")
                 else 
                     $(transition.selector).css(effect[0], effect[1])
@@ -740,7 +816,13 @@ function loop() {
                 effect = transition.after[effect];
                 if (effect[0] == "transform")
                     $(transition.selector).css(effect[0], constructTransform(effect[1]));
-                else if(effect[0] == "left" || effect[0] == "top")
+                else if(effect[0] == "bezier")
+                {
+                    var y = calculateBezierWidth(effect[1],effect[2],effect[3]);
+                    $(transition.selector).css("width",y + "%");
+                    $(transition.selector).css("transform","rotate(" + calcualteBezierAngle(y,effect[3],effect[1],effect[2]) + "deg)");
+                }
+                else if(effect[0] == "left" || effect[0] == "top" || effect[0] == "width")
                     $(transition.selector).css(effect[0], effect[1] + "%")
                 else
                     $(transition.selector).css(effect[0], effect[1])
@@ -754,17 +836,25 @@ function loop() {
                 var value;
                 if (effect[0] == "transform")
                     value = constructTransformInProgress(effect[1], effectScrollPercent);
+                else if(effect[0] == "bezier")
+                value = effect[3].start + (effect[3].end - effect[3].start) * effectScrollPercent;
                 else
                     value = effect[1].start + (effect[1].end - effect[1].start) * effectScrollPercent;
-                if(effect[0] == "left" || effect[0] == "top")
+                if(effect[0] == "left" || effect[0] == "top" || effect[0] == "width")
                     $(transition.selector).css(effect[0], value + "%")
+                    else if(effect[0] == "bezier")
+                    {
+                        var y = calculateBezierWidth(effect[1],effect[2],value);
+                        $(transition.selector).css("width",y + "%");
+                        $(transition.selector).css("transform","rotate(" + calcualteBezierAngle(y,value,effect[1],effect[2]) + "deg)");
+                    }
                 else
                     $(transition.selector).css(effect[0], value);
             }
         }
 
     }
-
+    pos();
     requestAnimationFrame(loop);
 }
 
@@ -773,6 +863,8 @@ function handleMobile() {
     for(var transition in transitions)
     {
         transition = transitions[transition];
+        if(transition.selector == ".hydraulic")
+            transition.selector = ".hydraulicM";
         for(var record in transition.before)
         {
             record = transition.before[record];
@@ -813,6 +905,7 @@ $(document).ready(function () {
 
     $(window).on('resize', resize());
     loop();
+    resize();
 
 });
 

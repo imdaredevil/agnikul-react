@@ -160,6 +160,34 @@ body.products .body {
     z-index: -1000;
 }
 
+.hydraulic {
+    width: 3.3%;
+    height: 1.5%;
+    transform-origin: 95% 50%;
+    position: absolute;
+    right: 11.9%;
+    top: 77.2%;
+    transform: rotate(1deg);
+    object-fit: cover;
+    object-position: right;
+    z-index: -10000;
+    opacity: 0;
+}
+
+.hydraulicM {
+    width: 3.3%;
+    height: 1.5%;
+    transform-origin: 95% 50%;
+    position: absolute;
+    right: 11.9%;
+    top: 77.2%;
+    transform: rotate(1deg);
+    object-fit: cover;
+    object-position: right;
+    z-index: -10000;
+    opacity: 0;
+}
+
 
 .second-scroll {
     opacity: 0;
@@ -435,6 +463,14 @@ body.products .body {
 
 
 @media screen and (max-width : 576px){
+
+    .hydraulic {
+        top: 86.2%;
+    }
+
+    .hydraulicM {
+        height: 0.5%;
+    }
 
     .rocket-horizontal-2 {      
     top: 79.4%;

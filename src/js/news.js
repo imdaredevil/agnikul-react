@@ -8,6 +8,7 @@ var newsSwiper;
 $(document).ready( function() {
 
   $("body").removeClass("products");
+  $(".first-row").removeClass("home__first-row");
 
   newsSwiper = new Swiper(
               ".news__location-swiper",

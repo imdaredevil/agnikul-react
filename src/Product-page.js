@@ -9,12 +9,18 @@ import rocket1 from "./images/rocket-1.png";
 import rocket2 from "./images/rocket-2.png";
 import rocket3 from "./images/rocket-3.png";
 import homepage from "./images/homepage.jpeg";
+import hydraulic from "./images/hydraulic2.png";
+import hydraulicM from "./images/hydraulicM.png";
 
 import { Link } from 'react-router-dom';
+
+
 
 function Product(){
 
     Init();
+
+    
 
     return (
         <div className="body">
@@ -91,6 +97,9 @@ versions. “Agnibaan” is a Sanksrit word that translates to mean
         
             <img src={truck} className="truck"/>
             <img src={stand} className="stand"/>
+            <img src={hydraulic} className="hydraulic"/>
+            
+            <img src={hydraulicM} className="hydraulicM"/>
 
         <div className="first-scroll-specs">
             <div className="row justify-content-around">

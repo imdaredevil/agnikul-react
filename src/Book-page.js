@@ -401,62 +401,48 @@ have agreed with the new terms of this Agreement.
         </div>
     </div>
 </div>
-    <div className="footer">
-        <div className="first-row"></div>
-        <div className="container-fluid">
-            <div className="row border-row">
-                <div className="col-sm">
-                    <p className="footer-normal">Phone</p>
-                    <p className="footer-bolder">+32 50 31 28 32</p>
-                </div>
-                <div className="col-sm">
-                    <p className="footer-normal">Address</p>
-                    <p className="footer-bolder">491 Merlin Crest Suite 963</p>
-                </div>
-                <div className="col-sm">
-
-                </div>
-                <div className="col-sm">
-
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-sm">
-                    <p className="footer-bold">Services</p>
-                    <p className="footer-normal">Strategy Design</p>
-                    <p className="footer-normal">Product Design</p>
-                    <p className="footer-normal">Content Strategy</p>
-                    <p className="footer-normal">Brand Strategy</p>
-                    <p className="footer-normal">Development</p>
-                </div>
-                <div className="col-sm">
-                    <p className="footer-bold">Help and Advice</p>
-                    <p className="footer-normal">How it Works</p>
-                    <p className="footer-normal">Contact Support</p>
-                    <p className="footer-normal">Privacy Policy</p>
-                    <p className="footer-normal">FAQ</p>
-                </div>
-                <div className="col-sm border-column">
-                    <p className="footer-bold">Company</p>
-                    <p className="footer-normal">About</p>
-                    <p className="footer-normal">Blog</p>
-                    <p className="footer-normal">Contact</p>
-                    <p className="footer-normal">Jobs</p>
-                </div>
-                <div className="col-sm">
-                    <p className="footer-bold">Get in Touch</p>
-                    <p className="footer-normal">Feel free to get in touch with us via email</p>
-                    <p className="footer-email">info.agnikul@gmail.com</p>
-                    <div className="footer-social-logos">
-                        <i className="fa fa-facebook" aria-hidden="true"></i>
-                        <i className="fa fa-google-plus" aria-hidden="true"></i>
-                        <i className="fa fa-twitter" aria-hidden="true"></i>
-                        <i className="fa fa-linkedin" aria-hidden="true"></i>
+<div className="footer">
+                    <div className="first-row"></div>
+                    <div className="container-fluid">
+                        <div className="row border-row">
+                            <div className="col-sm">
+                                <p className="footer-normal phone">Phone</p>
+                                <p className="footer-bolder">+32 50 31 28 32, +91 99625 075240, <br></br> +91 96772 82356, +1 551 689 2314</p>
+                            </div>
+                            <div className="col-sm">
+                                <p className="footer-normal">Launch Services</p>
+                                <p className="footer-bold">payloadpeople@gnikul.in</p>
+                            </div>
+                            <div className="col-sm">
+                                <p className="footer-normal">Careers</p>
+                                <p className="footer-bold">humancapital@agnikul.in</p>
+                            </div>
+                          
+                        </div>
+                        <div className="row">
+                        <div className="col-sm">
+                                <p className="footer-normal">Agnikul Cosmos Private Limited.</p>
+                                <p className="footer-bolder">National Center for Combustion R&D, <br></br>3rd floor, IIT Madras, <br></br> Chennai 600036</p>
+                            </div>
+                            <div className="col-sm border-column">
+                                <p className="footer-normal">Agnikul Cosmos Launch Vehicles Private Limited</p>
+                                <p className="footer-bolder">Kerala Startup Mission, Technopark, Thejaswini, G3B, Technopark Rd, Karyavattom, Thiruvananthapuram, Kerala 695581</p>
+                            </div>
+                            <div className="col-sm">
+                            <p className="footer-bold">Blog</p>
+                                <p className="footer-bold"><Link to="/news" className="footer-bold">News</Link></p>
+                                <p className="footer-bold">Videos</p>
+                                <p className="footer-bold">Privacy Policy</p>
+                                <div className="footer-social-logos">
+                                    <i className="fa fa-facebook" aria-hidden="true"></i>
+                                    <i className="fa fa-google-plus" aria-hidden="true"></i>
+                                    <i className="fa fa-twitter" aria-hidden="true"></i>
+                                    <i className="fa fa-linkedin" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
 
         </div>
     );

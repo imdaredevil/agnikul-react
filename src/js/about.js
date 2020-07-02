@@ -7,6 +7,7 @@ export default function Init() {
 var mySwiper,advSwiper,partSwiper,busiSwiper;
 $(document).ready(function () {
     $("body").removeClass("products");
+    $(".first-row").removeClass("home__first-row");
     //initialize swiper when document ready
     mySwiper = new Swiper ('.timeline-swiper', {
         direction: 'vertical',

@@ -1,5 +1,12 @@
+.tempBanner {
+    width: 100%;
+    height: 76.4%;
+}
+
+
+
 .team__TeamBanner {
-    background: url("../images/teampage.jpg");
+    background: url("../images/Batch\ 1.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;

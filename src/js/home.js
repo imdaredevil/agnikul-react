@@ -28,7 +28,7 @@ function getTransform(){
 function moveUp() {
 
     var curr = getTransform();
-    if(curr > -62)
+    if(curr > -65)
     {
         curr -= diff;
         setTransform(curr);
@@ -54,6 +54,7 @@ export default function ScrollHover(){
     $(document).ready(function(){
         
     $("body").removeClass("products");
+    $(".first-row").addClass("home__first-row");
 
     $("#location .dropdown-item").click(function() {
         document.getElementById("location-field").innerHTML = this.innerHTML;

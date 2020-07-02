@@ -125,7 +125,6 @@ var jobs = {
 function addEvents() {
   $("#job .dropdown-item").click(function(){
     var key = $(this).attr("id");
-    console.log(this);
     document.getElementById("job-field").innerHTML = this.innerHTML;
     if(!document.getElementById("job-field").classList.contains("selected"))
     document.getElementById("job-field").classList.add("selected");
@@ -151,6 +150,7 @@ function addEvents() {
 $(document).ready( function() {
 
   $("body").removeClass("products");
+  $(".first-row").removeClass("home__first-row");
 
 //   careerSwiper = new Swiper(".career__location-swiper",{
 //         direction: "vertical",
@@ -211,13 +211,25 @@ $(document).ready( function() {
   $("#crew .dropdown-item").click(function(){
       var key = $(this).attr("id");
       document.getElementById("crew-field").innerHTML = this.innerHTML;
+      document.getElementById("job-field").innerHTML = "JOB";
+      var contents = document.getElementsByClassName("career__description");
+      for(var cont in contents)
+      {
+          cont = contents[cont];
+          if(cont.classList!=undefined && cont.classList.contains("visible"))
+            cont.classList.remove("visible");
+      }
+  
+      var content = document.getElementById("blank");
+      content.classList.add("visible");  
+
       if(!document.getElementById("crew-field").classList.contains("selected"))
     document.getElementById("crew-field").classList.add("selected");
 
       var currCat = jobs[key];
       if(currCat == undefined)
         return;
-      var content = "";
+      content = "";
       for(var job in currCat)
       {
           job = currCat[job];

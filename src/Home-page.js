@@ -278,53 +278,37 @@ could be made available for select missions.</p>
                 </div>
 
                 <div className="footer">
-                    <div className="home__first-row"></div>
+                    <div className="first-row"></div>
                     <div className="container-fluid">
                         <div className="row border-row">
                             <div className="col-sm">
-                                <p className="footer-normal">Phone</p>
-                                <p className="footer-bolder">+32 50 31 28 32</p>
-                                <p className="footer-bolder">+91 99625 07524</p>
-                                <p className="footer-bolder">+91 96772 82356</p>
-                                <p className="footer-bolder">+1 551 689 2314</p>
+                                <p className="footer-normal phone">Phone</p>
+                                <p className="footer-bolder">+32 50 31 28 32, +91 99625 075240, <br></br> +91 96772 82356, +1 551 689 2314</p>
                             </div>
                             <div className="col-sm">
-                                <p className="footer-normal">Address</p>
-                                <p className="footer-bolder">Agnikul Cosmos Private Limited.</p>
-                                <p className="footer-bolder">National Center for Combustion R&D,</p>
-                                <p className="footer-bolder">3rd floor,</p>
-                                <p className="footer-bolder">IIT Madras</p>
-                                <p className="footer-bolder">Chennai 600036</p>
+                                <p className="footer-normal">Launch Services</p>
+                                <p className="footer-bold">payloadpeople@gnikul.in</p>
                             </div>
                             <div className="col-sm">
-                                <p className="footer-normal">Address</p>
-                                <p className="footer-bolder">Agnikul Cosmos Launch Vehicles Private Limited</p>
-                                <p className="footer-bolder">Kerala Startup Mission,</p>
-                                <p className="footer-bolder">Technopark, Thejaswini,</p>
-                                <p className="footer-bolder">G3B, Technopark Rd, Karyavattom,</p>
-                                <p className="footer-bolder">Thiruvananthapuram, Kerala 695581</p>
+                                <p className="footer-normal">Careers</p>
+                                <p className="footer-bold">humancapital@agnikul.in</p>
                             </div>
-                            <div className="col-sm">
-
-                            </div>
+                          
                         </div>
                         <div className="row">
-                            <div className="col-sm">
-                                <p className="footer-bold">Launch Services</p>
-                                <p className="footer-normal">payloadpeople@gnikul.in</p>
-                            </div>
-                            <div className="col-sm">
-                                <p className="footer-bold">Careers</p>
-                                <p className="footer-normal">humancapital@agnikul.in</p>
+                        <div className="col-sm">
+                                <p className="footer-normal">Agnikul Cosmos Private Limited.</p>
+                                <p className="footer-bolder">National Center for Combustion R&D, <br></br>3rd floor, IIT Madras, <br></br> Chennai 600036</p>
                             </div>
                             <div className="col-sm border-column">
-                                <p className="footer-bold">Media</p>
-                                <p className="footer-normal">News</p>
+                                <p className="footer-normal">Agnikul Cosmos Launch Vehicles Private Limited</p>
+                                <p className="footer-bolder">Kerala Startup Mission, Technopark, Thejaswini, G3B, Technopark Rd, Karyavattom, Thiruvananthapuram, Kerala 695581</p>
                             </div>
                             <div className="col-sm">
-                                <p className="footer-normal">About</p>
-                                <p className="footer-normal">Blog</p>
-                                <p className="footer-normal">Videos</p>
+                            <p className="footer-bold">Blog</p>
+                                <p className="footer-bold"><Link to="/news" className="footer-bold">News</Link></p>
+                                <p className="footer-bold">Videos</p>
+                                <p className="footer-bold">Privacy Policy</p>
                                 <div className="footer-social-logos">
                                     <i className="fa fa-facebook" aria-hidden="true"></i>
                                     <i className="fa fa-google-plus" aria-hidden="true"></i>
