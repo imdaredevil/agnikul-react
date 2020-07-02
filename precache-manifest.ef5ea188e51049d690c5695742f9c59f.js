@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8c8e4cda4365148afd70bfe60511bf1a",
+    "revision": "14ae30a1b046452a45d38fc900220aea",
     "url": "/agnikul-react/index.html"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/css/3.58940346.chunk.css"
   },
   {
-    "revision": "4ff7158eca5e33de3be0",
-    "url": "/agnikul-react/static/css/4.5043e8c7.chunk.css"
+    "revision": "94535adbba22c70ab0ce",
+    "url": "/agnikul-react/static/css/4.c24b06de.chunk.css"
   },
   {
     "revision": "af064bbbb1d323e29b89",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/css/9.6b7b64b3.chunk.css"
   },
   {
-    "revision": "e0dd5550e302437b9be1",
-    "url": "/agnikul-react/static/css/main.7f4da9cb.chunk.css"
+    "revision": "f8110ef8cf2e1a41d7b1",
+    "url": "/agnikul-react/static/css/main.ebbd3dfc.chunk.css"
   },
   {
     "revision": "0c3c6241fa139f90f306",
@@ -72,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/3.8c66661f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4ff7158eca5e33de3be0",
-    "url": "/agnikul-react/static/js/4.4ca0d44c.chunk.js"
+    "revision": "94535adbba22c70ab0ce",
+    "url": "/agnikul-react/static/js/4.aa38e6b7.chunk.js"
   },
   {
     "revision": "af064bbbb1d323e29b89",
@@ -96,12 +96,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/9.c2a97770.chunk.js"
   },
   {
-    "revision": "e0dd5550e302437b9be1",
+    "revision": "f8110ef8cf2e1a41d7b1",
     "url": "/agnikul-react/static/js/main.846b3acc.chunk.js"
   },
   {
-    "revision": "185b3fe04dc791f51fd9",
-    "url": "/agnikul-react/static/js/runtime-main.1d9e20af.js"
+    "revision": "44bc6b45ba26338efacf",
+    "url": "/agnikul-react/static/js/runtime-main.474d4d05.js"
   },
   {
     "revision": "9c04694488e555c0cdf3b3008d5a71c6",
