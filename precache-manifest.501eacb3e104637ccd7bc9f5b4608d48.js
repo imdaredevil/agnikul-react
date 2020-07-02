@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6fbb9e360f3572b9a78eec7130589f06",
+    "revision": "1c4003a9cf55ff167f22ccd3e76fde48",
     "url": "/agnikul-react/index.html"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/css/3.58940346.chunk.css"
   },
   {
-    "revision": "33c12f18df07d7ad9a0d",
-    "url": "/agnikul-react/static/css/4.fad51df6.chunk.css"
+    "revision": "5d89e2a1237ca1b41f27",
+    "url": "/agnikul-react/static/css/4.985ddf4a.chunk.css"
   },
   {
     "revision": "bb5c816ccc92be17c77e",
@@ -36,7 +36,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/css/7.83d426cd.chunk.css"
   },
   {
-    "revision": "f3e2e1a168611ced138e",
+    "revision": "c0704e5fdbab8ae735cd",
     "url": "/agnikul-react/static/css/8.f84af7fe.chunk.css"
   },
   {
@@ -72,7 +72,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/3.8c66661f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "33c12f18df07d7ad9a0d",
+    "revision": "5d89e2a1237ca1b41f27",
     "url": "/agnikul-react/static/js/4.51df093c.chunk.js"
   },
   {
@@ -88,8 +88,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/7.af0c0db5.chunk.js"
   },
   {
-    "revision": "f3e2e1a168611ced138e",
-    "url": "/agnikul-react/static/js/8.d9672e5f.chunk.js"
+    "revision": "c0704e5fdbab8ae735cd",
+    "url": "/agnikul-react/static/js/8.8ba0b5f2.chunk.js"
   },
   {
     "revision": "20f31d933d7ac4749ac8",
@@ -100,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/main.5b892ea1.chunk.js"
   },
   {
-    "revision": "1d2f8bffa01b45223d2f",
-    "url": "/agnikul-react/static/js/runtime-main.084dec47.js"
+    "revision": "4a6016e8ac2b522b44a1",
+    "url": "/agnikul-react/static/js/runtime-main.213a79d7.js"
   },
   {
     "revision": "9c04694488e555c0cdf3b3008d5a71c6",
