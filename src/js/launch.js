@@ -4,82 +4,89 @@ import Swiper from 'swiper';
 
 export default function Init() {
 
-var locationData = {
-  "chennai" : [0,1,2,3,4,5],
-  "beijing" : [10,11,12,13,14,15],
-  "kolkata" : [20,21,22,33,34,35],
-  "ahmedabad" : [40,41,42,43,44,45],
-  "rajastan" : [525,523,445,441,443,438,437,439,520,446,442,444,440],
-  "moscow" : [60,61,62,63,64,65],
-} 
+  var locationData = {
+    "chennai": [0, 1, 2, 3, 4, 5],
+    "beijing": [10, 11, 12, 13, 14, 15],
+    "kolkata": [20, 21, 22, 33, 34, 35],
+    "ahmedabad": [40, 41, 42, 43, 44, 45],
+    "rajastan": [525, 523, 445, 441, 443, 438, 437, 439, 520, 446, 442, 444, 440],
+    "moscow": [60, 61, 62, 63, 64, 65],
+  }
 
-function loop() {
-  // //console.log($(".body").scrollTop());
-  // var world = document.getElementById("world");
-  // var rect = world.getBoundingClientRect();
-  // var swipeRect = document.getElementsByClassName("launch__location-swiper")[0].getBoundingClientRect();
-  // if(rect.bottom < $(".body").height())
-  // $(".launch__world-map").css("top",0.6*$(".body").height() - rect.bottom);
-  // requestAnimationFrame(loop); 
-}
+  function loop() {
+    // //console.log($(".body").scrollTop());
+    // var world = document.getElementById("world");
+    // var rect = world.getBoundingClientRect();
+    // var swipeRect = document.getElementsByClassName("launch__location-swiper")[0].getBoundingClientRect();
+    // if(rect.bottom < $(".body").height())
+    // $(".launch__world-map").css("top",0.6*$(".body").height() - rect.bottom);
+    // requestAnimationFrame(loop); 
+  }
 
-$(document).ready( function() {
+  $(document).ready(function () {
 
-  $("body").removeClass("products");
-  
-  $(".first-row").removeClass("home__first-row");
-  loop();
-  // $(".body").scroll(function(){
-  //     var locSlider = document.getElementsByClassName("launch__location-swiper")[0];
-  //     var bot = locSlider.getBoundingClientRect().bottom;
-  //     if(bot < $(".body").scrollTop() + (0.4)*window.screen.height)
-  //     {
-  //        $(".launch__world-map").removeClass("fixed"); 
-  //     }
-  //     else
-  //     {
-  //       $(".launch__world-map").addClass("fixed"); 
-  //     }
-  // });
+    $("body").removeClass("products");
 
-  var prev = undefined;
+    $(".first-row").removeClass("home__first-row");
+    $(".book__terms__link").click(function () {
+      $(".book__modal__out").addClass("show");
+      $(".body").css("overflow-y", "hidden");
+    });
 
-  $(".launch__location__slide-content").each(function(){
-    $(this).click(
-    function() {
+    $(".book__close__icon").click(function () {
+      $(".book__modal__out").removeClass("show");
+      $(".body").css("overflow-y", "scroll");
+    });
 
-      // Now you can use all slider methods like
-       //$(this).css("border","solid 1px #4d8c52");
-        var key = $(this).attr('id');
-        var selectorDesc = "#" + key + " .launch__location__slide-desc";
-        var selectorContent = "#" + key;
-        if(prev != undefined)
-        {
-          var prevDesc = "#" + prev + " .launch__location__slide-desc";
-          var prevContent = "#" + prev;
-          $(prevContent).removeClass("active");
-          $(prevDesc).removeClass("active");
-        }
-            $(selectorContent).addClass("active");
-            $(selectorDesc).addClass("active");
+    loop();
+    // $(".body").scroll(function(){
+    //     var locSlider = document.getElementsByClassName("launch__location-swiper")[0];
+    //     var bot = locSlider.getBoundingClientRect().bottom;
+    //     if(bot < $(".body").scrollTop() + (0.4)*window.screen.height)
+    //     {
+    //        $(".launch__world-map").removeClass("fixed"); 
+    //     }
+    //     else
+    //     {
+    //       $(".launch__world-map").addClass("fixed"); 
+    //     }
+    // });
 
-        //console.log(locationData[key]);
-        var dots = document.getElementsByTagName("circle");
-        for(var i=0;i<dots.length;i++)
-        {
-             if(locationData[key].indexOf(i) != -1)
-             {
-                dots[i].style.fill = "#4d8c52";
-             }
-                else
-                dots[i].style.fill = "rgba(0,0,0,0.3)";
-        }
-        prev = key;
-    },
-    );
+    var prev = undefined;
+
+    $(".launch__location__slide-content").each(function () {
+      $(this).click(
+        function () {
+
+          // Now you can use all slider methods like
+          //$(this).css("border","solid 1px #4d8c52");
+          var key = $(this).attr('id');
+          var selectorDesc = "#" + key + " .launch__location__slide-desc";
+          var selectorContent = "#" + key;
+          if (prev != undefined) {
+            var prevDesc = "#" + prev + " .launch__location__slide-desc";
+            var prevContent = "#" + prev;
+            $(prevContent).removeClass("active");
+            $(prevDesc).removeClass("active");
+          }
+          $(selectorContent).addClass("active");
+          $(selectorDesc).addClass("active");
+
+          //console.log(locationData[key]);
+          var dots = document.getElementsByTagName("circle");
+          for (var i = 0; i < dots.length; i++) {
+            if (locationData[key].indexOf(i) != -1) {
+              dots[i].style.fill = "#4d8c52";
+            }
+            else
+              dots[i].style.fill = "rgba(0,0,0,0.3)";
+          }
+          prev = key;
+        },
+      );
+    });
+
   });
-
-});
 
 }
 
