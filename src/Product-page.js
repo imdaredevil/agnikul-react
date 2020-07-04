@@ -12,6 +12,20 @@ import homepage from "./images/homepage.jpeg";
 import hydraulic from "./images/hydraulic2.png";
 import hydraulicM from "./images/hydraulicM.png";
 
+import ml from "./images/machine-learning.png";
+import mask from "./images/medical-mask.png";
+import resize from "./images/resize-v.png";
+import angle from "./images/angle.png";
+import dp from "./images/decision-process.png";
+import aaa from "./images/aaa.png";
+import shape from "./images/shape.png";
+import server from "./images/server-2.png";
+
+import thirdFirst from "./images/Scroll2_Lower.png";
+import thirdSecond from "./images/Scroll2_Top1.png";
+import thirdThird from "./images/Scroll2_Top2.png";
+import fourthFirst from "./images/Scroll3_Lower.png";
+
 import { Link } from 'react-router-dom';
 
 
@@ -55,9 +69,9 @@ function Product() {
                 </Link>
                     </div>
                     <div id="navButtonDiv" className="column-lg">
-                        <button className="nav-itemc nav-buttonc">
-                            <Link to="/book"> BOOK YOUR LAUNCH</Link>
-                        </button>
+                    <Link to="/book"><button className="nav-itemc nav-buttonc">
+                             BOOK YOUR LAUNCH
+                        </button></Link>
                     </div>
                 </div>
                 <div className="iconc">
@@ -104,22 +118,22 @@ function Product() {
                 <div className="first-scroll-specs">
                     <div className="row justify-content-around">
                         <div className="col-xs">
-                            <i className="fa fa-bars"></i>
+                            <img className="product__icon" src={shape}></img>
                             <p className="spec-name">MAX PAYLOAD</p>
                             <p className="spec-value">100 KG to 700 km.LEO</p>
                         </div>
                         <div className="col-xs">
-                            <i className="fa fa-bars"></i>
+                            <img className="product__icon" src={resize}></img>
                             <p className="spec-name">HEIGHT</p>
                             <p className="spec-value">18 M</p>
                         </div>
                         <div className="col-xs">
-                            <i className="fa fa-bars"></i>
+                            <img className="product__icon" src={angle}></img>
                             <p className="spec-name">DIAMETER</p>
                             <p className="spec-value">1.3 M</p>
                         </div>
                         <div className="col-xs">
-                            <i className="fa fa-bars"></i>
+                            <img className="product__icon" src={mask}></img>
                             <p className="spec-name">LIFT OFF MASS</p>
                             <p className="spec-value">14 TONS</p>
                         </div>
@@ -139,19 +153,19 @@ large enough for almost all small satellite needs.</p>
                 <div className="second-scroll second-scroll-3">
                     <div className="row justify-content-around">
                         <div className="col">
-                            <i className="fa fa-bars icon"></i>
+                            <img className="product__icon" src={dp}></img>
                             <p className="heading">PAYLOAD ENVELOPE</p>
                             <p className="text">2 m x 1.5 m envelope with the ability to take one or many satellites.</p>
                         </div>
 
                         <div className="col">
-                            <i className="fa fa-bars icon"></i>
+                            <img className="product__icon" src={ml}></img>
                             <p className="heading">1 - 100 Kgs</p>
                             <p className="text">Flat costing for any payload between 20 - 100 kgs</p>
                         </div>
 
                         <div className="col">
-                            <i className="fa fa-bars icon"></i>
+                            <img className="product__icon" src={server}></img>
                             <p className="heading">Payload Guide</p>
                             <p className="text">For more information, please request our payload guide</p>
                         </div>
@@ -168,7 +182,7 @@ large enough for almost all small satellite needs.</p>
                 </div>
 
                 <div className="third-scroll third-scroll-3">
-                    <i className="fa fa-bars"></i>
+                            <img className="product__icon" src={aaa}></img>
                     <p className="spec-name">TOTAL THRUST</p>
                     <p className="spec-value">Sea Level Thrust - 25 kN</p>
                 </div>
@@ -180,7 +194,7 @@ large enough for almost all small satellite needs.</p>
 utilization techniques to enhance payload capacity.</p>
                 </div>
 
-                <div className="third-scroll  third-image-1">
+                {/* <div className="third-scroll  third-image-1">
                     <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
@@ -190,18 +204,42 @@ utilization techniques to enhance payload capacity.</p>
                         <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)" />
 
                     </svg>
-                </div>
+                </div> */}
 
                 <div className="third-scroll  third-image-2">
-                    <svg viewBox="0 0 185 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <svg viewBox="0 0 90 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
                         <defs>
-                            <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
-                                <image href={homepage} x="-25" width="150" height="100" />
+                            <pattern id="tf" patternUnits="userSpaceOnUse" width="100" height="100">
+                                <image href={thirdFirst} x="12.5" width="75" height="100" />
                             </pattern>
                         </defs>
-                        <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)" />
-                        <polygon points="140 1 185 25 185 75 140 99 95 75 95 25" fill="url(#img)" />
+                        <polygon points="45 1 90 25 90 75 45 99 0 75 0 25" fill="url(#tf)" stroke="#4d8c52"/>
+                        {/* <polygon points="145 1 190 25 190 75 145 99 95 75 95 25" fill="url(#img)" />
+                        <polygon points="230 1 285 25 270 75 215 99 180 75 180 25" fill="url(#img)" /> */}
 
+                    </svg>
+                </div>
+
+                <div className="third-scroll  third-image-3">
+                    <svg viewBox="0 0 90 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="ts" patternUnits="userSpaceOnUse" width="100" height="100">
+                                <image href={thirdSecond} x="12.5" width="75" height="100" />
+                            </pattern>
+                        </defs>
+                        <polygon points="45 1 90 25 90 75 45 99 0 75 0 25" fill="url(#ts)" stroke="#4d8c52"/>
+
+                    </svg>
+                </div>
+
+                <div className="third-scroll  third-image-4">
+                    <svg viewBox="0 0 90 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="tt" patternUnits="userSpaceOnUse" width="100" height="100">
+                                <image href={thirdThird} x="12.5" width="75" height="100" />
+                            </pattern>
+                        </defs>
+                        <polygon points="45 1 90 25 90 75 45 99 0 75 0 25" fill="url(#tt)" stroke="#4d8c52"/>
                     </svg>
                 </div>
 
@@ -233,15 +271,15 @@ utilization techniques to enhance payload capacity.</p>
                 <div className="fourth-scroll fourth-image fourth-image-1">
                     <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
                         <defs>
-                            <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
-                                <image href={homepage} x="-25" width="150" height="100" />
+                            <pattern id="ff" patternUnits="userSpaceOnUse" width="100" height="100">
+                                <image href={fourthFirst} x="12.5" width="75" height="100" />
                             </pattern>
                         </defs>
-                        <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)" />
+                        <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#ff)" stroke="#4d8c52"/>
                     </svg>
                 </div>
 
-                <div className="fourth-scroll fourth-image fourth-image-2">
+                {/* <div className="fourth-scroll fourth-image fourth-image-2">
                     <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
@@ -251,7 +289,7 @@ utilization techniques to enhance payload capacity.</p>
                         <polygon points="1 50 25 95 75 95 99 50 75 5 25 5" fill="url(#img)" />
             50 1 95 25 95 75 50 99 5 75 5 25
           </svg>
-                </div>
+                </div> */}
 
                 <div className="fifth-scroll fifth-scroll-1">
                     <p className="number">04</p>
@@ -274,7 +312,7 @@ utilization techniques to enhance payload capacity.</p>
                 <div className="fifth-scroll fifth-scroll-3">
                     <div className="roww">
                         <div className="column">
-                            <i className="fa fa-bars icon"></i>
+                            <img className="product__icon" src={dp}></img>
                             <p className="heading">Access to multiple launchports</p>
                             <p className="text">Dhanush was built and conceived as a separate product
                             that enables the process of launching to be reliable and
@@ -282,7 +320,7 @@ utilization techniques to enhance payload capacity.</p>
 </p>
                         </div>
                         <div className="column">
-                            <i className="fa fa-bars icon"></i>
+                            <img className="product__icon" src={dp}></img>
                             <p className="heading">Mobility</p>
                             <p className="text">Dimensions of Dhanush were designed keeping in mind
                             road dimensions and transportability restrictions

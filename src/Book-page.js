@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import "./css/book.css";
 import log from "./images/logo.png";
 import navBar from "./js/common";
@@ -15,10 +15,115 @@ import office from "./images/office.png";
 import location from "./images/property-location.png";
 import person from "./images/single-01.png";
 import down from "./images/down-arrow.png";
+import $ from 'jquery';
 
 
+const SPREADSHEET_ID = '1k0SYvqDA2ZyI8Ntan3i8hZqk2Wzb5PIKFILZUK86whU';
+const CLIENT_ID = "563170352853-288s8j6np8j7ht6hdbo8lpo2aqna4ude.apps.googleusercontent.com";
+const API_KEY = "AIzaSyB8w9mYueq9k5x07x0-k_4wUaC4xgLOTB0";
+const SCOPE = "https://googleapis.com/auth/spreadsheets";
 
-function Book() {
+
+class Book extends Component {
+
+    
+    constructor(props){
+        super(props);
+   
+
+        this.state = {
+            launch : "LAUNCH LOCATION",
+            orbit : "ORBITAL INCLINATION",
+            payload : "PAYLOAD MASS"
+        };
+        if(props.location != undefined && props.location.state != undefined)
+        {
+        if(props.location.state.launch != undefined)
+            this.state.launch = props.location.state.launch;
+            if(props.location.state.orbit != undefined)
+                this.state.orbit = props.location.state.orbit;
+                if(props.location.state.payload != undefined)
+                    this.state.payload = props.location.state.payload;
+        }
+
+        this.enterLaunch = this.enterLaunch.bind(this);
+     this.enterPayload = this.enterPayload.bind(this);
+     this.enterOrbit = this.enterOrbit.bind(this);
+     this.submitForm = this.submitForm.bind(this);
+       
+    }
+    submitForm(e)
+    {
+        e.preventDefault();
+       const URL = 'https://script.google.com/macros/s/AKfycbzXC9Ag_Vl-P78JLJao1ACqIz-LuxTRSLRkO1t3slRkCoB62fc/exec';
+       var location = this.state.launch;
+       var orbit = this.state.orbit;
+       var payload = this.state.payload;
+       var name = $("#name-field").val();
+       var email = $("#email-field").val();
+       var company = $("#company-field").val();
+       var country = $("#country-field").text();
+       var phone = $("#phone-field").val();
+       var altitude = $("#altitude-field").val();
+       var tac = document.getElementById("tac");
+       if(!($("#location-field").hasClass("selected") && $("#inclination-field").hasClass("selected")
+       && $("#payload-field").hasClass("selected") && $("#country-field").hasClass("selected")
+       && name != "" && email != "" && company != "" && phone != "" && altitude != "" && tac.checked))
+      {
+          $(".form-warning").css("display","block");
+          return;
+      }
+      $(".custom-button span").html("SUBMITTING..");
+      $(".form-warning").css("display","none");
+      var jqxhr = $.ajax({
+          url : URL,
+          method : 'GET',
+          dataType: "json",
+          data: {
+              "Launch Location" : location,
+              "Orbital Inclination" : orbit,
+              "Payload Mass" : payload,
+              "Name" : name,
+              "Email Address" : email,
+              "Company" : company,
+              "Altitude" : altitude,
+              "Country of Origin" : country,
+              "Phone" : phone
+          }
+      }).done(function(response){
+          console.log(response);
+          window.location = process.env.PUBLIC_URL + "#/book-complete";
+          
+      }
+      );
+    }
+
+    enterLaunch(name) {
+        if (!document.getElementById("location-field").classList.contains("selected"))
+                document.getElementById("location-field").classList.add("selected");
+        this.setState({
+            launch : name
+        });
+     }
+    
+     enterOrbit(name) {
+        if (!document.getElementById("inclination-field").classList.contains("selected"))
+                document.getElementById("inclination-field").classList.add("selected");
+        this.setState({
+            orbit : name
+        });
+     }
+    
+     enterPayload(name) {
+        if (!document.getElementById("payload-field").classList.contains("selected"))
+                document.getElementById("payload-field").classList.add("selected");
+        this.setState({
+            payload : name
+        });
+     }
+    
+
+render() {
 
     Init();
 
@@ -75,14 +180,14 @@ function Book() {
                         <div className="container-fluid custom-form">
                             <div className="row">
                                 <div className="col-sm">
-                                    <div className="dropdown">
-                                        <button className="dropdown-toggle custom-form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div className="dropdown" id="form-launch">
+                                        <button className="dropdown-toggle custom-form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  data-boundary="form-launch">
                                             <div className="row justify-content-between align-items-center">
                                                 <div className="col-xs">
                                                     <img src={flag} className="custom"></img>
                                                 </div>
                                                 <div className="col">
-                                                    <p className="form-control-name" id="location-field">LAUNCH LOCATION</p>
+                                                    <p className={this.state.launch == "LAUNCH LOCATION" ? "form-control-name" : "form-control-name selected"} id="location-field">{this.state.launch}</p>
                                                 </div>
                                                 <div className="col-xs">
                                                     <img className="arrow" src={down} />
@@ -90,23 +195,24 @@ function Book() {
                                             </div>
                                         </button>
                                         <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="location">
-                                            <p className="dropdown-item">Action</p>
-                                            <p className="dropdown-item">Another action</p>
-                                            <p className="dropdown-item">Something else here</p>
-                                        </div>
+                                        <p className="dropdown-item" onClick={(e) => this.enterLaunch("Asia Pacific")}>Asia Pacific</p>
+                                            <p className="dropdown-item" onClick={(e) => this.enterLaunch("India")}>India</p>
+                                            <p className="dropdown-item" onClick={(e) => this.enterLaunch("Northern Europe")}>Northern Europe</p>
+                                            <p className="dropdown-item" onClick={(e) => this.enterLaunch("Northern America")}>Northern America</p>
+                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-sm">
-                                    <div className="dropdown">
-                                        <button className=" custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div className="dropdown" id="form-orbit">
+                                        <button className=" custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  data-boundary="form-orbit">
                                             <div className="row justify-content-between align-items-center">
                                                 <div className="col-xs">
                                                     <img src={orbit} className="custom"></img>
                                                 </div>
                                                 <div className="col">
-                                                    <p className="form-control-name" id="inclination-field">ORBITAL INCLINATION</p>
+                                                    <p className={this.state.orbit == "ORBITAL INCLINATION" ? "form-control-name" : "form-control-name selected"} id="inclination-field">{this.state.orbit}</p>
                                                 </div>
                                                 <div className="col-xs">
                                                     <img className="arrow" src={down} />
@@ -114,21 +220,21 @@ function Book() {
                                             </div>
                                         </button>
                                         <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="inclination">
-                                            <p className="dropdown-item">Action</p>
-                                            <p className="dropdown-item">Another action</p>
-                                            <p className="dropdown-item">Something else here</p>
-                                        </div>
+                                        <p className="dropdown-item" onClick={(e) => this.enterOrbit("SSO")}>SSO</p>
+                                            <p className="dropdown-item" onClick={(e) => this.enterOrbit("50 deg to SSo")}>50 deg to SSO</p>
+                                            <p className="dropdown-item" onClick={(e) => this.enterOrbit("0 - 50 deg")}>0 - 50 deg</p>
+                                       </div>
                                     </div>
                                 </div>
                                 <div className="col-sm">
-                                    <div className="dropdown">
-                                        <button className="custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div className="dropdown" id="form-payload">
+                                        <button className="custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  data-boundary="form-payload">
                                             <div className="row justify-content-between align-items-center">
                                                 <div className="col-xs">
                                                     <img src={payload} className="custom"></img>
                                                 </div>
                                                 <div className="col">
-                                                    <p className="form-control-name" id="payload-field">PAYLOAD MASS</p>
+                                                    <p className={this.state.payload == "PAYLOAD MASS" ? "form-control-name" : "form-control-name selected"} id="payload-field">{this.state.payload}</p>
                                                 </div>
                                                 <div className="col-xs">
                                                     <img className="arrow" src={down} />
@@ -136,10 +242,13 @@ function Book() {
                                             </div>
                                         </button>
                                         <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="payload">
-                                            <p className="dropdown-item">Action</p>
-                                            <p className="dropdown-item">Another action</p>
-                                            <p className="dropdown-item">Something else here</p>
-                                        </div>
+                                        <p className="dropdown-item"  onClick={(e) => this.enterPayload("< 20 kg")}> &lt; 20 kg</p>
+                                            <p className="dropdown-item"  onClick={(e) => this.enterPayload("20 - 40 kg")}>20 - 40 kg</p>
+                                            <p className="dropdown-item"  onClick={(e) => this.enterPayload("40 - 60 kg")}>40 - 60 kg</p>
+                                            <p className="dropdown-item"  onClick={(e) => this.enterPayload("60 - 80 kg")}>60 - 80 kg</p>
+                                            <p className="dropdown-item"  onClick={(e) => this.enterPayload("80 - 100 kg")}>80 - 100 kg</p>
+                                            <p className="dropdown-item"  onClick={(e) => this.enterPayload("> 100 kg")}> &gt; 100 kg</p>
+                                       </div>
                                     </div>
                                 </div>
                             </div>
@@ -156,7 +265,7 @@ function Book() {
                                                     <img src={person} className="custom"></img>
                                                 </div>
                                                 <div className="col">
-                                                    <input className="form-control-name" placeholder="NAME" />
+                                                    <input className="form-control-name" id="name-field" placeholder="NAME" />
                                                 </div>
                                             </div>
                                         </div>
@@ -172,7 +281,7 @@ function Book() {
                                                     <img src={office} className="custom"></img>
                                                 </div>
                                                 <div className="col">
-                                                    <input className="form-control-name" placeholder="COMPANY" />
+                                                    <input className="form-control-name" id="company-field" placeholder="COMPANY" />
                                                 </div>
                                             </div>
                                         </div>
@@ -181,8 +290,8 @@ function Book() {
                             </div>
                             <div className="row">
                                 <div className="col-sm">
-                                    <div className="dropdown">
-                                        <button className="dropdown-toggle custom-form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div className="dropdown" id="form-country">
+                                        <button className="dropdown-toggle custom-form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  data-boundary="form-country">
                                             <div className="row justify-content-between align-items-center">
                                                 <div className="col-xs">
                                                     <img src={location} className="custom"></img>
@@ -212,7 +321,7 @@ function Book() {
                                                     <img src={mail} className="custom"></img>
                                                 </div>
                                                 <div className="col">
-                                                    <input className="form-control-name" placeholder="EMAIL ADDRESS" />
+                                                    <input className="form-control-name" id="email-field" placeholder="EMAIL ADDRESS" />
                                                 </div>
                                             </div>
                                         </div>
@@ -228,7 +337,7 @@ function Book() {
                                                     <img src={phone} className="custom"></img>
                                                 </div>
                                                 <div className="col">
-                                                    <input className="form-control-name" placeholder="PHONE NUMBER" />
+                                                    <input className="form-control-name" id="phone-field" placeholder="PHONE NUMBER" />
                                                 </div>
                                             </div>
                                         </div>
@@ -244,7 +353,7 @@ function Book() {
                                                     <img src={mountain} className="custom"></img>
                                                 </div>
                                                 <div className="col">
-                                                    <input className="form-control-name" placeholder="ALTITUDE" />
+                                                    <input className="form-control-name" id="altitude-field" placeholder="ALTITUDE" />
                                                 </div>
                                             </div>
                                         </div>
@@ -257,12 +366,15 @@ function Book() {
                                     <span className="custom-form-check-span"></span>
    I accept the <a className="book__terms__link bookk__terms__link">terms, conditions and privacy policy</a> of the company.
 </label>
+
+<p className="form-warning">Fill out all fields</p>
+
                             </div>
                             <div className="row">
                                 <div className="col">
-                                    <button className="custom-button">
+                                    <button className="custom-button" onClick={(e) => this.submitForm(e)}>
                                         <img src={spaceshipWhite}></img>
-                                        <span>  BUILD MY VEHICLE</span>
+                                        <span>BUILD MY VEHICLE</span>
                                     </button>
                                 </div>
                             </div>
@@ -446,6 +558,7 @@ To the extent permitted by law:
 
         </div>
     );
+                                    }
 
 }
 

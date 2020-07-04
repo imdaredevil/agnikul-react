@@ -18,8 +18,48 @@ import dots from "./images/rectangle-2.png";
 import down from "./images/down-arrow.png";
 
 
-function Home() {
+class Home extends React.Component {
 
+ constructor(props){
+     super(props);
+
+     this.state = {
+         launch : "LAUNCH LOCATION",
+         orbit : "ORBITAL INCLINATION",
+         payload : "PAYLOAD MASS"
+     }
+
+     this.enterLaunch = this.enterLaunch.bind(this);
+     this.enterPayload = this.enterPayload.bind(this);
+     this.enterOrbit = this.enterOrbit.bind(this);
+    
+ }
+
+ enterLaunch(name) {
+    if (!document.getElementById("location-field").classList.contains("selected"))
+            document.getElementById("location-field").classList.add("selected");
+    this.setState({
+        launch : name
+    });
+ }
+
+ enterOrbit(name) {
+    if (!document.getElementById("inclination-field").classList.contains("selected"))
+            document.getElementById("inclination-field").classList.add("selected");
+    this.setState({
+        orbit : name
+    });
+ }
+
+ enterPayload(name) {
+    if (!document.getElementById("payload-field").classList.contains("selected"))
+            document.getElementById("payload-field").classList.add("selected");
+    this.setState({
+        payload : name
+    });
+ }
+
+ render() {
     ScrollHover();
 
     return (
@@ -55,9 +95,9 @@ function Home() {
                 </Link>
                     </div>
                     <div id="navButtonDiv" className="column-lg">
-                        <button className="nav-itemc nav-buttonc">
-                            <Link to="/book"> BOOK YOUR LAUNCH</Link>
-                        </button>
+                    <Link to="/book"><button className="nav-itemc nav-buttonc">
+                             BOOK YOUR LAUNCH
+                        </button></Link>
                     </div>
                 </div>
                 <div className="iconc">
@@ -185,14 +225,14 @@ could be made available for select missions.</p>
                         <div className="container-fluid custom-form">
                             <div className="row justify-content-center">
                                 <div className="col-sm">
-                                    <div className="dropdown">
-                                        <button className="dropdown-toggle custom-form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div className="dropdown" id="form-launch">
+                                        <button className="dropdown-toggle custom-form-control form-launch" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="form-launch">
                                             <div className="row justify-content-between align-items-center">
                                                 <div className="col-xs">
                                                     <img src={flag} className="custom"></img>
                                                 </div>
                                                 <div className="col">
-                                                    <p className="form-control-name" id="location-field">LAUNCH LOCATION</p>
+                        <p className="form-control-name" id="location-field">{this.state.launch}</p>
                                                 </div>
                                                 <div className="col-xs">
                                                     <img className="arrow" src={down} />
@@ -200,9 +240,10 @@ could be made available for select missions.</p>
                                             </div>
                                         </button>
                                         <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="location">
-                                            <p className="dropdown-item">Action</p>
-                                            <p className="dropdown-item">Another action</p>
-                                            <p className="dropdown-item">Something else here</p>
+                                            <p className="dropdown-item" onClick={(e) => this.enterLaunch("Asia Pacific")}>Asia Pacific</p>
+                                            <p className="dropdown-item" onClick={(e) => this.enterLaunch("India")}>India</p>
+                                            <p className="dropdown-item" onClick={(e) => this.enterLaunch("Northern Europe")}>Northern Europe</p>
+                                            <p className="dropdown-item" onClick={(e) => this.enterLaunch("Northern America")}>Northern America</p>
                                         </div>
                                     </div>
 
@@ -210,14 +251,14 @@ could be made available for select missions.</p>
                             </div>
                             <div className="row">
                                 <div className="col-sm">
-                                    <div className="dropdown">
-                                        <button className=" custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div className="dropdown" id="form-orbit">
+                                        <button className=" custom-form-control-half dropdown-toggle form-orbit" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="#form-orbit">
                                             <div className="row justify-content-between align-items-center">
                                                 <div className="col-xs">
                                                     <img src={orbit} className="custom"></img>
                                                 </div>
                                                 <div className="col">
-                                                    <p className="form-control-name" id="inclination-field">ORBITAL INCLINATION</p>
+                                                    <p className="form-control-name" id="inclination-field">{this.state.orbit}</p>
                                                 </div>
                                                 <div className="col-xs">
                                                     <img className="arrow" src={down} />
@@ -225,21 +266,21 @@ could be made available for select missions.</p>
                                             </div>
                                         </button>
                                         <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="inclination">
-                                            <p className="dropdown-item">Action</p>
-                                            <p className="dropdown-item">Another action</p>
-                                            <p className="dropdown-item">Something else here</p>
+                                            <p className="dropdown-item" onClick={(e) => this.enterOrbit("SSO")}>SSO</p>
+                                            <p className="dropdown-item" onClick={(e) => this.enterOrbit("50 deg to SSo")}>50 deg to SSO</p>
+                                            <p className="dropdown-item" onClick={(e) => this.enterOrbit("0 - 50 deg")}>0 - 50 deg</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-sm">
-                                    <div className="dropdown">
-                                        <button className="custom-form-control-half dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div className="dropdown" id="form-payload">
+                                        <button className="custom-form-control-half dropdown-toggle form-payload" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="#form-payload">
                                             <div className="row justify-content-between align-items-center">
                                                 <div className="col-xs">
                                                     <img src={payload} className="custom"></img>
                                                 </div>
                                                 <div className="col">
-                                                    <p className="form-control-name" id="payload-field">PAYLOAD MASS</p>
+                                                    <p className="form-control-name" id="payload-field">{this.state.payload}</p>
                                                 </div>
                                                 <div className="col-xs">
                                                     <img className="arrow" src={down} />
@@ -247,16 +288,20 @@ could be made available for select missions.</p>
                                             </div>
                                         </button>
                                         <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="payload">
-                                            <p className="dropdown-item">Action</p>
-                                            <p className="dropdown-item">Another action</p>
-                                            <p className="dropdown-item">Something else here</p>
+                                            <p className="dropdown-item"  onClick={(e) => this.enterPayload("< 20 kg")}> &lt; 20 kg</p>
+                                            <p className="dropdown-item"  onClick={(e) => this.enterPayload("20 - 40 kg")}>20 - 40 kg</p>
+                                            <p className="dropdown-item"  onClick={(e) => this.enterPayload("40 - 60 kg")}>40 - 60 kg</p>
+                                            <p className="dropdown-item"  onClick={(e) => this.enterPayload("60 - 80 kg")}>60 - 80 kg</p>
+                                            <p className="dropdown-item"  onClick={(e) => this.enterPayload("80 - 100 kg")}>80 - 100 kg</p>
+                                            <p className="dropdown-item"  onClick={(e) => this.enterPayload("> 100 kg")}> &gt; 100 kg</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <p className="form-warning">Fill out all fields</p>
                             <div className="row">
                                 <div className="col">
-                                    <button className="custom-button">
+                                    <button className="custom-button modal-show">
                                         <img src={spaceshipWhite}></img>
                                         <span>  BUILD MY VEHICLE</span>
                                     </button>
@@ -276,6 +321,24 @@ could be made available for select missions.</p>
                     <a>If you have a question, please reach out.</a>
                 </p>
             </div>
+
+            <div className="home__modal__out">
+                <div className="home__modal__outer">
+                    <div className="home__modal">
+                        <p className="home__close__icon">X</p>
+                        <p className="home__modal__text">
+                        We have received this information. Thanks! Can you pls take a 1-2 mins more to give us more information 
+                        so that we can assign a Payload Acquisition Strategist to your query?
+                        </p>   
+                        <Link to={{ pathname: "/book", state: { launch : this.state.launch , orbit : this.state.orbit, payload : this.state.payload }}}>        
+                        <button className="custom-button modal__button">
+                            <span>Let's Make Orbit</span>
+                        </button>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+
             <div className="book__modal__out">
                 <div className="book__modal__outer">
                     <div className="book__modal">
@@ -455,5 +518,7 @@ To the extent permitted by law:
     );
 
 }
+
+};
 
 export default Home;

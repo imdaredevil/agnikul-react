@@ -395,8 +395,8 @@ form {
   border: none;
   color: white;
   display: inline-block;
-  width: 300px;
-  padding: 1% 2%;
+  width: 40%;
+  padding: 1% 0.5%;
   margin-top: 1%;
 }
 
@@ -735,6 +735,13 @@ margin-bottom: 0;
     border-radius: 0px;
   }
 }
+
+.form-warning {
+  display: none;
+  text-align: left;
+  color: #4d8c52;
+}
+
 
 .footer{
   background-color: #4d8c52;

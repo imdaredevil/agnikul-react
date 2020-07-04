@@ -31,12 +31,14 @@
 
 .launch__overall-div {
   display: flex;
-  margin-bottom: 5%;
+  height: auto;
+  margin-bottom: -31.5%;
 }
 
 .launch__location-swiper {
   width: 30vw;
-  height: 100%;
+  height: auto;
+  float: left;
 }
 
 
@@ -52,7 +54,7 @@
 
 .launch__location__slide-content {
   width: 90%;
-  padding: 3%;
+  padding: 5% 3%;
   border-radius: 13px;
   box-shadow: 0 10px 20px 0 #d4d4d4;
   background-color: #ffffff;
@@ -119,35 +121,41 @@
 }
 
 .launch__world-map {
-    height: 100%;
-    width: 60vw;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
+    width: 70%;
+    height: auto;
     margin-top: 0.5%;
     margin-left: 2%;
     position: relative;
+    float: right;
   }
 
+.world_image {
+  height: 50%;
+}
 
 .fixed {
   position: fixed;
       left: 30vw;
     margin-top: 0;
 }
-  .launch__world-map #world #continents #south-america, .launch__world-map #world #continents #north-america, .launch__world-map #world #continents #africa, .launch__world-map #world #continents #europe, .launch__world-map #world #continents #australia, .launch__world-map #world #continents #russia {
-    pointer-events: bounding-box;
-  }
-  .launch__world-map #world #continents #south-america circle, .launch__world-map #world #continents #north-america circle, .launch__world-map #world #continents #africa circle, .launch__world-map #world #continents #europe circle, .launch__world-map #world #continents #australia circle, .launch__world-map #world #continents #russia circle {
-    fill: rgba(0, 0, 0, 0.3);
-    r: 3;
-  }
+
+.launch__buttonDiv {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 5% 15px;
+  text-align: center;
+
+}
 
   @media screen and (max-width: 768px) {
 
     .launch__world-map {
       display: none;
+    }
+
+    .launch__overall-div {
+      margin-bottom: 5%;
     }
 
     .launch__location-swiper {

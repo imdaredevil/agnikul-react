@@ -46,9 +46,9 @@ function News() {
                 </Link>
                     </div>
                     <div id="navButtonDiv" className="column-lg">
-                        <button className="nav-itemc nav-buttonc">
-                            <Link to="/book"> BOOK YOUR LAUNCH</Link>
-                        </button>
+                    <Link to="/book"><button className="nav-itemc nav-buttonc">
+                             BOOK YOUR LAUNCH
+                        </button></Link>
                     </div>
                 </div>
                 <div className="iconc">

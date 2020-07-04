@@ -7,7 +7,8 @@ import orbit from "./images/pennant.png";
 import payload from "./images/scale-4.png";
 import { Link } from 'react-router-dom';
 import down from './images/down-arrow.png';
-
+import office from "./images/office.png";
+import job from "./images/briefcase-26.png";
 
 function Career() {
 
@@ -46,9 +47,9 @@ function Career() {
                 </Link>
                     </div>
                     <div id="navButtonDiv" className="column-lg">
-                        <button className="nav-itemc nav-buttonc">
-                            <Link to="/book"> BOOK YOUR LAUNCH</Link>
-                        </button>
+                    <Link to="/book"><button className="nav-itemc nav-buttonc">
+                             BOOK YOUR LAUNCH
+                        </button></Link>
                     </div>
                 </div>
                 <div className="iconc">
@@ -66,7 +67,7 @@ function Career() {
                                 <button className="custom-form-control dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <div className="row justify-content-between align-items-center">
                                         <div className="col-xs">
-                                            <img src={payload} className="custom"></img>
+                                            <img src={office} className="custom"></img>
                                         </div>
                                         <div className="col">
                                             <p className="form-control-name" id="crew-field">CREW</p>
@@ -94,7 +95,7 @@ function Career() {
                                 <button className="custom-form-control dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <div className="row justify-content-between align-items-center">
                                         <div className="col-xs">
-                                            <img src={payload} className="custom"></img>
+                                            <img src={job} className="custom"></img>
                                         </div>
                                         <div className="col">
                                             <p className="form-control-name" id="job-field">JOB</p>
@@ -117,6 +118,16 @@ function Career() {
                     <br></br>
                     <br></br>
                     <br></br>
+                </div>
+                <div className="career__description" id="other-profiles-desc">
+                    <br></br>
+                    <br></br>
+                    <p className="career__text">We have a few more exciting profiles.
+                     If you are curious, please send your resume in PDF format 
+                     and a 3 line email describing - who you are, 
+                     why you want to apply to Agnikul and something interesting about yourself, 
+                    Send emails to <a href="mailto:humancapital@agnikul.in" className="career__mail">humancapital@agnikul.in</a>
+                    </p>
                 </div>
                 <div className="career__description" id="maker-or-fabricator-mechanical-desc">
                     <p className="career__job">Associate Fabricator</p>
@@ -221,7 +232,11 @@ function Career() {
 
                     <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>
 
-
+                    <br></br>
+                    <p className="career__text">If interested, please send your resume in PDF format and a 3 line email describing
+                     - who you are, why you want to apply to Agnikul and something interesting about yourself, 
+                     Send emails to <a href="mailto:humancapital@agnikul.in" className="career__mail">humancapital@agnikul.in</a>
+                     </p>
                 </div>
                 <div className="career__description" id="maker-or-fabricator-avionics-desc">
                     <p className="career__job">Associate Fabricator</p>
@@ -324,7 +339,12 @@ function Career() {
                     <p className="career__head">Location:  <span className="career__text">IIT Madras, Chennai, India</span></p>
 
                     <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>
-
+                   
+                   <br></br>
+                    <p className="career__text">If interested, please send your resume in PDF format and a 3 line email describing
+                     - who you are, why you want to apply to Agnikul and something interesting about yourself, 
+                     Send emails to <a href="mailto:humancapital@agnikul.in" className="career__mail">humancapital@agnikul.in</a>
+                     </p>
 
                 </div>
                 <div className="career__description" id="electric-motor-designer-desc">
@@ -436,6 +456,11 @@ function Career() {
 
                     <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>
 
+                    <br></br>
+                    <p className="career__text">If interested, please send your resume in PDF format and a 3 line email describing
+                     - who you are, why you want to apply to Agnikul and something interesting about yourself, 
+                     Send emails to <a href="mailto:humancapital@agnikul.in" className="career__mail">humancapital@agnikul.in</a>
+                     </p>
 
                 </div>
                 <div className="career__description" id="embedded-systems-software-developer-desc">
@@ -575,6 +600,11 @@ function Career() {
 
                     <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>
 
+<br></br>
+                    <p className="career__text">If interested, please send your resume in PDF format and a 3 line email describing
+                     - who you are, why you want to apply to Agnikul and something interesting about yourself, 
+                     Send emails to <a href="mailto:humancapital@agnikul.in" className="career__mail">humancapital@agnikul.in</a>
+                     </p>
 
                 </div>
                 <div className="career__description" id="launch-vehicle-structural-engineer-desc">
@@ -714,6 +744,11 @@ function Career() {
 
                     <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>
 
+                    <br></br>
+                    <p className="career__text">If interested, please send your resume in PDF format and a 3 line email describing
+                     - who you are, why you want to apply to Agnikul and something interesting about yourself, 
+                     Send emails to <a href="mailto:humancapital@agnikul.in" className="career__mail">humancapital@agnikul.in</a>
+                     </p>
 
                 </div>
                 <div className="career__description" id="mission-design-software-developer-desc">
@@ -857,6 +892,12 @@ function Career() {
 
                     <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>
 
+                    <br></br>
+                    <p className="career__text">If interested, please send your resume in PDF format and a 3 line email describing
+                     - who you are, why you want to apply to Agnikul and something interesting about yourself, 
+                     Send emails to <a href="mailto:humancapital@agnikul.in" className="career__mail">humancapital@agnikul.in</a>
+                     </p>
+            
 
                 </div>
                 <div className="career__description" id="power-electronics-engineer-desc">
@@ -964,6 +1005,12 @@ function Career() {
                     <p className="career__head">Location:  <span className="career__text">Chennai, India</span></p>
 
                     <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>
+
+                    <br></br>
+                     <p className="career__text">If interested, please send your resume in PDF format and a 3 line email describing
+                     - who you are, why you want to apply to Agnikul and something interesting about yourself, 
+                     Send emails to <a href="mailto:humancapital@agnikul.in" className="career__mail">humancapital@agnikul.in</a>
+                     </p>
 
                 </div>
                 <div className="career__description" id="space-robotics-and-control-engineer-desc">
@@ -1128,6 +1175,12 @@ function Career() {
 
                     <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>
 
+                    <br></br>
+                     <p className="career__text">If interested, please send your resume in PDF format and a 3 line email describing
+                     - who you are, why you want to apply to Agnikul and something interesting about yourself, 
+                     Send emails to <a href="mailto:humancapital@agnikul.in" className="career__mail">humancapital@agnikul.in</a>
+                     </p>
+
                 </div>
                 <div className="career__description" id="vehicle-dynamics-engineer-desc">
                     <p className="career__job">Vehicle Dynamics Engineer</p>
@@ -1237,6 +1290,13 @@ function Career() {
                     <p className="career__head">Location:  <span className="career__text">Chennai, India</span></p>
 
                     <p className="career__head">Employment Type:  <span className="career__text">Full Time</span></p>
+                   
+                   <br></br>
+                    <p className="career__text">If interested, please send your resume in PDF format and a 3 line email describing
+                     - who you are, why you want to apply to Agnikul and something interesting about yourself, 
+                     Send emails to <a href="mailto:humancapital@agnikul.in" className="career__mail">humancapital@agnikul.in</a>
+                     </p>
+
 
                 </div>
             </div>

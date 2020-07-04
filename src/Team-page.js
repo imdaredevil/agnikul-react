@@ -1,31 +1,19 @@
 import React from 'react';
 import "./css/team.css";
 import log from "./images/logo.png";
+import Init from "./js/team";
 import navBar from "./js/common";
 import placeHolder from "./images/homepage.jpeg";
-import $ from "jquery";
 import photo from "./images/temimage.jpg";
+import srinath from "./images/Srinath.jpg";
+import moinn from "./images/Moin.jpg";
 
 import { Link } from 'react-router-dom';
 
 function Team() {
 
 
-    $(document).ready(function () {
-        $("body").removeClass("products");
-        $(".first-row").removeClass(".home__first-row");
-
-        $(".book__terms__link").click(function () {
-            $(".book__modal__out").addClass("show");
-            $(".body").css("overflow-y", "hidden");
-        });
-
-        $(".book__close__icon").click(function () {
-            $(".book__modal__out").removeClass("show");
-            $(".body").css("overflow-y", "scroll");
-        });
-
-    });
+   Init();
 
 
 
@@ -62,9 +50,9 @@ function Team() {
                 </Link>
                     </div>
                     <div id="navButtonDiv" className="column-lg">
-                        <button className="nav-itemc nav-buttonc">
-                            <Link to="/book"> BOOK YOUR LAUNCH</Link>
-                        </button>
+                    <Link to="/book"><button className="nav-itemc nav-buttonc">
+                             BOOK YOUR LAUNCH
+                        </button></Link>
                     </div>
                 </div>
                 <div className="iconc">
@@ -73,7 +61,78 @@ function Team() {
                     </div>
                 </div>
             </div>
-            <img src={photo} className="tempBanner" />
+
+
+            <div className="team__team-banner">
+                <div className="row">
+                    <div className="col">
+                    <img className="holder" />
+                    <img className="holder-2" />
+                    </div>
+                    <div className="col">
+                    <img className="holder" />
+                    <img className="holder-2" />
+                    </div>
+                    <div className="col">
+                    <img className="holder" />
+                    <img className="holder-2" />
+                    </div>
+                    <div className="col col-m">
+                    <img className="holder" />
+                    <img className="holder-2" />
+                    </div>
+                    <div className="col col-m">
+                    <img className="holder" />
+                    <img className="holder-2" />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col">
+                    <img className="holder" />
+                    <img className="holder-2" />
+                    </div>
+                    <div className="col-2 team__banner-content">
+                        <p className="team__banner-heading">Our Team</p>
+                        <p className="team__banner-text">
+                        Pavel is a writer and researcher who studied digital human and new media.
+                         Being addicted to large amount of information, he produces an appropriate.
+                        </p>
+                    </div>
+                    <div className="col">
+                    <img className="holder" />
+                    <img className="holder-2" />
+                    </div>
+                    <div className="col col-m">
+                    <img className="holder" />
+                    <img className="holder-2" />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col">
+                    <img className="holder" />
+                    <img className="holder-2" />
+                    </div>
+                    <div className="col">
+                    <img className="holder" />
+                    <img className="holder-2" />
+                    </div>
+                    <div className="col">
+                    <img className="holder" />
+                    <img className="holder-2" />
+                    </div>
+                    <div className="col col-m">
+                    <img className="holder" />
+                    <img className="holder-2" />
+                    </div>
+                    <div className="col col-m">
+                    <img className="holder" />
+                    <img className="holder-2" />
+                    </div>
+                </div>
+            </div>
+
+
+            {/* <img src={photo} className="tempBanner" /> */}
             {/* <div className="team__TeamBanner">
         <div className="team__banner-content">
             <p className="team__banner-first-line">Our Team</p>
@@ -96,33 +155,32 @@ function Team() {
             <div className="team__third-section container-fluid">
                 <div className="row justify-content-center founders">
                     <div className="col-sm founder-card">
-                        <img className="founder-image" src={placeHolder} />
-                        <p className="founder-name">First Name</p>
+                        <img className="founder-image" src={srinath} />
+                        <p className="founder-name">Srinath</p>
                         <p className="founder-desi">FOUNDER</p>
                         <p className="founder-text">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        Bond trader turned Aerospace Engineer. 
+                        Physics enthusiast. Once in a while tries to write screenplays.
                 </p>
                         <div className="founder-logos">
-                            <a><i className="fa fa-twitter fa-lg"></i></a>
-                            <a><i className="fa fa-linkedin fa-lg"></i></a>
-                            <a><i className="fa fa-instagram fa-lg"></i></a>
-                            <a><i className="fa fa-facebook fa-lg"></i></a>
+                            <a href="https://twitter.com/srinathr155" target="_blank"><i className="fa fa-twitter fa-lg"></i></a>
+                            <a href="https://www.linkedin.com/in/srinath-ravichandran-09679a7/" target="_blank"><i className="fa fa-linkedin fa-lg"></i></a>
+                            {/* <a><i className="fa fa-instagram fa-lg"></i></a>
+                            <a><i className="fa fa-facebook fa-lg"></i></a> */}
                         </div>
                     </div>
                     <div className="col-sm founder-card">
-                        <img className="founder-image" src={placeHolder} />
-                        <p className="founder-name">First Name</p>
+                        <img className="founder-image" src={moinn} />
+                        <p className="founder-name">Moin</p>
                         <p className="founder-desi">FOUNDER</p>
                         <p className="founder-text">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        Aerospace Engineer turned Operations Specialist. Law enthusiast. Used to play the guitar. 
                 </p>
                         <div className="founder-logos">
-                            <a><i className="fa fa-twitter fa-lg"></i></a>
-                            <a><i className="fa fa-linkedin fa-lg"></i></a>
-                            <a><i className="fa fa-instagram fa-lg"></i></a>
-                            <a><i className="fa fa-facebook fa-lg"></i></a>
+                            <a href="https://twitter.com/moin_spm" target="_blank"><i className="fa fa-twitter fa-lg"></i></a>
+                            <a href="https://www.linkedin.com/in/moin-spm-53a80342/" target="_blank"><i className="fa fa-linkedin fa-lg"></i></a>
+                            {/* <a><i className="fa fa-instagram fa-lg"></i></a>
+                            <a><i className="fa fa-facebook fa-lg"></i></a> */}
                         </div>
                     </div>
                 </div>

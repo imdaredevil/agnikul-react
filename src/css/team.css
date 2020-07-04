@@ -3,7 +3,67 @@
     height: 76.4%;
 }
 
+.team__team-banner{
+    width: 100%;
+    height: 76.4%;
+}
 
+.team__team-banner .row {
+    height: 33%;
+    width: 100%;
+    padding: 0%;
+}
+
+.team__team-banner .col {
+    position: relative;
+    min-width: 20%;
+    padding: 0%;
+}
+
+.team__team-banner .col .holder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: saturate(0);
+    top: 0%;
+    left: 0%;
+}
+
+.team__team-banner .col .holder-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: saturate(0);
+    z-index: -10000;
+    top: 0%;
+    left: 0%;
+}
+
+
+
+.animated {
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.team__team-banner .col-2 {
+    min-width: 40%;
+    background-color: white;
+
+}
 
 .team__TeamBanner {
     background: url("../images/Batch\ 1.png");
@@ -14,52 +74,75 @@
     position:  relative;
 }
 
-.team__banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-70%);
-    width: 53.33%;
-    text-align: center;
-}
 
-.team__banner-first-line {
+.team__banner-heading {
     font-family: "Poppins Bold";
-  font-size: 36px;
+margin-top: 1%;
+  font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.76;
   letter-spacing: normal;
-  text-align: center;
-  color: #252526;
+  color: #4d8c52;
 }
 
-.team__banner-first-line span {
-  color : #4d8c52;
-}
+
 
 .team__banner-text {
     font-family: "Poppins Regular";
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.75;
     letter-spacing: normal;
-    text-align: center;
     color: rgba(33, 56, 66, 0.6);
 }
 
 @media screen and (max-width : 768px ) {
-  .team__banner-first-line{
-      font-size: 21px;
+  .team__banner-heading{
+      font-size: 16px;
+      line-height: normal;
   }
   
   .team__banner-text{
       font-size: 14px;
+      line-height: normal;
   }
   
+}
+
+@media screen and (max-width : 576px) {
+    .team__team-banner{
+        height: 90%;
+        overflow-x: hidden;
+    }
+
+    .team__team-banner .col {
+        min-width: 33.33%;
+    }
+
+    .team__team-banner .col-2 {
+        min-width: 33.33%
+    }
+
+    .col-m {
+        display: none;
+    }
+
+
+    .team__banner-heading{
+        font-size: 14px;
+        line-height: normal;
+    }
+    
+    .team__banner-text{
+        font-size: 12px;
+        line-height: normal;
+    }
+    
+
 }
 
 .team__second-section{
@@ -125,7 +208,6 @@
 .founder-image {
     width: 100%;
     margin-bottom: 5%;
-    height: 270px;
 }
 
 .founder-name {

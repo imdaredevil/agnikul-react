@@ -30,6 +30,10 @@ export default function Init() {
       {
         "name": "Maker / Fabricator - Avionics",
         "id": "maker-or-fabricator-avionics"
+      },
+      {
+        "name" : "Other Profiles",
+        "id" : "other-profiles"
       }
     ],
     "sw": [
@@ -44,6 +48,10 @@ export default function Init() {
       {
         "name": "LabVIEW developer",
         "id": "labview-developer"
+      },
+      {
+        "name" : "Other Profiles",
+        "id" : "other-profiles"
       }
     ],
     "sws": [
@@ -66,6 +74,10 @@ export default function Init() {
       {
         "name": "Maker / Fabricator - Mechanical",
         "id": "maker-or-fabricator-mechanical"
+      },
+      {
+        "name" : "Other Profiles",
+        "id" : "other-profiles"
       }
     ],
     "fls": [
@@ -84,6 +96,10 @@ export default function Init() {
       {
         "name": "Launch Vehicle Thermal Systems Engineer",
         "id": "launch-vehicle-thermal-systems-engineer"
+      },
+      {
+        "name" : "Other Profiles",
+        "id" : "other-profiles"
       }
     ],
     "op": [
@@ -99,6 +115,10 @@ export default function Init() {
         "name": "Front end systems developer",
         "id": "front-end-systems-developer"
       },
+      {
+        "name" : "Other Profiles",
+        "id" : "other-profiles"
+      }
     ],
     "fiac": [
       {
@@ -118,6 +138,10 @@ export default function Init() {
       {
         "name": "Logistics Manager",
         "id": "logistics-manager"
+      },
+      {
+        "name" : "Other Profiles",
+        "id" : "other-profiles"
       }
     ]
   }

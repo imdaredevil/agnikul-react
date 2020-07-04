@@ -9,6 +9,19 @@ import spacex from "./images/spacex-logo.png";
 import navBar from "./js/common";
 import worldmap from "./images/bitmap.png";
 import { Link } from 'react-router-dom';
+import iit from  './images/IITM.jpg';
+import ceg from './images/CEG.jpg';
+import ciie from './images/CIIE.jpg';
+import perumal from './images/Perumal.jpg';
+import pvr from './images/PVR.jpg';
+import satya from './images/Satya.jpg';
+import sekar from "./images/Shekar.jpg";
+
+import alenspace from "./images/alenspace.png";
+import dcube from "./images/Dcube.png";
+import dorbit from "./images/Dorbit.png";
+import leafspace from "./images/leafspace.png";
+import picosats from "./images/Picosats.png";
 
 
 function About() {
@@ -48,9 +61,9 @@ function About() {
                 </Link>
                     </div>
                     <div id="navButtonDiv" className="column-lg">
-                        <button className="nav-itemc nav-buttonc">
-                            <Link to="/book"> BOOK YOUR LAUNCH</Link>
-                        </button>
+                    <Link to="/book"><button className="nav-itemc nav-buttonc">
+                             BOOK YOUR LAUNCH
+                        </button></Link>
                     </div>
                 </div>
                 <div className="iconc">
@@ -76,7 +89,59 @@ space access to everyone!
                 </div>
             </div>
 
-            <div className="Timeline">
+            <div className="Timesline">
+                <div className="vertical-line"></div>
+                <div className="Timeline-section">
+                    <div className="Timeline-year"><p>2016</p></div>
+                    <p className="Timeline-text">
+                                    Inception ! - This was when Agnikul was an idea on paper and in dreams
+                        </p>
+                </div>
+                <div className="Timeline-section">
+                    <div className="Timeline-year"><p>2017</p></div>
+                    <p className="Timeline-text">
+                                    Formation! - Agnikul Cosmos was formally incorporated as a
+                                    company in Chennai, India.
+                        </p>
+                                <p className="Timeline-text">
+                                    Agnikul moved into the National Center for Combustion R&D at IIT Madras, Chennai, India.
+                        </p>
+                </div>
+                <div className="Timeline-section">
+                    <div className="Timeline-year"><p>2018</p></div>
+                    <p className="Timeline-text">
+                                    Incubation & Acceleration - Agnikul incubated at IIT Madras. Agnikul became a part of the Airbus Accelerator
+                        </p>
+                                <p className="Timeline-text">
+                                    First series of hot firings - Agnikul fired it’s first set of igniters
+                                    and single injector element based thrusters.
+                        </p>
+                </div>
+                <div className="Timeline-section">
+                    <div className="Timeline-year"><p>2019</p></div>
+                    <p className="Timeline-text">
+                                    Cash Infusion - Agnikul raised its seed round of funding from Speciale Invest
+                        </p>
+                                <p className="Timeline-text">
+                                    Agnikul grew to have a presence in Kerala as well and became
+                                    a part of the Kerala Startup mission startup community.
+                        </p>
+                                <p className="Timeline-text">
+                                    Agnikul realized it’s single piece, fully 3d printed, higher stage engine.
+                        </p>
+                                <p className="Timeline-text">
+                                    Commercialization - Agnikul started signing agreements with potential customers!
+                        </p>
+                </div>
+                <div className="Timeline-section">
+                    <div className="Timeline-year"><p>2020</p></div>
+                    <p className="Timeline-text">
+                                    A lot more to come .. watch for updates
+                        </p>
+                </div>
+
+            </div>
+            {/* <div className="Timeline">
                 <div className="timeline-swiper  swiper-container">
                     <div className="timeline__swiper-pagination  swiper-pagination"></div>
                     <div className="vertical-line"></div>
@@ -86,7 +151,6 @@ space access to everyone!
                                 <div className="slide-year">
                                     <p>2016</p>
                                 </div>
-                                {/* <p className="slide-head">NCCRD</p> */}
                                 <p className="slide-text">
                                     Inception ! - This was when Agnikul was an idea on paper and in dreams
                         </p>
@@ -97,7 +161,6 @@ space access to everyone!
                                 <div className="slide-year">
                                     <p>2017</p>
                                 </div>
-                                {/* <p className="slide-head">NCCRD</p> */}
                                 <p className="slide-text">
                                     Formation! - Agnikul Cosmos was formally incorporated as a
                                     company in Chennai, India.
@@ -112,7 +175,6 @@ space access to everyone!
                                 <div className="slide-year">
                                     <p>2018</p>
                                 </div>
-                                {/* <p className="slide-head">NCCRD</p> */}
                                 <p className="slide-text">
                                     Incubation & Acceleration - Agnikul incubated at IIT Madras. Agnikul became a part of the Airbus Accelerator
                         </p>
@@ -127,7 +189,6 @@ space access to everyone!
                                 <div className="slide-year">
                                     <p>2019</p>
                                 </div>
-                                {/* <p className="slide-head">NCCRD</p> */}
                                 <p className="slide-text">
                                     Cash Infusion - Agnikul raised its seed round of funding from Speciale Invest
                         </p>
@@ -151,7 +212,6 @@ space access to everyone!
                                 <div className="slide-year">
                                     <p>2020</p>
                                 </div>
-                                {/* <p className="slide-head">NCCRD</p> */}
                                 <p className="slide-text">
                                     More cash infusion - Agnikul raised its pre-series A round from
                                     highly reputed institutional investors.
@@ -169,8 +229,8 @@ space access to everyone!
                         </div>
                     </div>
                 </div>
-            </div>
-            <img className="centered-image" src={centeredimage} />
+    </div> */ }
+            <img className="centered-image" src={centeredimage} /> 
 
             <div className="about__third-section">
                 <p className="about__section-head">Advisors in Agnikul</p>
@@ -181,7 +241,7 @@ space access to everyone!
                         <div className="swiper-wrapper">
                             <div className="advisor__swiper-slide swiper-slide">
                                 <div className="advisor__slide-content">
-                                    <img className="advisor__slide-img" src={homepage} />
+                                    <img className="advisor__slide-img" src={satya} />
                                     <p className="advisor__name">SR Chakravarthy</p>
                                     <p className="advisor__award">Professor & Head - Combustion R&D Center, IIT Madras
 </p>
@@ -191,7 +251,7 @@ space access to everyone!
                             </div>
                             <div className="advisor__swiper-slide swiper-slide">
                                 <div className="advisor__slide-content">
-                                    <img className="advisor__slide-img" src={homepage} />
+                                    <img className="advisor__slide-img" src={perumal} />
                                     <p className="advisor__name">RV Perumal, Padma Bhushan</p>
                                     <p className="advisor__award">(Retd.) GSLV Project Director & ISRO Veteran</p>
                                     <p className="advisor__desi">An accomplished rocket scientist and the Project Director of
@@ -202,7 +262,7 @@ space access to everyone!
                             </div>
                             <div className="advisor__swiper-slide swiper-slide">
                                 <div className="advisor__slide-content">
-                                    <img className="advisor__slide-img" src={homepage} />
+                                    <img className="advisor__slide-img" src={pvr} />
                                     <p className="advisor__name">PV Ramakrishnan</p>
                                     <p className="advisor__award">Prof. (Emeritus) - Electronics and Communication Engineering.</p>
                                     <p className="advisor__desi">Project Director of ANUSAT - 1. Over 35 years of experience in
@@ -211,7 +271,7 @@ electronics and avionics design.</p>
                             </div>
                             <div className="advisor__swiper-slide swiper-slide">
                                 <div className="advisor__slide-content">
-                                    <img className="advisor__slide-img" src={homepage} />
+                                    <img className="advisor__slide-img" src={sekar} />
                                     <p className="advisor__name">N Shekar</p>
                                     <p className="advisor__award">Head of Aerospace Industry Development Association of Tamil
 Nadu, (Retd.) MD CDG - Boeing, India</p>
@@ -238,7 +298,7 @@ experience in building and scaling industry products.</p>
             </div>
 
             <div className="about__fourth-section">
-                <p className="about__section-head">Partners of Agnikul</p>
+                <p className="about__section-head">Academic Partners of Agnikul</p>
             </div>
 
             <div className="partners">
@@ -247,30 +307,24 @@ experience in building and scaling industry products.</p>
                     <div className="swiper-wrapper">
                         <div className="partner__swiper-slide swiper-slide">
                             <div className="partner__slide-content">
-                                <img className="partner__slide-img" src={homepage} />
+                                <img className="partner__slide-img" src={iit} />
                                 <p className="partner__name">IIT Madras</p>
-                                <p className="partner__award">Padma Bushan</p>
-                                <p className="partner__desi">Honarary Professor - India Space Research Organization</p>
+                        </div>
+                        </div>
+                        <div className="partner__swiper-slide swiper-slide">
+                            <div className="partner__slide-content">
+                                <img className="partner__slide-img" src={ceg} />
+                                <p className="partner__name">CEG, Anna University</p>
                             </div>
                         </div>
                         <div className="partner__swiper-slide swiper-slide">
                             <div className="partner__slide-content">
-                                <img className="partner__slide-img" src={homepage} />
-                                <p className="partner__name">College Of Engineering, Guindy, Anna University</p>
-                                <p className="partner__award">Padma Bushan</p>
-                                <p className="partner__desi">Senior Research fellow, EEE, Nanyang Tech University, Singapore & Professor ( Retd.)</p>
-                            </div>
-                        </div>
-                        <div className="partner__swiper-slide swiper-slide">
-                            <div className="partner__slide-content">
-                                <img className="partner__slide-img" src={homepage} />
+                                <img className="partner__slide-img" src={ciie} />
                                 <p className="partner__name">IIM Ahmedabad’s CIIE</p>
-                                <p className="partner__award">Padma Bushan</p>
-                                <p className="partner__desi">Honarary Professor - India Space Research Organization</p>
                             </div>
                         </div>
                     </div>
-                    <div className="partner__swiper-pagination swiper-pagination"></div>
+                    {/* <div className="partner__swiper-pagination swiper-pagination"></div> */}
                     <div className="partner__swiper-button-prev swiper-button-prev"></div>
                     <div className="partner__swiper-button-next swiper-button-next"></div>
                 </div>
@@ -286,43 +340,36 @@ experience in building and scaling industry products.</p>
                         <div className="business__swiper-slide swiper-slide">
                             <div className="business__slide-content">
                                 <p className="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>
-                                <p className="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p>
-                                <img className="business__slide-img" src={spacex} />
+                               {/* $0 */}
+                                <img className="business__slide-img" src={alenspace} />
                             </div>
                         </div>
                         <div className="business__swiper-slide swiper-slide">
                             <div className="business__slide-content">
                                 <p className="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>
-                                <p className="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p>
-                                <img className="business__slide-img" src={spacex} />
+                                {/* <p className="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p> */}
+                                <img className="business__slide-img" src={dcube} />
                             </div>
                         </div>
                         <div className="business__swiper-slide swiper-slide">
                             <div className="business__slide-content">
                                 <p className="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>
-                                <p className="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p>
-                                <img className="business__slide-img" src={spacex} />
+                               {/* $0 */}
+                                <img className="business__slide-img" src={dorbit} />
                             </div>
                         </div>
                         <div className="business__swiper-slide swiper-slide">
                             <div className="business__slide-content">
                                 <p className="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>
-                                <p className="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p>
-                                <img className="business__slide-img" src={spacex} />
+                               {/* $0 */}
+                                <img className="business__slide-img" src={leafspace} />
                             </div>
                         </div>
                         <div className="business__swiper-slide swiper-slide">
                             <div className="business__slide-content">
                                 <p className="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>
-                                <p className="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p>
-                                <img className="business__slide-img" src={spacex} />
-                            </div>
-                        </div>
-                        <div className="business__swiper-slide swiper-slide">
-                            <div className="business__slide-content">
-                                <p className="business__slide-quote">"With Agnikul, goal is to make space affordable for everyone in India. If you are excited about our journey,”</p>
-                                <p className="business__slide-author"><b>Elon Musk</b> Chief Executive Officer</p>
-                                <img className="business__slide-img" src={spacex} />
+                               {/* $0 */}
+                                <img className="business__slide-img" src={picosats} />
                             </div>
                         </div>
                     </div>

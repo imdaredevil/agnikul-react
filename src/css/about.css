@@ -55,11 +55,66 @@
   
 }
 
-.Timeline .vertical-line {
+.Timesline {
+  width: 100%;
+  padding-top: 2%;
+  position: relative;
+  text-align: center;
+  margin-top: -2%;
+}
+
+.Timeline-year {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 1% 0%;
+  text-align: center;
+  background:white;
+  transform:  rotate(45deg);
+}
+
+.Timeline-year p {
+  font-family: "Poppins Bold";
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4d8c52;
+    margin-bottom: 0;
+    padding: 6%;
+    transform: translateY(25%) rotate(-45deg);
+}
+
+.Timeline-section {
+  background-color: white;
+  margin-top: 5%;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.Timeline-text {
+  text-align: center;
+  font-family: "Poppins Regular";
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: rgba(33, 56, 66, 0.6);
+  
+}
+
+
+
+ .vertical-line {
   border-left: 1px solid #4d8c52;
   height: 100%;
   position:absolute;
   left: 50%; 
+  z-index: -10000;
 }
 
 

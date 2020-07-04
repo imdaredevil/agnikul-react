@@ -52,39 +52,39 @@ export default function Init() {
     //     }
     // });
 
-    var prev = undefined;
+    // var prev = undefined;
 
-    $(".launch__location__slide-content").each(function () {
-      $(this).click(
-        function () {
+    // $(".launch__location__slide-content").each(function () {
+    //   $(this).click(
+    //     function () {
 
-          // Now you can use all slider methods like
-          //$(this).css("border","solid 1px #4d8c52");
-          var key = $(this).attr('id');
-          var selectorDesc = "#" + key + " .launch__location__slide-desc";
-          var selectorContent = "#" + key;
-          if (prev != undefined) {
-            var prevDesc = "#" + prev + " .launch__location__slide-desc";
-            var prevContent = "#" + prev;
-            $(prevContent).removeClass("active");
-            $(prevDesc).removeClass("active");
-          }
-          $(selectorContent).addClass("active");
-          $(selectorDesc).addClass("active");
+    //       // Now you can use all slider methods like
+    //       //$(this).css("border","solid 1px #4d8c52");
+    //       var key = $(this).attr('id');
+    //       var selectorDesc = "#" + key + " .launch__location__slide-desc";
+    //       var selectorContent = "#" + key;
+    //       if (prev != undefined) {
+    //         var prevDesc = "#" + prev + " .launch__location__slide-desc";
+    //         var prevContent = "#" + prev;
+    //         $(prevContent).removeClass("active");
+    //         $(prevDesc).removeClass("active");
+    //       }
+    //       $(selectorContent).addClass("active");
+    //       $(selectorDesc).addClass("active");
 
-          //console.log(locationData[key]);
-          var dots = document.getElementsByTagName("circle");
-          for (var i = 0; i < dots.length; i++) {
-            if (locationData[key].indexOf(i) != -1) {
-              dots[i].style.fill = "#4d8c52";
-            }
-            else
-              dots[i].style.fill = "rgba(0,0,0,0.3)";
-          }
-          prev = key;
-        },
-      );
-    });
+    //       //console.log(locationData[key]);
+    //       var dots = document.getElementsByTagName("circle");
+    //       for (var i = 0; i < dots.length; i++) {
+    //         if (locationData[key].indexOf(i) != -1) {
+    //           dots[i].style.fill = "#4d8c52";
+    //         }
+    //         else
+    //           dots[i].style.fill = "rgba(0,0,0,0.3)";
+    //       }
+    //       prev = key;
+    //     },
+    //   );
+    // });
 
   });
 
