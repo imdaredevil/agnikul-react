@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/agnikul-react/precache-manifest.883c2de31e7c85778c1ea0fd406c4da8.js"
+  "/agnikul-react/precache-manifest.95de5441bc7ca83aec56778aa0fb4e79.js"
 );
 
 self.addEventListener('message', (event) => {
