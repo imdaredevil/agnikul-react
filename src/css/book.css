@@ -1,66 +1,66 @@
-.book_heading {
-    margin-top : 5%;
+.book__heading {
+    margin-top: 5%;
     margin-bottom: 5%;
     text-align: center;
     width: 100%;
     font-family: "Poppins Bold";
-  font-size: 36px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.54;
-  letter-spacing: normal;
-  text-align: center;
-  color: #252526;
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: center;
+    color: #252526;
 }
 
-.book__overallDiv {
-    background-image: url("../images/group-2.png");
+.book__overall-div {
+    background-image: url("../images/book/book-back.png");
     background-size: cover;
 }
 
-.book_form-content{
+.book__form-content {
     text-align: center;
 }
 
-.book_step {
-    margin-left: 23.1%;
+.book__step {
+    width: 55.55%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: "Poppins Bold";
-  font-size: 14px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 4.11;
-  letter-spacing: 2px;
-  color: #4d8c52;
-  padding-bottom: 0%;
-  margin-bottom: 0%;
-  text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.11;
+    letter-spacing: 2px;
+    color: #4d8c52;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    text-align: left;
 }
 
-.book_form-content .custom-form-control {
+.book__form-content .custom-form-control {
     margin-bottom: 2%;
 }
 
-.book_form-content .custom-button {
-    margin-bottom : 5%;
+.book__form-content .custom-button {
+    margin-bottom: 5%;
 }
 
-.bookk__terms__link {
-  color: #4d8c52 !important;
-  text-decoration: underline !important;
+.bookk__terms-link {
+    color: #4d8c52 !important;
+    text-decoration: underline !important;
 }
-
-
-
-
 
 @media screen and (max-width: 768px) {
-    .book_heading {
-        font-size:20px;
+    .book__heading {
+        font-size: 20px;
     }
-
-    .book_step {
+    .book__step {
         font-size: 13px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 70%;
     }
 }

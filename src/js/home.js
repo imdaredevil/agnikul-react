@@ -28,7 +28,7 @@ function getTransform() {
 function moveUp() {
 
     var curr = getTransform();
-    if (curr > -65) {
+    if (curr > -68) {
         curr -= diff;
         setTransform(curr);
     }
@@ -54,16 +54,16 @@ export default function ScrollHover() {
         $("body").removeClass("products");
         $(".first-row").addClass("home__first-row");
         $(".book__terms__link").click(function () {
-            $(".book__modal__out").addClass("show");
+            $(".custom-modal-out").addClass("show");
             $(".body").css("overflow-y", "hidden");
         });
 
-        $(".book__close__icon").click(function () {
-            $(".book__modal__out").removeClass("show");
+        $(".close-icon").click(function () {
+            $(".custom-modal-out").removeClass("show");
             $(".body").css("overflow-y", "scroll");
         });
 
-        $(".modal-show").click(function () {
+        $(".custom-modal-show").click(function () {
             var fields = document.querySelectorAll(".form-control-name");
             for(var i=0;i<fields.length;i++)
             {
@@ -75,12 +75,12 @@ export default function ScrollHover() {
                 }
             }
             $(".form-warning").css("display","none");
-            $(".home__modal__out").addClass("show");
+            $(".home__custom-modal-out").addClass("show");
             $(".body").css("overflow-y", "hidden");
         });
 
-        $(".home__close__icon").click(function () {
-            $(".home__modal__out").removeClass("show");
+        $(".home__close-icon").click(function () {
+            $(".home__custom-modal-out").removeClass("show");
             $(".body").css("overflow-y", "scroll");
         });
 

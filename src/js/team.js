@@ -14,13 +14,13 @@ var indArray;
 
 function setInitial(){
     $(".holder").each(function(index){
-        $(this).attr("src",process.env.PUBLIC_URL + '/images/team_photos/' + (index + 1) + '.png');
+        $(this).attr("src",process.env.PUBLIC_URL + '/images/team-photos/' + (index + 1) + '.png');
     });
 }
 
 function selectBackground(){
     var rand = ((glo++) + elements.length) % 44;
-    return process.env.PUBLIC_URL + '/images/team_photos/' + (rand + 1) + '.png';
+    return process.env.PUBLIC_URL + '/images/team-photos/' + (rand + 1) + '.png';
 }
 
 function shuffle(array) {
@@ -68,12 +68,12 @@ $(document).ready(function () {
     $(".first-row").removeClass(".home__first-row");
 
     $(".book__terms__link").click(function () {
-        $(".book__modal__out").addClass("show");
+        $(".custom-modal-out").addClass("show");
         $(".body").css("overflow-y", "hidden");
     });
 
-    $(".book__close__icon").click(function () {
-        $(".book__modal__out").removeClass("show");
+    $(".close-icon").click(function () {
+        $(".custom-modal-out").removeClass("show");
         $(".body").css("overflow-y", "scroll");
     });
     setInitial();

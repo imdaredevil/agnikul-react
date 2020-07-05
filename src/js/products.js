@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import hydraulicM from "../images/hydraulicM.png";
 
 
 export default function Init() {
@@ -724,7 +723,7 @@ export default function Init() {
         h = Number.parseFloat(h);
         //console.log(0.1*styles.height);
         $(".hydraulic").css("top", (t + 0.6 * h) + "px");
-        $(".hydraulicM").css("top", (t + 0.6 * h) + "px");
+        $(".hydraulic-mobile").css("top", (t + 0.6 * h) + "px");
     }
 
     function constructTransform(transforms) {
@@ -855,26 +854,34 @@ export default function Init() {
     }
 
     function handleMobile() {
-        console.log("mobile called");
+
+        var value = 9;
         for (var transition in transitions) {
+            var index = transition;
             transition = transitions[transition];
             if (transition.selector == ".hydraulic")
-                transition.selector = ".hydraulicM";
+                transition.selector = ".hydraulic-mobile";
             for (var record in transition.before) {
                 record = transition.before[record];
                 if (record[0] == "top")
-                    record[1] += 9;
+                {
+                    if(window.screen.width <= 320 && index == 9)
+                        record[1] += 9;
+                    record[1] += value;
+                }
             }
             for (var record in transition.after) {
                 record = transition.after[record];
                 if (record[0] == "top")
-                    record[1] += 9;
+                    record[1] += value;
             }
             for (var record in transition.on) {
                 record = transition.on[record];
                 if (record[0] == "top") {
+                    if(window.screen.width <= 320 && index == 9)
                     record[1].start += 9;
-                    record[1].end += 9;
+                    record[1].start += value;
+                    record[1].end += value;
                 }
 
             }

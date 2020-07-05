@@ -3,7 +3,7 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 import "./css/styles.css";
-import logo from "./images/group-10.png";
+import logo from "./images/circle-icon.png";
 
 
 const Home = lazy(() => import('./Home-page'));

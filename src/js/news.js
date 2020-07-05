@@ -11,23 +11,23 @@ export default function Init() {
     $(".first-row").removeClass("home__first-row");
 
     $(".book__terms__link").click(function () {
-      $(".book__modal__out").addClass("show");
+      $(".custom-modal-out").addClass("show");
       $(".body").css("overflow-y", "hidden");
     });
 
-    $(".book__close__icon").click(function () {
-      $(".book__modal__out").removeClass("show");
+    $(".close-icon").click(function () {
+      $(".custom-modal-out").removeClass("show");
       $(".body").css("overflow-y", "scroll");
     });
 
 
     newsSwiper = new Swiper(
-      ".news__location-swiper",
+      ".news-swiper",
       {
         direction: "horizontal",
         slidesPerView: "auto",
         pagination: {
-          el: ".news__location__swiper-pagination",
+          el: ".news__swiper-pagination",
           clickable: true
         },
         keyboard: {

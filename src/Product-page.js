@@ -3,28 +3,28 @@ import "./css/products.css";
 import Init from './js/products';
 import navBar from './js/common';
 import log from "./images/logo.png";
-import truck from "./images/truck.png";
-import stand from "./images/stand.png";
-import rocket1 from "./images/rocket-1.png";
-import rocket2 from "./images/rocket-2.png";
-import rocket3 from "./images/rocket-3.png";
-import homepage from "./images/homepage.jpeg";
-import hydraulic from "./images/hydraulic2.png";
-import hydraulicM from "./images/hydraulicM.png";
 
-import ml from "./images/machine-learning.png";
-import mask from "./images/medical-mask.png";
-import resize from "./images/resize-v.png";
-import angle from "./images/angle.png";
-import dp from "./images/decision-process.png";
-import aaa from "./images/aaa.png";
-import shape from "./images/shape.png";
-import server from "./images/server-2.png";
+import rocket1 from "./images/products/rocket-1.png";
+import rocket2 from "./images/products/rocket-2.png";
+import rocket3 from "./images/products/rocket-3.png";
+import truck from "./images/products/truck.png";
+import stand from "./images/products/stand.png";
+import hydraulic from "./images/products/hydraulic.png";
+import hydraulicM from "./images/products/hydraulic-mobile.png";
 
-import thirdFirst from "./images/Scroll2_Lower.png";
-import thirdSecond from "./images/Scroll2_Top1.png";
-import thirdThird from "./images/Scroll2_Top2.png";
-import fourthFirst from "./images/Scroll3_Lower.png";
+import ml from "./images/products/mass.png";
+import mask from "./images/products/lift-off-mass.png";
+import resize from "./images/products/height.png";
+import angle from "./images/products/diameter.png";
+import dp from "./images/products/temporary.png";
+import aaa from "./images/products/thrust.png";
+import shape from "./images/products/max-payload.png";
+import server from "./images/products/payload-guide.png";
+
+import thirdFirst from "./images/products/Scroll2_Lower.png";
+import thirdSecond from "./images/products/Scroll2_Top1.png";
+import thirdThird from "./images/products/Scroll2_Top2.png";
+import fourthFirst from "./images/products/Scroll3_Lower.png";
 
 import { Link } from 'react-router-dom';
 
@@ -38,7 +38,7 @@ function Product() {
 
     return (
         <div className="body">
-            <div className="navBar navFixed">
+            <div className="navBar nav-fixed">
                 <div className="topnav row justify-content-around align-items-baseline" id="myTopnav">
                     <div className="column-lg nav-brandc">
                         <Link to="/"><img className="logo" src={log} /></Link>
@@ -81,7 +81,7 @@ function Product() {
                 </div>
             </div>
 
-            <div className="originalDiv">
+            <div className="original-div">
                 <div className="first-scroll-content">
                     <p className="first-scroll-heading">A CONFIGURABLE & NIMBLE DESIGN</p>
                     <p className="first-scroll-text">
@@ -113,7 +113,7 @@ function Product() {
                 <img src={stand} className="stand" />
                 <img src={hydraulic} className="hydraulic" />
 
-                <img src={hydraulicM} className="hydraulicM" />
+                <img src={hydraulicM} className="hydraulic-mobile" />
 
                 <div className="first-scroll-specs">
                     <div className="row justify-content-around">

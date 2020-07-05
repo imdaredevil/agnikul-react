@@ -3,19 +3,18 @@ import "./css/home.css";
 import ScrollHover from './js/home';
 import { Link } from 'react-router-dom';
 import log from "./images/logo.png";
-import agnibaan from "./images/home-agni.jpg";
+import agnibaan from "./images/home/home-agni.jpg";
 import satelite from "./images/small-logo.png";
 import navBar from "./js/common";
-import fingersnap from "./images/finger-snap.png";
-import cardback from "./images/api.png";
-import spaceshipWhite from "./images/spaceship-copy.png";
-import flag from "./images/flag.png";
-import orbit from "./images/pennant.png";
-import payload from "./images/scale-4.png";
-import bannericon from "./images/combined-shape.png";
-import quote from "./images/group-5.png";
-import dots from "./images/rectangle-2.png";
-import down from "./images/down-arrow.png";
+import cardback from "./images/home/card-back.png";
+import spaceshipWhite from "./images/form-icons/spaceship-white.png";
+import flag from "./images/form-icons/launch-location.png";
+import orbit from "./images/form-icons/orbital-inclination.png";
+import payload from "./images/form-icons/payload-mass.png";
+import bannericon from "./images/home/banner-icon.png";
+import quote from "./images/home/quote.png";
+import dots from "./images/home/form-back.png";
+import down from "./images/form-icons/down-arrow.png";
 
 
 class Home extends React.Component {
@@ -107,7 +106,7 @@ class Home extends React.Component {
                 </div>
             </div>
 
-            <div className="home__HomeBanner">
+            <div className="home__home-banner">
                 <div className="home__banner-content">
                     <img src={bannericon} className="home__banner-icon" />
                     <h1 className="home__banner-first-line">Bringing Space Within</h1>
@@ -193,7 +192,7 @@ could be made available for select missions.</p>
                             <img className="home__back-icon" src={cardback} />
                             <div className="card-body">
                                 <h1 className="card-head"><b>10+</b></h1>
-                                <h3 className="card-title"><b>Launch Parts</b></h3>
+                                <h3 className="card-title"><b>Launch Ports</b></h3>
                                 <p className="card-text">Access to 10+ launchports today. Access to 25+ coming
                                 soon. Yes, launch-where-you-want.
 </p>
@@ -216,14 +215,14 @@ could be made available for select missions.</p>
 
             <div className="home__fourth-section">
                 <div className="home__fourth-head">
-                    <p className="home__midText">Ready To Launch ?</p><br></br><br></br>
+                    <p className="home__mid-text">Ready To Launch ?</p><br></br><br></br>
                     <p className="home__fourth-section-text">
                         Yes, Agnibaan is configurable! (If you have not picked that up
                         already). So, let’s go to space together.
             </p>
                     <form>
                         <div className="container-fluid custom-form">
-                            <div className="row justify-content-center">
+                            <div className="row">
                                 <div className="col-sm">
                                     <div className="dropdown" id="form-launch">
                                         <button className="dropdown-toggle custom-form-control form-launch" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="form-launch">
@@ -240,10 +239,12 @@ could be made available for select missions.</p>
                                             </div>
                                         </button>
                                         <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="location">
+                                        <div className="custom-form-options-inner">
                                             <p className="dropdown-item" onClick={(e) => this.enterLaunch("Asia Pacific")}>Asia Pacific</p>
                                             <p className="dropdown-item" onClick={(e) => this.enterLaunch("India")}>India</p>
                                             <p className="dropdown-item" onClick={(e) => this.enterLaunch("Northern Europe")}>Northern Europe</p>
                                             <p className="dropdown-item" onClick={(e) => this.enterLaunch("Northern America")}>Northern America</p>
+                                        </div>
                                         </div>
                                     </div>
 
@@ -266,9 +267,11 @@ could be made available for select missions.</p>
                                             </div>
                                         </button>
                                         <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="inclination">
+                                        <div className="custom-form-options-inner">
                                             <p className="dropdown-item" onClick={(e) => this.enterOrbit("SSO")}>SSO</p>
                                             <p className="dropdown-item" onClick={(e) => this.enterOrbit("50 deg to SSo")}>50 deg to SSO</p>
                                             <p className="dropdown-item" onClick={(e) => this.enterOrbit("0 - 50 deg")}>0 - 50 deg</p>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -288,6 +291,7 @@ could be made available for select missions.</p>
                                             </div>
                                         </button>
                                         <div className="dropdown-menu custom-form-options" aria-labelledby="dropdownMenuButton" id="payload">
+                                        <div className="custom-form-options-inner">
                                             <p className="dropdown-item"  onClick={(e) => this.enterPayload("< 20 kg")}> &lt; 20 kg</p>
                                             <p className="dropdown-item"  onClick={(e) => this.enterPayload("20 - 40 kg")}>20 - 40 kg</p>
                                             <p className="dropdown-item"  onClick={(e) => this.enterPayload("40 - 60 kg")}>40 - 60 kg</p>
@@ -295,13 +299,14 @@ could be made available for select missions.</p>
                                             <p className="dropdown-item"  onClick={(e) => this.enterPayload("80 - 100 kg")}>80 - 100 kg</p>
                                             <p className="dropdown-item"  onClick={(e) => this.enterPayload("> 100 kg")}> &gt; 100 kg</p>
                                         </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <p className="form-warning">Fill out all fields</p>
                             <div className="row">
                                 <div className="col">
-                                    <button className="custom-button modal-show">
+                                    <button className="custom-button custom-modal-show">
                                         <img src={spaceshipWhite}></img>
                                         <span>  BUILD MY VEHICLE</span>
                                     </button>
@@ -322,16 +327,16 @@ could be made available for select missions.</p>
                 </p>
             </div>
 
-            <div className="home__modal__out">
-                <div className="home__modal__outer">
-                    <div className="home__modal">
-                        <p className="home__close__icon">X</p>
-                        <p className="home__modal__text">
+            <div className="home__custom-modal-out">
+                <div className="home__custom-modal-outer">
+                    <div className="home__custom-modal">
+                        <p className="home__close-icon">X</p>
+                        <p className="home__custom-modal-text">
                         We have received this information. Thanks! Can you pls take a 1-2 mins more to give us more information 
                         so that we can assign a Payload Acquisition Strategist to your query?
                         </p>   
                         <Link to={{ pathname: "/book", state: { launch : this.state.launch , orbit : this.state.orbit, payload : this.state.payload }}}>        
-                        <button className="custom-button modal__button">
+                        <button className="custom-button custom-modal-button">
                             <span>Let's Make Orbit</span>
                         </button>
                         </Link>
@@ -339,12 +344,12 @@ could be made available for select missions.</p>
                 </div>
             </div>
 
-            <div className="book__modal__out">
-                <div className="book__modal__outer">
-                    <div className="book__modal">
-                        <p className="book__close__icon">X</p>
-                        <p className="book__modal__heading">TERMS, CONDITIONS AND PRIVACY POLICY</p>
-                        <p className="book__modal__text">These terms of use are an agreement between Agnikul Cosmos Private Limited (“Agnikul”, “we”, “us” or
+            <div className="custom-modal-out">
+                <div className="custom-modal-outer">
+                    <div className="custom-modal">
+                        <p className="close-icon">X</p>
+                        <p className="custom-modal-heading">TERMS, CONDITIONS AND PRIVACY POLICY</p>
+                        <p className="custom-modal-text">These terms of use are an agreement between Agnikul Cosmos Private Limited (“Agnikul”, “we”, “us” or
                         “our”) and users of its website (“you”, “your” or “user”). This agreement (the “Agreement”) also
 governs your use of this website <a href="http://agnikul.in">(http://www.agnikul.in/)</a> (the “Site”). By using the Site, you
 acknowledge that you have reviewed and agree to all of the terms of this Agreement and agree to be
@@ -352,11 +357,11 @@ bound by them in connection with your use of the Site. By entering, accessing, b
 information to, or otherwise using this site, you acknowledge and agree to the following terms and
 conditions.
 </p>
-                        <div className="book__modal__section">
-                            <p className="book__modal__head">
+                        <div className="custom-modal-section">
+                            <p className="custom-modal-head">
                                 Intellectual Property
                 </p>
-                            <p className="book__modal__text">
+                            <p className="custom-modal-text">
                                 All intellectual property rights in the Site including content, graphics and copyright works are owned by
 us. We exclusively own all rights in the compilation, design and layout of the Site.<br></br>
 You may access, view and print the content on the Site provided that you only use that content for your
@@ -365,11 +370,11 @@ You must obtain our written permission to copy, reproduce or publish any of the 
 graphics, videos, photographs or other copyright works) on the Site
                 </p>
                         </div>
-                        <div className="book__modal__section">
-                            <p className="book__modal__head">
+                        <div className="custom-modal-section">
+                            <p className="custom-modal-head">
                                 Third Party Websites
                 </p>
-                            <p className="book__modal_text">
+                            <p className="custom-modal_text">
                                 From time to time, the Site may include features and functionality that allow you to interact with other
                                 sites that are not under our control, including social media websites. We provide these features,
                                 functionality, and links to you only as a convenience and do not endorse any linked websites or social
@@ -377,11 +382,11 @@ graphics, videos, photographs or other copyright works) on the Site
                                 media sites.
                 </p>
                         </div>
-                        <div className="book__modal__section">
-                            <p className="book__modal__head">
+                        <div className="custom-modal-section">
+                            <p className="custom-modal-head">
                                 Provision of Information and Privacy
                 </p>
-                            <p className="book__modal__text">
+                            <p className="custom-modal-text">
                                 You are not required to provide personal information to us. If you provide information to us, you will
 ensure that such information is accurate and complete.<br></br>
 We collect the personal information provided to us and may use it for communicating with you,
@@ -400,23 +405,23 @@ the functionality of the Site. We use the technical information collected to hav
 of how people use the Site and how we might improve it
                 </p>
                         </div>
-                        <div className="book__modal__section">
-                            <p className="book__modal__head">
+                        <div className="custom-modal-section">
+                            <p className="custom-modal-head">
                                 All Liabilities Excluded
                 </p>
-                            <p className="book__modal__text">
+                            <p className="custom-modal-text">
                                 You agree that your use of this Site is at your sole risk. Because of the number of possible sources of
                                 information available through the Site, and the inherent hazards and uncertainties of electronic
 distribution, there may be delays, omissions, inaccuracies or other problems with such information.<br></br>
 To the extent permitted by law:
                 </p>
                             <ol>
-                                <li className="book__modal__text">
+                                <li className="custom-modal-text">
                                     all warranties, representations and guarantees are excluded, including suitability, fitness for
                                     purpose, appropriateness, availability for use, accuracy or completeness of the Site or the
                                     content on or accessed through it;
                     </li>
-                                <li className="book__modal__text">
+                                <li className="custom-modal-text">
                                     under no circumstances shall Agnikul or its affiliates, agents or licensors be liable to you or
                                     anyone else for any damages (whether direct, indirect, punitive, incidental, special,
                                     consequential or otherwise, or whether resulting from tort, contract or other theories of law)
@@ -426,44 +431,44 @@ To the extent permitted by law:
                                     errors or omissions in the content or information on the Site; or (4) any computer virus or other
                                     programming device, even if Agnikul is advised of the possibility thereof; and
                     </li>
-                                <li className="book__modal__text">
+                                <li className="custom-modal-text">
                                     you indemnify us against all loss we suffer or incur as a direct or indirect result of your failure to
                                     comply with this Agreement.
                     </li>
                             </ol>
-                            <p className="book__modal__text">
+                            <p className="custom-modal-text">
                                 If you become dissatisfied with this Site, or the terms, conditions or policies governing this Site, your
                                 sole and exclusive remedy is to discontinue using this Site. This limitation on damages is essential to the
                                 agreement between you and us and the Site would not be provided free of charge without such
                                 limitation.
             </p>
                         </div>
-                        <div className="book__modal__section">
-                            <p className="book__modal__head">
+                        <div className="custom-modal-section">
+                            <p className="custom-modal-head">
                                 Governing Law and Jurisdiction
                 </p>
-                            <p className="book__modal__text">
+                            <p className="custom-modal-text">
                                 The Site, all related content, and this Agreement shall be governed by and construed in accordance with
                                 the laws of India, without regard to the principles of conflicts of laws. The courts of Chennai, India shall
                                 have exclusive jurisdiction on any dispute that arises in relation to this Agreement or your use of the
                                 Site.
                 </p>
                         </div>
-                        <div className="book__modal__section">
-                            <p className="book__modal__head">
+                        <div className="custom-modal-section">
+                            <p className="custom-modal-head">
                                 Amendments
                 </p>
-                            <p className="book__modal__text">
+                            <p className="custom-modal-text">
                                 We may amend this Agreement from time to time, and you should ensure that you check and read the
                                 same regularly. If you continue to use the Site after this Agreement is amended, you are deemed to
                                 have agreed with the new terms of this Agreement.
                 </p>
                         </div>
-                        <div className="book__modal__section">
-                            <p className="book__modal__head">
+                        <div className="custom-modal-section">
+                            <p className="custom-modal-head">
                                 Contact
                 </p>
-                            <p className="book__modal__text">
+                            <p className="custom-modal-text">
                                 If you have any queries, please contact privacy@agnikul.in
                 </p>
                         </div>
@@ -499,15 +504,15 @@ To the extent permitted by law:
                             <p className="footer-bolder">Kerala Startup Mission, Technopark, Thejaswini, G3B, Technopark Rd, Karyavattom, Thiruvananthapuram, Kerala 695581</p>
                         </div>
                         <div className="col-sm">
-                            <p className="footer-bold">Blog</p>
+                            <a href="https://medium.com/agnikuls-blog" target="/blank"><p className="footer-bold">Blog</p></a>
                             <p className="footer-bold"><Link to="/news" className="footer-bold">News</Link></p>
-                            <p className="footer-bold">Videos</p>
+                            <a href="https://www.youtube.com/channel/UCZ4l5Je0PVUvSrHr76vP0wA/featured" target="_blank"><p className="footer-bold">Videos</p></a>
                             <p className="footer-bold book__terms__link">Privacy Policy</p>
                             <div className="footer-social-logos">
                                 <i className="fa fa-facebook" aria-hidden="true"></i>
                                 <i className="fa fa-google-plus" aria-hidden="true"></i>
-                                <i className="fa fa-twitter" aria-hidden="true"></i>
-                                <i className="fa fa-linkedin" aria-hidden="true"></i>
+                                <a href="https://twitter.com/@agnikulcosmos" target="_blank"><i className="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/company/agnikul-cosmos/" target="_blank"><i className="fa fa-linkedin" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>

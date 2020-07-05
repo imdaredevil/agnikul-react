@@ -1,4 +1,4 @@
-.news__titleDiv {
+.news__title-div {
     width: 100%;
 }
 
@@ -20,48 +20,47 @@
 .news__text {
     font-family: "Poppins Regular";
     width: 58.958%;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #818383;
-  margin-left: 21%;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #818383;
+    margin-left: 21%;
 }
-
 
 .news__overall-div {
     display: flex;
 }
 
-.news__location-swiper {
+.news-swiper {
     width: 100vw;
     height: 90vh;
 }
 
-.news__location__swiper-slide {
+.news__swiper-slide {
     width: 21.33% !important;
-    margin: 2%  5% 3%;
+    margin: 2% 5% 3%;
     height: 85% !important;
     border-radius: 13px;
 }
 
-.news__location___slide-image {
+.news__slide-image {
     width: 100%;
     border-radius: 13px;
     height: 40%;
     object-fit: cover;
 }
 
-.news__location__slide-content {
+.news__slide-content {
     width: 90%;
     height: 70%;
     margin: 5% 0% 5%;
 }
 
-.news__location__slide-link {
+.news__slide-link {
     font-family: "Poppins Bold";
     font-size: 14px;
     font-weight: normal;
@@ -73,7 +72,7 @@
     text-decoration: underline !important;
 }
 
-.news__location__slide-title {
+.news__slide-title {
     font-family: "Poppins SemiBold";
     font-size: 18px;
     font-weight: normal;
@@ -83,8 +82,7 @@
     letter-spacing: normal;
 }
 
-
-.news__location__slide-text {
+.news__slide-text {
     font-family: "Poppins Regular";
     font-size: 14px;
     font-weight: normal;
@@ -95,51 +93,51 @@
     text-align: justify;
 }
 
-
-.news__location__swiper-pagination .swiper-pagination-bullet {
+.news__swiper-pagination .swiper-pagination-bullet {
     width: 11px;
     height: 11px;
     border-radius: 10px;
     background: #062744;
     opacity: 0.2;
     transition: all .3s;
-  }
+}
 
-.news__location__swiper-pagination .swiper-pagination-bullet-active {
+.news__swiper-pagination .swiper-pagination-bullet-active {
     opacity: 1;
     background: #4d8c52;
     width: 45px;
     border-radius: 13px;
-  }
+}
 
-
-@media screen and (max-width : 768px){
+@media screen and (max-width: 768px) {
     .news__heading {
         font-size: 18px;
     }
     .news__text {
         font-size: 12px;
     }
-    .news__location__slide-link,.news__location__slide-text{
+    .news__slide-link,
+    .news__slide-text {
         font-size: 12px;
     }
-    .news__location__slide-title{
+    .news__slide-title {
         font-size: 16px;
     }
-
-    .news__location__swiper-slide {
+    .news__swiper-slide {
         width: 40% !important;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .news__location__swiper-slide {
-        width: 60% !important; 
+    .news__swiper-slide {
+        width: 60% !important;
         margin: 3% 20% 0%;
+        height: 70% !important;
     }
-
-    
 }
 
-
-
+@media screen and (max-width: 320px) {
+    .news__swiper-slide {
+        height: 60% !important;
+    }
+}

@@ -10,12 +10,12 @@ export default function Init() {
     $(".first-row").removeClass("home__first-row");
 
     $(".book__terms__link").click(function () {
-      $(".book__modal__out").addClass("show");
+      $(".custom-modal-out").addClass("show");
       $(".body").css("overflow-y", "hidden");
     });
 
-    $(".book__close__icon").click(function () {
-      $(".book__modal__out").removeClass("show");
+    $(".close-icon").click(function () {
+      $(".custom-modal-out").removeClass("show");
       $(".body").css("overflow-y", "scroll");
     });
 
@@ -57,11 +57,11 @@ export default function Init() {
         enabled: true,
       },
       navigation: {
-        nextEl: '.advisor__swiper-button-next',
-        prevEl: '.advisor__swiper-button-prev',
+        nextEl: '.advisor-swiper-button-next',
+        prevEl: '.advisor-swiper-button-prev',
       },
       pagination: {
-        el: '.advisor__swiper-pagination',
+        el: '.advisor-swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
           if ((index >= 1 && index <= this.slides.length - 2) || 1200 > window.screen.width)
@@ -107,12 +107,12 @@ export default function Init() {
         enabled: true,
       },
       navigation: {
-        nextEl: '.partner__swiper-button-next',
-        prevEl: '.partner__swiper-button-prev',
+        nextEl: '.partner-swiper-button-next',
+        prevEl: '.partner-swiper-button-prev',
       },
       simulateTouch: false,
       pagination: {
-        el: '.partner__swiper-pagination',
+        el: '.partner-swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
           if ((index >= 1 && index <= this.slides.length - 2) || 1200 > window.screen.width)
@@ -158,10 +158,9 @@ export default function Init() {
         loop: true,
         speed: 1000,
         effect: "slide",
-        autoHeight: true,
         pagination: {
           clickable: true,
-          el: '.business__swiper-pagination'
+          el: '.business-swiper-pagination'
         }
       }
     );
