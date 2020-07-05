@@ -241,9 +241,24 @@ body.products .body {
     .first-scroll-specs .col-xs {
         width: 150px;
     }
+    .first-scroll-text {
+        font-size: 10px;
+    }
+    .first-scroll-heading {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 320px) {
+    .first-scroll-specs {
+        top: 60%;
+    }
+    .first-scroll-text {
+        font-size: 8px;
+    }
+    .first-scroll-heading {
+        font-size: 10px;
+    }
     .spec-name {
         font-size: 10px;
     }

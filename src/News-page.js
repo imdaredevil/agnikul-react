@@ -11,10 +11,11 @@ import { Link } from 'react-router-dom';
 
 function News() {
 
-    Init();
+    Init(); // function to initialize animations and swipers
 
     return (
         <div className="body">
+ {/* ***************NAVBAR******************* */}
             <div className="navBar">
                 <div className="topnav row justify-content-around align-items-baseline" id="myTopnav">
                     <div className="column-lg nav-brandc">
@@ -124,6 +125,7 @@ function News() {
 
             </div>
 
+            {/* ****************FOOTER AND MODAL FOR PRIVACY POLICY****************** */}
             <div className="custom-modal-out">
                 <div className="custom-modal-outer">
                     <div className="custom-modal">
@@ -266,11 +268,11 @@ To the extent permitted by law:
                         </div>
                         <div className="col-sm">
                             <p className="footer-normal">Launch Services</p>
-                            <p className="footer-bold">payloadpeople@gnikul.in</p>
+                            <a href="mailto:payloadpeople@agnikul.in"><p className="footer-bold">payloadpeople@agnikul.in</p></a>
                         </div>
                         <div className="col-sm">
                             <p className="footer-normal">Careers</p>
-                            <p className="footer-bold">humancapital@agnikul.in</p>
+                            <a href="mailto:humancapital@agnikul.in"><p className="footer-bold">humancapital@agnikul.in</p></a>
                         </div>
 
                     </div>

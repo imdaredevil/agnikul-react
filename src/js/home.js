@@ -47,7 +47,7 @@ function moveDown() {
 }
 
 
-export default function ScrollHover() {
+export default function Init() {
 
     $(document).ready(function () {
 
