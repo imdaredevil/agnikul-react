@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3bae9517fda38fdc63674b3e9e8a8f67",
+    "revision": "004f6b8d6b58de05ebf37c1ee2a9dd47",
     "url": "/agnikul-react/index.html"
   },
   {
-    "revision": "8e444f6bf33adb5e7b58",
-    "url": "/agnikul-react/static/css/10.e8a2f1eb.chunk.css"
+    "revision": "5489ca3761a6110d8e94",
+    "url": "/agnikul-react/static/css/10.84cd577c.chunk.css"
   },
   {
     "revision": "a7dbb4de84f55ad130a6",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/css/4.4a08479e.chunk.css"
   },
   {
-    "revision": "647854cf54218b0b0576",
-    "url": "/agnikul-react/static/css/5.4428d8d7.chunk.css"
+    "revision": "d70ea0c54f6cbcd4826e",
+    "url": "/agnikul-react/static/css/5.10bac513.chunk.css"
   },
   {
     "revision": "c161632b8857b0281b29",
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/0.ace1fb79.chunk.js"
   },
   {
-    "revision": "8e444f6bf33adb5e7b58",
-    "url": "/agnikul-react/static/js/10.c59016ec.chunk.js"
+    "revision": "5489ca3761a6110d8e94",
+    "url": "/agnikul-react/static/js/10.2a9e992c.chunk.js"
   },
   {
     "revision": "a7dbb4de84f55ad130a6",
@@ -76,7 +76,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/4.03c6a7ca.chunk.js"
   },
   {
-    "revision": "647854cf54218b0b0576",
+    "revision": "d70ea0c54f6cbcd4826e",
     "url": "/agnikul-react/static/js/5.5c9a9f13.chunk.js"
   },
   {
@@ -100,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/main.0ff1741f.chunk.js"
   },
   {
-    "revision": "e538872eeeb3ea2e1814",
-    "url": "/agnikul-react/static/js/runtime-main.0b42cef2.js"
+    "revision": "c87eef893b7b2cfdd77b",
+    "url": "/agnikul-react/static/js/runtime-main.ddb95551.js"
   },
   {
     "revision": "d4e8f94bbf8b399880db76fb3238a832",
