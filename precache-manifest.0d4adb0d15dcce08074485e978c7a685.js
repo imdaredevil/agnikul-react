@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "94e88f92357262de174b637d04a2d45c",
+    "revision": "5e03da5669a8efaa09a2459c515d3086",
     "url": "/agnikul-react/index.html"
   },
   {
@@ -28,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/css/5.10bac513.chunk.css"
   },
   {
-    "revision": "c161632b8857b0281b29",
+    "revision": "abb1c2fdf86c30238e7c",
     "url": "/agnikul-react/static/css/6.ea7a0f0d.chunk.css"
   },
   {
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/5.7e3256cb.chunk.js"
   },
   {
-    "revision": "c161632b8857b0281b29",
-    "url": "/agnikul-react/static/js/6.567fa1d2.chunk.js"
+    "revision": "abb1c2fdf86c30238e7c",
+    "url": "/agnikul-react/static/js/6.08dc6099.chunk.js"
   },
   {
     "revision": "d994c5d1d3c031177e77",
@@ -100,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/main.0ff1741f.chunk.js"
   },
   {
-    "revision": "d65efd4cacd161bd47cc",
-    "url": "/agnikul-react/static/js/runtime-main.94d958e2.js"
+    "revision": "fd9769e56d68ff32a07f",
+    "url": "/agnikul-react/static/js/runtime-main.d319719f.js"
   },
   {
     "revision": "d4e8f94bbf8b399880db76fb3238a832",
