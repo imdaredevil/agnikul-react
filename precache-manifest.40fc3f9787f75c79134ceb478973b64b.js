@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5e03da5669a8efaa09a2459c515d3086",
+    "revision": "55a90eff2441da33d116acb79dc3bcaa",
     "url": "/agnikul-react/index.html"
   },
   {
-    "revision": "5489ca3761a6110d8e94",
-    "url": "/agnikul-react/static/css/10.84cd577c.chunk.css"
+    "revision": "e453c21aa159a2863e4c",
+    "url": "/agnikul-react/static/css/10.ea5ee982.chunk.css"
   },
   {
-    "revision": "a7dbb4de84f55ad130a6",
-    "url": "/agnikul-react/static/css/11.d6a1a63a.chunk.css"
+    "revision": "9d20175b40119637a550",
+    "url": "/agnikul-react/static/css/11.7894c2bb.chunk.css"
   },
   {
     "revision": "f0460781333b83ca508b",
@@ -24,27 +24,27 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/css/4.4a08479e.chunk.css"
   },
   {
-    "revision": "931659cdfb22c06277d3",
+    "revision": "3c8a7d17b5a1d5a46f43",
     "url": "/agnikul-react/static/css/5.10bac513.chunk.css"
   },
   {
-    "revision": "abb1c2fdf86c30238e7c",
+    "revision": "3e14f3b2917ad48fa6a8",
     "url": "/agnikul-react/static/css/6.ea7a0f0d.chunk.css"
   },
   {
-    "revision": "d994c5d1d3c031177e77",
-    "url": "/agnikul-react/static/css/7.b1490dee.chunk.css"
+    "revision": "9684ad97ac8694e29eb7",
+    "url": "/agnikul-react/static/css/7.ca4d1a2f.chunk.css"
   },
   {
     "revision": "f8622dd8666112a76f7b",
     "url": "/agnikul-react/static/css/8.381ee5d0.chunk.css"
   },
   {
-    "revision": "3d851b0fd1229620d95d",
-    "url": "/agnikul-react/static/css/9.ea5ee982.chunk.css"
+    "revision": "521c630be8d41b4588e4",
+    "url": "/agnikul-react/static/css/9.56729f79.chunk.css"
   },
   {
-    "revision": "06a6e87b7deead0aca95",
+    "revision": "40a2711f8be16bec0001",
     "url": "/agnikul-react/static/css/main.637c0332.chunk.css"
   },
   {
@@ -52,12 +52,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/0.ace1fb79.chunk.js"
   },
   {
-    "revision": "5489ca3761a6110d8e94",
-    "url": "/agnikul-react/static/js/10.2a9e992c.chunk.js"
+    "revision": "e453c21aa159a2863e4c",
+    "url": "/agnikul-react/static/js/10.9afb5c85.chunk.js"
   },
   {
-    "revision": "a7dbb4de84f55ad130a6",
-    "url": "/agnikul-react/static/js/11.9a870e1d.chunk.js"
+    "revision": "9d20175b40119637a550",
+    "url": "/agnikul-react/static/js/11.fee58a67.chunk.js"
   },
   {
     "revision": "f0460781333b83ca508b",
@@ -76,32 +76,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/4.03c6a7ca.chunk.js"
   },
   {
-    "revision": "931659cdfb22c06277d3",
-    "url": "/agnikul-react/static/js/5.7e3256cb.chunk.js"
+    "revision": "3c8a7d17b5a1d5a46f43",
+    "url": "/agnikul-react/static/js/5.c718deea.chunk.js"
   },
   {
-    "revision": "abb1c2fdf86c30238e7c",
-    "url": "/agnikul-react/static/js/6.08dc6099.chunk.js"
+    "revision": "3e14f3b2917ad48fa6a8",
+    "url": "/agnikul-react/static/js/6.c3d9b099.chunk.js"
   },
   {
-    "revision": "d994c5d1d3c031177e77",
-    "url": "/agnikul-react/static/js/7.066b822e.chunk.js"
+    "revision": "9684ad97ac8694e29eb7",
+    "url": "/agnikul-react/static/js/7.dc3a7616.chunk.js"
   },
   {
     "revision": "f8622dd8666112a76f7b",
     "url": "/agnikul-react/static/js/8.d7d6d954.chunk.js"
   },
   {
-    "revision": "3d851b0fd1229620d95d",
-    "url": "/agnikul-react/static/js/9.3324392a.chunk.js"
+    "revision": "521c630be8d41b4588e4",
+    "url": "/agnikul-react/static/js/9.e1433c23.chunk.js"
   },
   {
-    "revision": "06a6e87b7deead0aca95",
-    "url": "/agnikul-react/static/js/main.0ff1741f.chunk.js"
+    "revision": "40a2711f8be16bec0001",
+    "url": "/agnikul-react/static/js/main.ab3c133c.chunk.js"
   },
   {
-    "revision": "fd9769e56d68ff32a07f",
-    "url": "/agnikul-react/static/js/runtime-main.d319719f.js"
+    "revision": "a4f4ef26c6a019eaed3c",
+    "url": "/agnikul-react/static/js/runtime-main.d067982d.js"
   },
   {
     "revision": "d4e8f94bbf8b399880db76fb3238a832",
