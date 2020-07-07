@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "06a80c04c7c4227e96c52d5fe0e24f49",
+    "revision": "8ad1c70946780ec0b94b7a712b59fb33",
     "url": "/agnikul-react/index.html"
   },
   {
