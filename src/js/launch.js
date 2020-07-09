@@ -13,15 +13,7 @@ export default function Init() {
     "moscow": [60, 61, 62, 63, 64, 65],
   }
 
-  function loop() {
-    // //console.log($(".body").scrollTop());
-    // var world = document.getElementById("world");
-    // var rect = world.getBoundingClientRect();
-    // var swipeRect = document.getElementsByClassName("launch__location-swiper")[0].getBoundingClientRect();
-    // if(rect.bottom < $(".body").height())
-    // $(".launch__world-map").css("top",0.6*$(".body").height() - rect.bottom);
-    // requestAnimationFrame(loop); 
-  }
+  
 
   $(document).ready(function () {
 
@@ -37,8 +29,6 @@ export default function Init() {
       $(".custom-modal-out").removeClass("show");
       $(".body").css("overflow-y", "scroll");
     });
-
-    loop();
     // $(".body").scroll(function(){
     //     var locSlider = document.getElementsByClassName("launch__location-swiper")[0];
     //     var bot = locSlider.getBoundingClientRect().bottom;
@@ -72,7 +62,7 @@ export default function Init() {
     //       $(selectorContent).addClass("active");
     //       $(selectorDesc).addClass("active");
 
-    //       //console.log(locationData[key]);
+    //  
     //       var dots = document.getElementsByTagName("circle");
     //       for (var i = 0; i < dots.length; i++) {
     //         if (locationData[key].indexOf(i) != -1) {

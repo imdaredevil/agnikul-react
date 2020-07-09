@@ -12,6 +12,8 @@ export default function Init() {
     var _jsPrefix;
     var _cssPrefix;
 
+    var prefixes = ["", "-webkit-", "-moz-", "-o-", "-ms-"];
+
 
 
     var transitions = [
@@ -714,14 +716,12 @@ export default function Init() {
     }
 
     function pos() {
-        // console.log("resized");
         var truck = document.getElementsByClassName("truck")[0];
         var styles = window.getComputedStyle(truck);
         var t = styles.top.split("p")[0];
         var h = styles.height.split("p")[0];
         t = Number.parseFloat(t);
         h = Number.parseFloat(h);
-        //console.log(0.1*styles.height);
         $(".hydraulic").css("top", (t + 0.6 * h) + "px");
         $(".hydraulic-mobile").css("top", (t + 0.6 * h) + "px");
     }
@@ -816,12 +816,19 @@ export default function Init() {
                     else if (effect[0] == "bezier") {
                         var y = calculateBezierWidth(effect[1], effect[2], effect[3]);
                         $(transition.selector).css("width", y + "%");
-                        $(transition.selector).css("transform", "rotate(" + calcualteBezierAngle(y, effect[3], effect[1], effect[2]) + "deg)");
+                        for (var prefix in prefixes) {
+                            prefix = prefixes[prefix];
+                            $(transition.selector).css(prefix + "transform", "rotate(" + calcualteBezierAngle(y, effect[3], effect[1], effect[2]) + "deg)");
+                        }
                     }
                     else if (effect[0] == "left" || effect[0] == "top" || effect[0] == "width")
                         $(transition.selector).css(effect[0], effect[1] + "%")
-                    else
-                        $(transition.selector).css(effect[0], effect[1])
+                    else {
+                        for (var prefix in prefixes) {
+                            prefix = prefixes[prefix];
+                            $(transition.selector).css(prefix + effect[0], effect[1])
+                        }
+                    }
                 }
             }
             else if (_scrollPercent >= transition.percentStart && _scrollPercent <= transition.percentEnd) {
@@ -842,6 +849,7 @@ export default function Init() {
                         var y = calculateBezierWidth(effect[1], effect[2], value);
                         $(transition.selector).css("width", y + "%");
                         $(transition.selector).css("transform", "rotate(" + calcualteBezierAngle(y, value, effect[1], effect[2]) + "deg)");
+                        
                     }
                     else
                         $(transition.selector).css(effect[0], value);
@@ -888,6 +896,19 @@ export default function Init() {
         }
     }
 
+    function setHeight() {
+        var ratio = 117.55 / 956.85;
+        $(".rocket-horizontal").css(
+          "height",
+          ratio * window.screen.width * 0.75 + "px"
+        );
+        $(".rocket-horizontal-2").css(
+          "height",
+          ratio * window.screen.width * 0.25 + "px"
+        );
+        
+    }
+
     $(document).ready(function () {
         $("body").addClass("products");
         pre = prefix();
@@ -897,9 +918,10 @@ export default function Init() {
         _cssPrefix = pre.css;
         resize();
 
-        console.log(window.screen.width);
         if (window.screen.width <= 576)
             handleMobile();
+
+        setHeight();
 
         $(window).on('resize', resize());
         loop();

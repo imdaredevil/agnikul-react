@@ -100,6 +100,15 @@
     color: rgba(33, 56, 66, 0.6);
 }
 
+.launch__location__slide-desc a {
+    color: #4d8c52;
+    text-decoration: none;
+}
+
+.launch__location__slide-desc a:hover {
+    color: #4d8c52 !important;
+}
+
 .launch__location__slide-desc.active {
     display: block;
 }

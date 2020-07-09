@@ -7,12 +7,22 @@ export default function Init() {
         $("body").removeClass("products");
         $(".first-row").removeClass("home__first-row");
 
-        $("#country .dropdown-item").click(function () {
-            document.getElementById("country-field").innerHTML = this.innerHTML;
-            if (!document.getElementById("country-field").classList.contains("selected"))
-                document.getElementById("country-field").classList.add("selected");
+        $("#altitude .dropdown-item").click(function () {
+            document.getElementById("altitude-field").innerHTML = this.innerHTML;
+            if (!document.getElementById("altitude-field").classList.contains("selected"))
+                document.getElementById("altitude-field").classList.add("selected");
 
         });
+
+         $("#preferred .dropdown-item").click(function () {
+           document.getElementById("preferred-field").innerHTML = this.innerHTML;
+           if (
+             !document
+               .getElementById("preferred-field")
+               .classList.contains("selected")
+           )
+             document.getElementById("preferred-field").classList.add("selected");
+         });
 
         $(".book__terms__link").click(function () {
             $(".custom-modal-out").addClass("show");

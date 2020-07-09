@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-var diff = 0.25;
+var diff = 0.2;
 var upId, downId;
 
 function setTransform(value) {
@@ -27,6 +27,8 @@ function getTransform() {
 
 function moveUp() {
 
+    
+ $(".home__right-within").removeClass("home__right-within-animated");
     var curr = getTransform();
     if (curr > -68) {
         curr -= diff;
@@ -43,6 +45,11 @@ function moveDown() {
         curr += diff;
         setTransform(curr);
     }
+    else
+    {
+        $(".home__right-within").addClass("home__right-within-animated");
+        }
+
     downId = requestAnimationFrame(moveDown);
 }
 
@@ -63,7 +70,8 @@ export default function Init() {
             $(".body").css("overflow-y", "scroll");
         });
 
-        $(".custom-modal-show").click(function () {
+        $(".custom-modal-show").click(function (e) {
+            e.preventDefault();
             var fields = document.querySelectorAll(".form-control-name");
             for(var i=0;i<fields.length;i++)
             {
@@ -86,24 +94,7 @@ export default function Init() {
 
 
 
-        // $("#location .dropdown-item").click(function () {
-        //     document.getElementById("location-field").innerHTML = this.innerHTML;
-        //     if (!document.getElementById("location-field").classList.contains("selected"))
-        //         document.getElementById("location-field").classList.add("selected");
-
-        // });
-        // $("#inclination .dropdown-item").click(function () {
-        //     document.getElementById("inclination-field").innerHTML = this.innerHTML;
-        //     if (!document.getElementById("inclination-field").classList.contains("selected"))
-        //         document.getElementById("inclination-field").classList.add("selected");
-
-        // });
-        // $("#payload .dropdown-item").click(function () {
-        //     document.getElementById("payload-field").innerHTML = this.innerHTML;
-        //     if (!document.getElementById("payload-field").classList.contains("selected"))
-        //         document.getElementById("payload-field").classList.add("selected");
-
-        // });
+     
         $(".home__right-image").hover(
             function () {
                 cancelAnimationFrame(downId);

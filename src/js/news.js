@@ -5,6 +5,10 @@ export default function Init() {
 
   var newsSwiper;
 
+  function checkmobile() {
+    return window.screen.width <= 576;
+  }
+
   $(document).ready(function () {
 
     $("body").removeClass("products");
@@ -21,20 +25,6 @@ export default function Init() {
     });
 
 
-    newsSwiper = new Swiper(
-      ".news-swiper",
-      {
-        direction: "horizontal",
-        slidesPerView: "auto",
-        pagination: {
-          el: ".news__swiper-pagination",
-          clickable: true
-        },
-        keyboard: {
-          enabled: true
-        },
-      }
-    );
 
   });
 

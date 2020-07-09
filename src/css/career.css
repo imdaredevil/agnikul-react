@@ -45,6 +45,18 @@
     letter-spacing: normal;
     text-align: center;
     color: #252526;
+}
+
+.career__section-text {
+    font-family: "Poppins Regular";
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(33, 56, 66, 0.6);
     margin-bottom: 5%;
 }
 
@@ -58,6 +70,7 @@
     letter-spacing: 1.82px;
     color: #4d8c52;
     margin-bottom: 0.5%;
+    text-align: justify;
 }
 
 .career__text {
@@ -69,7 +82,9 @@
     line-height: 1.4;
     letter-spacing: normal;
     color: rgba(33, 56, 66);
+    text-align: justify;
 }
+
 
 .career__mail {
     color: #4d8c52;

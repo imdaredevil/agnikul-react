@@ -53,16 +53,21 @@ function Product() {
               Products
             </Link>
           </div>
-          <div className="column-md">
+          {/* <div className="column-md">
             <Link to="/launch-sites" className="nav-itemc nav-linkc">
               Launch Sites
             </Link>
-          </div>
-          <div className="column-md">
-            <Link to="/team" className="nav-itemc nav-linkc">
-              Meet the Team
-            </Link>
-          </div>
+          </div> */}
+                     <div className="column">
+              <Link to="/team" className="nav-itemc nav-linkc">
+                Team
+              </Link>
+            </div>
+            <div className="column">
+              <Link to="/news" className="nav-itemc nav-linkc">
+                News
+              </Link>
+            </div>
           <div className="column">
             <Link to="/career" className="nav-itemc nav-linkc">
               Career
@@ -165,7 +170,7 @@ function Product() {
 
             <div className="col">
               <img className="product__icon" src={ml}></img>
-              <p className="heading">1 - 100 Kgs</p>
+              <p className="heading">1 - 100kgs</p>
               <p className="text">
                 Flat costing for any payload between 20 - 100 kgs
               </p>
@@ -194,8 +199,8 @@ function Product() {
 
         <div className="third-scroll third-scroll-3">
           <img className="product__icon" src={aaa}></img>
-          <p className="spec-name">TOTAL THRUST</p>
-          <p className="spec-value">Sea Level Thrust - 25 kN</p>
+          <p className="heading">TOTAL THRUST</p>
+          <p className="text">Sea Level Thrust - 25 kN</p>
         </div>
 
         <div className="third-scroll third-scroll-4">

@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import Swiper from "swiper";
 
 
 export default function Init() {
@@ -44,7 +45,6 @@ function shuffle(array) {
 
 function loop() {
 
-    //console.log(elements);
         
         cure = indArray[curi];
         var holder = elements[cure].querySelector(".holder");
@@ -61,7 +61,9 @@ function loop() {
             loop();
         },3000);
         },1000);
-}
+    }
+    
+    var advSwiper;
 
 $(document).ready(function () {
     $("body").removeClass("products");
@@ -76,6 +78,56 @@ $(document).ready(function () {
         $(".custom-modal-out").removeClass("show");
         $(".body").css("overflow-y", "scroll");
     });
+  
+   advSwiper = new Swiper(".advisor-swiper", {
+     direction: "horizontal",
+     slidesPerView: "auto",
+     centeredSlides: true,
+     simulateTouch: false,
+     keyboard: {
+       enabled: true,
+     },
+     navigation: {
+       nextEl: ".advisor-swiper-button-next",
+       prevEl: ".advisor-swiper-button-prev",
+     },
+     pagination: {
+       el: ".advisor-swiper-pagination",
+       clickable: true,
+       renderBullet: function (index, className) {
+         if (
+           (index >= 1 && index <= this.slides.length - 2) ||
+           1200 > window.screen.width
+         )
+           return '<span class="' + className + '"></span>';
+         else return '<span  class="' + className + ' hidden-bullet"></span>';
+       },
+     },
+
+     on: {
+       slideChange: function () {
+         if (window.screen.width > 1200) {
+           if (this.activeIndex == 1) {
+             this.allowSlidePrev = false;
+             this.navigation.prevEl.classList.add("swiper-button-disabled");
+           } else {
+             this.allowSlidePrev = true;
+             this.navigation.prevEl.classList.remove("swiper-button-disabled");
+           }
+           if (this.activeIndex == this.slides.length - 2) {
+             this.allowSlideNext = false;
+             this.navigation.nextEl.classList.add("swiper-button-disabled");
+           } else {
+             this.allowSlideNext = true;
+             this.navigation.nextEl.classList.remove("swiper-button-disabled");
+           }
+         }
+       },
+     },
+   });
+   if (window.screen.width > 1200) advSwiper.slideNext();
+
+  
     setInitial();
     elements = document.querySelectorAll(".team__team-banner .col");
     indArray = Array(elements.length);

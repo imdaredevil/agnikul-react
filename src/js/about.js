@@ -4,7 +4,7 @@ import Swiper from "swiper";
 
 export default function Init() {
 
-  var mySwiper, advSwiper, partSwiper, busiSwiper;
+  var mySwiper, invSwiper, partSwiper, busiSwiper;
   $(document).ready(function () {
     $("body").removeClass("products");
     $(".first-row").removeClass("home__first-row");
@@ -48,7 +48,7 @@ export default function Init() {
 
 
 
-    advSwiper = new Swiper('.advisor-swiper', {
+    invSwiper = new Swiper('.investor-swiper', {
       direction: 'horizontal',
       slidesPerView: 'auto',
       centeredSlides: true,
@@ -57,11 +57,11 @@ export default function Init() {
         enabled: true,
       },
       navigation: {
-        nextEl: '.advisor-swiper-button-next',
-        prevEl: '.advisor-swiper-button-prev',
+        nextEl: '.investor-swiper-button-next',
+        prevEl: '.investor-swiper-button-prev',
       },
       pagination: {
-        el: '.advisor-swiper-pagination',
+        el: '.investor-swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
           if ((index >= 1 && index <= this.slides.length - 2) || 1200 > window.screen.width)
@@ -97,7 +97,7 @@ export default function Init() {
 
     });
     if (window.screen.width > 1200)
-      advSwiper.slideNext();
+      invSwiper.slideNext();
 
     partSwiper = new Swiper('.partner-swiper', {
       direction: 'horizontal',

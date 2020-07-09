@@ -424,6 +424,7 @@ select:hover {
     width: 100%;
     z-index: 1000000000;
     padding: 5px 0%;
+    white-space: normal;
 }
 
 .custom-form-options-inner {
@@ -433,6 +434,10 @@ select:hover {
     scrollbar-arrow-color: rgba(225, 225, 225, 0);
     max-height: 200px;
     width: 100%;
+}
+
+.custom-form-options-inner p {
+    white-space: normal;
 }
 
 .custom-form .col-sm {
@@ -573,12 +578,6 @@ select:hover {
     }
 }
 
-@media screen and (max-width: 576px) {
-    .custom-form-options,
-    .custom-form-control-half~.custom-form-options {
-        width: 90%;
-    }
-}
 
 
 /* ******************privacy policy custom-modal************ */
@@ -714,13 +713,11 @@ select:hover {
     padding-top: 2%;
     position: relative;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 4%;
+    padding-bottom: 2%;
     z-index: 0;
 }
 
-.footer {
-    padding-right: 4%;
-}
 
 .footer .border-row {
     border-bottom: 1px solid #1e4d22;
@@ -730,27 +727,44 @@ select:hover {
     border-right: 1px solid #979797;
 }
 
+
+
 .footer .row {
-    padding: 2% 0% 2% 2%;
+    padding: 0% 0% 0% 2%;
     font-size: 12px;
+    line-height: 25px;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
-    line-height: 30px;
     color: #ffffff;
 }
 
 .footer-bold {
-    font-family: "Poppins SemiBold";
+    font-family: "Poppins Regular";
     text-decoration: none !important;
     color: white;
     font-size: 13px;
-    margin-bottom: 10px;
 }
 
 .footer-bolder {
     font-family: "Poppins Bold";
     font-size: 13px;
+    margin-bottom: 0%;
+}
+
+.footer-feel-free {
+    margin-bottom: 30%;
+}
+
+
+.footer a,.footer .book__terms__link {
+    color: white;
+    text-decoration: underline !important;
+}
+
+.footer .row .col-xs {
+    padding-right: 5%;
+    padding-left: 3%;
 }
 
 .footer .col-sm {
@@ -777,7 +791,7 @@ select:hover {
     border-radius: 50%;
     text-align: center;
     padding-top: 9px;
-    margin: 2% 2% 2% 0%;
+    margin: 2% 3% 2% 0%;
     width: 33px;
     height: 33px;
     background-color: #444a34;
@@ -805,10 +819,7 @@ select:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .footer .border-column {
-        border-right: none;
-        border-bottom: 1px solid #1e4d22;
-    }
+    
     .footer-social-logos i {
         color: white;
     }
@@ -830,4 +841,12 @@ select:hover {
     .footer .col-sm {
         margin-bottom: 5%;
     }
+    .footer .border-column {
+        border-right: none;
+    }
+
+    .footer-feel-free {
+    margin-bottom: 2%;
+}
+
 }

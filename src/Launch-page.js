@@ -59,14 +59,19 @@ class Launch extends Component {
                 Products
               </Link>
             </div>
-            <div className="column-md">
+            {/* <div className="column-md">
               <Link to="/launch-sites" className="nav-itemc nav-linkc active">
                 Launch Sites
               </Link>
-            </div>
-            <div className="column-md">
+            </div> */}
+            <div className="column">
               <Link to="/team" className="nav-itemc nav-linkc">
-                Meet the Team
+                Team
+              </Link>
+            </div>
+            <div className="column">
+              <Link to="/news" className="nav-itemc nav-linkc">
+                News
               </Link>
             </div>
             <div className="column">
@@ -91,9 +96,8 @@ class Launch extends Component {
 
         <p className="launch__section-head">Launch-Sites</p>
         <p className="launch__section-head-text">
-          Pavel is a writer and researcher who studied digital humanities and
-          new media. Being addicted to large amount of information, he produces
-          an appropriate.
+          Launches should happen where the customer wants them from or where the
+          mission demands it from. Go ahead & choose your location here.
         </p>
 
         <div className="launch__overall-div">
@@ -120,8 +124,10 @@ class Launch extends Component {
                         : "launch__location__slide-desc"
                     }
                   >
-                    Construction is currently underway on a second launch pad at
-                    Launch Complex 1.
+                    For more details, send a mail to{" "}
+                    <a href="mailto:payloadpeople@agnikul.in">
+                      payloadpeople@agnikul.in
+                    </a>
                   </p>
                 </div>
               </div>
@@ -146,8 +152,10 @@ class Launch extends Component {
                         : "launch__location__slide-desc"
                     }
                   >
-                    Construction is currently underway on a second launch pad at
-                    Launch Complex 1.
+                    For more details, send a mail to{" "}
+                    <a href="mailto:payloadpeople@agnikul.in">
+                      payloadpeople@agnikul.in
+                    </a>
                   </p>
                 </div>
               </div>
@@ -170,8 +178,10 @@ class Launch extends Component {
                         : "launch__location__slide-desc"
                     }
                   >
-                    Construction is currently underway on a second launch pad at
-                    Launch Complex 1.
+                    For more details, send a mail to{" "}
+                    <a href="mailto:payloadpeople@agnikul.in">
+                      payloadpeople@agnikul.in
+                    </a>
                   </p>
                 </div>
               </div>
@@ -194,8 +204,10 @@ class Launch extends Component {
                         : "launch__location__slide-desc"
                     }
                   >
-                    Construction is currently underway on a second launch pad at
-                    Launch Complex 1.
+                    For more details, send a mail to{" "}
+                    <a href="mailto:payloadpeople@agnikul.in">
+                      payloadpeople@agnikul.in
+                    </a>
                   </p>
                 </div>
               </div>
@@ -384,74 +396,108 @@ class Launch extends Component {
         </div>
 
         <div className="footer">
-          <div className="first-row"></div>
           <div className="container-fluid">
-            <div className="row border-row">
+            <div className="row">
               <div className="col-sm">
-                <p className="footer-normal phone">Phone</p>
-                <p className="footer-bolder">
-                  +32 50 31 28 32, +91 99625 075240, <br></br> +91 96772 82356,
-                  +1 551 689 2314
-                </p>
+                <div className="footer-section">
+                  <p className="footer-normal phone">Phone</p>
+                  <p className="footer-bolder">+91 99625 075240</p>
+                  <p className="footer-bolder">+91 96772 82356</p>
+                  <p className="footer-bolder">+1 551 689 2314</p>
+                </div>
+              </div>
+              <div className="col-sm border-column">
+                <div className="footer-section">
+                  <p className="footer-normal">Addresses</p>
+                  <p className="footer-bolder">
+                    Agnikul Cosmos Private Limited.
+                  </p>
+                  <p className="footer-bold">
+                    National Center for Combustion R&D, <br></br>3rd floor, IIT
+                    Madras, <br></br> Chennai 600036
+                  </p>
+                </div>
               </div>
               <div className="col-sm">
-                <p className="footer-normal">Launch Services</p>
-                <a href="mailto:payloadpeople@agnikul.in">
-                  <p className="footer-bold">payloadpeople@agnikul.in</p>
-                </a>
-              </div>
-              <div className="col-sm">
-                <p className="footer-normal">Careers</p>
-                <a href="mailto:humancapital@agnikul.in">
-                  <p className="footer-bold">humancapital@agnikul.in</p>
-                </a>
+                <div className="footer-section footer-feel-free">
+                  <p className="footer-normal">
+                    Curious to know more about us ? Reach out to
+                  </p>
+                  <a href="mailto:curious@agnikul.in">
+                    <p className="footer-bolder">curious@agnikul.in</p>
+                  </a>
+                </div>
               </div>
             </div>
             <div className="row">
               <div className="col-sm">
-                <p className="footer-normal">Agnikul Cosmos Private Limited.</p>
-                <p className="footer-bolder">
-                  National Center for Combustion R&D, <br></br>3rd floor, IIT
-                  Madras, <br></br> Chennai 600036
-                </p>
+                <div className="footer-section">
+                  <p className="footer-normal">Email</p>
+                  <a href="mailto:humancapital@agnikul.in">
+                    <p className="footer-bolder">humancapital@agnikul.in</p>
+                  </a>
+                  <a href="mailto:payloadpeople@agnikul.in">
+                    <p className="footer-bolder">payloadpeople@agnikul.in</p>
+                  </a>
+                </div>
               </div>
               <div className="col-sm border-column">
-                <p className="footer-normal">
-                  Agnikul Cosmos Launch Vehicles Private Limited
-                </p>
-                <p className="footer-bolder">
-                  Kerala Startup Mission, Technopark, Thejaswini, G3B,
-                  Technopark Rd, Karyavattom, Thiruvananthapuram, Kerala 695581
-                </p>
+                <div className="footer-section">
+                  <p className="footer-bolder">
+                    Agnikul Cosmos Launch Vehicles Private Limited
+                  </p>
+                  <p className="footer-bold">
+                    Kerala Startup Mission, Technopark, Thejaswini, G3B,
+                    Technopark Rd, Karyavattom, Thiruvananthapuram, Kerala
+                    695581
+                  </p>
+                </div>
               </div>
               <div className="col-sm">
-                <a href="https://medium.com/agnikuls-blog" target="/blank">
-                  <p className="footer-bold">Blog</p>
-                </a>
-                <p className="footer-bold">
-                  <Link to="/news" className="footer-bold">
-                    News
-                  </Link>
-                </p>
-                <a
-                  href="https://www.youtube.com/channel/UCZ4l5Je0PVUvSrHr76vP0wA/featured"
-                  target="_blank"
-                >
-                  <p className="footer-bold">Videos</p>
-                </a>
-                <p className="footer-bold book__terms__link">Privacy Policy</p>
-                <div className="footer-social-logos">
-                  <i className="fa fa-facebook" aria-hidden="true"></i>
-                  <i className="fa fa-google-plus" aria-hidden="true"></i>
-                  <a href="https://twitter.com/@agnikulcosmos" target="_blank">
-                    <i className="fa fa-twitter" aria-hidden="true"></i>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/agnikul-cosmos/"
-                    target="_blank"
-                  >
-                    <i className="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
+                <div className="footer-section">
+                  <div className="row">
+                    <div className="col-xs">
+                      <a
+                        href="https://medium.com/agnikuls-blog"
+                        target="_blank"
+                      >
+                        <p className="footer-bolder">Blog</p>
+                      </a>
+                    </div>
+                    <div className="col-xs">
+                      <Link to="/news" className="footer-bolder">
+                        <p className="footer-bolder">News</p>
+                      </Link>
+                    </div>
+                    <div className="col-xs">
+                      <a
+                        className="footer-bolder"
+                        href="https://www.youtube.com/channel/UCZ4l5Je0PVUvSrHr76vP0wA/featured"
+                        target="_blank"
+                      >
+                        <p className="footer-bolder">Videos</p>
+                      </a>
+                    </div>
+                  </div>
+                  <p className="footer-bolder book__terms__link">
+                    Terms,Conditions and Privacy Policy
+                  </p>
+                  <div className="footer-social-logos">
+                    <i className="fa fa-facebook" aria-hidden="true"></i>
+                    <i className="fa fa-google-plus" aria-hidden="true"></i>
+                    <a
+                      href="https://twitter.com/@agnikulcosmos"
+                      target="_blank"
+                    >
+                      <i className="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/agnikul-cosmos/"
+                      target="_blank"
+                    >
+                      <i className="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

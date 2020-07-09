@@ -267,7 +267,6 @@ export default function Init() {
         job = currCat[job];
         content += '<p class="dropdown-item" id="' + job.id + '">' + job.name + "</p>\n";
       }
-      console.log(content);
       var dropdw = document.getElementById("job");
       dropdw.innerHTML = content;
       addEvents();

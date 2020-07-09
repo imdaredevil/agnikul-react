@@ -36,14 +36,19 @@ function Career() {
               Products
             </Link>
           </div>
-          <div className="column-md">
+          {/* <div className="column-md">
             <Link to="/launch-sites" className="nav-itemc nav-linkc">
               Launch Sites
             </Link>
-          </div>
-          <div className="column-md">
+          </div> */}
+          <div className="column">
             <Link to="/team" className="nav-itemc nav-linkc">
-              Meet the Team
+              Team
+            </Link>
+          </div>
+          <div className="column">
+            <Link to="/news" className="nav-itemc nav-linkc">
+              News
             </Link>
           </div>
           <div className="column">
@@ -67,10 +72,13 @@ function Career() {
       </div>
       <div className="container-fluid custom-form career__form">
         <p className="career__section-head">Careers</p>
+        <p className="career__section-text">
+          Anyone who is really, really good at anything has a place at Agnikul.
+        </p>
         <form>
           <div className="row">
             <div className="col-sm">
-              <div className="dropdown">
+              <div className="dropdown" id="form-crew">
                 <button
                   className="custom-form-control dropdown-toggle"
                   type="button"
@@ -78,6 +86,7 @@ function Career() {
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
+                  data-boundary="#form-crew"
                 >
                   <div className="row justify-content-between align-items-center">
                     <div className="col-xs">
@@ -126,7 +135,7 @@ function Career() {
           </div>
           <div className="row">
             <div className="col-sm">
-              <div className="dropdown">
+              <div className="dropdown" id="form-job">
                 <button
                   className="custom-form-control dropdown-toggle"
                   type="button"
@@ -134,6 +143,7 @@ function Career() {
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
+                  data-boundary="#form-job"
                 >
                   <div className="row justify-content-between align-items-center">
                     <div className="col-xs">
@@ -229,32 +239,32 @@ function Career() {
           <div className="career__section">
             <p className="career__head">PREFERRED SKILLS AND EXPERIENCE</p>
             <ul>
-              <li className="careers__text">
+              <li className="career__text">
                 Bachelor’s degree in mechanical, chemical, or aerospace
                 engineering
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Knowledge of metallic manufacturing techniques, processes, and
                 equipment related to machining, welding, drilling, and
                 automation
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Mechanical component and/or tooling design and analysis (3D
                 computer-aided design)
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Ability to write detailed repair reports (advanced MS Office
                 skills)
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Experience with process development from R&D to high-volume
                 manufacturing
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Experience writing work instructions and procedures for critical
                 aerospace parts
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Experience in a production environment within the aerospace
                 industry
               </li>
@@ -263,14 +273,14 @@ function Career() {
           <div className="career__section">
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
-              <li className="careers__text">
+              <li className="career__text">
                 Position may require extended work hours
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Position requires working directly with hardware on the floor
                 for extended periods of time
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Must be available to work extended hours and weekends as needed
               </li>
             </ul>
@@ -357,27 +367,27 @@ function Career() {
           <div className="career__section">
             <p className="career__head">PREFERRED SKILLS AND EXPERIENCE</p>
             <ul>
-              <li className="careers__text">
+              <li className="career__text">
                 Bachelor’s degree in electronics engineering technology degree
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Experience with thermal vacuum testing
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Experience with vibration and shock testing.
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Ability to write detailed repair reports (advanced MS Office
                 skills)
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Some experience in space, aviation, military or other
                 high-reliability operating environments is highly desirable.
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Software skills- LabVIEW or Python desired
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Capable of working with diverse electrical test equipment analog
                 and digital and RF.
               </li>
@@ -388,7 +398,7 @@ function Career() {
           <div className="career__section">
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
-              <li className="careers__text">
+              <li className="career__text">
                 Must be available to work extended hours and weekends as needed
               </li>
             </ul>
@@ -505,24 +515,24 @@ function Career() {
           <div className="career__section">
             <p className="career__head">EXPERIENCE</p>
             <ul>
-              <li className="careers__text">
+              <li className="career__text">
                 BS or MS in Mechanical or Electrical Engineering or similar
                 discipline
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 2+ years’ work experience in motor design or electrical machines
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Experience and familiarity with Finite Element Analysis,
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Experience and familiarity with electro-magnetics, 3 phase power
                 systems
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Experience with building of prototypes
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Experience with SolidWorks is a plus
               </li>
             </ul>
@@ -530,7 +540,7 @@ function Career() {
           <div className="career__section">
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
-              <li className="careers__text">
+              <li className="career__text">
                 Must be available to work extended hours and weekends as needed
               </li>
             </ul>
@@ -668,25 +678,25 @@ function Career() {
           <div className="career__section">
             <p className="career__head">PREFERRED SKILLS AND EXPERIENCE</p>
             <ul>
-              <li className="careers__text">
+              <li className="career__text">
                 Masters of Science Degree in Electrical Engineering, Computer
                 Engineering or equivalent area of focus.
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 2+ years of board level experience designing hardware from
                 concept through production; strong emphasis on full lifecycle
                 development of new hardware systems -- not small incremental
                 updates to legacy hardware
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Strong understanding of computers and programming languages
                 (C/C++, Matlab, Assembly language).
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Ability to work in a fast paced, autonomously driven, and
                 demanding start-up atmosphere
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Excellent communication skills both written and verbal.
               </li>
             </ul>
@@ -694,7 +704,7 @@ function Career() {
           <div className="career__section">
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
-              <li className="careers__text">
+              <li className="career__text">
                 Must be available to work extended hours and weekends as needed
               </li>
             </ul>
@@ -835,24 +845,24 @@ function Career() {
           <div className="career__section">
             <p className="career__head">PREFERRED SKILLS AND EXPERIENCE</p>
             <ul>
-              <li className="careers__text">
+              <li className="career__text">
                 Master’s degree or PhD in an engineering discipline
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Strong background in solid mechanics and structural dynamics
                 (custom-modal, transient, and random vibration analysis)
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Expert on fatigue, crack initiation, propagation mechanisms and
                 metallic failure prevention
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Familiar with crack growth analysis codes
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Excellent oral and written communication skills
               </li>
-              <li className="careers__text">
+              <li className="career__text">
                 Ability to deliver against an aggressive schedule
               </li>
             </ul>
@@ -860,7 +870,7 @@ function Career() {
           <div className="career__section">
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
-              <li className="careers__text">
+              <li className="career__text">
                 Must be available to work extended hours and weekends as needed
               </li>
             </ul>
@@ -1039,7 +1049,7 @@ function Career() {
           <div className="career__section">
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
-              <li className="careers__text">
+              <li className="career__text">
                 Must be available to work extended hours and weekends as needed
               </li>
             </ul>
@@ -1171,7 +1181,7 @@ function Career() {
           <div className="career__section">
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
-              <li className="careers__text">
+              <li className="career__text">
                 Must be available to work extended hours and weekends as needed
               </li>
             </ul>
@@ -1378,7 +1388,7 @@ function Career() {
           <div className="career__section">
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
-              <li className="careers__text">
+              <li className="career__text">
                 Must be available to work extended hours and weekends as needed
               </li>
             </ul>
@@ -1512,7 +1522,7 @@ function Career() {
           <div className="career__section">
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
-              <li className="careers__text">
+              <li className="career__text">
                 Must be available to work extended hours and weekends as needed
               </li>
             </ul>
@@ -1720,74 +1730,99 @@ function Career() {
       </div>
 
       <div className="footer">
-        <div className="first-row"></div>
         <div className="container-fluid">
-          <div className="row border-row">
+          <div className="row">
             <div className="col-sm">
-              <p className="footer-normal phone">Phone</p>
-              <p className="footer-bolder">
-                +32 50 31 28 32, +91 99625 075240, <br></br> +91 96772 82356, +1
-                551 689 2314
-              </p>
+              <div className="footer-section">
+                <p className="footer-normal phone">Phone</p>
+                <p className="footer-bolder">+91 99625 075240</p>
+                <p className="footer-bolder">+91 96772 82356</p>
+                <p className="footer-bolder">+1 551 689 2314</p>
+              </div>
+            </div>
+            <div className="col-sm border-column">
+              <div className="footer-section">
+                <p className="footer-normal">Addresses</p>
+                <p className="footer-bolder">Agnikul Cosmos Private Limited.</p>
+                <p className="footer-bold">
+                  National Center for Combustion R&D, <br></br>3rd floor, IIT
+                  Madras, <br></br> Chennai 600036
+                </p>
+              </div>
             </div>
             <div className="col-sm">
-              <p className="footer-normal">Launch Services</p>
-              <a href="mailto:payloadpeople@agnikul.in">
-                <p className="footer-bold">payloadpeople@agnikul.in</p>
-              </a>
-            </div>
-            <div className="col-sm">
-              <p className="footer-normal">Careers</p>
-              <a href="mailto:humancapital@agnikul.in">
-                <p className="footer-bold">humancapital@agnikul.in</p>
-              </a>
+              <div className="footer-section footer-feel-free">
+                <p className="footer-normal">
+                  Curious to know more about us ? Reach out to
+                </p>
+                <a href="mailto:curious@agnikul.in">
+                  <p className="footer-bolder">curious@agnikul.in</p>
+                </a>
+              </div>
             </div>
           </div>
           <div className="row">
             <div className="col-sm">
-              <p className="footer-normal">Agnikul Cosmos Private Limited.</p>
-              <p className="footer-bolder">
-                National Center for Combustion R&D, <br></br>3rd floor, IIT
-                Madras, <br></br> Chennai 600036
-              </p>
+              <div className="footer-section">
+                <p className="footer-normal">Email</p>
+                <a href="mailto:humancapital@agnikul.in">
+                  <p className="footer-bolder">humancapital@agnikul.in</p>
+                </a>
+                <a href="mailto:payloadpeople@agnikul.in">
+                  <p className="footer-bolder">payloadpeople@agnikul.in</p>
+                </a>
+              </div>
             </div>
             <div className="col-sm border-column">
-              <p className="footer-normal">
-                Agnikul Cosmos Launch Vehicles Private Limited
-              </p>
-              <p className="footer-bolder">
-                Kerala Startup Mission, Technopark, Thejaswini, G3B, Technopark
-                Rd, Karyavattom, Thiruvananthapuram, Kerala 695581
-              </p>
+              <div className="footer-section">
+                <p className="footer-bolder">
+                  Agnikul Cosmos Launch Vehicles Private Limited
+                </p>
+                <p className="footer-bold">
+                  Kerala Startup Mission, Technopark, Thejaswini, G3B,
+                  Technopark Rd, Karyavattom, Thiruvananthapuram, Kerala 695581
+                </p>
+              </div>
             </div>
             <div className="col-sm">
-              <a href="https://medium.com/agnikuls-blog" target="/blank">
-                <p className="footer-bold">Blog</p>
-              </a>
-              <p className="footer-bold">
-                <Link to="/news" className="footer-bold">
-                  News
-                </Link>
-              </p>
-              <a
-                href="https://www.youtube.com/channel/UCZ4l5Je0PVUvSrHr76vP0wA/featured"
-                target="_blank"
-              >
-                <p className="footer-bold">Videos</p>
-              </a>
-              <p className="footer-bold book__terms__link">Privacy Policy</p>
-              <div className="footer-social-logos">
-                <i className="fa fa-facebook" aria-hidden="true"></i>
-                <i className="fa fa-google-plus" aria-hidden="true"></i>
-                <a href="https://twitter.com/@agnikulcosmos" target="_blank">
-                  <i className="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/agnikul-cosmos/"
-                  target="_blank"
-                >
-                  <i className="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
+              <div className="footer-section">
+                <div className="row">
+                  <div className="col-xs">
+                    <a href="https://medium.com/agnikuls-blog" target="_blank">
+                      <p className="footer-bolder">Blog</p>
+                    </a>
+                  </div>
+                  <div className="col-xs">
+                    <Link to="/news" className="footer-bolder">
+                      <p className="footer-bolder">News</p>
+                    </Link>
+                  </div>
+                  <div className="col-xs">
+                    <a
+                      className="footer-bolder"
+                      href="https://www.youtube.com/channel/UCZ4l5Je0PVUvSrHr76vP0wA/featured"
+                      target="_blank"
+                    >
+                      <p className="footer-bolder">Videos</p>
+                    </a>
+                  </div>
+                </div>
+                <p className="footer-bolder book__terms__link">
+                  Terms,Conditions and Privacy Policy
+                </p>
+                <div className="footer-social-logos">
+                  <i className="fa fa-facebook" aria-hidden="true"></i>
+                  <i className="fa fa-google-plus" aria-hidden="true"></i>
+                  <a href="https://twitter.com/@agnikulcosmos" target="_blank">
+                    <i className="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/agnikul-cosmos/"
+                    target="_blank"
+                  >
+                    <i className="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

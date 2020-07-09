@@ -3,11 +3,13 @@ import "./css/book.css";
 import log from "./images/logo.png";
 import navBar from "./js/common";
 import spaceshipWhite from "./images/form-icons/spaceship-white.png";
+import Init from "./js/book";
+import { Link } from "react-router-dom";
+import $ from "jquery";
+
 import flag from "./images/form-icons/launch-location.png";
 import orbit from "./images/form-icons/orbital-inclination.png";
 import payload from "./images/form-icons/payload-mass.png";
-import Init from "./js/book";
-import { Link } from "react-router-dom";
 import phone from "./images/form-icons/phone.png";
 import mail from "./images/form-icons/letter.png";
 import mountain from "./images/form-icons/mountain.png";
@@ -15,7 +17,14 @@ import office from "./images/form-icons/office.png";
 import location from "./images/form-icons/location.png";
 import person from "./images/form-icons/person.png";
 import down from "./images/form-icons/down-arrow.png";
-import $ from "jquery";
+
+import blank from "./images/launch/blank.png";
+import AsiaPacific from "./images/launch/Asiapacific.png";
+import India from "./images/launch/India.png";
+import NorthAmerica from "./images/launch/Northernamerica.png";
+import NorthEurope from "./images/launch/Northerneurope.png";
+
+
 
 class Book extends Component {
   constructor(props) {
@@ -25,6 +34,7 @@ class Book extends Component {
       launch: "LAUNCH LOCATION",
       orbit: "ORBITAL INCLINATION",
       payload: "PAYLOAD MASS",
+      current: blank
     };
     if (props.location != undefined && props.location.state != undefined) {
       if (props.location.state.launch != undefined)
@@ -50,21 +60,19 @@ class Book extends Component {
     var name = $("#name-field").val();
     var email = $("#email-field").val();
     var company = $("#company-field").val();
-    var country = $("#country-field").text();
+    var altitude = $("#altitude-field").text();
     var phone = $("#phone-field").val();
-    var altitude = $("#altitude-field").val();
+    var preferred = $("#preferred-field").text();
     var tac = document.getElementById("tac");
     if (
       !(
         $("#location-field").hasClass("selected") &&
         $("#inclination-field").hasClass("selected") &&
         $("#payload-field").hasClass("selected") &&
-        $("#country-field").hasClass("selected") &&
+        $("#altitude-field").hasClass("selected") &&
+        $("#preferred-field").hasClass("selected") &&
         name != "" &&
         email != "" &&
-        company != "" &&
-        phone != "" &&
-        altitude != "" &&
         tac.checked
       )
     ) {
@@ -81,27 +89,32 @@ class Book extends Component {
         "Launch Location": location,
         "Orbital Inclination": orbit,
         "Payload Mass": payload,
-        Name: name,
+        "Name": name,
         "Email Address": email,
-        Company: company,
-        Altitude: altitude,
-        "Country of Origin": country,
-        Phone: phone,
-        Timestamp: new Date(),
+        "Company": company,
+        "Orbital Altitude": altitude,
+        "Preferred Site for Payload Integration" : preferred,
+        "Phone": phone,
+        "Timestamp": new Date(),
       },
     }).done(function (response) {
-      console.log(response);
       window.location = process.env.PUBLIC_URL + "#/book-complete";
     });
   }
 
   enterLaunch(name) {
+    var image = blank;
     if (
       !document.getElementById("location-field").classList.contains("selected")
     )
       document.getElementById("location-field").classList.add("selected");
+     if (name == "Asia Pacific") image = AsiaPacific;
+     if (name == "Northern Europe") image = NorthEurope;
+     if (name == "Northern America") image = NorthAmerica;
+     if (name == "India") image = India;
     this.setState({
       launch: name,
+      current: image
     });
   }
 
@@ -153,14 +166,19 @@ class Book extends Component {
                 Products
               </Link>
             </div>
-            <div className="column-md">
+            {/* <div className="column-md">
               <Link to="/launch-sites" className="nav-itemc nav-linkc">
                 Launch Sites
               </Link>
-            </div>
-            <div className="column-md">
+            </div> */}
+            <div className="column">
               <Link to="/team" className="nav-itemc nav-linkc">
-                Meet the Team
+                Team
+              </Link>
+            </div>
+            <div className="column">
+              <Link to="/news" className="nav-itemc nav-linkc">
+                News
               </Link>
             </div>
             <div className="column">
@@ -182,7 +200,11 @@ class Book extends Component {
         </div>
         <div className="book__overall-div">
           <p className="book__heading">Book your launch</p>
-
+          <p className="book__head-text">
+            Launches should be customer driven but when we look around we find
+            them mostly launch vehicle driven. We want to turn it around,
+            completely and make it customer-centric.
+          </p>
           <div className="book__form-content">
             <form>
               <p className="book__step">STEP 01</p>
@@ -254,6 +276,13 @@ class Book extends Component {
                           </p>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-sm">
+                    <div className="book__world-map">
+                      <img className="world_image" src={this.state.current} />
                     </div>
                   </div>
                 </div>
@@ -405,8 +434,98 @@ class Book extends Component {
               <div className="container-fluid custom-form">
                 <div className="row">
                   <div className="col-sm">
+                    <div className="dropdown" id="form-altitude">
+                      <button
+                        className="dropdown-toggle custom-form-control"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-boundary="form-altitude"
+                      >
+                        <div className="row justify-content-between align-items-center">
+                          <div className="col-xs">
+                            <img src={mountain} className="custom"></img>
+                          </div>
+                          <div className="col">
+                            <p
+                              className="form-control-name"
+                              id="altitude-field"
+                            >
+                              ORBITAL ALTITUDE
+                            </p>
+                          </div>
+                          <div className="col-xs">
+                            <img className="arrow" src={down} />
+                          </div>
+                        </div>
+                      </button>
+                      <div
+                        className="dropdown-menu custom-form-options"
+                        aria-labelledby="dropdownMenuButton"
+                        id="altitude"
+                      >
+                        <div className="custom-form-options-inner">
+                          <p className="dropdown-item">&lt; 400 km</p>
+                          <p className="dropdown-item">400 - 500 km</p>
+                          <p className="dropdown-item">500 - 600 km</p>
+                          <p className="dropdown-item">600 - 700 km</p>
+                          <p className="dropdown-item">&gt; 700 km</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-sm">
+                    <div className="dropdown" id="form-preferred">
+                      <button
+                        className="dropdown-toggle custom-form-control"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        data-boundary="form-preferred"
+                      >
+                        <div className="row justify-content-between align-items-center">
+                          <div className="col-xs">
+                            <img src={location} className="custom"></img>
+                          </div>
+                          <div className="col">
+                            <p
+                              className="form-control-name"
+                              id="preferred-field"
+                            >
+                              PREFERRED SITE OF PAYLOAD INTEGRATION
+                            </p>
+                          </div>
+                          <div className="col-xs">
+                            <img className="arrow" src={down} />
+                          </div>
+                        </div>
+                      </button>
+                      <div
+                        className="dropdown-menu custom-form-options"
+                        aria-labelledby="dropdownMenuButton"
+                        id="preferred"
+                      >
+                        <div className="custom-form-options-inner">
+                          <p className="dropdown-item">Launchpad</p>
+                          <p className="dropdown-item">Leave it to Agnikul</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p className="book__step">STEP 03</p>
+              <div className="container-fluid custom-form">
+                <div className="row">
+                  <div className="col-sm">
                     <div className="dropdown">
-                      <div className="custom-form-control">
+                      <div className="custom-form-control" type="button">
                         <div className="row justify-content-between align-items-center">
                           <div className="col-xs">
                             <img src={person} className="custom"></img>
@@ -429,7 +548,7 @@ class Book extends Component {
                       <div className="custom-form-control">
                         <div className="row justify-content-between align-items-center">
                           <div className="col-xs">
-                            <img src={office} className="custom"></img>
+                            <img src={phone} className="custom"></img>
                           </div>
                           <div className="col">
                             <input
@@ -438,46 +557,6 @@ class Book extends Component {
                               placeholder="COMPANY"
                             />
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-sm">
-                    <div className="dropdown" id="form-country">
-                      <button
-                        className="dropdown-toggle custom-form-control"
-                        type="button"
-                        id="dropdownMenuButton"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        data-boundary="form-country"
-                      >
-                        <div className="row justify-content-between align-items-center">
-                          <div className="col-xs">
-                            <img src={location} className="custom"></img>
-                          </div>
-                          <div className="col">
-                            <p className="form-control-name" id="country-field">
-                              COUNTRY OF ORIGIN
-                            </p>
-                          </div>
-                          <div className="col-xs">
-                            <img className="arrow" src={down} />
-                          </div>
-                        </div>
-                      </button>
-                      <div
-                        className="dropdown-menu custom-form-options"
-                        aria-labelledby="dropdownMenuButton"
-                        id="country"
-                      >
-                        <div className="custom-form-options-inner">
-                          <p className="dropdown-item">Action</p>
-                          <p className="dropdown-item">Another action</p>
-                          <p className="dropdown-item">Something else here</p>
                         </div>
                       </div>
                     </div>
@@ -495,6 +574,7 @@ class Book extends Component {
                             <input
                               className="form-control-name"
                               id="email-field"
+                              type="email"
                               placeholder="EMAIL ADDRESS"
                             />
                           </div>
@@ -515,27 +595,8 @@ class Book extends Component {
                             <input
                               className="form-control-name"
                               id="phone-field"
+                              type="phone"
                               placeholder="PHONE NUMBER"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-sm">
-                    <div className="dropdown">
-                      <div className="custom-form-control">
-                        <div className="row justify-content-between align-items-center">
-                          <div className="col-xs">
-                            <img src={mountain} className="custom"></img>
-                          </div>
-                          <div className="col">
-                            <input
-                              className="form-control-name"
-                              id="altitude-field"
-                              placeholder="ALTITUDE"
                             />
                           </div>
                         </div>
@@ -737,74 +798,108 @@ class Book extends Component {
           </div>
         </div>
         <div className="footer">
-          <div className="first-row"></div>
           <div className="container-fluid">
-            <div className="row border-row">
+            <div className="row">
               <div className="col-sm">
-                <p className="footer-normal phone">Phone</p>
-                <p className="footer-bolder">
-                  +32 50 31 28 32, +91 99625 075240, <br></br> +91 96772 82356,
-                  +1 551 689 2314
-                </p>
+                <div className="footer-section">
+                  <p className="footer-normal phone">Phone</p>
+                  <p className="footer-bolder">+91 99625 075240</p>
+                  <p className="footer-bolder">+91 96772 82356</p>
+                  <p className="footer-bolder">+1 551 689 2314</p>
+                </div>
+              </div>
+              <div className="col-sm border-column">
+                <div className="footer-section">
+                  <p className="footer-normal">Addresses</p>
+                  <p className="footer-bolder">
+                    Agnikul Cosmos Private Limited.
+                  </p>
+                  <p className="footer-bold">
+                    National Center for Combustion R&D, <br></br>3rd floor, IIT
+                    Madras, <br></br> Chennai 600036
+                  </p>
+                </div>
               </div>
               <div className="col-sm">
-                <p className="footer-normal">Launch Services</p>
-                <a href="mailto:payloadpeople@agnikul.in">
-                  <p className="footer-bold">payloadpeople@agnikul.in</p>
-                </a>
-              </div>
-              <div className="col-sm">
-                <p className="footer-normal">Careers</p>
-                <a href="mailto:humancapital@agnikul.in">
-                  <p className="footer-bold">humancapital@agnikul.in</p>
-                </a>
+                <div className="footer-section footer-feel-free">
+                  <p className="footer-normal">
+                    Curious to know more about us ? Reach out to
+                  </p>
+                  <a href="mailto:curious@agnikul.in">
+                    <p className="footer-bolder">curious@agnikul.in</p>
+                  </a>
+                </div>
               </div>
             </div>
             <div className="row">
               <div className="col-sm">
-                <p className="footer-normal">Agnikul Cosmos Private Limited.</p>
-                <p className="footer-bolder">
-                  National Center for Combustion R&D, <br></br>3rd floor, IIT
-                  Madras, <br></br> Chennai 600036
-                </p>
+                <div className="footer-section">
+                  <p className="footer-normal">Email</p>
+                  <a href="mailto:humancapital@agnikul.in">
+                    <p className="footer-bolder">humancapital@agnikul.in</p>
+                  </a>
+                  <a href="mailto:payloadpeople@agnikul.in">
+                    <p className="footer-bolder">payloadpeople@agnikul.in</p>
+                  </a>
+                </div>
               </div>
               <div className="col-sm border-column">
-                <p className="footer-normal">
-                  Agnikul Cosmos Launch Vehicles Private Limited
-                </p>
-                <p className="footer-bolder">
-                  Kerala Startup Mission, Technopark, Thejaswini, G3B,
-                  Technopark Rd, Karyavattom, Thiruvananthapuram, Kerala 695581
-                </p>
+                <div className="footer-section">
+                  <p className="footer-bolder">
+                    Agnikul Cosmos Launch Vehicles Private Limited
+                  </p>
+                  <p className="footer-bold">
+                    Kerala Startup Mission, Technopark, Thejaswini, G3B,
+                    Technopark Rd, Karyavattom, Thiruvananthapuram, Kerala
+                    695581
+                  </p>
+                </div>
               </div>
               <div className="col-sm">
-                <a href="https://medium.com/agnikuls-blog" target="/blank">
-                  <p className="footer-bold">Blog</p>
-                </a>
-                <p className="footer-bold">
-                  <Link to="/news" className="footer-bold">
-                    News
-                  </Link>
-                </p>
-                <a
-                  href="https://www.youtube.com/channel/UCZ4l5Je0PVUvSrHr76vP0wA/featured"
-                  target="_blank"
-                >
-                  <p className="footer-bold">Videos</p>
-                </a>
-                <p className="footer-bold book__terms__link">Privacy Policy</p>
-                <div className="footer-social-logos">
-                  <i className="fa fa-facebook" aria-hidden="true"></i>
-                  <i className="fa fa-google-plus" aria-hidden="true"></i>
-                  <a href="https://twitter.com/@agnikulcosmos" target="_blank">
-                    <i className="fa fa-twitter" aria-hidden="true"></i>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/agnikul-cosmos/"
-                    target="_blank"
-                  >
-                    <i className="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
+                <div className="footer-section">
+                  <div className="row">
+                    <div className="col-xs">
+                      <a
+                        href="https://medium.com/agnikuls-blog"
+                        target="_blank"
+                      >
+                        <p className="footer-bolder">Blog</p>
+                      </a>
+                    </div>
+                    <div className="col-xs">
+                      <Link to="/news" className="footer-bolder">
+                        <p className="footer-bolder">News</p>
+                      </Link>
+                    </div>
+                    <div className="col-xs">
+                      <a
+                        className="footer-bolder"
+                        href="https://www.youtube.com/channel/UCZ4l5Je0PVUvSrHr76vP0wA/featured"
+                        target="_blank"
+                      >
+                        <p className="footer-bolder">Videos</p>
+                      </a>
+                    </div>
+                  </div>
+                  <p className="footer-bolder book__terms__link">
+                    Terms,Conditions and Privacy Policy
+                  </p>
+                  <div className="footer-social-logos">
+                    <i className="fa fa-facebook" aria-hidden="true"></i>
+                    <i className="fa fa-google-plus" aria-hidden="true"></i>
+                    <a
+                      href="https://twitter.com/@agnikulcosmos"
+                      target="_blank"
+                    >
+                      <i className="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/agnikul-cosmos/"
+                      target="_blank"
+                    >
+                      <i className="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
