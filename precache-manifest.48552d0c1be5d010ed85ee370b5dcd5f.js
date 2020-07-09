@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "98968bdbee8a199f6c2da85f77e70e7b",
+    "revision": "650fdc82ee71efe3fbc9d87843457e98",
     "url": "/agnikul-react/index.html"
   },
   {
@@ -36,15 +36,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/css/7.ea7a0f0d.chunk.css"
   },
   {
-    "revision": "8efe16046b25d84cc48e",
-    "url": "/agnikul-react/static/css/8.b265326a.chunk.css"
+    "revision": "28cc7bbe21f53cade00f",
+    "url": "/agnikul-react/static/css/8.07213c52.chunk.css"
   },
   {
     "revision": "1eb807be8e00f802f631",
     "url": "/agnikul-react/static/css/9.381ee5d0.chunk.css"
   },
   {
-    "revision": "7359755de81c5b1780b2",
+    "revision": "01849412be2211535d04",
     "url": "/agnikul-react/static/css/main.2f64e526.chunk.css"
   },
   {
@@ -88,7 +88,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/7.f43b45bf.chunk.js"
   },
   {
-    "revision": "8efe16046b25d84cc48e",
+    "revision": "28cc7bbe21f53cade00f",
     "url": "/agnikul-react/static/js/8.3bcc2a77.chunk.js"
   },
   {
@@ -96,12 +96,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/9.772ef551.chunk.js"
   },
   {
-    "revision": "7359755de81c5b1780b2",
-    "url": "/agnikul-react/static/js/main.b8752dcc.chunk.js"
+    "revision": "01849412be2211535d04",
+    "url": "/agnikul-react/static/js/main.f8478cee.chunk.js"
   },
   {
-    "revision": "6f0580ea0cd076af1a34",
-    "url": "/agnikul-react/static/js/runtime-main.eab02147.js"
+    "revision": "65dcaf9b97c1fea45e95",
+    "url": "/agnikul-react/static/js/runtime-main.9c343a99.js"
   },
   {
     "revision": "d4e8f94bbf8b399880db76fb3238a832",
@@ -294,6 +294,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c4be848c5accd4d6bbb106bfa3c8b41a",
     "url": "/agnikul-react/static/media/centered-image.c4be848c.png"
+  },
+  {
+    "revision": "7b9f9926b71290160db152b36ec33d02",
+    "url": "/agnikul-react/static/media/circle-icon.7b9f9926.png"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
