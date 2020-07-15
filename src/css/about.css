@@ -560,9 +560,17 @@
     text-align: center;
 }
 
+.business-slide-img-div {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+}
+
 .business-slide-img {
-    width: 200px;
-    vertical-align: top;
+    height: 100%;
+    object-fit: contain;
+    align-self: center;
 }
 
 .business-swiper .swiper-wrapper {
@@ -581,14 +589,13 @@
 
 .business-slide-quote {
     opacity: 0.6;
-    font-family: "Poppins Italic";
+    font-family: "Poppins Regular";
     font-size: 24px;
     font-weight: normal;
     font-stretch: normal;
-    font-style: italic;
     line-height: normal;
     letter-spacing: normal;
-    text-align: center;
+    text-align: justify;
     color: #000000;
 }
 

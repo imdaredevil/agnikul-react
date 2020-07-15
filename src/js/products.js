@@ -862,11 +862,16 @@ export default function Init() {
     }
 
     function handleMobile() {
-
+        _containerHeight = 5000;
         var value = 9;
         for (var transition in transitions) {
             var index = transition;
             transition = transitions[transition];
+
+            if (transition.selector == ".fifth-scroll")
+            {
+                transition.percentEnd = transition.percentStart;              
+            }
             if (transition.selector == ".hydraulic")
                 transition.selector = ".hydraulic-mobile";
             for (var record in transition.before) {
@@ -910,7 +915,11 @@ export default function Init() {
     }
 
     $(document).ready(function () {
+
+            
         $("body").addClass("products");
+         setHeight();
+         if (window.screen.width <= 576) handleMobile();
         pre = prefix();
         _jsPrefix = pre.lowercase;
         if (_jsPrefix == 'moz')
@@ -918,11 +927,9 @@ export default function Init() {
         _cssPrefix = pre.css;
         resize();
 
-        if (window.screen.width <= 576)
-            handleMobile();
+      
 
-        setHeight();
-
+       
         $(window).on('resize', resize());
         loop();
         resize();

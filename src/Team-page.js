@@ -42,13 +42,13 @@ function Team() {
               Products
             </Link>
           </div>
-          <div className="column-md">
+          {/* <div className="column-md">
             <Link to="/launch-sites" className="nav-itemc nav-linkc">
               Launch Sites
             </Link>
-          </div>
+          </div> */}
           <div className="column">
-            <Link to="/team" className="nav-itemc nav-linkc">
+            <Link to="/team" className="nav-itemc nav-linkc active">
               Team
             </Link>
           </div>

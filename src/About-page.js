@@ -26,7 +26,7 @@ import speciale from "./images/about/investors/speciale.png";
 import alenspace from "./images/about/customers/alenspace.png";
 import dcube from "./images/about/customers/Dcube.png";
 import dorbit from "./images/about/customers/Dorbit.png";
-import leafspace from "./images/about/customers/leafspace.png";
+import leafspace from "./images/about/customers/leafspace.svg";
 import picosats from "./images/about/customers/Picosats.png";
 
 function About() {
@@ -59,7 +59,7 @@ function About() {
             <Link to="/launch-sites" className="nav-itemc nav-linkc">
               Launch Sites
             </Link> 
-          </div> */ }
+          </div> */}
           <div className="column">
             <Link to="/team" className="nav-itemc nav-linkc">
               Team
@@ -291,53 +291,68 @@ function About() {
             <div className="business-swiper-slide swiper-slide">
               <div className="business-slide-content">
                 <p className="business-slide-quote">
-                  "With Agnikul, goal is to make space affordable for everyone
-                  in India. If you are excited about our journey,”
+                  "We are super excited to announce our official partnership with
+                  Agnikul to support on-demand access to space, adding value by
+                  providing our ground segment support and enabling a turn-key
+                  launch service.""
                 </p>
                 {/* $0 */}
-                <img className="business-slide-img" src={alenspace} />
+                <div className="business-slide-img-div">
+                  <img className="business-slide-img" src={leafspace} />
+                </div>
               </div>
             </div>
             <div className="business-swiper-slide swiper-slide">
               <div className="business-slide-content">
                 <p className="business-slide-quote">
-                  "With Agnikul, goal is to make space affordable for everyone
-                  in India. If you are excited about our journey,”
+                  "For our products we need economic and fast access to space,
+                  we believe that Agnikul enables this in an uncomplicated
+                  nature. We are looking for flying with Agnikul soon."
                 </p>
+                <br></br>
                 {/* <p className="business-slide-author"><b>Elon Musk</b> Chief Executive Officer</p> */}
-                <img className="business-slide-img" src={dcube} />
+                <div className="business-slide-img-div">
+                  <img className="business-slide-img" src={dcube} />
+                </div>
+              </div>
+            </div>
+            {/* <div className="business-swiper-slide swiper-slide">
+              <div className="business-slide-content">
+                <p className="business-slide-quote">
+                  "For our products we need economic and fast access to space,
+                  we believe that Agnikul enables this in an uncomplicated
+                  nature. We are looking for flying with Agnikul soon."
+                </p>
+                <div className="business-slide-img-div">
+                  <img className="business-slide-img" src={dorbit} />
+                </div>
               </div>
             </div>
             <div className="business-swiper-slide swiper-slide">
               <div className="business-slide-content">
                 <p className="business-slide-quote">
-                  "With Agnikul, goal is to make space affordable for everyone
-                  in India. If you are excited about our journey,”
+                  "For our products we need economic and fast access to space,
+                  we believe that Agnikul enables this in an uncomplicated
+                  nature. We are looking for flying with Agnikul soon."
                 </p>
-                {/* $0 */}
-                <img className="business-slide-img" src={dorbit} />
+                <div className="business-slide-img-div">
+                  <img className="business-slide-img" src={leafspace} />
+                </div>
               </div>
             </div>
             <div className="business-swiper-slide swiper-slide">
               <div className="business-slide-content">
                 <p className="business-slide-quote">
-                  "With Agnikul, goal is to make space affordable for everyone
-                  in India. If you are excited about our journey,”
+                  "For our products we need economic and fast access to space,
+                  we believe that Agnikul enables this in an uncomplicated
+                  nature. We are looking for flying with Agnikul soon."
                 </p>
-                {/* $0 */}
-                <img className="business-slide-img" src={leafspace} />
+                <div className="business-slide-img-div">
+                  <img className="business-slide-img" src={picosats} />
+                </div>
               </div>
-            </div>
-            <div className="business-swiper-slide swiper-slide">
-              <div className="business-slide-content">
-                <p className="business-slide-quote">
-                  "With Agnikul, goal is to make space affordable for everyone
-                  in India. If you are excited about our journey,”
-                </p>
-                {/* $0 */}
-                <img className="business-slide-img" src={picosats} />
-              </div>
-            </div>
+            </div> */}
+
           </div>
           <div className="business-swiper-pagination swiper-pagination"></div>
         </div>

@@ -130,17 +130,17 @@ function Product() {
             <div className="col-xs">
               <img className="product__icon" src={resize}></img>
               <p className="spec-name">HEIGHT</p>
-              <p className="spec-value">18 M</p>
+              <p className="spec-value">18 m</p>
             </div>
             <div className="col-xs">
               <img className="product__icon" src={angle}></img>
               <p className="spec-name">DIAMETER</p>
-              <p className="spec-value">1.3 M</p>
+              <p className="spec-value">1.3 m</p>
             </div>
             <div className="col-xs">
               <img className="product__icon" src={mask}></img>
               <p className="spec-name">LIFT OFF MASS</p>
-              <p className="spec-value">14 TONS</p>
+              <p className="spec-value">14 mtu</p>
             </div>
           </div>
         </div>
@@ -170,9 +170,9 @@ function Product() {
 
             <div className="col">
               <img className="product__icon" src={ml}></img>
-              <p className="heading">1 - 100kgs</p>
+              <p className="heading">1 - 100kg</p>
               <p className="text">
-                Flat costing for any payload between 20 - 100 kgs
+                Flat costing for any payload between 20 - 100 kg
               </p>
             </div>
 
@@ -300,7 +300,7 @@ function Product() {
 
         <div className="fourth-scroll fourth-scroll-1">
           <p className="number">03</p>
-          <p className="content">STAGE 3</p>
+          <p className="content">STAGE 1</p>
         </div>
 
         <div className="fourth-scroll fourth-scroll-2">

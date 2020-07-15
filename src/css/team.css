@@ -98,6 +98,7 @@
 @media screen and (max-width: 576px) {
     .team__team-banner {
         overflow-x: hidden;
+        height: 78%;
     }
     .team__team-banner .col {
         min-width: 33.33%;
