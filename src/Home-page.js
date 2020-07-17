@@ -106,14 +106,12 @@ class Home extends React.Component {
             </div>
             <div className="column">
               <Link to="/career" className="nav-itemc nav-linkc">
-                Career
+                Careers
               </Link>
             </div>
             <div id="navButtonDiv" className="column-lg">
               <Link to="/book">
-                <button className="nav-itemc nav-buttonc">
-                  BOOK YOUR LAUNCH
-                </button>
+                <button className="nav-itemc nav-buttonc">BOOK A LAUNCH</button>
               </Link>
             </div>
           </div>
@@ -145,12 +143,12 @@ class Home extends React.Component {
           <div className="home__second-content">
             <img src={satelite} className="home__second-section-icon" />
             <h3 className="home__second-section-heading">
-              Agnibaan is a highly customizable, 2 stage launch vehicle
+              Agnibaan is a highly customizable, 2 stage launch vehicle.
             </h3>
             <p className="home__second-section-text">
-              Capable of taking upto 100 kgs to orbits around 700 km high,
+              Capable of taking upto 100 kg to orbits around 700 km high,
               Agnibaan can access both low and high inclination orbits and is
-              completely mobile - designed for accessing more than 25
+              completely mobile - designed for accessing more than 10
               launchports.
             </p>
             <br></br>
@@ -189,7 +187,7 @@ class Home extends React.Component {
           </div>
           <div className="row">
             <div className="col-sm">
-              <div className="card">
+              <div className="card" id="firstcard">
                 <img className="home__back-icon" src={cardback} />
                 <div className="card-body">
                   <h1 className="card-head">
@@ -217,7 +215,7 @@ class Home extends React.Component {
                   </h3>
                   <p className="card-text">
                     Payload integration to launch won’t take more than a
-                    fortnight. Yes, launch-when-you-want
+                    fortnight. Yes, launch-when-you-want.
                   </p>
                 </div>
               </div>
@@ -265,8 +263,8 @@ class Home extends React.Component {
             <br></br>
             <br></br>
             <p className="home__fourth-section-text">
-              Yes, Agnibaan is configurable! (If you have not picked that up
-              already). So, let’s go to space together.
+              Yes, Agnibaan is configurable (If you have not picked that up
+              already)!. So, let’s go to space together.
             </p>
             <form>
               <div className="container-fluid custom-form">
@@ -494,7 +492,7 @@ class Home extends React.Component {
             <div className="home__custom-modal">
               <p className="home__close-icon">X</p>
               <p className="home__custom-modal-text">
-                We have received this information. Thanks! Can you pls take a
+                We have received this information. Thanks! Can you please take
                 1-2 mins more to give us more information so that we can assign
                 a Payload Acquisition Strategist to your query?
               </p>
@@ -528,7 +526,7 @@ class Home extends React.Component {
                 Private Limited (“Agnikul”, “we”, “us” or “our”) and users of
                 its website (“you”, “your” or “user”). This agreement (the
                 “Agreement”) also governs your use of this website{" "}
-                <a href="http://agnikul.in">(http://www.agnikul.in/)</a> (the
+                <a href="https://nikul.in">(https://www.agnikul.in/)</a> (the
                 “Site”). By using the Site, you acknowledge that you have
                 reviewed and agree to all of the terms of this Agreement and
                 agree to be bound by them in connection with your use of the
@@ -684,7 +682,7 @@ class Home extends React.Component {
               <div className="col-sm">
                 <div className="footer-section">
                   <p className="footer-normal phone">Phone</p>
-                  <p className="footer-bolder">+91 99625 075240</p>
+                  <p className="footer-bolder">+91 99625 07524</p>
                   <p className="footer-bolder">+91 96772 82356</p>
                   <p className="footer-bolder">+1 551 689 2314</p>
                 </div>
@@ -716,12 +714,25 @@ class Home extends React.Component {
               <div className="col-sm">
                 <div className="footer-section">
                   <p className="footer-normal">Email</p>
-                  <a href="mailto:humancapital@agnikul.in">
-                    <p className="footer-bolder">humancapital@agnikul.in</p>
-                  </a>
-                  <a href="mailto:payloadpeople@agnikul.in">
-                    <p className="footer-bolder">payloadpeople@agnikul.in</p>
-                  </a>
+                  <p className="footer-bolder">
+                    <Link to="/career" className="nav">
+                      Careers
+                    </Link>{" "}
+                    -
+                    <a href="mailto:humancapital@agnikul.in">
+                      humancapital@agnikul.in
+                    </a>
+                  </p>
+
+                  <p className="footer-bolder">
+                    <Link to="/book" className="nav">
+                      Customers
+                    </Link>{" "}
+                    -
+                    <a href="mailto:payloadpeople@agnikul.in">
+                      payloadpeople@agnikul.in
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className="col-sm border-column">
@@ -763,11 +774,9 @@ class Home extends React.Component {
                     </div>
                   </div>
                   <p className="footer-bolder book__terms__link">
-                    Terms,Conditions and Privacy Policy
+                    Terms, Conditions and Privacy Policy
                   </p>
                   <div className="footer-social-logos">
-                    <i className="fa fa-facebook" aria-hidden="true"></i>
-                    <i className="fa fa-google-plus" aria-hidden="true"></i>
                     <a
                       href="https://twitter.com/@agnikulcosmos"
                       target="_blank"

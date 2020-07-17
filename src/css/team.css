@@ -189,7 +189,7 @@
     width: 5%;
     padding: 0% 8% 0% 0%;
     margin-bottom: -10%;
-    transform: translateY(-30%);
+    transform: translateY(-16%);
 }
 
 .founder-image {
@@ -233,6 +233,8 @@
     letter-spacing: normal;
 }
 
+
+
 .founder-logos {
     display: inline-block;
     width: 100%;
@@ -259,6 +261,12 @@
     .founder-text {
         font-size: 14px;
     }
+}
+
+@media screen and (max-width: 576px){
+    .founder-text br {
+        display: none;
+}
 }
 
 /* **********ADVISORS************* */

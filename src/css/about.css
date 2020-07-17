@@ -589,7 +589,7 @@
 
 .business-slide-quote {
     opacity: 0.6;
-    font-family: "Poppins Regular";
+    font-family: "Poppins Italic";
     font-size: 24px;
     font-weight: normal;
     font-stretch: normal;
@@ -645,4 +645,11 @@
     .business-slide-img {
         width: 150px;
     }
+
+    #hostmi.business-slide-img {
+        height: 40%;
+        width: auto;
+        object-fit: contain;
+    }
+
 }

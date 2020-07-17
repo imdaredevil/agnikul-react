@@ -31,7 +31,7 @@ body.products .body {
   top: 10%;
   position: fixed;
   /* height: 100vh; */
-  min-height: -webkit-fill-available;
+  min-height: 100%;
   overflow-y: hidden;
   background-image: url("../images/products/hex-back.png");
   background-size: cover;
@@ -152,7 +152,7 @@ body.products .body {
 /* **********first scroll************* */
 
 .first-scroll-content {
-  padding: 5.23% 11.67% 2.61%;
+  padding: 3.73% 11.67% 2.61%;
   left: 50%;
   top: 0%;
   transform: translateX(-50%);
@@ -183,6 +183,13 @@ body.products .body {
   text-align: center;
   color: rgba(33, 56, 66, 0.6);
 }
+.text span {
+  font-family: "Poppins Light Italic";
+}
+.first-scroll-text span{
+  font-family: "Poppins Italic";
+}
+
 
 .first-scroll-specs {
   width: 75.7%;
@@ -318,7 +325,9 @@ body.products .body {
   letter-spacing: normal;
   color: rgba(33, 56, 66, 0.6);
   text-align: justify;
+  word-wrap: break-word;
 }
+
 
 .icon {
   color: #4d8c52;
@@ -428,6 +437,10 @@ body.products .body {
   .second-scroll-1,
   .second-scroll-2 {
     top: 2%;
+  }
+
+  .second-scroll-3 {
+    top: 52%;
   }
 }
 

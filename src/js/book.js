@@ -14,7 +14,8 @@ export default function Init() {
 
         });
 
-         $("#preferred .dropdown-item").click(function () {
+        $("#preferred .dropdown-item").click(function () {
+            if(!this.classList.contains("disabled"))
            document.getElementById("preferred-field").innerHTML = this.innerHTML;
            if (
              !document

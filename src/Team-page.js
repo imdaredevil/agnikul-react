@@ -59,14 +59,12 @@ function Team() {
           </div>
           <div className="column">
             <Link to="/career" className="nav-itemc nav-linkc">
-              Career
+              Careers
             </Link>
           </div>
           <div id="navButtonDiv" className="column-lg">
             <Link to="/book">
-              <button className="nav-itemc nav-buttonc">
-                BOOK YOUR LAUNCH
-              </button>
+              <button className="nav-itemc nav-buttonc">BOOK A LAUNCH</button>
             </Link>
           </div>
         </div>
@@ -165,8 +163,17 @@ function Team() {
             <p className="founder-name">Srinath Ravichandran</p>
             <p className="founder-desi">CO-FOUNDER</p>
             <p className="founder-text">
-              Bond trader turned Aerospace Engineer. Physics enthusiast. Once in
-              a while tries to write screenplays.
+              Srinath is a Wall Street trader turned Aerospace Engineer with
+              over 10 years of experience in Engineering, Finance, and Project
+              Management. He has a Bachelor's degree in Electrical Engineering
+              from College of Engineering, Guindy, and Masters degrees in
+              Financial Engineering from Columbia University and Aerospace
+              Engineering from the University of Illinois at Urbana Champaign.
+              Srinath believes in using his multi disciplinary experience to
+              solve large scale problems that humanity faces today. He started
+              Agnikul with the simple idea that going to space shouldn't be the
+              hardest part of living in and working from space. In his leisure
+              time, he follows the film industry and tries to write screenplays.
             </p>
             <div className="founder-logos">
               <a href="https://twitter.com/srinathr155" target="_blank">
@@ -187,8 +194,17 @@ function Team() {
             <p className="founder-name">Moin SPM</p>
             <p className="founder-desi">CO-FOUNDER</p>
             <p className="founder-text">
-              Aerospace Engineer turned Operations Specialist. Law enthusiast.
-              Used to play the guitar.
+              Moin is an Operations Specialist with over 7 years of experience
+              in Engineering Management, Manufacturing, and Supply Chain
+              operations. He has a Bachelor’s degree in Aeronautics from Anna
+              University, Chennai, and a Master’s Degree in Business
+              Administration from the University of Newcastle, Australia. He
+              also has a keen interest in Space Law. Prior to Agnikul, he led a
+              contract manufacturing company in the CPG sector. He is truly
+              fascinated by space and how its frameworks combine physics,
+              engineering, and safety. He believes in making space accessible
+              for everyone & that allowed him to start Agnikul with Srinath. In
+              his spare time, he tries to spend time playing guitar.
             </p>
             <div className="founder-logos">
               <a href="https://twitter.com/moin_spm" target="_blank">
@@ -208,7 +224,7 @@ function Team() {
       </div>
 
       <div className="team__fourth-section">
-        <p className="team__section-head">Advisors in Agnikul</p>
+        <p className="team__section-head">Advisors</p>
 
         <div className="advisors">
           <div className="advisor-swiper swiper-container">
@@ -290,7 +306,7 @@ function Team() {
               Limited (“Agnikul”, “we”, “us” or “our”) and users of its website
               (“you”, “your” or “user”). This agreement (the “Agreement”) also
               governs your use of this website{" "}
-              <a href="http://agnikul.in">(http://www.agnikul.in/)</a> (the
+              <a href="https://nikul.in">(https://www.agnikul.in/)</a> (the
               “Site”). By using the Site, you acknowledge that you have reviewed
               and agree to all of the terms of this Agreement and agree to be
               bound by them in connection with your use of the Site. By
@@ -445,7 +461,7 @@ function Team() {
             <div className="col-sm">
               <div className="footer-section">
                 <p className="footer-normal phone">Phone</p>
-                <p className="footer-bolder">+91 99625 075240</p>
+                <p className="footer-bolder">+91 99625 07524</p>
                 <p className="footer-bolder">+91 96772 82356</p>
                 <p className="footer-bolder">+1 551 689 2314</p>
               </div>
@@ -475,12 +491,25 @@ function Team() {
             <div className="col-sm">
               <div className="footer-section">
                 <p className="footer-normal">Email</p>
-                <a href="mailto:humancapital@agnikul.in">
-                  <p className="footer-bolder">humancapital@agnikul.in</p>
-                </a>
-                <a href="mailto:payloadpeople@agnikul.in">
-                  <p className="footer-bolder">payloadpeople@agnikul.in</p>
-                </a>
+                <p className="footer-bolder">
+                  <Link to="/career" className="nav">
+                    Careers
+                  </Link>{" "}
+                  -
+                  <a href="mailto:humancapital@agnikul.in">
+                    humancapital@agnikul.in
+                  </a>
+                </p>
+
+                <p className="footer-bolder">
+                  <Link to="/book" className="nav">
+                    Customers
+                  </Link>{" "}
+                  -
+                  <a href="mailto:payloadpeople@agnikul.in">
+                    payloadpeople@agnikul.in
+                  </a>
+                </p>
               </div>
             </div>
             <div className="col-sm border-column">
@@ -518,11 +547,9 @@ function Team() {
                   </div>
                 </div>
                 <p className="footer-bolder book__terms__link">
-                  Terms,Conditions and Privacy Policy
+                  Terms, Conditions and Privacy Policy
                 </p>
                 <div className="footer-social-logos">
-                  <i className="fa fa-facebook" aria-hidden="true"></i>
-                  <i className="fa fa-google-plus" aria-hidden="true"></i>
                   <a href="https://twitter.com/@agnikulcosmos" target="_blank">
                     <i className="fa fa-twitter" aria-hidden="true"></i>
                   </a>

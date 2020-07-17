@@ -58,25 +58,25 @@ function Product() {
               Launch Sites
             </Link>
           </div> */}
-                     <div className="column">
-              <Link to="/team" className="nav-itemc nav-linkc">
-                Team
-              </Link>
-            </div>
-            <div className="column">
-              <Link to="/news" className="nav-itemc nav-linkc">
-                News
-              </Link>
-            </div>
+          <div className="column">
+            <Link to="/team" className="nav-itemc nav-linkc">
+              Team
+            </Link>
+          </div>
+          <div className="column">
+            <Link to="/news" className="nav-itemc nav-linkc">
+              News
+            </Link>
+          </div>
           <div className="column">
             <Link to="/career" className="nav-itemc nav-linkc">
-              Career
+              Careers
             </Link>
           </div>
           <div id="navButtonDiv" className="column-lg">
             <Link to="/book">
               <button className="nav-itemc nav-buttonc">
-                BOOK YOUR LAUNCH
+                BOOK A LAUNCH
               </button>
             </Link>
           </div>
@@ -90,7 +90,7 @@ function Product() {
 
       <div className="original-div">
         <div className="first-scroll-content">
-          <p className="first-scroll-heading">A CONFIGURABLE & NIMBLE DESIGN</p>
+          <p className="first-scroll-heading">A CONFIGURABLE DESIGN</p>
           <p className="first-scroll-text">
             Agnibaan is a customizable vehicle. When we were at the drawing
             board, we carefully analyzed what our customers really needed. We
@@ -98,8 +98,11 @@ function Product() {
             designing to ensure reliability. Removing a few engines and flying
             is more involved than it sounds. We had to ensure vehicle
             controllability, stability, lift off thrust-to-weight ratio (& many
-            other parameters) made sense for each of these versions. “Agnibaan”
-            is a Sanksrit word that translates to mean “an arrow of fire”.
+            other parameters) made sense for each of these versions.<br></br>
+            <span>
+              (“Agnibaan” is a Sanksrit word that translates to mean “an arrow of
+              fire”.)
+            </span>
           </p>
         </div>
         <div className="rocket-horizontal">
@@ -125,7 +128,7 @@ function Product() {
             <div className="col-xs">
               <img className="product__icon" src={shape}></img>
               <p className="spec-name">MAX PAYLOAD</p>
-              <p className="spec-value">100 KG to 700 km.LEO</p>
+              <p className="spec-value">100 kg to 700 km LEO</p>
             </div>
             <div className="col-xs">
               <img className="product__icon" src={resize}></img>
@@ -140,12 +143,12 @@ function Product() {
             <div className="col-xs">
               <img className="product__icon" src={mask}></img>
               <p className="spec-name">LIFT OFF MASS</p>
-              <p className="spec-value">14 mtu</p>
+              <p className="spec-value">14000 kg</p>
             </div>
           </div>
         </div>
         <div className="second-scroll second-scroll-1">
-          <p className="number">01</p>
+          <p className="number">03</p>
           <p className="content">BABY STAGE</p>
         </div>
 
@@ -172,7 +175,7 @@ function Product() {
               <img className="product__icon" src={ml}></img>
               <p className="heading">1 - 100kg</p>
               <p className="text">
-                Flat costing for any payload between 20 - 100 kg
+                Flat costing for any payload between 20 - 100 kg.
               </p>
             </div>
 
@@ -180,7 +183,8 @@ function Product() {
               <img className="product__icon" src={server}></img>
               <p className="heading">Payload Guide</p>
               <p className="text">
-                For more information, please request our payload guide
+                For more information, please request our payload
+                guide.(payloadpeople@agnikul.in)
               </p>
             </div>
           </div>
@@ -193,14 +197,14 @@ function Product() {
 
         <div className="third-scroll third-scroll-2">
           <p className="text">
-            Our second stage is powered by the Agnite vacuum optimized engine
+            Our second stage is powered by the Agnite vacuum optimized engine.
           </p>
         </div>
 
         <div className="third-scroll third-scroll-3">
           <img className="product__icon" src={aaa}></img>
           <p className="heading">TOTAL THRUST</p>
-          <p className="text">Sea Level Thrust - 25 kN</p>
+          <p className="text">Sea Level Thrust - 25 kN.</p>
         </div>
 
         <div className="third-scroll third-scroll-4">
@@ -299,7 +303,7 @@ function Product() {
         </div>
 
         <div className="fourth-scroll fourth-scroll-1">
-          <p className="number">03</p>
+          <p className="number">01</p>
           <p className="content">STAGE 1</p>
         </div>
 
@@ -314,9 +318,9 @@ function Product() {
 
         <div className="fourth-scroll fourth-scroll-3">
           <p className="text">
-            Capable of operating with a sea level of Isp of 285 seconds, the
-            entire combustion section here is a single piece assembly and 100%
-            3d printed.
+            Capable of operating with a sea level Isp of 285 seconds, the entire
+            combustion section here is a single piece assembly and 100% 3D
+            printed.
           </p>
         </div>
 
@@ -368,9 +372,12 @@ function Product() {
             launch pedestal - to support full mobility across all configurations
             of Agnibaan. As opposed to (current versions of) Agnibaan, Dhanush
             is meant for multiple uses and is built with durability and
-            transportability in mind. “Dhanush” is a Sanskrit word that
-            translates to “a celestial bow (from which arrows are launched)”. So
-            yes, Agnibaan is launched from Dhanush!
+            transportability in mind. <br></br>
+            <span>
+              (“Dhanush” is a Sanskrit word that translates to “a celestial bow
+              (from which arrows are launched)”. So yes, Agnibaan is launched
+              from Dhanush!)
+            </span>
           </p>
         </div>
 

@@ -21,9 +21,9 @@ function BookComplete() {
         <img className="middle-image" src={satellite} />
         <p className="middle-head">Congratulations!</p>
         <p className="middle-text">
-          We have received your request. Terms and Conditions agreements act as
-          a legal contract between you (the company) who has t. Our dedicateed
-          team will soon be touch with you.
+          We have received your request. You are one step closer to getting to
+          orbit. A dedicated payload strategist has been assigned to you. We
+          will get in touch with you shortly.
         </p>
         <Link to="/products">
           <button className="middle-button">GO BACK TO PRODUCTS</button>

@@ -232,6 +232,10 @@
     padding: 0% 8.88% 5% 6.86% !important;
 }
 
+.home__third-section .row {
+    min-width: 100%;
+}
+
 .home__third-section .card {
     -webkit-backdrop-filter: blur(8.9px);
     backdrop-filter: blur(8.9px);
@@ -251,8 +255,12 @@
     backdrop-filter: blur(8.9px);
     background: linear-gradient( rgba(75, 136, 80, 0.7), rgba(75, 136, 80, 0.7));
     /* change below for old card */
-    padding-top: 0%;
+    padding-top: 3%;
     padding-bottom: 0%;
+}
+
+.home__third-section .card#firstcard:hover {
+    padding-top: 0% !important;
 }
 
 .home__back-icon {
@@ -325,6 +333,7 @@
 
 .card:hover .card-text {
     display: block;
+    height: 100%;
 }
 
 
@@ -360,6 +369,13 @@
     }
     .home__third-section .card-text {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home__third-section .card:hover {
+            padding-top: 8%;
+            padding-bottom: 8%;
     }
 }
 

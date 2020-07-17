@@ -12,19 +12,19 @@ export default function Init() {
         "id": "electric-motor-designer"
       },
       {
-        "name": "Power Electronics engineer",
+        "name": "Power Electronics Engineer",
         "id": "power-electronics-engineer"
       },
       {
-        "name": "Space Robotics and Controls engineer",
+        "name": "Space Robotics and Controls Engineer",
         "id": "space-robotics-and-control-engineer"
       },
       {
-        "name": "Embedded systems & mixed signal hardware engineer",
+        "name": "Embedded Systems & Mixed Signal Hardware Engineer",
         "id": "embedded-systems-&-mixed-signal-hardware-engineer"
       },
       {
-        "name": "RF Systems design engineer",
+        "name": "RF Systems Design Engineer",
         "id": "rf-systems-design-engineer"
       },
       {
@@ -45,10 +45,10 @@ export default function Init() {
         "name": "Mission Design Software Developer",
         "id": "mission-design-software-developer"
       },
-      {
-        "name": "LabVIEW developer",
-        "id": "labview-developer"
-      },
+      // {
+      //   "name": "LabVIEW Eeveloper",
+      //   "id": "labview-developer"
+      // },
       {
         "name" : "Other Profiles",
         "id" : "other-profiles"
@@ -163,7 +163,7 @@ export default function Init() {
 
       var content = document.getElementById(key + "-desc");
       if (content == undefined)
-        content = document.getElementById("blank");
+        content = document.getElementById("backup-profiles-desc");
       content.classList.add("visible");
 
     });

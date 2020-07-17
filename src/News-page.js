@@ -10,6 +10,61 @@ import { Link } from 'react-router-dom';
 
 var newsItems = [
   {
+    title:
+      "Chennai start-up building India's first private smallsat rocket, eyes ISRO help for testing",
+    text:
+      "Chennai start-up Agnikul Cosmos is building India's first private small satellite rocket and will be seeking the help of the Indian Space Research Organisation (ISRO) for conducting tests.",
+    link:
+      "https://www.newindianexpress.com/cities/chennai/2020/jun/30/chennai-start-up-building-indias-first-private-smallsat-rocket-eyes-isro-help-for-testing-2163503.html",
+  },
+  {
+    title:
+      "Indian start-up is building a three-stage rocket that could be ready to launch by 2022",
+    text:
+      "With the government opening up the space sector for private investments..",
+    link:
+      "https://www.businessinsider.in/science/space/news/indian-start-up-is-building-a-three-stage-rocket-that-could-be-ready-to-launch-by-2022/articleshow/76691391.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst",
+  },
+  {
+    title:
+      "'IN-SPACe' can curb brain drain of huge Indian talent pool: ISRO chairman K Sivan",
+    text:
+      "Thousands of engineers pass out each year and many migrate to other countries due to limited opportunities within the country, Sivan said.",
+    link:
+      "https://www.newindianexpress.com/nation/2020/jun/27/in-space-can-curb-brain-drain-of-huge-indian-talent-pool-isro-chairman-k-sivan-2162302.html",
+  },
+  {
+    title:
+      "It’s win-win as India expands ‘space’ to accommodate private sector",
+    text:
+      "Srinath Ravichandran heaved a cathartic sigh of relief that helped loosen the knot in his stomach. The CEO & co-founder of Chennai-based start-up Agnikul Cosmos had everything going right, at least directionally.",
+    link:
+      "https://www.thehindubusinessline.com/news/its-win-win-as-india-expands-space-to-accommodate-private-sector/article31915844.ece",
+  },
+  {
+    title:
+      "Isro to move satellites, rockets to its commercial arm NSIL; boost for private sector in space",
+    text:
+      "India’s space agency will move all its operational satellites, rockets and applications...",
+    link:
+      "https://economictimes.indiatimes.com/news/science/private-sector-to-be-allowed-to-build-rockets-provide-launch-services-isro-chief-sivan/articleshow/76619366.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst",
+  },
+  {
+    title:
+      "What does it take to (re)create the future of Space from India? 8 Takeaways from the SpaceTech Startups community",
+    text:
+      "As part of the SpaceTech Startups (STS) community, the first-ever Space Crowd Pitch took place in Bengaluru on March 28, 2019. The event brought together Space startup founders, sector-focused investors, subject-matter experts, ecosystem leaders, and engineering talents.",
+    link:
+      "https://yourstory.com/2019/04/what-does-it-take-to-recreate-the-future-of-space-",
+  },
+  {
+    title: "Artha Venture Fund invests Rs 3.6 crore in Agnikul",
+    text:
+      "Artha Venture Fund (AVF), an early-stage micro-VC fund, has announced an investment of $500,000 (Rs 3.6 crore) in space-tech company Agnikul in its Pre-Series A funding round.",
+    link:
+      "https://www.financialexpress.com/industry/sme/artha-venture-fund-invests-rs-3-6-crore-in-agnikul/1913136/",
+  },
+  {
     title: "Chennai-based space tech start-up Agnikul has raised ₹23.4 crores",
     text:
       "Agnikul, operating out of the National Centre for Combustion. Agnikul, operating out of the National Centre for Combustion.",
@@ -18,18 +73,18 @@ var newsItems = [
   },
   {
     title:
-      "Made in India, for the world: this startup incubated at IIT Madras is an Uber for putting satellites in orbit",
+      "Chennai is quickly turning into the new hotbed for deep-tech startup",
     text:
-      "Launching a satellite is, quite literally, rocket science. Which means it is also expensive...",
+      "IIT-Madras and its research park have played a key role in nurturing deep-tech startups",
     link:
-      "https://in.finance.yahoo.com/news/made-india-world-startup-incubated-103000795.html",
+      "https://economictimes.indiatimes.com/small-biz/startups/newsbuzz/chennai-is-the-new-hotbed-for-deep-tech/articleshow/70514504.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst",
   },
   {
-    title: "Agnikul Cosmos aims for a new orbit",
+    title: "Small rockets are the next big thing",
     text:
-      "The lean start-up manufactures rockets that can launch satellites up to 100 kg",
+      "With Chandrayaan-2 heading towards the Moon, a slew of exciting projects is in the offing",
     link:
-      "https://www.thehindubusinessline.com/specials/emerging-entrepreneurs/agnikul-cosmos-aims-for-a-new-orbit/article26703929.ece",
+      "https://www.thehindubusinessline.com/news/science/small-rockets-are-the-next-big-thing/article28655816.ece",
   },
   {
     title:
@@ -49,27 +104,80 @@ var newsItems = [
   },
   {
     title:
-      "Indian start-up is building a three-stage rocket that could be ready to launch by 2022",
+      "Made in India, for the world: this startup incubated at IIT Madras is an Uber for putting satellites in orbit",
     text:
-      "With the government opening up the space sector for private investments..",
+      "Launching a satellite is, quite literally, rocket science. Which means it is also expensive...",
     link:
-      "https://www.businessinsider.in/science/space/news/indian-start-up-is-building-a-three-stage-rocket-that-could-be-ready-to-launch-by-2022/articleshow/76691391.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst",
+      "https://in.finance.yahoo.com/news/made-india-world-startup-incubated-103000795.html",
+  },
+  {
+    title: "Agnikul Cosmos aims for a new orbit",
+    text:
+      "The lean start-up manufactures rockets that can launch satellites up to 100 kg",
+    link:
+      "https://www.thehindubusinessline.com/specials/emerging-entrepreneurs/agnikul-cosmos-aims-for-a-new-orbit/article26703929.ece",
+  },
+  {
+    title: "Now, send ashes of departed souls to space",
+    text:
+      "Now, you can go beyond just gazing at the stars reminiscing about your departed into the night",
+    link:
+      "http://timesofindia.indiatimes.com/articleshow/70635490.cms?utm_source=co",
+  },
+  {
+    title: "Space startup Agnikul Cosmos raises Rs 3cr in seed funding",
+    text:
+      "Aerospace startup incubated at IIT-Madras’ incubation cell, Agnikul Cosmos has raised Rs. 3 Crore in a seed funding round from seed-stage investment firm Speciale Incept Advisors",
+    link:
+      "http://timesofindia.indiatimes.com/articleshow/67981962.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst",
   },
   {
     title:
-      "It’s win-win as India expands ‘space’ to accommodate private sector",
+      "From Space-tech to waste management, IIT-M incubation cell firms are solving real-world challenges",
     text:
-      "Srinath Ravichandran heaved a cathartic sigh of relief that helped loosen the knot in his stomach. The CEO & co-founder of Chennai-based start-up Agnikul Cosmos had everything going right, at least directionally.",
+      "when enterprises working on advanced technology business models - more often referred to as deep tech startups - attracted increased attention and funding",
     link:
-      "https://www.thehindubusinessline.com/news/its-win-win-as-india-expands-space-to-accommodate-private-sector/article31915844.ece",
+      "http://timesofindia.indiatimes.com/articleshow/67341477.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst",
   },
   {
     title:
-      "Isro to move satellites, rockets to its commercial arm NSIL; boost for private sector in space",
+      "ISRO alone can’t get the Gaganaut in space. It will need a little help from Anant, Agnikul, Bellatrix, and Inox",
     text:
-      "India’s space agency will move all its operational satellites, rockets and applications...",
+      "As ISRO starts work on human flight, its chairman trying to reengineer the organization for speed and innovation. Private companies are biggest beneficiaries here.",
     link:
-      "https://economictimes.indiatimes.com/news/science/private-sector-to-be-allowed-to-build-rockets-provide-launch-services-isro-chief-sivan/articleshow/76619366.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst",
+      "https://economictimes.indiatimes.com/prime/technology-and-startups/isro-alone-cant-get-the-gaganaut-in-space-it-will-need-a-little-help-from-anant-agnikul-bellatrix-and-inox-/primearticleshow/66253757.cms",
+  },
+  {
+    title:
+      "India is slowly catching up with the world to use 3D printing in building products",
+    text:
+      "In conventional rockets, the engine is assembled by cutting metal and forged based on specifications. There is wastage of metal and the process is long-drawn.",
+    link:
+      "https://economictimes.indiatimes.com/news/science/india-is-slowly-catching-up-with-the-world-to-use-3d-printing-in-building-products/articleshow/67085613.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst",
+  },
+  {
+    title:
+      "Perils in space funding: India's first private Moon mission aborted",
+    text:
+      "Start-ups in space sector say mobilising funds is the biggest barrier in India as investors are hesitant to support such high-risk ventures ",
+    link:
+      "https://www.business-standard.com/article/companies/teamindus-calls-off-india-s-first-private-moon-mission-due-to-funds-crunch-118010900337_1.html",
+  },
+  {
+    title:
+      "Chennai-based firm among 24 startups to join Airbus accelerator programme",
+    text:
+      "Airbus has selected 24 new startups, including Chennai-based AgniKul Cosmos, to join its BizLab for the launch of the fourth accelerator which will provide a platform for developing previously untapped technologies and ways of working in the aerospace sector.",
+    link:
+      "https://www.business-standard.com/article/companies/chennai-based-firm-among-24-startups-to-join-airbus-accelerator-programme-118111300732_1.html",
+  },
+  {
+    title:
+      "Despite tech prowess, start-ups in the space sector find it hard to raise funds",
+    text:
+      "While Isro wants private industry participation and is setting up incubation centers, there are issues related to policies and the general mindset of investors",
+    link:
+      "https://www.business-standard.com/article/current-affairs/despite-tech-prowess-start-ups-in-space-sector-find-it-hard-to-raise-funds-118090700999_1.html",
   },
 ];
 
@@ -255,14 +363,12 @@ class News extends Component {
             </div>
             <div className="column">
               <Link to="/career" className="nav-itemc nav-linkc">
-                Career
+                Careers
               </Link>
             </div>
             <div id="navButtonDiv" className="column-lg">
               <Link to="/book">
-                <button className="nav-itemc nav-buttonc">
-                  BOOK YOUR LAUNCH
-                </button>
+                <button className="nav-itemc nav-buttonc">BOOK A LAUNCH</button>
               </Link>
             </div>
           </div>
@@ -300,7 +406,7 @@ class News extends Component {
                 Private Limited (“Agnikul”, “we”, “us” or “our”) and users of
                 its website (“you”, “your” or “user”). This agreement (the
                 “Agreement”) also governs your use of this website{" "}
-                <a href="http://agnikul.in">(http://www.agnikul.in/)</a> (the
+                <a href="https://nikul.in">(https://www.agnikul.in/)</a> (the
                 “Site”). By using the Site, you acknowledge that you have
                 reviewed and agree to all of the terms of this Agreement and
                 agree to be bound by them in connection with your use of the
@@ -456,7 +562,7 @@ class News extends Component {
               <div className="col-sm">
                 <div className="footer-section">
                   <p className="footer-normal phone">Phone</p>
-                  <p className="footer-bolder">+91 99625 075240</p>
+                  <p className="footer-bolder">+91 99625 07524</p>
                   <p className="footer-bolder">+91 96772 82356</p>
                   <p className="footer-bolder">+1 551 689 2314</p>
                 </div>
@@ -488,12 +594,25 @@ class News extends Component {
               <div className="col-sm">
                 <div className="footer-section">
                   <p className="footer-normal">Email</p>
-                  <a href="mailto:humancapital@agnikul.in">
-                    <p className="footer-bolder">humancapital@agnikul.in</p>
-                  </a>
-                  <a href="mailto:payloadpeople@agnikul.in">
-                    <p className="footer-bolder">payloadpeople@agnikul.in</p>
-                  </a>
+                  <p className="footer-bolder">
+                    <Link to="/career" className="nav">
+                      Careers
+                    </Link>{" "}
+                    -
+                    <a href="mailto:humancapital@agnikul.in">
+                      humancapital@agnikul.in
+                    </a>
+                  </p>
+
+                  <p className="footer-bolder">
+                    <Link to="/book" className="nav">
+                      Customers
+                    </Link>{" "}
+                    -
+                    <a href="mailto:payloadpeople@agnikul.in">
+                      payloadpeople@agnikul.in
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className="col-sm border-column">
@@ -535,11 +654,9 @@ class News extends Component {
                     </div>
                   </div>
                   <p className="footer-bolder book__terms__link">
-                    Terms,Conditions and Privacy Policy
+                    Terms, Conditions and Privacy Policy
                   </p>
                   <div className="footer-social-logos">
-                    <i className="fa fa-facebook" aria-hidden="true"></i>
-                    <i className="fa fa-google-plus" aria-hidden="true"></i>
                     <a
                       href="https://twitter.com/@agnikulcosmos"
                       target="_blank"

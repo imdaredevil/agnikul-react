@@ -15,7 +15,7 @@ import iit from "./images/about/partners/IITM.jpg";
 import ceg from "./images/about/partners/CEG.jpg";
 import ciie from "./images/about/partners/CIIE.jpg";
 
-import pi from "./images/about/investors/pi.png";
+import pi from "./images/about/investors/piventures.png";
 import cii from "./images/about/investors/CIIE.png";
 import artha from "./images/about/investors/artha.png";
 import globevestor from "./images/about/investors/globevestor.png";
@@ -23,7 +23,7 @@ import letsventure from "./images/about/investors/letsventure.png";
 import lionrock from "./images/about/investors/lionrock.png";
 import speciale from "./images/about/investors/speciale.png";
 
-import alenspace from "./images/about/customers/alenspace.png";
+import hostmi from "./images/about/customers/hostmi.png";
 import dcube from "./images/about/customers/Dcube.png";
 import dorbit from "./images/about/customers/Dorbit.png";
 import leafspace from "./images/about/customers/leafspace.svg";
@@ -72,14 +72,12 @@ function About() {
           </div>
           <div className="column">
             <Link to="/career" className="nav-itemc nav-linkc">
-              Career
+              Careers
             </Link>
           </div>
           <div id="navButtonDiv" className="column-lg">
             <Link to="/book">
-              <button className="nav-itemc nav-buttonc">
-                BOOK YOUR LAUNCH
-              </button>
+              <button className="nav-itemc nav-buttonc">BOOK A LAUNCH</button>
             </Link>
           </div>
         </div>
@@ -99,8 +97,8 @@ function About() {
             fire”.
             <br></br>
             We are a group of enthusiasts, rocket scientists, engineers,
-            programmers, lawyers and more - all of us just love enabling space
-            access to everyone!
+            programmers, lawyers, and more - all of us just love enabling space
+            accessible to everyone!
           </p>
         </div>
       </div>
@@ -112,8 +110,8 @@ function About() {
             <p>2016</p>
           </div>
           <p className="timeline-text">
-            Inception ! - This was when Agnikul was an idea on paper and in
-            dreams
+            Inception! - This was when Agnikul was an idea on paper and in
+            dreams.
           </p>
         </div>
         <div className="timeline-section">
@@ -125,8 +123,8 @@ function About() {
             in Chennai, India.
           </p>
           <p className="timeline-text">
-            Agnikul moved into the National Center for Combustion R&D at IIT
-            Madras, Chennai, India.
+            We moved into the National Center for Combustion R&D at IIT Madras,
+            Chennai, India.
           </p>
         </div>
         <div className="timeline-section">
@@ -134,12 +132,12 @@ function About() {
             <p>2018</p>
           </div>
           <p className="timeline-text">
-            Incubation & Acceleration - Agnikul incubated at IIT Madras. Agnikul
-            became a part of the Airbus Accelerator
+            Incubation & Acceleration! - Agnikul incubated at IIT Madras. We
+            became a part of the Airbus Accelerator.
           </p>
           <p className="timeline-text">
-            First series of hot firings - Agnikul fired it’s first set of
-            igniters and single injector element based thrusters.
+            First series of hot firings! - We fired our first set of igniters
+            and single injector element based thrusters.
           </p>
         </div>
         <div className="timeline-section">
@@ -151,16 +149,15 @@ function About() {
             of the Kerala Startup mission startup community.
           </p>
           <p className="timeline-text">
-            Commercialization - Agnikul started signing agreements with
-            potential customers!
+            Commercialization! - We started signing agreements with potential
+            customers.
           </p>
           <p className="timeline-text">
-            Cash Infusion - Agnikul raised its seed round of funding from
-            Speciale Invest
+            Cash infusion! - We raised our seed round of funding from Speciale
+            Invest.
           </p>
           <p className="timeline-text">
-            Agnikul realized it’s single piece, fully 3d printed, higher stage
-            engine.
+            We realized our single piece, fully 3d printed, upper stage engine.
           </p>
         </div>
         <div className="timeline-section">
@@ -168,22 +165,22 @@ function About() {
             <p>2020</p>
           </div>
           <p className="timeline-text">
-            More commercialization - Agreements with Launchpads, more customers
-            and significant vendor-partners.
+            More commercialization! - Agreements with Launchports, customers,
+            significant vendor-partners and others
           </p>
           <p className="timeline-text">
             More cash infusion - Agnikul raised its pre-series A round from
             highly reputed institutional investors.
           </p>
           <p className="timeline-text">
-            A lot more to come .. watch for updates
+            A lot more to come .. watch for updates!
           </p>
         </div>
       </div>
       <img className="centered-image" src={centeredimage} />
 
       <div className="about__third-section">
-        <p className="about__section-head">Investors of Agnikul</p>
+        <p className="about__section-head">Investors</p>
 
         <div className="investors">
           <div className="investor-swiper swiper-container">
@@ -221,13 +218,13 @@ function About() {
               <div className="investor-swiper-slide swiper-slide">
                 <div className="investor-slide-content">
                   <img className="investor-slide-img" src={globevestor} />
-                  <p className="investor-name">globevestor</p>
+                  <p className="investor-name">Globevestor</p>
                 </div>
               </div>
               <div className="investor-swiper-slide swiper-slide">
                 <div className="investor-slide-content">
                   <img className="investor-slide-img" src={lionrock} />
-                  <p className="investor-name">LionRock(Srihari kumar)</p>
+                  <p className="investor-name">LionRock (Srihari kumar)</p>
                 </div>
               </div>
             </div>
@@ -250,7 +247,7 @@ function About() {
       </div>
 
       <div className="about__fourth-section">
-        <p className="about__section-head">Academic Partners of Agnikul</p>
+        <p className="about__section-head">Academic Partners</p>
       </div>
 
       <div className="partners">
@@ -291,10 +288,10 @@ function About() {
             <div className="business-swiper-slide swiper-slide">
               <div className="business-slide-content">
                 <p className="business-slide-quote">
-                  "We are super excited to announce our official partnership with
-                  Agnikul to support on-demand access to space, adding value by
-                  providing our ground segment support and enabling a turn-key
-                  launch service.""
+                  "We are super excited to announce our official partnership
+                  with Agnikul to support on-demand access to space, adding
+                  value by providing our ground segment support and enabling a
+                  turn-key launch service."
                 </p>
                 {/* $0 */}
                 <div className="business-slide-img-div">
@@ -316,6 +313,25 @@ function About() {
                 </div>
               </div>
             </div>
+            <div className="business-swiper-slide swiper-slide">
+              <div className="business-slide-content">
+                <p className="business-slide-quote">
+                  "Being able to launch flexibly from different locations around
+                  the world is a very innovative approach! This possibility will
+                  have a very positive affect on our customers and will unleash
+                  new potential"
+                </p>
+                {/* $0 */}
+                <div className="business-slide-img-div">
+                  <img
+                    className="business-slide-img"
+                    src={hostmi}
+                    id="hostmi"
+                  />
+                </div>
+              </div>
+            </div>
+
             {/* <div className="business-swiper-slide swiper-slide">
               <div className="business-slide-content">
                 <p className="business-slide-quote">
@@ -327,8 +343,8 @@ function About() {
                   <img className="business-slide-img" src={dorbit} />
                 </div>
               </div>
-            </div>
-            <div className="business-swiper-slide swiper-slide">
+            </div> */}
+            {/*   <div className="business-swiper-slide swiper-slide">
               <div className="business-slide-content">
                 <p className="business-slide-quote">
                   "For our products we need economic and fast access to space,
@@ -352,7 +368,6 @@ function About() {
                 </div>
               </div>
             </div> */}
-
           </div>
           <div className="business-swiper-pagination swiper-pagination"></div>
         </div>
@@ -371,7 +386,7 @@ function About() {
               Limited (“Agnikul”, “we”, “us” or “our”) and users of its website
               (“you”, “your” or “user”). This agreement (the “Agreement”) also
               governs your use of this website{" "}
-              <a href="http://agnikul.in">(http://www.agnikul.in/)</a> (the
+              <a href="https://www.agnikul.in">(https://www.agnikul.in/)</a> (the
               “Site”). By using the Site, you acknowledge that you have reviewed
               and agree to all of the terms of this Agreement and agree to be
               bound by them in connection with your use of the Site. By
@@ -526,7 +541,7 @@ function About() {
             <div className="col-sm">
               <div className="footer-section">
                 <p className="footer-normal phone">Phone</p>
-                <p className="footer-bolder">+91 99625 075240</p>
+                <p className="footer-bolder">+91 99625 07524</p>
                 <p className="footer-bolder">+91 96772 82356</p>
                 <p className="footer-bolder">+1 551 689 2314</p>
               </div>
@@ -556,12 +571,25 @@ function About() {
             <div className="col-sm">
               <div className="footer-section">
                 <p className="footer-normal">Email</p>
-                <a href="mailto:humancapital@agnikul.in">
-                  <p className="footer-bolder">humancapital@agnikul.in</p>
-                </a>
-                <a href="mailto:payloadpeople@agnikul.in">
-                  <p className="footer-bolder">payloadpeople@agnikul.in</p>
-                </a>
+
+                <p className="footer-bolder">
+                  <Link to="/career" className="nav">
+                    Careers
+                  </Link>{" "}
+                  -
+                  <a href="mailto:humancapital@agnikul.in">
+                    humancapital@agnikul.in
+                  </a>
+                </p>
+
+                <p className="footer-bolder">
+                  <Link to="/book" className="nav">
+                    Customers
+                  </Link> - 
+                  <a href="mailto:payloadpeople@agnikul.in">
+                    payloadpeople@agnikul.in
+                  </a>
+                </p>
               </div>
             </div>
             <div className="col-sm border-column">
@@ -599,11 +627,9 @@ function About() {
                   </div>
                 </div>
                 <p className="footer-bolder book__terms__link">
-                  Terms,Conditions and Privacy Policy
+                  Terms, Conditions and Privacy Policy
                 </p>
                 <div className="footer-social-logos">
-                  <i className="fa fa-facebook" aria-hidden="true"></i>
-                  <i className="fa fa-google-plus" aria-hidden="true"></i>
                   <a href="https://twitter.com/@agnikulcosmos" target="_blank">
                     <i className="fa fa-twitter" aria-hidden="true"></i>
                   </a>

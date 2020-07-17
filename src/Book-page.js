@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, isValidElement } from "react";
 import "./css/book.css";
 import log from "./images/logo.png";
 import navBar from "./js/common";
@@ -50,10 +50,20 @@ class Book extends Component {
     this.enterOrbit = this.enterOrbit.bind(this);
     this.submitForm = this.submitForm.bind(this);
   }
+
+ValidateEmail(mail) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+  {
+   return (true);
+  }
+  return (false);
+}
+
   submitForm(e) {
     e.preventDefault();
     const URL =
-      "https://script.google.com/macros/s/AKfycbzXC9Ag_Vl-P78JLJao1ACqIz-LuxTRSLRkO1t3slRkCoB62fc/exec";
+      "https://script.google.com/macros/s/AKfycbyL2MxkYA_j_Omj0ImUJpU_uHUyv-TgHiIBm9CHiHzuXMjsPcQ/exec";
     var location = this.state.launch;
     var orbit = this.state.orbit;
     var payload = this.state.payload;
@@ -76,8 +86,14 @@ class Book extends Component {
         tac.checked
       )
     ) {
+       $(".form-warning").html("Fill out all form fields");
       $(".form-warning").css("display", "block");
       return;
+    }
+    if (!this.ValidateEmail(email)) {
+      $(".form-warning").html("Enter proper email");
+         $(".form-warning").css("display", "block");
+         return;
     }
     $(".custom-button span").html("SUBMITTING..");
     $(".form-warning").css("display", "none");
@@ -183,12 +199,12 @@ class Book extends Component {
             </div>
             <div className="column">
               <Link to="/career" className="nav-itemc nav-linkc">
-                Career
+                Careers
               </Link>
             </div>
             <div id="navButtonDiv" className="column-lg">
               <button className="nav-itemc nav-buttonc">
-                <Link to="/book"> BOOK YOUR LAUNCH</Link>
+                <Link to="/book"> BOOK A LAUNCH</Link>
               </button>
             </div>
           </div>
@@ -512,6 +528,9 @@ class Book extends Component {
                         id="preferred"
                       >
                         <div className="custom-form-options-inner">
+                          <p className="dropdown-item disabled">
+                            PREFERRED SITE FOR PAYLOAD INTEGRATION
+                          </p>
                           <p className="dropdown-item">Launchpad</p>
                           <p className="dropdown-item">Leave it to Agnikul</p>
                         </div>
@@ -576,6 +595,7 @@ class Book extends Component {
                               id="email-field"
                               type="email"
                               placeholder="EMAIL ADDRESS"
+                              required
                             />
                           </div>
                         </div>
@@ -625,6 +645,7 @@ class Book extends Component {
                     <button
                       className="custom-button"
                       onClick={(e) => this.submitForm(e)}
+                      type="submit"
                     >
                       <img src={spaceshipWhite}></img>
                       <span>BUILD MY VEHICLE</span>
@@ -648,7 +669,7 @@ class Book extends Component {
                 Private Limited (“Agnikul”, “we”, “us” or “our”) and users of
                 its website (“you”, “your” or “user”). This agreement (the
                 “Agreement”) also governs your use of this website{" "}
-                <a href="http://agnikul.in">(http://www.agnikul.in/)</a> (the
+                <a href="https://nikul.in">(https://www.agnikul.in/)</a> (the
                 “Site”). By using the Site, you acknowledge that you have
                 reviewed and agree to all of the terms of this Agreement and
                 agree to be bound by them in connection with your use of the
@@ -803,7 +824,7 @@ class Book extends Component {
               <div className="col-sm">
                 <div className="footer-section">
                   <p className="footer-normal phone">Phone</p>
-                  <p className="footer-bolder">+91 99625 075240</p>
+                  <p className="footer-bolder">+91 99625 07524</p>
                   <p className="footer-bolder">+91 96772 82356</p>
                   <p className="footer-bolder">+1 551 689 2314</p>
                 </div>
@@ -835,12 +856,25 @@ class Book extends Component {
               <div className="col-sm">
                 <div className="footer-section">
                   <p className="footer-normal">Email</p>
-                  <a href="mailto:humancapital@agnikul.in">
-                    <p className="footer-bolder">humancapital@agnikul.in</p>
-                  </a>
-                  <a href="mailto:payloadpeople@agnikul.in">
-                    <p className="footer-bolder">payloadpeople@agnikul.in</p>
-                  </a>
+                  <p className="footer-bolder">
+                    <Link to="/career" className="nav">
+                      Careers
+                    </Link>{" "}
+                    -
+                    <a href="mailto:humancapital@agnikul.in">
+                      humancapital@agnikul.in
+                    </a>
+                  </p>
+
+                  <p className="footer-bolder">
+                    <Link to="/book" className="nav">
+                      Customers
+                    </Link>{" "}
+                    -
+                    <a href="mailto:payloadpeople@agnikul.in">
+                      payloadpeople@agnikul.in
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className="col-sm border-column">
@@ -882,11 +916,9 @@ class Book extends Component {
                     </div>
                   </div>
                   <p className="footer-bolder book__terms__link">
-                    Terms,Conditions and Privacy Policy
+                    Terms, Conditions and Privacy Policy
                   </p>
                   <div className="footer-social-logos">
-                    <i className="fa fa-facebook" aria-hidden="true"></i>
-                    <i className="fa fa-google-plus" aria-hidden="true"></i>
                     <a
                       href="https://twitter.com/@agnikulcosmos"
                       target="_blank"

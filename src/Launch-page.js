@@ -76,14 +76,12 @@ class Launch extends Component {
             </div>
             <div className="column">
               <Link to="/career" className="nav-itemc nav-linkc">
-                Career
+                Careers
               </Link>
             </div>
             <div id="navButtonDiv" className="column-lg">
               <Link to="/book">
-                <button className="nav-itemc nav-buttonc">
-                  BOOK YOUR LAUNCH
-                </button>
+                <button className="nav-itemc nav-buttonc">BOOK A LAUNCH</button>
               </Link>
             </div>
           </div>
@@ -245,7 +243,7 @@ class Launch extends Component {
                 Private Limited (“Agnikul”, “we”, “us” or “our”) and users of
                 its website (“you”, “your” or “user”). This agreement (the
                 “Agreement”) also governs your use of this website{" "}
-                <a href="http://agnikul.in">(http://www.agnikul.in/)</a> (the
+                <a href="https://nikul.in">(https://www.agnikul.in/)</a> (the
                 “Site”). By using the Site, you acknowledge that you have
                 reviewed and agree to all of the terms of this Agreement and
                 agree to be bound by them in connection with your use of the
@@ -401,7 +399,7 @@ class Launch extends Component {
               <div className="col-sm">
                 <div className="footer-section">
                   <p className="footer-normal phone">Phone</p>
-                  <p className="footer-bolder">+91 99625 075240</p>
+                  <p className="footer-bolder">+91 99625 07524</p>
                   <p className="footer-bolder">+91 96772 82356</p>
                   <p className="footer-bolder">+1 551 689 2314</p>
                 </div>
@@ -433,12 +431,25 @@ class Launch extends Component {
               <div className="col-sm">
                 <div className="footer-section">
                   <p className="footer-normal">Email</p>
-                  <a href="mailto:humancapital@agnikul.in">
-                    <p className="footer-bolder">humancapital@agnikul.in</p>
-                  </a>
-                  <a href="mailto:payloadpeople@agnikul.in">
-                    <p className="footer-bolder">payloadpeople@agnikul.in</p>
-                  </a>
+                  <p className="footer-bolder">
+                    <Link to="/career" className="nav">
+                      Careers
+                    </Link>{" "}
+                    -
+                    <a href="mailto:humancapital@agnikul.in">
+                      humancapital@agnikul.in
+                    </a>
+                  </p>
+
+                  <p className="footer-bolder">
+                    <Link to="/book" className="nav">
+                      Customers
+                    </Link>{" "}
+                    -
+                    <a href="mailto:payloadpeople@agnikul.in">
+                      payloadpeople@agnikul.in
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className="col-sm border-column">
@@ -480,11 +491,9 @@ class Launch extends Component {
                     </div>
                   </div>
                   <p className="footer-bolder book__terms__link">
-                    Terms,Conditions and Privacy Policy
+                    Terms, Conditions and Privacy Policy
                   </p>
                   <div className="footer-social-logos">
-                    <i className="fa fa-facebook" aria-hidden="true"></i>
-                    <i className="fa fa-google-plus" aria-hidden="true"></i>
                     <a
                       href="https://twitter.com/@agnikulcosmos"
                       target="_blank"

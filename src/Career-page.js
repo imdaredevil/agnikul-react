@@ -53,14 +53,12 @@ function Career() {
           </div>
           <div className="column">
             <Link to="/career" className="nav-itemc nav-linkc active">
-              Career
+              Careers
             </Link>
           </div>
           <div id="navButtonDiv" className="column-lg">
             <Link to="/book">
-              <button className="nav-itemc nav-buttonc">
-                BOOK YOUR LAUNCH
-              </button>
+              <button className="nav-itemc nav-buttonc">BOOK A LAUNCH</button>
             </Link>
           </div>
         </div>
@@ -187,7 +185,20 @@ function Career() {
             We have a few more exciting profiles. If you are curious, please
             send your resume in PDF format and a 3 line email describing - who
             you are, why you want to apply to Agnikul and something interesting
-            about yourself, Send emails to{" "}
+            about yourself. Send resumes to{" "}
+            <a href="mailto:humancapital@agnikul.in" className="career__mail">
+              humancapital@agnikul.in
+            </a>
+          </p>
+        </div>
+        <div className="career__description" id="backup-profiles-desc">
+          <br></br>
+          <br></br>
+          <p className="career__text">
+            For a detailed job description, please send your resume in PDF
+            format and a 3 line email describing - who you are, why you want to
+            apply to Agnikul and something interesting about yourself. Send
+            resumes to{" "}
             <a href="mailto:humancapital@agnikul.in" className="career__mail">
               humancapital@agnikul.in
             </a>
@@ -281,7 +292,7 @@ function Career() {
                 for extended periods of time
               </li>
               <li className="career__text">
-                Must be available to work extended hours and weekends as needed
+                Must be available to work extended hours and weekends as needed.
               </li>
             </ul>
           </div>
@@ -290,11 +301,11 @@ function Career() {
             <ul>
               <li className="career__text">
                 Your work will directly impact the company's (and the rocket's)
-                trajectory
+                trajectory.
               </li>
               <li className="career__text">
                 You will learn rocket science from some of the most senior and
-                respected minds in ISRO
+                respected minds in ISRO.
               </li>
             </ul>
           </div>
@@ -311,7 +322,7 @@ function Career() {
           <p className="career__text">
             If interested, please send your resume in PDF format and a 3 line
             email describing - who you are, why you want to apply to Agnikul and
-            something interesting about yourself, Send emails to{" "}
+            something interesting about yourself. Send resumes to{" "}
             <a href="mailto:humancapital@agnikul.in" className="career__mail">
               humancapital@agnikul.in
             </a>
@@ -384,9 +395,7 @@ function Career() {
                 Some experience in space, aviation, military or other
                 high-reliability operating environments is highly desirable.
               </li>
-              <li className="career__text">
-                Software skills- LabVIEW or Python desired
-              </li>
+              <li className="career__text">Software skills- Python desired</li>
               <li className="career__text">
                 Capable of working with diverse electrical test equipment analog
                 and digital and RF.
@@ -399,7 +408,7 @@ function Career() {
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
               <li className="career__text">
-                Must be available to work extended hours and weekends as needed
+                Must be available to work extended hours and weekends as needed.
               </li>
             </ul>
           </div>
@@ -408,11 +417,11 @@ function Career() {
             <ul>
               <li className="career__text">
                 Your work will directly impact the company's (and the rocket's)
-                trajectory
+                trajectory.
               </li>
               <li className="career__text">
                 You will learn rocket science from some of the most senior and
-                respected minds in ISRO
+                respected minds in ISRO.
               </li>
             </ul>
           </div>
@@ -429,7 +438,7 @@ function Career() {
           <p className="career__text">
             If interested, please send your resume in PDF format and a 3 line
             email describing - who you are, why you want to apply to Agnikul and
-            something interesting about yourself, Send emails to{" "}
+            something interesting about yourself. Send resumes to{" "}
             <a href="mailto:humancapital@agnikul.in" className="career__mail">
               humancapital@agnikul.in
             </a>
@@ -483,32 +492,32 @@ function Career() {
               <li className="career__text">
                 Ownership of all aspects of motor design including motor system
                 mechanical and electrical components such as armature, output
-                shaft, terminals, etc.Aids in the creation of CAD and 2D
+                shaft, terminals, etc. Aids in the creation of CAD and 2D
                 drawings for stators, rotors and assemblies
               </li>
               <li className="career__text">
                 Develops the design for winding architecture, magnetic
-                architecture, flux carrier stamping and lamination joining,
+                architecture, flux carrier stamping and lamination joining.
               </li>
               <li className="career__text">
                 Creates framework for insulation systems, interconnections,
                 thermal systems, sensing, Identifying and qualifying suppliers
-                of raw materials, components, and assemblies
+                of raw materials, components, and assemblies.
               </li>
               <li className="career__text">
                 Validates performance and derives and delivers a durability
-                testing profile
+                testing profile.
               </li>
               <li className="career__text">
-                Designs keeping in mind - DFM, cost reductions, and second
+                Designs keeping in mind - DFM, cost reductions, and second.
               </li>
               <li className="career__text">
                 Architects and performs thermal performance analysis for
-                magnetic designs
+                magnetic designs.
               </li>
               <li className="career__text">
                 Be able to perform : GD&T, 3D & 2D Drawings, DFMEA, PFMEA,
-                structural & thermal FEA
+                structural & thermal FEA.
               </li>
             </ul>
           </div>
@@ -517,23 +526,24 @@ function Career() {
             <ul>
               <li className="career__text">
                 BS or MS in Mechanical or Electrical Engineering or similar
-                discipline
+                discipline.
               </li>
               <li className="career__text">
-                2+ years’ work experience in motor design or electrical machines
+                2+ years’ work experience in motor design or electrical
+                machines.
               </li>
               <li className="career__text">
-                Experience and familiarity with Finite Element Analysis,
+                Experience and familiarity with Finite Element Analysis.
               </li>
               <li className="career__text">
                 Experience and familiarity with electro-magnetics, 3 phase power
-                systems
+                systems.
               </li>
               <li className="career__text">
-                Experience with building of prototypes
+                Experience with building of prototypes.
               </li>
               <li className="career__text">
-                Experience with SolidWorks is a plus
+                Experience with SolidWorks is a plus.
               </li>
             </ul>
           </div>
@@ -541,7 +551,8 @@ function Career() {
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
               <li className="career__text">
-                Must be available to work extended hours and weekends as needed
+                Must be available to work extended hours and weekends as
+                needed..
               </li>
             </ul>
           </div>
@@ -554,18 +565,18 @@ function Career() {
               </li>
               <li className="career__text">
                 Your work will directly impact the company's (and the rocket's)
-                trajectory
+                trajectory.
               </li>
               <li className="career__text">
                 You will learn rocket science from some of the most senior and
-                respected minds in ISRO
+                respected minds in ISRO.
               </li>
               <li className="career__text">
-                You will work on shaping space policy in India
+                You will work on shaping space policy in India.
               </li>
               <li className="career__text">
                 You will dirty your hands in a global supply/chain optimization
-                problem
+                problem.
               </li>
             </ul>
           </div>
@@ -581,7 +592,7 @@ function Career() {
           <p className="career__text">
             If interested, please send your resume in PDF format and a 3 line
             email describing - who you are, why you want to apply to Agnikul and
-            something interesting about yourself, Send emails to{" "}
+            something interesting about yourself. Send resumes to{" "}
             <a href="mailto:humancapital@agnikul.in" className="career__mail">
               humancapital@agnikul.in
             </a>
@@ -690,7 +701,7 @@ function Career() {
               </li>
               <li className="career__text">
                 Strong understanding of computers and programming languages
-                (C/C++, Matlab, Assembly language).
+                (C/C++, Simulation tools, Assembly language).
               </li>
               <li className="career__text">
                 Ability to work in a fast paced, autonomously driven, and
@@ -705,7 +716,7 @@ function Career() {
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
               <li className="career__text">
-                Must be available to work extended hours and weekends as needed
+                Must be available to work extended hours and weekends as needed.
               </li>
             </ul>
           </div>
@@ -718,18 +729,18 @@ function Career() {
               </li>
               <li className="career__text">
                 Your work will directly impact the company's (and the rocket's)
-                trajectory
+                trajectory.
               </li>
               <li className="career__text">
                 You will learn rocket science from some of the most senior and
-                respected minds in ISRO
+                respected minds in ISRO.
               </li>
               <li className="career__text">
-                You will work on shaping space policy in India
+                You will work on shaping space policy in India.
               </li>
               <li className="career__text">
                 You will dirty your hands in a global supply/chain optimization
-                problem
+                problem.
               </li>
             </ul>
           </div>
@@ -745,7 +756,7 @@ function Career() {
           <p className="career__text">
             If interested, please send your resume in PDF format and a 3 line
             email describing - who you are, why you want to apply to Agnikul and
-            something interesting about yourself, Send emails to{" "}
+            something interesting about yourself. Send resumes to{" "}
             <a href="mailto:humancapital@agnikul.in" className="career__mail">
               humancapital@agnikul.in
             </a>
@@ -838,7 +849,7 @@ function Career() {
                 principles
               </li>
               <li className="career__text">
-                Ability to work extended hours and weekends as needed
+                Ability to work extended hours and weekends as needed.
               </li>
             </ul>
           </div>
@@ -871,7 +882,7 @@ function Career() {
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
               <li className="career__text">
-                Must be available to work extended hours and weekends as needed
+                Must be available to work extended hours and weekends as needed.
               </li>
             </ul>
           </div>
@@ -880,18 +891,18 @@ function Career() {
             <ul>
               <li className="career__text">
                 Your work will directly impact the company's (and the rocket's)
-                trajectory
+                trajectory.
               </li>
               <li className="career__text">
                 You will learn rocket science from some of the most senior and
-                respected minds in ISRO
+                respected minds in ISRO.
               </li>
               <li className="career__text">
-                You will work on shaping space policy in India
+                You will work on shaping space policy in India.
               </li>
               <li className="career__text">
                 You will dirty your hands in a global supply/chain optimization
-                problem
+                problem.
               </li>
             </ul>
           </div>
@@ -907,7 +918,7 @@ function Career() {
           <p className="career__text">
             If interested, please send your resume in PDF format and a 3 line
             email describing - who you are, why you want to apply to Agnikul and
-            something interesting about yourself, Send emails to{" "}
+            something interesting about yourself. Send resumes to{" "}
             <a href="mailto:humancapital@agnikul.in" className="career__mail">
               humancapital@agnikul.in
             </a>
@@ -935,11 +946,11 @@ function Career() {
               </li>
               <li className="career__text">
                 If you see a car's headlights and wonder what happened to your
-                ability for abstraction, this is for you
+                ability for abstraction, this is for you.
               </li>
               <li className="career__text">
                 If you can see a launch vehicle as a 21st century robot, this is
-                for you
+                for you.
               </li>
             </ul>
           </div>
@@ -948,17 +959,17 @@ function Career() {
             <ul>
               <li className="career__text">
                 Optimize trajectories the launch vehicle will have to fly in to
-                get to orbit
+                get to orbit.
               </li>
               <li className="career__text">
                 Work with Propulsion and GNC Engineers to code engine
                 characterization, carry out simulations, and integrate programs
-                into flight control algorithms;
+                into flight control algorithms.
               </li>
               <li className="career__text">
                 Work interdisciplinary trades (e.g. with Avionics, GNC, Thermal,
                 and Structures) that result in the most optimal vehicle level
-                configuration;
+                configuration.
               </li>
             </ul>
           </div>
@@ -967,17 +978,17 @@ function Career() {
             <ul>
               <li className="career__text">
                 Bachelor’s degree in computer science, physics, electrical
-                engineering, or equivalent engineering discipline;
+                engineering, or equivalent engineering discipline.
               </li>
               <li className="career__text">
-                Understands the basic physics behind projectile motion;
+                Understands the basic physics behind projectile motion.
               </li>
               <li className="career__text">
-                Applied experience coding in an object-oriented language;
+                Applied experience coding in an object-oriented language.
               </li>
               <li className="career__text">
                 Ability to work long hours, weekends etc. if needed (almost
-                always!);
+                always!).
               </li>
             </ul>
           </div>
@@ -986,63 +997,65 @@ function Career() {
             <ul>
               <li className="career__text">
                 Ability to design and implement robust and scalable systems with
-                flexible and scalable UI
+                flexible and scalable UI.
               </li>
               <li className="career__text">
                 Professional experience with standard front-end technologies
                 like modern HTML, CSS, JavaScript (we use AngularJS, Polymer,
-                Backbone.js, React, and more), REST, JSON
+                Backbone.js, React, and more), REST, JSON.
               </li>
               <li className="career__text">
-                Deep understanding of object oriented programming
+                Deep understanding of object oriented programming.
               </li>
               <li className="career__text">
-                Deep understanding of distributed, horizontally scalable systems
+                Deep understanding of distributed, horizontally scalable
+                systems.
               </li>
               <li className="career__text">
                 Experiences with cloud technologies such as AWS, Azure or Google
-                Cloud Engine
+                Cloud Engine.
               </li>
               <li className="career__text">
                 Focus on performance bottlenecks and performance improvement
-                techniques
+                techniques.
               </li>
               <li className="career__text">
                 Familiar with basic principles of compressible and
                 incompressible flow, thermodynamics, thermochemistry, mechanics,
-                materials, and electrical circuits
+                materials, and electrical circuits.
               </li>
               <li className="career__text">
                 A background in scientific computing, high-performance
-                computing, or mathematics
+                computing, or mathematics.
               </li>
               <li className="career__text">
-                Strong skills with debuggers, profilers, and unit testing
+                Strong skills with debuggers, profilers, and unit testing.
               </li>
               <li className="career__text">
                 Interest in/competence with multiple languages and technologies
-                (Python, C++, MATLAB, SQL)
+                (Python, C++, Simulation tools, SQL).
               </li>
               <li className="career__text">
                 Familiar with Agile software development techniques,
-                particularly Test-Driven Development, and Continuous Integration
+                particularly Test-Driven Development, and Continuous
+                Integration.
               </li>
               <li className="career__text">
-                Experience with database management
+                Experience with database management.
               </li>
               <li className="career__text">
                 Able to prioritize and execute tasks in a high-pressure
                 environment with ongoing drive for continuous improvement in all
-                aspects of work
+                aspects of work.
               </li>
               <li className="career__text">
                 Excellent communication skills and ability to succinctly present
-                recommendations to stakeholders, the customer, and management
+                recommendations to stakeholders, the customer, and management.
               </li>
               <li className="career__text">
                 Able to work well in an integrated collaborative team
                 environment, including frequent interactions with technicians,
-                other engineers, and managers
+                other engineers, and managers.
               </li>
             </ul>
           </div>
@@ -1050,7 +1063,7 @@ function Career() {
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
               <li className="career__text">
-                Must be available to work extended hours and weekends as needed
+                Must be available to work extended hours and weekends as needed.
               </li>
             </ul>
           </div>
@@ -1059,18 +1072,18 @@ function Career() {
             <ul>
               <li className="career__text">
                 Your work will directly impact the company's (and the rocket's)
-                trajectory
+                trajectory.
               </li>
               <li className="career__text">
                 You will learn rocket science from some of the most senior and
-                respected minds in ISRO
+                respected minds in ISRO.
               </li>
               <li className="career__text">
-                You will work on shaping space policy in India
+                You will work on shaping space policy in India.
               </li>
               <li className="career__text">
                 You will dirty your hands in a global supply/chain optimization
-                problem
+                problem.
               </li>
             </ul>
           </div>
@@ -1086,7 +1099,7 @@ function Career() {
           <p className="career__text">
             If interested, please send your resume in PDF format and a 3 line
             email describing - who you are, why you want to apply to Agnikul and
-            something interesting about yourself, Send emails to{" "}
+            something interesting about yourself. Send resumes to{" "}
             <a href="mailto:humancapital@agnikul.in" className="career__mail">
               humancapital@agnikul.in
             </a>
@@ -1126,11 +1139,11 @@ function Career() {
             <ul>
               <li className="career__text">
                 Create the fundamental power electronics architecture and
-                associated software and hardware systems for Agnikul's vehicle
+                associated software and hardware systems for Agnikul's vehicle.
               </li>
               <li className="career__text">
                 Contribute engineering expertise in design, study, and testing
-                of DC-DC power converters for harsh environments
+                of DC-DC power converters for harsh environments.
               </li>
               <li className="career__text">
                 Deliver on power system and sub-system level design trades and
@@ -1138,18 +1151,18 @@ function Career() {
               </li>
               <li className="career__text">
                 Design DC-DC topologies and select optimal architectures and
-                components for board level power
+                components for board level power.
               </li>
               <li className="career__text">
                 Design, handle and test systems with lithium-ion battery with
-                due respect for their safety, and usage
+                due respect for their safety, and usage.
               </li>
               <li className="career__text">
-                Design AC-DC converters for both flight and ground systems
+                Design AC-DC converters for both flight and ground systems.
               </li>
               <li className="career__text">
                 Design extremely compact AC-DC converters with a special focus
-                on mechanical design
+                on mechanical design.
               </li>
             </ul>
           </div>
@@ -1159,14 +1172,14 @@ function Career() {
               <li className="career__text">
                 Bachelors / Master's degree in electrical engineering, power
                 systems or electronics engineering or any degree that enhanced
-                your ability to model and deal with power electronics
+                your ability to model and deal with power electronics.
               </li>
               <li className="career__text">
-                Ability to work long hours and weekends as needed.
+                Ability to work long hours and weekends as needed..
               </li>
               <li className="career__text">
                 Experience in modeling, simulation, and testing of power
-                electronics
+                electronics.
               </li>
               <li className="career__text">
                 Working experience in voltage and current mode control and
@@ -1174,7 +1187,7 @@ function Career() {
               </li>
               <li className="career__text">
                 Familiarity with power supply testing and packaging for harsh
-                environments
+                environments.
               </li>
             </ul>
           </div>
@@ -1182,7 +1195,8 @@ function Career() {
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
               <li className="career__text">
-                Must be available to work extended hours and weekends as needed
+                Must be available to work extended hours and weekends as
+                needed..
               </li>
             </ul>
           </div>
@@ -1195,18 +1209,18 @@ function Career() {
               </li>
               <li className="career__text">
                 Your work will directly impact the company's (and the rocket's)
-                trajectory
+                trajectory.
               </li>
               <li className="career__text">
                 You will learn rocket science from some of the most senior and
-                respected minds in ISRO
+                respected minds in ISRO.
               </li>
               <li className="career__text">
-                You will work on shaping space policy in India
+                You will work on shaping space policy in India.
               </li>
               <li className="career__text">
                 You will dirty your hands in a global supply/chain optimization
-                problem
+                problem.
               </li>
             </ul>
           </div>
@@ -1222,7 +1236,7 @@ function Career() {
           <p className="career__text">
             If interested, please send your resume in PDF format and a 3 line
             email describing - who you are, why you want to apply to Agnikul and
-            something interesting about yourself, Send emails to{" "}
+            something interesting about yourself. Send resumes to{" "}
             <a href="mailto:humancapital@agnikul.in" className="career__mail">
               humancapital@agnikul.in
             </a>
@@ -1245,15 +1259,15 @@ function Career() {
             <ul>
               <li className="career__text">
                 If you like to think the other extreme of the north pole is
-                north “zero” - this is for you{" "}
+                north “zero” - this is for you.
               </li>
               <li className="career__text">
                 If you don’t need someone to tell you LQR is good enough - this
-                is for you
+                is for you.
               </li>
               <li className="career__text">
                 If you believe lead-lag compensation is the essence of all human
-                interactions - this is for you
+                interactions - this is for you.
               </li>
             </ul>
           </div>
@@ -1263,79 +1277,79 @@ function Career() {
               <li className="career__text">
                 Works on independent sections of controller design and
                 integration process for launch vehicle control systems and
-                related components in the vehicle’s guidance systems
+                related components in the vehicle’s guidance systems.
               </li>
               <li className="career__text">
                 Specifically,
                 <ul>
                   <li className="career__text">
                     Aid in the development of Autopilot linear stability testing
-                    and analysis
+                    and analysis.
                   </li>
                   <li className="career__text">
                     Design Non-linear 6DOF simulation analysis and scenario
-                    analysis
+                    analysis.
                   </li>
                   <li className="career__text">
-                    Review system level and launch vehicle requirements
+                    Review system level and launch vehicle requirements.
                   </li>
                   <li className="career__text">
                     Lead development and maintenance of software tools that
                     predict pre-flight performance under nominal, off-nominal
-                    conditions
+                    conditions.
                   </li>
                   <li className="career__text">
                     Perform post flight verification of simulation predictions
-                    and Monte Carlo through multiple flight conditions
+                    and Monte Carlo through multiple flight conditions.
                   </li>
                   <li className="career__text">
                     Create hazards assessment programs and tools to understand
                     probability of impact and expected damage from off-nominal
-                    and failure modes
+                    and failure modes.
                   </li>
                   <li className="career__text">
-                    Support design reviews and milestones as necessary
+                    Support design reviews and milestones as necessary.
                   </li>
                 </ul>
               </li>
               <li className="career__text">
-                Assists independent sections of propulsion control systems
+                Assists independent sections of propulsion control systems.
               </li>
               <li className="career__text">
                 Aid specifically, the development of some or all of the
-                following
+                following.
                 <ul>
                   <li className="career__text">
-                    Design of Mixture ratio control & stability analysis
+                    Design of Mixture ratio control & stability analysis.
                   </li>
                   <li className="career__text">
                     Integration of mixture ratio control, electric motor speed
-                    control and propellant utilization loops
+                    control and propellant utilization loops.
                   </li>
                   <li className="career__text">
                     Development of system level requirements for cross coupled
                     dynamics between propellant utilization algorithms and
-                    vehicle guidance / autopilot algorithms
+                    vehicle guidance / autopilot algorithms.
                   </li>
                   <li className="career__text">
-                    Support design reviews and milestones as necessary
+                    Support design reviews and milestones as necessary.
                   </li>
                 </ul>
               </li>
               <li className="career__text">
                 Supports hardware design & implementation of the vehicle across
-                multiple control systems
+                multiple control systems.
                 <ul>
                   <li className="career__text">
                     Analog and mixed signal design with focus on launch vehicle
-                    hardware
+                    hardware.
                   </li>
                   <li className="career__text">
                     Board level design for both ground checkout systems and
-                    flight hardware
+                    flight hardware.
                   </li>
                   <li className="career__text">
-                    Support design reviews and milestones as necessary
+                    Support design reviews and milestones as necessary.
                   </li>
                 </ul>
               </li>
@@ -1346,14 +1360,14 @@ function Career() {
             <ul>
               <li className="career__text">
                 Bachelors / Master’s Degree in Controls Engineering, Electrical
-                engineering, Electronics & Communications engineering
+                engineering, Electronics & Communications engineering.
               </li>
               <li className="career__text">
                 Highly developed computer skills using EE design/analysis
-                software
+                software.
               </li>
               <li className="career__text">
-                Decent software programming skills
+                Decent software programming skills.
               </li>
             </ul>
           </div>
@@ -1362,14 +1376,14 @@ function Career() {
             <ul>
               <li className="career__text">
                 Ph.D. in Electrical engineering, Electronics & Communications
-                engineering
+                engineering.
               </li>
               <li className="career__text">
                 Good understanding of product development and Control network
-                (CAN)
+                (CAN).
               </li>
               <li className="career__text">
-                1+ experience with mechanical systems and engines
+                1+ experience with mechanical systems and engines.
               </li>
               <li className="career__text">
                 Good understanding of engine controller design and
@@ -1377,11 +1391,11 @@ function Career() {
               </li>
               <li className="career__text">
                 Good understanding of orbital mechanics, multi-body dynamics,
-                and controls-structures interaction
+                and controls-structures interaction.
               </li>
               <li className="career__text">
                 Experience with static constrained optimization, calculus of
-                variations, dynamic optimization, maximum principle
+                variations, dynamic optimization, maximum principle.
               </li>
             </ul>
           </div>
@@ -1389,7 +1403,7 @@ function Career() {
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
               <li className="career__text">
-                Must be available to work extended hours and weekends as needed
+                Must be available to work extended hours and weekends as needed.
               </li>
             </ul>
           </div>
@@ -1398,18 +1412,18 @@ function Career() {
             <ul>
               <li className="career__text">
                 Your work will directly impact the company's (and the rocket's)
-                trajectory
+                trajectory.
               </li>
               <li className="career__text">
                 You will learn rocket science from some of the most senior and
-                respected minds in ISRO
+                respected minds in ISRO.
               </li>
               <li className="career__text">
-                You will work on shaping space policy in India
+                You will work on shaping space policy in India.
               </li>
               <li className="career__text">
                 You will dirty your hands in a global supply/chain optimization
-                problem
+                problem.
               </li>
             </ul>
           </div>
@@ -1425,7 +1439,7 @@ function Career() {
           <p className="career__text">
             If interested, please send your resume in PDF format and a 3 line
             email describing - who you are, why you want to apply to Agnikul and
-            something interesting about yourself, Send emails to{" "}
+            something interesting about yourself. Send resumes to{" "}
             <a href="mailto:humancapital@agnikul.in" className="career__mail">
               humancapital@agnikul.in
             </a>
@@ -1449,7 +1463,7 @@ function Career() {
               <li className="career__text">
                 If you know why water tanker lorries in India have their tops
                 open - this is for you. (Even better if you have tried to model
-                slosh dynamics of a water tanker lorry)
+                slosh dynamics of a water tanker lorry).
               </li>
               <li className="career__text">
                 If you can mathematically predict the instantaneous position and
@@ -1465,7 +1479,7 @@ function Career() {
             <ul>
               <li className="career__text">
                 Design, analyze and build flight dynamics models for launch
-                vehicles
+                vehicles.
               </li>
               <li className="career__text">
                 Design high fidelity simulations of hypersonic flight systems,
@@ -1480,14 +1494,14 @@ function Career() {
               <li className="career__text">
                 Bachelors / Master's degree in controls engineering, aerospace
                 or mechanical engineering or any degree that enhanced your
-                ability to model systems mathematically
+                ability to model systems mathematically.
               </li>
               <li className="career__text">
                 2-3 years of experience in mathematically modeling system
-                dynamics
+                dynamics.
               </li>
               <li className="career__text">
-                A fascination to bring space closer to everyone on earth
+                A fascination to bring space closer to everyone on earth.
               </li>
             </ul>
           </div>
@@ -1496,11 +1510,11 @@ function Career() {
             <ul>
               <li className="career__text">
                 Master's degree in aeronautical/astronautical, aerospace or
-                mechanical engineering
+                mechanical engineering.
               </li>
               <li className="career__text">
                 Understanding of software-in-the-loop and hardware-in-the-loop
-                development
+                development.
               </li>
               <li className="career__text">
                 Design and analyze control approaches for complex vehicle
@@ -1508,10 +1522,10 @@ function Career() {
               </li>
               <li className="career__text">
                 Be able to understand vehicle plant dynamics and select
-                appropriate control methods
+                appropriate control methods.
               </li>
               <li className="career__text">
-                Research and create launch vehicle guidance algorithm
+                Research and create launch vehicle guidance algorithm.
               </li>
               <li className="career__text">
                 Understanding of system dynamics, trajectory optimization to
@@ -1523,7 +1537,7 @@ function Career() {
             <p className="career__head">ADDITIONAL REQUIREMENTS</p>
             <ul>
               <li className="career__text">
-                Must be available to work extended hours and weekends as needed
+                Must be available to work extended hours and weekends as needed.
               </li>
             </ul>
           </div>
@@ -1532,18 +1546,18 @@ function Career() {
             <ul>
               <li className="career__text">
                 Your work will directly impact the company's (and the rocket's)
-                trajectory
+                trajectory.
               </li>
               <li className="career__text">
                 You will learn rocket science from some of the most senior and
-                respected minds in ISRO
+                respected minds in ISRO.
               </li>
               <li className="career__text">
-                You will work on shaping space policy in India
+                You will work on shaping space policy in India.
               </li>
               <li className="career__text">
                 You will dirty your hands in a global supply/chain optimization
-                problem
+                problem.
               </li>
             </ul>
           </div>
@@ -1559,7 +1573,7 @@ function Career() {
           <p className="career__text">
             If interested, please send your resume in PDF format and a 3 line
             email describing - who you are, why you want to apply to Agnikul and
-            something interesting about yourself, Send emails to{" "}
+            something interesting about yourself. Send resumes to{" "}
             <a href="mailto:humancapital@agnikul.in" className="career__mail">
               humancapital@agnikul.in
             </a>
@@ -1580,7 +1594,7 @@ function Career() {
               Limited (“Agnikul”, “we”, “us” or “our”) and users of its website
               (“you”, “your” or “user”). This agreement (the “Agreement”) also
               governs your use of this website{" "}
-              <a href="http://agnikul.in">(http://www.agnikul.in/)</a> (the
+              <a href="https://nikul.in">(https://www.agnikul.in/)</a> (the
               “Site”). By using the Site, you acknowledge that you have reviewed
               and agree to all of the terms of this Agreement and agree to be
               bound by them in connection with your use of the Site. By
@@ -1735,7 +1749,7 @@ function Career() {
             <div className="col-sm">
               <div className="footer-section">
                 <p className="footer-normal phone">Phone</p>
-                <p className="footer-bolder">+91 99625 075240</p>
+                <p className="footer-bolder">+91 99625 07524</p>
                 <p className="footer-bolder">+91 96772 82356</p>
                 <p className="footer-bolder">+1 551 689 2314</p>
               </div>
@@ -1765,12 +1779,25 @@ function Career() {
             <div className="col-sm">
               <div className="footer-section">
                 <p className="footer-normal">Email</p>
-                <a href="mailto:humancapital@agnikul.in">
-                  <p className="footer-bolder">humancapital@agnikul.in</p>
-                </a>
-                <a href="mailto:payloadpeople@agnikul.in">
-                  <p className="footer-bolder">payloadpeople@agnikul.in</p>
-                </a>
+                <p className="footer-bolder">
+                  <Link to="/career" className="nav">
+                    Careers
+                  </Link>{" "}
+                  -
+                  <a href="mailto:humancapital@agnikul.in">
+                    humancapital@agnikul.in
+                  </a>
+                </p>
+
+                <p className="footer-bolder">
+                  <Link to="/book" className="nav">
+                    Customers
+                  </Link>{" "}
+                  -
+                  <a href="mailto:payloadpeople@agnikul.in">
+                    payloadpeople@agnikul.in
+                  </a>
+                </p>
               </div>
             </div>
             <div className="col-sm border-column">
@@ -1808,11 +1835,9 @@ function Career() {
                   </div>
                 </div>
                 <p className="footer-bolder book__terms__link">
-                  Terms,Conditions and Privacy Policy
+                  Terms, Conditions and Privacy Policy
                 </p>
                 <div className="footer-social-logos">
-                  <i className="fa fa-facebook" aria-hidden="true"></i>
-                  <i className="fa fa-google-plus" aria-hidden="true"></i>
                   <a href="https://twitter.com/@agnikulcosmos" target="_blank">
                     <i className="fa fa-twitter" aria-hidden="true"></i>
                   </a>

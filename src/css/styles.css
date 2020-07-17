@@ -427,6 +427,11 @@ select:hover {
     white-space: normal;
 }
 
+.custom-form-options-inner .dropdown-item.disabled {
+    color: #b0b1a8;
+    font-family: "Poppins Bold";
+}
+
 .custom-form-options-inner {
     overflow-y: scroll;
     scrollbar-color: #b7b7b7;
@@ -540,6 +545,8 @@ select:hover {
     color: #4d8c52;
 }
 
+
+
 @media screen and (max-width: 768px) {
     .custom-button span,
     .custom-form-control-half input,
@@ -575,6 +582,10 @@ select:hover {
     }
     .custom-button {
         width: 200px;
+    }
+
+    .form-warning {
+        font-size: 12px;
     }
 }
 
@@ -661,6 +672,14 @@ select:hover {
     color: #252526;
     text-align: justify;
 }
+
+.custom-modal-text a{
+    color: #4d8c52;
+}
+
+.custom-modal-text a:hover{
+    color: #4d8c52 !important;
+} 
 
 .custom-modal-head {
     font-family: "Poppins SemiBold";
@@ -762,6 +781,11 @@ select:hover {
     text-decoration: underline !important;
 }
 
+.footer a.nav {
+    text-decoration: none !important;
+    display: inline;
+}
+
 .footer .row .col-xs {
     padding-right: 5%;
     padding-left: 3%;
@@ -773,7 +797,7 @@ select:hover {
 
 .footer-normal {
     font-family: "Poppins Regular";
-    color: #b6c197;
+    color: white;
 }
 
 .footer-email {
@@ -798,23 +822,23 @@ select:hover {
     color: #5e6648;
 }
 
-.footer-social-logos .fa:hover {
+.footer-social-logos .fa {
     color: white;
 }
 
-.footer-social-logos i.fa-facebook:hover {
+.footer-social-logos i.fa-facebook {
     background-color: #3b5998;
 }
 
-.footer-social-logos i.fa-twitter:hover {
+.footer-social-logos i.fa-twitter {
     background-color: #00ACEE;
 }
 
-.footer-social-logos i.fa-google-plus:hover {
+.footer-social-logos i.fa-google-plus {
     background-color: #f4b400;
 }
 
-.footer-social-logos i.fa-linkedin:hover {
+.footer-social-logos i.fa-linkedin {
     background-color: #0072b1;
 }
 
