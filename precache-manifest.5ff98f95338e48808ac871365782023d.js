@@ -1,14 +1,14 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e2b3f591457c25dbb7ef260d3ac9ddcf",
+    "revision": "033809f90f2a6f8cd1e205a54bd5afac",
     "url": "/agnikul-react/index.html"
   },
   {
-    "revision": "3a0d3f1bec47fa3ecd25",
+    "revision": "b2932db4f30534b16e93",
     "url": "/agnikul-react/static/css/10.ea5ee982.chunk.css"
   },
   {
-    "revision": "60661d1b1cec4191f7d6",
+    "revision": "8ec2bcd8a25c5087b2b5",
     "url": "/agnikul-react/static/css/11.da3c9c36.chunk.css"
   },
   {
@@ -20,11 +20,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/css/3.58940346.chunk.css"
   },
   {
-    "revision": "d2b54b524c906da2e827",
+    "revision": "bda7c78eaebcc250a4b3",
     "url": "/agnikul-react/static/css/4.1ee5560c.chunk.css"
   },
   {
-    "revision": "85124a57572ca3572223",
+    "revision": "2e6275c74341cebde489",
     "url": "/agnikul-react/static/css/5.96f55db9.chunk.css"
   },
   {
@@ -32,32 +32,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/css/6.200c2c52.chunk.css"
   },
   {
-    "revision": "30996d70ecc67f4dda29",
+    "revision": "5dc07903781cbd1e1022",
     "url": "/agnikul-react/static/css/7.5482f2b3.chunk.css"
   },
   {
-    "revision": "38f88cd6983fe4ba87ec",
+    "revision": "7b348b2651833bec3171",
     "url": "/agnikul-react/static/css/8.6590f41f.chunk.css"
   },
   {
-    "revision": "0a7a113e965d203e48bc",
+    "revision": "e14fa277b46c42469d88",
     "url": "/agnikul-react/static/css/9.381ee5d0.chunk.css"
   },
   {
-    "revision": "c70cba8e5ec9feadfcf6",
-    "url": "/agnikul-react/static/css/main.d052ac09.chunk.css"
+    "revision": "c70bdf739c6815bec30c",
+    "url": "/agnikul-react/static/css/main.89ec0665.chunk.css"
   },
   {
     "revision": "405994597a841509b538",
     "url": "/agnikul-react/static/js/0.9a49ed90.chunk.js"
   },
   {
-    "revision": "3a0d3f1bec47fa3ecd25",
-    "url": "/agnikul-react/static/js/10.5791eaa2.chunk.js"
+    "revision": "b2932db4f30534b16e93",
+    "url": "/agnikul-react/static/js/10.9f4f3c2e.chunk.js"
   },
   {
-    "revision": "60661d1b1cec4191f7d6",
-    "url": "/agnikul-react/static/js/11.6250e3c4.chunk.js"
+    "revision": "8ec2bcd8a25c5087b2b5",
+    "url": "/agnikul-react/static/js/11.e1dcd3ff.chunk.js"
   },
   {
     "revision": "770bb8196ece21a44548",
@@ -72,36 +72,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/3.8c66661f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d2b54b524c906da2e827",
-    "url": "/agnikul-react/static/js/4.8681261c.chunk.js"
+    "revision": "bda7c78eaebcc250a4b3",
+    "url": "/agnikul-react/static/js/4.a993a889.chunk.js"
   },
   {
-    "revision": "85124a57572ca3572223",
-    "url": "/agnikul-react/static/js/5.553dc6de.chunk.js"
+    "revision": "2e6275c74341cebde489",
+    "url": "/agnikul-react/static/js/5.bfaafe88.chunk.js"
   },
   {
     "revision": "5dc551fa4fc1babc9e34",
     "url": "/agnikul-react/static/js/6.8b2be52d.chunk.js"
   },
   {
-    "revision": "30996d70ecc67f4dda29",
-    "url": "/agnikul-react/static/js/7.74761a1c.chunk.js"
+    "revision": "5dc07903781cbd1e1022",
+    "url": "/agnikul-react/static/js/7.d231dcc9.chunk.js"
   },
   {
-    "revision": "38f88cd6983fe4ba87ec",
-    "url": "/agnikul-react/static/js/8.f75595ef.chunk.js"
+    "revision": "7b348b2651833bec3171",
+    "url": "/agnikul-react/static/js/8.48676c38.chunk.js"
   },
   {
-    "revision": "0a7a113e965d203e48bc",
-    "url": "/agnikul-react/static/js/9.e4fca4da.chunk.js"
+    "revision": "e14fa277b46c42469d88",
+    "url": "/agnikul-react/static/js/9.c8d010ba.chunk.js"
   },
   {
-    "revision": "c70cba8e5ec9feadfcf6",
+    "revision": "c70bdf739c6815bec30c",
     "url": "/agnikul-react/static/js/main.6fcb989f.chunk.js"
   },
   {
-    "revision": "601fd6b76076c9b0619a",
-    "url": "/agnikul-react/static/js/runtime-main.4e086368.js"
+    "revision": "61dffc35ff46102b3d7b",
+    "url": "/agnikul-react/static/js/runtime-main.1863c99d.js"
   },
   {
     "revision": "1b436cea2eb57314d8b82214fa44c244",
