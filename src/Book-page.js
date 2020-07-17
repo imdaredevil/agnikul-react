@@ -74,27 +74,68 @@ ValidateEmail(mail)
     var phone = $("#phone-field").val();
     var preferred = $("#preferred-field").text();
     var tac = document.getElementById("tac");
-    if (
-      !(
-        $("#location-field").hasClass("selected") &&
-        $("#inclination-field").hasClass("selected") &&
-        $("#payload-field").hasClass("selected") &&
-        $("#altitude-field").hasClass("selected") &&
-        $("#preferred-field").hasClass("selected") &&
-        name != "" &&
-        email != "" &&
-        tac.checked
-      )
-    ) {
-       $(".form-warning").html("Fill out all form fields");
-      $(".form-warning").css("display", "block");
+    var notProper = false;
+    $(".form-warning").css("display", "none");
+    if (!$("#location-field").hasClass("selected"))
+    {
+      notProper = true;
+      $("#launch-warning").css("display", "block");
+    }
+    if (!$("#inclination-field").hasClass("selected")) {
+      notProper = true;
+      $("#orbit-warning").css("display", "block");
+    }
+    if (!$("#payload-field").hasClass("selected")) {
+      notProper = true;
+      $("#payload-warning").css("display", "block");
+    }
+    if (!$("#altitude-field").hasClass("selected")) {
+      notProper = true;
+      $("#altitude-warning").css("display", "block");
+    }
+    if (!$("#preferred-field").hasClass("selected")) {
+      notProper = true;
+      $("#preferred-warning").css("display", "block");
+    }
+    if (name == "") {
+      notProper = true;
+      $("#name-warning").css("display", "block");
+    }
+    if (email == "") {
+      notProper = true;
+      $("#email-warning").html("Required*");
+      $("#email-warning").css("display", "block");
+    }
+    else if (!this.ValidateEmail(email))
+    {
+      notProper = true;
+      $("#email-warning").html("Enter proper email");
+      $("#email-warning").css("display", "block");
+    }
+    
+    if (notProper)
       return;
-    }
-    if (!this.ValidateEmail(email)) {
-      $(".form-warning").html("Enter proper email");
-         $(".form-warning").css("display", "block");
-         return;
-    }
+    // if (
+    //   !(
+    //     $("#location-field").hasClass("selected") &&
+    //     $("#inclination-field").hasClass("selected") &&
+    //     $("#payload-field").hasClass("selected") &&
+    //     $("#altitude-field").hasClass("selected") &&
+    //     $("#preferred-field").hasClass("selected") &&
+    //     name != "" &&
+    //     email != "" &&
+    //     tac.checked
+    //   )
+    // ) {
+    //    $(".form-warning").html("Fill out all form fields");
+    //   $(".form-warning").css("display", "block");
+    //   return;
+    // }
+    // if (!this.ValidateEmail(email)) {
+    //   $(".form-warning").html("Enter proper email");
+    //      $(".form-warning").css("display", "block");
+    //      return;
+    // }
     $(".custom-button span").html("SUBMITTING..");
     $(".form-warning").css("display", "none");
     var jqxhr = $.ajax({
@@ -293,6 +334,9 @@ ValidateEmail(mail)
                         </div>
                       </div>
                     </div>
+                    <p className="form-warning" id="launch-warning">
+                      Required*
+                    </p>
                   </div>
                 </div>
                 <div className="row">
@@ -362,6 +406,9 @@ ValidateEmail(mail)
                         </div>
                       </div>
                     </div>
+                    <p className="form-warning" id="orbit-warning">
+                      Required*
+                    </p>
                   </div>
                   <div className="col-sm">
                     <div className="dropdown" id="form-payload">
@@ -442,6 +489,9 @@ ValidateEmail(mail)
                         </div>
                       </div>
                     </div>
+                    <p className="form-warning" id="payload-warning">
+                      Required*
+                    </p>
                   </div>
                 </div>
               </div>
@@ -491,6 +541,9 @@ ValidateEmail(mail)
                         </div>
                       </div>
                     </div>
+                    <p className="form-warning" id="altitude-warning">
+                      Required*
+                    </p>
                   </div>
                 </div>
                 <div className="row">
@@ -536,6 +589,9 @@ ValidateEmail(mail)
                         </div>
                       </div>
                     </div>
+                    <p className="form-warning" id="preferred-warning">
+                      Required*
+                    </p>
                   </div>
                 </div>
               </div>
@@ -559,6 +615,9 @@ ValidateEmail(mail)
                         </div>
                       </div>
                     </div>
+                    <p className="form-warning" id="name-warning">
+                      Required*
+                    </p>
                   </div>
                 </div>
                 <div className="row">
@@ -601,6 +660,9 @@ ValidateEmail(mail)
                         </div>
                       </div>
                     </div>
+                    <p className="form-warning" id="email-warning">
+                      Required*
+                    </p>
                   </div>
                 </div>
                 <div className="row">

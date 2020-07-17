@@ -541,10 +541,14 @@ select:hover {
 
 .form-warning {
     display: none;
-    text-align: left;
-    color: #4d8c52;
+    text-align: right;
+    color: #4d8c52;;
+    font-size: 14px;
 }
 
+#form-payload ~ .form-warning,#form-orbit ~ .form-warning {
+    margin-top: 4%;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -587,6 +591,13 @@ select:hover {
     .form-warning {
         font-size: 12px;
     }
+}
+
+@media screen and (max-width: 576px){
+    
+#form-payload ~ .form-warning,#form-orbit ~ .form-warning {
+    margin-top: 0%;
+}
 }
 
 

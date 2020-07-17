@@ -361,7 +361,7 @@ function Product() {
                 </div> */}
 
         <div className="fifth-scroll fifth-scroll-1">
-          <p className="number">04</p>
+          <p className="number">00</p>
           <p className="content">LAUNCH PEDESTAL - DHANUSH</p>
         </div>
 
