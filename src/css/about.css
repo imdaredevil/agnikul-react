@@ -453,9 +453,7 @@
     height: 200px;
 }
 
-.partner-swiper-pagination {
-    display: none !important;
-}
+
 
 .partner-swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
     border-radius: 0%;

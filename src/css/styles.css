@@ -546,6 +546,10 @@ select:hover {
     font-size: 14px;
 }
 
+.form-warning#tac-warning{
+    text-align: left;
+}
+
 #form-payload ~ .form-warning,#form-orbit ~ .form-warning {
     margin-top: 4%;
 }

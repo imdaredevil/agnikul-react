@@ -112,6 +112,12 @@ ValidateEmail(mail)
       $("#email-warning").html("Enter proper email");
       $("#email-warning").css("display", "block");
     }
+
+    if (!tac.checked)
+    {
+      notProper = true;
+      $("#tac-warning").css("display", "block");
+    }
     
     if (notProper)
       return;
@@ -700,7 +706,7 @@ ValidateEmail(mail)
                     of the company.
                   </label>
 
-                  <p className="form-warning">Fill out all fields</p>
+                  <p className="form-warning" id="tac-warning">Required*</p>
                 </div>
                 <div className="row">
                   <div className="col">

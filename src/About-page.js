@@ -14,6 +14,9 @@ import centeredimage from "./images/about/centered-image.png";
 import iit from "./images/about/partners/IITM.jpg";
 import ceg from "./images/about/partners/CEG.jpg";
 import ciie from "./images/about/partners/CIIE.jpg";
+import murugappa from "./images/about/partners/murugappa.jpg";
+import ksum from "./images/about/partners/ksum.jpg";
+import airbus from "./images/about/partners/airbus.jpg";
 
 import pi from "./images/about/investors/piventures.png";
 import cii from "./images/about/investors/CIIE.png";
@@ -240,14 +243,14 @@ function About() {
         <div className="intermediate-banner-content">
           <p className="intermediate-banner-title">
             Our story wouldn’t have started and isn’t complete without our
-            academic partners.
+            partners.
           </p>
           {/* <Link className="intermediate-banner-link" to="/products">GO TO PRODUCTS</Link>           */}
         </div>
       </div>
 
       <div className="about__fourth-section">
-        <p className="about__section-head">Academic Partners</p>
+        <p className="about__section-head">Partners</p>
       </div>
 
       <div className="partners">
@@ -269,6 +272,24 @@ function About() {
               <div className="partner-slide-content">
                 <img className="partner-slide-img" src={ciie} />
                 <p className="partner-name">IIM Ahmedabad’s CIIE</p>
+              </div>
+            </div>
+            <div className="partner-swiper-slide swiper-slide">
+              <div className="partner-slide-content">
+                <img className="partner-slide-img" src={murugappa} />
+                <p className="partner-name">Murugappa Polytechnic</p>
+              </div>
+            </div>
+            <div className="partner-swiper-slide swiper-slide">
+              <div className="partner-slide-content">
+                <img className="partner-slide-img" src={airbus} />
+                <p className="partner-name">Airbus Bizlab</p>
+              </div>
+            </div>
+            <div className="partner-swiper-slide swiper-slide">
+              <div className="partner-slide-content">
+                <img className="partner-slide-img" src={ksum} />
+                <p className="partner-name">Kerala Startup Mission</p>
               </div>
             </div>
           </div>
@@ -386,10 +407,10 @@ function About() {
               Limited (“Agnikul”, “we”, “us” or “our”) and users of its website
               (“you”, “your” or “user”). This agreement (the “Agreement”) also
               governs your use of this website{" "}
-              <a href="https://www.agnikul.in">(https://www.agnikul.in/)</a> (the
-              “Site”). By using the Site, you acknowledge that you have reviewed
-              and agree to all of the terms of this Agreement and agree to be
-              bound by them in connection with your use of the Site. By
+              <a href="https://www.agnikul.in">(https://www.agnikul.in/)</a>{" "}
+              (the “Site”). By using the Site, you acknowledge that you have
+              reviewed and agree to all of the terms of this Agreement and agree
+              to be bound by them in connection with your use of the Site. By
               entering, accessing, browsing, submitting information to, or
               otherwise using this site, you acknowledge and agree to the
               following terms and conditions.
@@ -585,7 +606,8 @@ function About() {
                 <p className="footer-bolder">
                   <Link to="/book" className="nav">
                     Customers
-                  </Link> - 
+                  </Link>{" "}
+                  -
                   <a href="mailto:payloadpeople@agnikul.in">
                     payloadpeople@agnikul.in
                   </a>

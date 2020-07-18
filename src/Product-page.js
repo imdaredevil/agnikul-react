@@ -175,7 +175,7 @@ function Product() {
               <img className="product__icon" src={ml}></img>
               <p className="heading">1 - 100kg</p>
               <p className="text">
-                Flat costing for any payload between 20 - 100 kg.
+                Flat costing for any payload between 25 - 100 kg.
               </p>
             </div>
 
