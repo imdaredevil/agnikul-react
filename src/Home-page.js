@@ -122,6 +122,8 @@ class Home extends React.Component {
           </div>
         </div>
 
+        {/*********************************HOME BANNER***********************************************************************/}
+
         <div className="home__home-banner">
           <div className="home__banner-content">
             <img src={bannericon} className="home__banner-icon" />
@@ -138,6 +140,8 @@ class Home extends React.Component {
             </Link>
           </div>
         </div>
+
+        {/*********************************AGNIBAAN TRAILER***********************************************************************/}
 
         <div className="home__second-section">
           <div className="home__second-content">
@@ -173,6 +177,8 @@ class Home extends React.Component {
             />
           </div>
         </div>
+
+        {/*********************************FACTS & FIGURES***********************************************************************/}
 
         <div className="container-fluid home__third-section">
           <div className="home__third-content">
@@ -256,6 +262,8 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
+
+        {/*********************************BOOK MY LAUNCH TRAILER**********************************************************************/}
 
         <div className="home__fourth-section">
           <div className="home__fourth-head">
@@ -486,6 +494,8 @@ class Home extends React.Component {
             <a>If you have a question, please reach out.</a>
           </p>
         </div> */}
+
+        {/*********************************MODAL AFTER CLICKING THE FORM BUTTON***********************************************************************/}
 
         <div className="home__custom-modal-out">
           <div className="home__custom-modal-outer">

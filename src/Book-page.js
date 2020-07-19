@@ -36,6 +36,8 @@ class Book extends Component {
       payload: "PAYLOAD MASS",
       current: blank
     };
+
+    // filling the form if the book my alunch page is called from home page.
     if (props.location != undefined && props.location.state != undefined) {
       if (props.location.state.launch != undefined)
         this.state.launch = props.location.state.launch;
@@ -121,27 +123,7 @@ ValidateEmail(mail)
     
     if (notProper)
       return;
-    // if (
-    //   !(
-    //     $("#location-field").hasClass("selected") &&
-    //     $("#inclination-field").hasClass("selected") &&
-    //     $("#payload-field").hasClass("selected") &&
-    //     $("#altitude-field").hasClass("selected") &&
-    //     $("#preferred-field").hasClass("selected") &&
-    //     name != "" &&
-    //     email != "" &&
-    //     tac.checked
-    //   )
-    // ) {
-    //    $(".form-warning").html("Fill out all form fields");
-    //   $(".form-warning").css("display", "block");
-    //   return;
-    // }
-    // if (!this.ValidateEmail(email)) {
-    //   $(".form-warning").html("Enter proper email");
-    //      $(".form-warning").css("display", "block");
-    //      return;
-    // }
+    
     $(".custom-button span").html("SUBMITTING..");
     $(".form-warning").css("display", "none");
     var jqxhr = $.ajax({
@@ -261,6 +243,8 @@ ValidateEmail(mail)
             </div>
           </div>
         </div>
+        {/*********************************BOOK MY LAUNCH FORM***********************************************************************/}
+
         <div className="book__overall-div">
           <p className="book__heading">Book your launch</p>
           <p className="book__head-text">
@@ -270,6 +254,8 @@ ValidateEmail(mail)
           </p>
           <div className="book__form-content">
             <form>
+              {/*********************************STEP 1***********************************************************************/}
+
               <p className="book__step">STEP 01</p>
               <div className="container-fluid custom-form">
                 <div className="row">
@@ -501,6 +487,9 @@ ValidateEmail(mail)
                   </div>
                 </div>
               </div>
+
+              {/*********************************STEP 2***********************************************************************/}
+
               <p className="book__step">STEP 02</p>
 
               <div className="container-fluid custom-form">
@@ -601,6 +590,9 @@ ValidateEmail(mail)
                   </div>
                 </div>
               </div>
+
+              {/*********************************STEP 3***********************************************************************/}
+
               <p className="book__step">STEP 03</p>
               <div className="container-fluid custom-form">
                 <div className="row">
@@ -706,7 +698,9 @@ ValidateEmail(mail)
                     of the company.
                   </label>
 
-                  <p className="form-warning" id="tac-warning">Required*</p>
+                  <p className="form-warning" id="tac-warning">
+                    Required*
+                  </p>
                 </div>
                 <div className="row">
                   <div className="col">

@@ -5,6 +5,18 @@ export default function Init() {
 
   var careerSwiper;
 
+  /* 
+  Add new jobs here. 
+  The jobs json is structured as, 
+  Key - category short code. The short code is derived from the id of the corresponding dropdown option
+  Value - a json array containing all the jobs in the category.
+          Each json has two keys,
+          name - name to be displayed in the dropdown.
+          id - id of the dropdown option and thus we can map the corresponding description 
+          by making the id of the description by adding the suffix -desc to it.
+          For eg., if the id of Electric Motor Designer is electric-motor-designer, then we should have
+          the description div id as electric-motor-designer-desc
+*/
   var jobs = {
     "elec": [
       {

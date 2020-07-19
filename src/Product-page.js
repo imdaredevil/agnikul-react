@@ -33,6 +33,7 @@ function Product() {
 
   return (
     <div className="body">
+      {/* *************************NAVBAR******************** */}
       <div className="navBar nav-fixed">
         <div
           className="topnav row justify-content-around align-items-baseline"
@@ -75,9 +76,7 @@ function Product() {
           </div>
           <div id="navButtonDiv" className="column-lg">
             <Link to="/book">
-              <button className="nav-itemc nav-buttonc">
-                BOOK A LAUNCH
-              </button>
+              <button className="nav-itemc nav-buttonc">BOOK A LAUNCH</button>
             </Link>
           </div>
         </div>
@@ -89,6 +88,7 @@ function Product() {
       </div>
 
       <div className="original-div">
+        {/* ************************FIRST SCROLL CONTENT******************** */}
         <div className="first-scroll-content">
           <p className="first-scroll-heading">A CONFIGURABLE DESIGN</p>
           <p className="first-scroll-text">
@@ -100,11 +100,18 @@ function Product() {
             controllability, stability, lift off thrust-to-weight ratio (& many
             other parameters) made sense for each of these versions.<br></br>
             <span>
-              (“Agnibaan” is a Sanksrit word that translates to mean “an arrow of
-              fire”.)
+              (“Agnibaan” is a Sanksrit word that translates to mean “an arrow
+              of fire”.)
             </span>
           </p>
         </div>
+
+        {/* ************* ROCKET ********************************* */}
+        {/* 
+              For the animations of first, second, third and fourth , we need a transform-origin of
+              50%, 50%. But, for the last image, we need a transform origin of 100% 50%.
+              Hence, tow rocket images are made
+        */}
         <div className="rocket-horizontal">
           <img src={rocket1} className="rocket-1" />
           <img src={rocket2} className="rocket-2" />
@@ -119,10 +126,16 @@ function Product() {
 
         <img src={truck} className="truck" />
         <img src={stand} className="stand" />
+
+        {/* different images are used for mobile and desktop, since we need a larger black portion for 
+        desktop and a smaller black portion for mobile 
+        */}
+
         <img src={hydraulic} className="hydraulic" />
 
         <img src={hydraulicM} className="hydraulic-mobile" />
 
+        {/* *************** FIRST SCROLL BOTTOM CONTENT ********************* */}
         <div className="first-scroll-specs">
           <div className="row justify-content-around">
             <div className="col-xs">
@@ -147,6 +160,8 @@ function Product() {
             </div>
           </div>
         </div>
+
+        {/* *************** SECOND SCROLL ********************* */}
         <div className="second-scroll second-scroll-1">
           <p className="number">03</p>
           <p className="content">BABY STAGE</p>
@@ -189,6 +204,8 @@ function Product() {
             </div>
           </div>
         </div>
+
+        {/* *************** THIRD SCROLL********************* */}
 
         <div className="third-scroll third-scroll-1">
           <p className="number">02</p>
@@ -302,6 +319,8 @@ function Product() {
           </svg>
         </div>
 
+        {/* *************** FOURTH SCROLL********************* */}
+
         <div className="fourth-scroll fourth-scroll-1">
           <p className="number">01</p>
           <p className="content">STAGE 1</p>
@@ -359,6 +378,8 @@ function Product() {
             50 1 95 25 95 75 50 99 5 75 5 25
           </svg>
                 </div> */}
+
+        {/* *************** FIFTH SCROLL********************* */}
 
         <div className="fifth-scroll fifth-scroll-1">
           <p className="number">00</p>

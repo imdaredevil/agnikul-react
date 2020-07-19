@@ -8,6 +8,8 @@ import newsHolder from "./images/news/news-placeholder.jpg";
 
 import { Link } from 'react-router-dom';
 
+
+/* **********************ADD MORE NEWS ARTICLES HERE************************* */
 var newsItems = [
   {
     title:
@@ -181,6 +183,8 @@ var newsItems = [
   },
 ];
 
+
+/* *********************NEWS PAGNATION COMPONENT*************************** */
 class NewsPagination extends Component { 
 
   constructor(props) {
@@ -226,6 +230,8 @@ class NewsPagination extends Component {
 }
 
 }
+
+/* **********************News Row Component - component for each row of news articles************************* */
 
 function NewsRow(offset,numberOfArticles) {
 
@@ -278,6 +284,7 @@ function NewsRow(offset,numberOfArticles) {
 
 }
 
+/* **********************NEWS TABLE COMPONENT - It is constructed as a collection of news rows************************* */
 function NewsTable(props) {
   var current = props.current;
   var offset = (current - 1) * 6;

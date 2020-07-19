@@ -75,6 +75,13 @@ function Team() {
         </div>
       </div>
 
+      {/* *************** TEAM BANNER ********************* */}
+      {/*
+      If we want to add a member, add the photo in public/images folder. 
+      Also name the photo as a number. The photos should be numbered from 1 
+      to <Number of members>.
+      After that, alter the numberOfMembers variable in team.js file.
+      */}
       <div className="team__team-banner">
         <div className="row">
           <div className="col">
@@ -145,6 +152,8 @@ function Team() {
         </div>
       </div>
 
+      {/* *************** FOUNDING TEAM ********************* */}
+
       <div className="team__second-section">
         <div className="team__second-content">
           <h3 className="team__second-section-heading">Founding Team</h3>
@@ -155,6 +164,8 @@ function Team() {
           </p>
         </div>
       </div>
+
+      {/* *************** FOUNDER CARDS ********************* */}
 
       <div className="team__third-section container-fluid">
         <div className="row justify-content-center founders">
@@ -222,6 +233,8 @@ function Team() {
           </div>
         </div>
       </div>
+
+      {/* *************** ADVISORS ********************* */}
 
       <div className="team__fourth-section">
         <p className="team__section-head">Advisors</p>

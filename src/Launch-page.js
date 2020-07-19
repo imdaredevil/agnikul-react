@@ -92,6 +92,7 @@ class Launch extends Component {
           </div>
         </div>
 
+        {/****************************PAGE HEADING******************************************* */}
         <p className="launch__section-head">Launch-Sites</p>
         <p className="launch__section-head-text">
           Launches should happen where the customer wants them from or where the
@@ -99,6 +100,7 @@ class Launch extends Component {
         </p>
 
         <div className="launch__overall-div">
+          {/****************************LOCATION CARDS******************************************* */}
           <div className="launch__location-swiper">
             <div className="launch__swiper-wrapper">
               <div className="launch__location__swiper-slide">
@@ -211,11 +213,14 @@ class Launch extends Component {
               </div>
             </div>
           </div>
+
+          {/****************************WORLD MAP******************************************* */}
           <div className="launch__world-map">
             <img className="world_image" src={this.state.current} />
           </div>
         </div>
 
+        {/****************************BUTTON TO REDIRECT TO FORM******************************************* */}
         <div className="launch__button-div">
           <Link
             to={{

@@ -9,7 +9,9 @@ var curi = 0;
 var cure;
 var glo = 0;
 var elements;
-var indArray;
+  var indArray;
+  
+  var numberOfMembers = 44;
 
 
 
@@ -20,7 +22,7 @@ function setInitial(){
 }
 
 function selectBackground(){
-    var rand = ((glo++) + elements.length) % 44;
+    var rand = ((glo++) + elements.length) % numberOfMembers;
     return process.env.PUBLIC_URL + '/images/team-photos/' + (rand + 1) + '.png';
 }
 

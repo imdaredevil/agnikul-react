@@ -68,11 +68,15 @@ function Career() {
           </div>
         </div>
       </div>
+      {/*********************************CAREER HEADING***********************************************************************/}
+
       <div className="container-fluid custom-form career__form">
         <p className="career__section-head">Careers</p>
         <p className="career__section-text">
           Anyone who is really, really good at anything has a place at Agnikul.
         </p>
+        {/*********************************CAREER FORM***********************************************************************/}
+
         <form>
           <div className="row">
             <div className="col-sm">
@@ -164,6 +168,9 @@ function Career() {
                   <div className="custom-form-options-inner" id="job">
                     <p className="dropdown-item" href="#">
                       Select a Crew
+                      {/*
+                        A json is present in the career.js file. For altering and adding career options, change the json
+                      */}
                     </p>
                   </div>
                 </div>
@@ -171,6 +178,12 @@ function Career() {
             </div>
           </div>
         </form>
+
+        {/* *********** CAREER DESCRIPTIONS ***************************************/}
+        {/*
+            Make sure we give the id attribute of job option in the dropdown and that of description properly.
+            If the dropdown has the id other-profiles, then the description must have other-profiles-desc
+        */}
         <div className="career__description visible" id="blank">
           <br></br>
           <br></br>

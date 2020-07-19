@@ -91,6 +91,8 @@ function About() {
         </div>
       </div>
 
+      {/*********************************ABOUT BANNNER***********************************************************************/}
+
       <div className="about__about-banner">
         <div className="about__banner-content">
           <p className="about__banner-first-line">Who are we? </p>
@@ -105,6 +107,7 @@ function About() {
           </p>
         </div>
       </div>
+      {/*********************************TIMELINE***********************************************************************/}
 
       <div className="timeline">
         <div className="vertical-line"></div>
@@ -182,6 +185,8 @@ function About() {
       </div>
       <img className="centered-image" src={centeredimage} />
 
+      {/*********************************INVESTORS***********************************************************************/}
+
       <div className="about__third-section">
         <p className="about__section-head">Investors</p>
 
@@ -237,6 +242,7 @@ function About() {
           </div>
         </div>
       </div>
+      {/*********************************PARTNER BANNNER***********************************************************************/}
 
       <div className="intermediate-banner">
         <img className="intermediate-img" src={worldmap} />
@@ -248,6 +254,8 @@ function About() {
           {/* <Link className="intermediate-banner-link" to="/products">GO TO PRODUCTS</Link>           */}
         </div>
       </div>
+
+      {/*********************************PARTNERS***********************************************************************/}
 
       <div className="about__fourth-section">
         <p className="about__section-head">Partners</p>
@@ -298,6 +306,8 @@ function About() {
           <div className="partner-swiper-button-next swiper-button-next"></div>
         </div>
       </div>
+
+      {/*********************************BUSINESSES***********************************************************************/}
 
       <div className="about__fifth-section">
         <p className="about__fifth-section-title">Why our partners like us</p>
