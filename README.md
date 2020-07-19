@@ -1,4 +1,4 @@
-<h1>Agnikul Website</h1>
+#Agnikul Website
 
 This is the source code of the offical website of Agnikul. 
 
@@ -7,7 +7,7 @@ In order to have professional route names and data transfer between routes, the 
 Hence, the files will not be of pure react nature.
 
 
-<h2>Folder Structure</h2>
+##Folder Structure##
 
 agnikul-react<br/>
 |<br>
