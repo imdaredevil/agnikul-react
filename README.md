@@ -51,7 +51,7 @@ agnikul-react<br/>
 
 ## File naming
 
-- The component files are named as <Component>-Page.js
+- The component files are named as &lt;Component&gt;-Page.js
 - The js files are named as <Component>.js. common.js has the function required for making navbar responsive
 - The css files are named as <Component>.css. styles.css has the css for navbar, footer and the privacy policy modal.
 
