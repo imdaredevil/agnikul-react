@@ -1,4 +1,4 @@
-#Agnikul Website
+# Agnikul Website
 
 This is the source code of the offical website of Agnikul. 
 
@@ -7,34 +7,34 @@ In order to have professional route names and data transfer between routes, the 
 Hence, the files will not be of pure react nature.
 
 
-##Folder Structure##
-
+## Folder Structure
+```
 agnikul-react<br/>
-|<br>
-|---public<br>
-|   └───images<br>
-|        └───team-photos <br>/* The photos of the team members should be kept inside the public folder since it is being referenced dynamically in the js/team.js file */<br>
-|---src<br>
-    ├───css<br>
-    │   └───poppins<br>
-    ├───images<br>
-    │   ├───about<br>
-    │   │   ├───advisors<br>
-    │   │   ├───customers<br>
-    │   │   ├───investors<br>
-    │   │   └───partners<br>
-    │   ├───book<br>
-    │   ├───book-complete<br>
-    │   ├───career<br>
-    │   ├───form-icons<br>
-    │   ├───home<br>
-    │   ├───launch<br>
-    │   ├───news<br>
-    │   ├───products<br>
-    │   └───team<br>
-    └───js<br>    
-    |<br>
-    /* The html pages for each route */<br>
+|
+|---public<
+|   └───images
+|        └───team-photos /* The photos of the team members should be kept inside the public folder since it is being referenced dynamically in the js/team.js file */<br>
+|---src
+    ├───css
+    │   └───poppins
+    ├───images
+    │   ├───about
+    │   │   ├───advisors
+    │   │   ├───customers
+    │   │   ├───investors
+    │   │   └───partners
+    │   ├───book
+    │   ├───book-complete
+    │   ├───career
+    │   ├───form-icons
+    │   ├───home
+    │   ├───launch
+    │   ├───news
+    │   ├───products
+    │   └───team
+    └───js   
+    |
+    /* The html pages for each route */
     |---Home-Page.js<br>
     |---About-Page.js<br>
     |---Products-Page.js<br>
@@ -46,7 +46,7 @@ agnikul-react<br/>
     |---BookComplete-Page.js<br>
     /* The file where the route is mapped to the component */<br>
     |---App.js    
-
+```
 
 <h2>File naming</h2>
 <ul>
