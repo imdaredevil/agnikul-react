@@ -9,7 +9,6 @@ Hence, the files will not be of pure react nature.
 
 <h2>Folder Structure</h2>
 
-<code>
 agnikul-react<br/>
 |<br>
 |---public<br>
@@ -47,7 +46,6 @@ agnikul-react<br/>
     |---BookComplete-Page.js<br>
     /* The file where the route is mapped to the component */<br>
     |---App.js    
-</code>
 
 
 <h2>File naming</h2>
