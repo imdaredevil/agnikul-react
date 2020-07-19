@@ -13,7 +13,8 @@ agnikul-react<br/>
 |
 |---public<
 |   └───images
-|        └───team-photos /* The photos of the team members should be kept inside the public folder since it is being referenced dynamically in the js/team.js file */<br>
+|        └───team-photos
+|             /* The photos of the team members should be kept inside the public folder since it is being referenced dynamically in the js/team.js file */
 |---src
     ├───css
     │   └───poppins
@@ -35,31 +36,28 @@ agnikul-react<br/>
     └───js   
     |
     /* The html pages for each route */
-    |---Home-Page.js<br>
-    |---About-Page.js<br>
-    |---Products-Page.js<br>
-    |---Team-Page.js<br>
-    |---Career-Page.js<br>
-    |---News-Page.js<br>
-    |---Launch-Page.js<br>
-    |---Book-Page.js<br>
-    |---BookComplete-Page.js<br>
-    /* The file where the route is mapped to the component */<br>
+    |---Home-Page.js
+    |---About-Page.js
+    |---Products-Page.js
+    |---Team-Page.js
+    |---Career-Page.js
+    |---News-Page.js
+    |---Launch-Page.js
+    |---Book-Page.js
+    |---BookComplete-Page.js
+    /* The file where the route is mapped to the component */
     |---App.js    
 ```
 
-<h2>File naming</h2>
-<ul>
-<li>The component files are named as //Route//-Page.js</li>
-<li>The js files are named as //Route//.js. common.js has the function required for making navbar responsive</li>
-<li>The css files are named as //Route//.css. styles.css has the css for navbar, footer and the privacy policy modal.</li>
-</ul>
+## File naming
 
-<h2>CSS Files</h2>
-<ul>
-<li>Each file is separated into sections by comments</li>
-<li>All classes should have the component name as prefix since in React, the css files which are not included in the page can also be loaded sometimes.</li>
-</ul>
+- The component files are named as <Component>-Page.js
+- The js files are named as <Component>.js. common.js has the function required for making navbar responsive
+- The css files are named as <Component>.css. styles.css has the css for navbar, footer and the privacy policy modal.
+
+## CSS Files
+- Each file is separated into sections by comments
+- All classes should have the component name as prefix since in React, the css files which are not included in the page can also be loaded sometimes.
 
 <h2>JS Files</h2>
 <ul>
