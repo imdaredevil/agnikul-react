@@ -9,9 +9,9 @@ Hence, the files will not be of pure react nature.
 
 ## Folder Structure
 ```
-agnikul-react<br/>
+agnikul-react
 |
-|---public<
+|---public
 |   └───images
 |        └───team-photos
 |             /* The photos of the team members should be kept inside the public folder since it is being referenced dynamically in the js/team.js file */
@@ -52,8 +52,8 @@ agnikul-react<br/>
 ## File naming
 
 - The component files are named as &lt;Component&gt;-Page.js
-- The js files are named as <Component>.js. common.js has the function required for making navbar responsive
-- The css files are named as <Component>.css. styles.css has the css for navbar, footer and the privacy policy modal.
+- The js files are named as &lt;Component&gt;.js. common.js has the function required for making navbar responsive
+- The css files are named as &lt;Component&gt;.css. styles.css has the css for navbar, footer and the privacy policy modal.
 
 ## CSS Files
 - Each file is separated into sections by comments
