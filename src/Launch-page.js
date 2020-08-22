@@ -499,11 +499,17 @@ class Launch extends Component {
                     Terms, Conditions and Privacy Policy
                   </p>
                   <div className="footer-social-logos">
-                    <a
+                     <a
                       href="https://twitter.com/@agnikulcosmos"
                       target="_blank"
                     >
                       <i className="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a
+                      href="https://instagram.com/agnikul/"
+                      target="_blank"
+                    >
+                      <i className="fa fa-lg fa-instagram" aria-hidden="true"></i>
                     </a>
                     <a
                       href="https://www.linkedin.com/company/agnikul-cosmos/"

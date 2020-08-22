@@ -13,6 +13,21 @@ import { Link } from 'react-router-dom';
 var newsItems = [
   {
     title:
+      "Agnikul partners with HOSTmi to strengthen customer access in European markets",
+    text:
+      "This partnership has taken us a step forward in establishing our vehicle as a “Made in India, for the world” solution.",
+    link:
+      "https://medium.com/agnikuls-blog/agnikul-partners-with-hostmi-to-strengthen-customer-access-in-european-markets-6e2047e2cc3a",
+  },
+  {
+    title: "Leaf Space and Agnikul partner to enable rapid access to space",
+    text:
+      "We are super excited to announce our official partnership with Leaf Space, a service provider of customized ground segment solutions.",
+    link:
+      "https://medium.com/@AgnikulCosmos/leaf-space-and-agnikul-partner-to-enable-rapid-access-to-space-bcaa713ead62",
+  },
+  {
+    title:
       "Chennai start-up building India's first private smallsat rocket, eyes ISRO help for testing",
     text:
       "Chennai start-up Agnikul Cosmos is building India's first private small satellite rocket and will be seeking the help of the Indian Space Research Organisation (ISRO) for conducting tests.",
@@ -664,11 +679,17 @@ class News extends Component {
                     Terms, Conditions and Privacy Policy
                   </p>
                   <div className="footer-social-logos">
-                    <a
+                     <a
                       href="https://twitter.com/@agnikulcosmos"
                       target="_blank"
                     >
                       <i className="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a
+                      href="https://instagram.com/agnikul/"
+                      target="_blank"
+                    >
+                      <i className="fa fa-lg fa-instagram" aria-hidden="true"></i>
                     </a>
                     <a
                       href="https://www.linkedin.com/company/agnikul-cosmos/"

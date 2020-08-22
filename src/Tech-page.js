@@ -1,22 +1,18 @@
 import React from "react";
-import "./css/team.css";
-import "swiper/css/swiper.min.css";
-import log from "./images/logo.png";
-import Init from "./js/team";
-import navBar from "./js/common";
-
-import srinath from "./images/team/Srinath.jpg";
-import moinn from "./images/team/Moin.jpg";
-
-import perumal from "./images/about/advisors/Perumal.jpg";
-import pvr from "./images/about/advisors/PVR.jpg";
-import satya from "./images/about/advisors/Satya.jpg";
-import sekar from "./images/about/advisors/Shekar.jpg";
-
-
 import { Link } from "react-router-dom";
 
-function Team() {
+import "./css/tech.css";
+import "swiper/css/swiper.min.css";
+
+import navBar from "./js/common";
+import Init from "./js/tech";
+
+import log from "./images/logo.png";
+
+import techimage from "./images/tech/tech-placeholder.jpg";
+
+
+function Tech() {
   Init(); // function to initialize animations and swipers
 
   return (
@@ -33,7 +29,7 @@ function Team() {
             </Link>
           </div>
           <div className="column">
-            <Link to="/about" className="nav-itemc nav-linkc">
+            <Link to="/about" className="nav-itemc nav-linkc active">
               About
             </Link>
           </div>
@@ -45,10 +41,10 @@ function Team() {
           {/* <div className="column-md">
             <Link to="/launch-sites" className="nav-itemc nav-linkc">
               Launch Sites
-            </Link>
+            </Link> 
           </div> */}
           <div className="column">
-            <Link to="/team" className="nav-itemc nav-linkc active">
+            <Link to="/team" className="nav-itemc nav-linkc">
               Team
             </Link>
           </div>
@@ -75,234 +71,65 @@ function Team() {
         </div>
       </div>
 
-      {/* *************** TEAM BANNER ********************* */}
-      {/*
-      If we want to add a member, add the photo in public/images folder. 
-      Also name the photo as a number. The photos should be numbered from 1 
-      to <Number of members>.
-      After that, alter the numberOfMembers variable in team.js file.
-      */}
-      <div className="team__team-banner">
-        <div className="row">
-          <div className="col">
-            <img className="holder" />
-            <img className="holder-2" />
-          </div>
-          <div className="col">
-            <img className="holder" />
-            <img className="holder-2" />
-          </div>
-          <div className="col">
-            <img className="holder" />
-            <img className="holder-2" />
-          </div>
-          <div className="col col-m">
-            <img className="holder" />
-            <img className="holder-2" />
-          </div>
-          <div className="col col-m">
-            <img className="holder" />
-            <img className="holder-2" />
-          </div>
-        </div>
-        <div className="row align-items-center">
-          <div className="col">
-            <img className="holder" />
-            <img className="holder-2" />
-          </div>
-          <div className="col-2 team__banner-content">
-            <p className="team__banner-heading">Meet Agnikul's crew</p>
-            <p className="team__banner-text">
-              The human engines driving Agnikul are our extremely dedicated and
-              hardworking crew. We are a fairly young team of 60 people, guided
-              by an extremely accomplished set of advisors - we constantly
-              strive to balance experience with passion.
-            </p>
-          </div>
-          <div className="col">
-            <img className="holder" />
-            <img className="holder-2" />
-          </div>
-          <div className="col col-m">
-            <img className="holder" />
-            <img className="holder-2" />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col">
-            <img className="holder" />
-            <img className="holder-2" />
-          </div>
-          <div className="col">
-            <img className="holder" />
-            <img className="holder-2" />
-          </div>
-          <div className="col">
-            <img className="holder" />
-            <img className="holder-2" />
-          </div>
-          <div className="col col-m">
-            <img className="holder" />
-            <img className="holder-2" />
-          </div>
-          <div className="col col-m">
-            <img className="holder" />
-            <img className="holder-2" />
-          </div>
-        </div>
-      </div>
+      {/*********************************HEADING***********************************************************************/}
 
-      {/* *************** FOUNDING TEAM ********************* */}
+      <p className="tech__section-head">Technology</p>
+      <p className="tech__section-head-text">
+        Launches should happen where the customer wants them from or where the
+        mission demands it from. Go ahead & choose your location here.
+      </p>
 
-      <div className="team__second-section">
-        <div className="team__second-content">
-          <h3 className="team__second-section-heading">Founding Team</h3>
-          <p className="team__second-section-text">
-            Our executive team draws on decades of experience across multiple
-            successful technology startups and helps guide the company towards
-            its strategic goals.
-          </p>
-        </div>
-      </div>
+      {/*********************************SLIDES***********************************************************************/}
 
-      {/* *************** FOUNDER CARDS ********************* */}
-
-      <div className="team__third-section container-fluid">
-        <div className="row justify-content-center founders">
-          <div className="col-sm founder-card">
-            <img className="founder-image" src={srinath} />
-            <p className="founder-name">Srinath Ravichandran</p>
-            <p className="founder-desi">CO-FOUNDER</p>
-            <p className="founder-text">
-              Srinath is a Wall Street trader turned Aerospace Engineer with
-              over 10 years of experience in Engineering, Finance, and Project
-              Management. He has a Bachelor's degree in Electrical Engineering
-              from College of Engineering, Guindy, and Masters degrees in
-              Financial Engineering from Columbia University and Aerospace
-              Engineering from the University of Illinois at Urbana Champaign.
-              Srinath believes in using his multi disciplinary experience to
-              solve large scale problems that humanity faces today. He started
-              Agnikul with the simple idea that going to space shouldn't be the
-              hardest part of living in and working from space. In his leisure
-              time, he follows the film industry and tries to write screenplays.
-            </p>
-            <div className="founder-logos">
-              <a href="https://twitter.com/srinathr155" target="_blank">
-                <i className="fa fa-twitter fa-lg"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/srinath-ravichandran-09679a7/"
-                target="_blank"
-              >
-                <i className="fa fa-linkedin fa-lg"></i>
-              </a>
-              {/* <a><i className="fa fa-lg fa-instagram fa-lg"></i></a>
-                            <a><i className="fa fa-facebook fa-lg"></i></a> */}
-            </div>
-          </div>
-          <div className="col-sm founder-card">
-            <img className="founder-image" src={moinn} />
-            <p className="founder-name">Moin SPM</p>
-            <p className="founder-desi">CO-FOUNDER</p>
-            <p className="founder-text">
-              Moin is an Operations Specialist with over 7 years of experience
-              in Engineering Management, Manufacturing, and Supply Chain
-              operations. He has a Bachelor’s degree in Aeronautics from Anna
-              University, Chennai, and a Master’s Degree in Business
-              Administration from the University of Newcastle, Australia. He
-              also has a keen interest in Space Law. Prior to Agnikul, he led a
-              contract manufacturing company in the CPG sector. He is truly
-              fascinated by space and how its frameworks combine physics,
-              engineering, and safety. He believes in making space accessible
-              for everyone & that allowed him to start Agnikul with Srinath. In
-              his spare time, he tries to spend time playing guitar.
-            </p>
-            <div className="founder-logos">
-              <a href="https://twitter.com/moin_spm" target="_blank">
-                <i className="fa fa-twitter fa-lg"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/moin-spm-53a80342/"
-                target="_blank"
-              >
-                <i className="fa fa-linkedin fa-lg"></i>
-              </a>
-              {/* <a><i className="fa fa-lg fa-instagram fa-lg"></i></a>
-                            <a><i className="fa fa-facebook fa-lg"></i></a> */}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* *************** ADVISORS ********************* */}
-
-      <div className="team__fourth-section">
-        <p className="team__section-head">Advisors</p>
-
-        <div className="advisors">
-          <div className="advisor-swiper swiper-container">
-            <div className="swiper-wrapper">
-              <div className="advisor-swiper-slide swiper-slide">
-                <div className="advisor-slide-content">
-                  <img className="advisor-slide-img" src={satya} />
-                  <p className="advisor-name">SR Chakravarthy</p>
-                  <p className="advisor-award">
-                    Professor & Head - Combustion R&D Center(NCCRD), IIT Madras
-                  </p>
-                  <p className="advisor-desi">
-                    An accomplished rocket scientist, combustion expert with
-                    over 25 years of experience, cofounder of 3 IIT Madras
-                    startups.
-                  </p>
-                </div>
-              </div>
-              <div className="advisor-swiper-slide swiper-slide">
-                <div className="advisor-slide-content">
-                  <img className="advisor-slide-img" src={perumal} />
-                  <p className="advisor-name">RV Perumal, Padma Bhushan</p>
-                  <p className="advisor-award">
-                    (Retd.) GSLV Project Director & ISRO Veteran
-                  </p>
-                  <p className="advisor-desi">
-                    An accomplished rocket scientist and the Project Director of
-                    India’s first GSLV rocket. Over 40 years of experience in
-                    rocket building.
-                  </p>
-                </div>
-              </div>
-              <div className="advisor-swiper-slide swiper-slide">
-                <div className="advisor-slide-content">
-                  <img className="advisor-slide-img" src={pvr} />
-                  <p className="advisor-name">PV Ramakrishnan</p>
-                  <p className="advisor-award">
-                    Prof. (Emeritus) - Electronics and Communication
-                    Engineering.
-                  </p>
-                  <p className="advisor-desi">
-                    Project Director of Anna University Satellite(ANUSAT)-1.
-                    Over 35 years of experience in electronics and avionics
-                    design.
-                  </p>
-                </div>
-              </div>
-              <div className="advisor-swiper-slide swiper-slide">
-                <div className="advisor-slide-content">
-                  <img className="advisor-slide-img" src={sekar} />
-                  <p className="advisor-name">N Shekar</p>
-                  <p className="advisor-award">
-                    (Retd.) Head of AIDAT,<br></br>MD CDG - Boeing, India
-                  </p>
-                  <p className="advisor-desi">
-                    Accomplished aerospace industry veteran with over 40 years
-                    of experience in building and scaling industry products.
-                  </p>
-                </div>
+      <div className="techs">
+        <div className="tech-swiper swiper-container">
+          <div className="swiper-wrapper">
+            <div className="tech-swiper-slide swiper-slide">
+              <div className="tech-slide-content">
+                <img className="tech-slide-img" src={techimage} />
+                <p className="tech-slide-head">Speciale Invest</p>
+                <p className="tech-slide-text">
+                  Launches should happen where the customer wants them from or
+                  where the mission demands it from. Go ahead & choose your
+                  location here.
+                </p>
               </div>
             </div>
-            <div className="advisor-swiper-pagination swiper-pagination"></div>
-            <div className="advisor-swiper-button-prev swiper-button-prev"></div>
-            <div className="advisor-swiper-button-next swiper-button-next"></div>
+            <div className="tech-swiper-slide swiper-slide">
+              <div className="tech-slide-content">
+                <img className="tech-slide-img" src={techimage} />
+                <p className="tech-slide-head">Speciale Invest</p>
+                <p className="tech-slide-text">
+                  Launches should happen where the customer wants them from or
+                  where the mission demands it from. Go ahead & choose your
+                  location here.
+                </p>
+              </div>
+            </div>
+            <div className="tech-swiper-slide swiper-slide">
+              <div className="tech-slide-content">
+                <img className="tech-slide-img" src={techimage} />
+                <p className="tech-slide-head">Speciale Invest</p>
+                <p className="tech-slide-text">
+                  Launches should happen where the customer wants them from or
+                  where the mission demands it from. Go ahead & choose your
+                  location here.
+                </p>
+              </div>
+            </div>
+            <div className="tech-swiper-slide swiper-slide">
+              <div className="tech-slide-content">
+                <img className="tech-slide-img" src={techimage} />
+                <p className="tech-slide-head">Speciale Invest</p>
+                <p className="tech-slide-text">
+                  Launches should happen where the customer wants them from or
+                  where the mission demands it from. Go ahead & choose your
+                  location here.
+                </p>
+              </div>
+            </div>
           </div>
+          <div className="tech-swiper-pagination swiper-pagination"></div>
         </div>
       </div>
 
@@ -319,10 +146,10 @@ function Team() {
               Limited (“Agnikul”, “we”, “us” or “our”) and users of its website
               (“you”, “your” or “user”). This agreement (the “Agreement”) also
               governs your use of this website{" "}
-              <a href="https://nikul.in">(https://www.agnikul.in/)</a> (the
-              “Site”). By using the Site, you acknowledge that you have reviewed
-              and agree to all of the terms of this Agreement and agree to be
-              bound by them in connection with your use of the Site. By
+              <a href="https://www.agnikul.in">(https://www.agnikul.in/)</a>{" "}
+              (the “Site”). By using the Site, you acknowledge that you have
+              reviewed and agree to all of the terms of this Agreement and agree
+              to be bound by them in connection with your use of the Site. By
               entering, accessing, browsing, submitting information to, or
               otherwise using this site, you acknowledge and agree to the
               following terms and conditions.
@@ -504,6 +331,7 @@ function Team() {
             <div className="col-sm">
               <div className="footer-section">
                 <p className="footer-normal">Email</p>
+
                 <p className="footer-bolder">
                   <Link to="/career" className="nav">
                     Careers
@@ -585,4 +413,4 @@ function Team() {
   );
 }
 
-export default Team;
+export default Tech;

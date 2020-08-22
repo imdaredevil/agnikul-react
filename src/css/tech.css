@@ -1,0 +1,132 @@
+/* ********TECH HEADING************ */
+.tech__section-head {
+    font-family: "Poppins Bold";
+    font-size: 42px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.76;
+    letter-spacing: normal;
+    text-align: center;
+    color: #252526;
+    margin: 0;
+}
+
+.tech__section-head-text {
+    padding: 0% 23.3%;
+    font-family: "Poppins Regular";
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(33, 56, 66, 0.6);
+}
+
+/* *****************TECH SLIDES***************** */
+
+.techs{
+    margin-top: 0%;
+    padding-bottom: 5%;
+    display: flex;
+}
+
+.tech-swiper {
+    width: 100%;
+    padding-top: 5%;
+}
+
+.tech-swiper .swiper-wrapper {
+    width: 90%;
+}
+
+.tech-swiper-slide {
+    width: 500px !important;
+}
+
+.tech-slide-content {
+    margin: 5%;
+    padding: 2.5% 13% 2.5% 13%;
+}
+
+.tech-slide-img {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5%;
+    object-fit: fill;
+    border-radius: 13px;
+    border-radius: 13px;
+}
+
+.tech-slide-head {
+     font-family: "Poppins Bold";
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal
+}
+
+.tech-slide-text {
+    font-family: "Poppins Regular";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: normal;
+    text-align: justify;
+}
+
+.tech-swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+.tech-swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet.hidden-bullet {
+    background-color: rgba(255, 255, 255, 0);
+    display: none;
+}
+
+.tech-swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #4d8c52;
+}
+
+.tech-swiper-button-next,
+.tech-swiper-button-prev {
+    width: 32px !important;
+    height: 32px !important;
+    top: 30% !important;
+}
+
+.tech-swiper-button-next::after,
+.tech-swiper-button-prev::after {
+    font-weight: 1000;
+    font-size: 32px !important;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+   
+    .tech-slide-head{
+        font-size: 14px;
+    }
+    .tech-slide-content {
+        margin: 5% 10%;
+        padding: 0% 15% 5% 15%;
+        height: auto;
+    }
+    .tech-slide-img {
+        width: 100%;
+        height: 40%;
+    }
+    .tech-swiper-button-next::after,
+    .tech-swiper-button-prev::after {
+        font-size: 20px !important;
+    }
+}
