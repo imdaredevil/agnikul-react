@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2c5e0af9c4b518c978ab9edf3f5aa2b9",
+    "revision": "bfdfb0bf872851b92a59cd8e5d0a9fc5",
     "url": "/agnikul-react/index.html"
   },
   {
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/css/7.485612cd.chunk.css"
   },
   {
-    "revision": "75f6e2115c72e6bcceca",
-    "url": "/agnikul-react/static/css/8.8478e809.chunk.css"
+    "revision": "2bf5426678c225d7045e",
+    "url": "/agnikul-react/static/css/8.c0e9e643.chunk.css"
   },
   {
     "revision": "b299d580b873b429466f",
@@ -96,8 +96,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/7.0cba7a11.chunk.js"
   },
   {
-    "revision": "75f6e2115c72e6bcceca",
-    "url": "/agnikul-react/static/js/8.20b165b3.chunk.js"
+    "revision": "2bf5426678c225d7045e",
+    "url": "/agnikul-react/static/js/8.db429662.chunk.js"
   },
   {
     "revision": "b299d580b873b429466f",
@@ -108,8 +108,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/js/main.2b2de903.chunk.js"
   },
   {
-    "revision": "b1edcdce494c07123e98",
-    "url": "/agnikul-react/static/js/runtime-main.262dcce2.js"
+    "revision": "451676a0440665892c9e",
+    "url": "/agnikul-react/static/js/runtime-main.3eaadbd4.js"
   },
   {
     "revision": "1b436cea2eb57314d8b82214fa44c244",
@@ -128,8 +128,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/media/CIIE.a74dd33a.png"
   },
   {
-    "revision": "12aa111229d8784f71baf980350f94fa",
-    "url": "/agnikul-react/static/media/COPV.12aa1112.png"
+    "revision": "b825450b9675a62598b5ee4e6d62a4a2",
+    "url": "/agnikul-react/static/media/COPV.b825450b.png"
   },
   {
     "revision": "ab9c94d3347d4b2b7d43da169c4afa59",
@@ -276,8 +276,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnikul-react/static/media/advisors-background.9ec2d9db.png"
   },
   {
-    "revision": "1d64ecec8a7509207c9c68d99462380d",
-    "url": "/agnikul-react/static/media/agnilet.1d64ecec.jpg"
+    "revision": "5d8a0c736015b697c926ef88f6f41098",
+    "url": "/agnikul-react/static/media/agnilet.5d8a0c73.jpg"
   },
   {
     "revision": "1773a8ddbcede8fc3161d357a120913d",
