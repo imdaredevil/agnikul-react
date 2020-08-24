@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import "./css/about.css";
 import "swiper/css/swiper.min.css";
 
-import navBar from "./js/common";
 import Init from "./js/about";
 
+import NavBarComponent from './navbar';
+
 import worldmap from "./images/about/intermediate-banner-back.png";
-import log from "./images/logo.png";
 import centeredimage from "./images/about/centered-image.png";
 
 import iit from "./images/about/partners/IITM.jpg";
@@ -38,59 +38,7 @@ function About() {
   return (
     <div className="body">
       {/* ***************NAVBAR******************* */}
-      <div className="navBar">
-        <div
-          className="topnav row justify-content-around align-items-baseline"
-          id="myTopnav"
-        >
-          <div className="column-lg nav-brandc">
-            <Link to="/">
-              <img className="logo" src={log} />
-            </Link>
-          </div>
-          <div className="column">
-            <Link to="/about" className="nav-itemc nav-linkc active">
-              About
-            </Link>
-          </div>
-          <div className="column">
-            <Link to="/products" className="nav-itemc nav-linkc">
-              Products
-            </Link>
-          </div>
-          {/* <div className="column-md">
-            <Link to="/launch-sites" className="nav-itemc nav-linkc">
-              Launch Sites
-            </Link> 
-          </div> */}
-          <div className="column">
-            <Link to="/team" className="nav-itemc nav-linkc">
-              Team
-            </Link>
-          </div>
-          <div className="column">
-            <Link to="/news" className="nav-itemc nav-linkc">
-              News
-            </Link>
-          </div>
-          <div className="column">
-            <Link to="/career" className="nav-itemc nav-linkc">
-              Careers
-            </Link>
-          </div>
-          <div id="navButtonDiv" className="column-lg">
-            <Link to="/book">
-              <button className="nav-itemc nav-buttonc">BOOK A LAUNCH</button>
-            </Link>
-          </div>
-        </div>
-        <div className="iconc">
-          <div onClick={navBar}>
-            <i className="fa fa-bars fa-lg"></i>
-          </div>
-        </div>
-      </div>
-
+    <NavBarComponent></NavBarComponent>
       {/*********************************ABOUT BANNNER***********************************************************************/}
 
       <div className="about__about-banner">

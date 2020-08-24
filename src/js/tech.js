@@ -63,7 +63,7 @@ export default function Init() {
         },
       },
     });
-    if (window.screen.width > 1200) techSwiper.slideNext();
+    if (window.screen.width > 1200) techSwiper.slideNext(0);
 
 
   });

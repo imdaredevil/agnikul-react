@@ -87,9 +87,12 @@ body {
     width: 7%;
     text-align: left;
 }
-
+.column-sm {
+    width: 5%;
+    text-align: left;
+}
 .column-md {
-    width: 11%;
+    width: 9%;
     text-align: left;
 }
 
@@ -174,6 +177,10 @@ body {
     .column-md {
         width: 100%;
         font-size: 12px;
+    }
+    .column-sm {
+    width: 100%;
+    text-align: left;
     }
     .column-lg {
         width: 100%;

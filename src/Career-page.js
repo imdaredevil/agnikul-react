@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import down from "./images/form-icons/down-arrow.png";
 import office from "./images/form-icons/office.png";
 import job from "./images/form-icons/job.png";
+import NavBarComponent from "./navbar";
 
 function Career() {
   Init(); // function to initialize animations and swipers
@@ -16,60 +17,8 @@ function Career() {
   return (
     <div className="body">
       {/* ***************NAVBAR******************* */}
-      <div className="navBar">
-        <div
-          className="topnav row justify-content-around align-items-baseline"
-          id="myTopnav"
-        >
-          <div className="column-lg nav-brandc">
-            <Link to="/">
-              <img className="logo" src={log} />
-            </Link>
-          </div>
-          <div className="column">
-            <Link to="/about" className="nav-itemc nav-linkc">
-              About
-            </Link>
-          </div>
-          <div className="column">
-            <Link to="/products" className="nav-itemc nav-linkc">
-              Products
-            </Link>
-          </div>
-          {/* <div className="column-md">
-            <Link to="/launch-sites" className="nav-itemc nav-linkc">
-              Launch Sites
-            </Link>
-          </div> */}
-          <div className="column">
-            <Link to="/team" className="nav-itemc nav-linkc">
-              Team
-            </Link>
-          </div>
-          <div className="column">
-            <Link to="/news" className="nav-itemc nav-linkc">
-              News
-            </Link>
-          </div>
-          <div className="column">
-            <Link to="/career" className="nav-itemc nav-linkc active">
-              Careers
-            </Link>
-          </div>
-          <div id="navButtonDiv" className="column-lg">
-            <Link to="/book">
-              <button className="nav-itemc nav-buttonc">BOOK A LAUNCH</button>
-            </Link>
-          </div>
-        </div>
-        <div className="iconc">
-          <div onClick={navBar}>
-            <i className="fa fa-bars fa-lg"></i>
-          </div>
-        </div>
-      </div>
+      <NavBarComponent></NavBarComponent>{" "}
       {/*********************************CAREER HEADING***********************************************************************/}
-
       <div className="container-fluid custom-form career__form">
         <p className="career__section-head">Careers</p>
         <p className="career__section-text">
@@ -1593,7 +1542,6 @@ function Career() {
           </p>
         </div>
       </div>
-
       {/* ****************FOOTER AND MODAL FOR PRIVACY POLICY****************** */}
       <div className="custom-modal-out">
         <div className="custom-modal-outer">
@@ -1755,7 +1703,6 @@ function Career() {
           </div>
         </div>
       </div>
-
       <div className="footer">
         <div className="container-fluid">
           <div className="row">

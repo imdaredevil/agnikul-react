@@ -5,6 +5,7 @@ import Init from './js/news';
 import log from "./images/logo.png";
 import "swiper/css/swiper.min.css";
 import newsHolder from "./images/news/news-placeholder.jpg";
+import NavBarComponent from "./navbar";
 
 import { Link } from 'react-router-dom';
 
@@ -348,58 +349,7 @@ class News extends Component {
     return (
       <div className="body">
         {/* ***************NAVBAR******************* */}
-        <div className="navBar">
-          <div
-            className="topnav row justify-content-around align-items-baseline"
-            id="myTopnav"
-          >
-            <div className="column-lg nav-brandc">
-              <Link to="/">
-                <img className="logo" src={log} />
-              </Link>
-            </div>
-            <div className="column">
-              <Link to="/about" className="nav-itemc nav-linkc">
-                About
-              </Link>
-            </div>
-            <div className="column">
-              <Link to="/products" className="nav-itemc nav-linkc">
-                Products
-              </Link>
-            </div>
-            {/* <div className="column-md">
-              <Link to="/launch-sites" className="nav-itemc nav-linkc">
-                Launch Sites
-              </Link>
-            </div> */}
-            <div className="column">
-              <Link to="/team" className="nav-itemc nav-linkc">
-                Team
-              </Link>
-            </div>
-            <div className="column">
-              <Link to="/news" className="nav-itemc nav-linkc active">
-                News
-              </Link>
-            </div>
-            <div className="column">
-              <Link to="/career" className="nav-itemc nav-linkc">
-                Careers
-              </Link>
-            </div>
-            <div id="navButtonDiv" className="column-lg">
-              <Link to="/book">
-                <button className="nav-itemc nav-buttonc">BOOK A LAUNCH</button>
-              </Link>
-            </div>
-          </div>
-          <div className="iconc">
-            <div onClick={navBar}>
-              <i className="fa fa-bars fa-lg"></i>
-            </div>
-          </div>
-        </div>
+        <NavBarComponent></NavBarComponent>{" "}
         <div className="news__title-div">
           <p className="news__title-div-heading">News & Updates</p>
           {/* <p className="news__title-div-text">
@@ -408,13 +358,11 @@ class News extends Component {
             its strategic goals.
           </p> */}
         </div>
-
         <NewsTable current={this.state.current}></NewsTable>
         <NewsPagination
           moveToPage={this.moveToPage}
           getCurrent={this.getCurrent}
         ></NewsPagination>
-
         {/* ****************FOOTER AND MODAL FOR PRIVACY POLICY****************** */}
         <div className="custom-modal-out">
           <div className="custom-modal-outer">
@@ -577,7 +525,6 @@ class News extends Component {
             </div>
           </div>
         </div>
-
         <div className="footer">
           <div className="container-fluid">
             <div className="row">
@@ -679,17 +626,17 @@ class News extends Component {
                     Terms, Conditions and Privacy Policy
                   </p>
                   <div className="footer-social-logos">
-                     <a
+                    <a
                       href="https://twitter.com/@agnikulcosmos"
                       target="_blank"
                     >
                       <i className="fa fa-twitter" aria-hidden="true"></i>
                     </a>
-                    <a
-                      href="https://instagram.com/agnikul/"
-                      target="_blank"
-                    >
-                      <i className="fa fa-lg fa-instagram" aria-hidden="true"></i>
+                    <a href="https://instagram.com/agnikul/" target="_blank">
+                      <i
+                        className="fa fa-lg fa-instagram"
+                        aria-hidden="true"
+                      ></i>
                     </a>
                     <a
                       href="https://www.linkedin.com/company/agnikul-cosmos/"

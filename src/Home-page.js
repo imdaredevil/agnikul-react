@@ -15,6 +15,7 @@ import bannericon from "./images/home/banner-icon.png";
 import quote from "./images/home/quote.png";
 import dots from "./images/home/form-back.png";
 import down from "./images/form-icons/down-arrow.png";
+import NavBarComponent from "./navbar";
 
 class Home extends React.Component {
   constructor(props) {
@@ -69,61 +70,8 @@ class Home extends React.Component {
     return (
       <div className="body">
         {/* ***************NAVBAR******************* */}
-        <div className="navBar">
-          <div
-            className="topnav row justify-content-around align-items-baseline"
-            id="myTopnav"
-          >
-            <div className="column-lg nav-brandc">
-              <Link to="/">
-                <img className="logo" src={log} />
-              </Link>
-            </div>
-            <div className="column">
-              <Link to="/about" className="nav-itemc nav-linkc">
-                About
-              </Link>
-            </div>
-            <div className="column">
-              <Link to="/products" className="nav-itemc nav-linkc">
-                Products
-              </Link>
-            </div>
-            {/* <div className="column-md">
-              <Link to="/launch-sites" className="nav-itemc nav-linkc">
-                Launch Sites
-              </Link>
-            </div> */}
-            <div className="column">
-              <Link to="/team" className="nav-itemc nav-linkc">
-                Team
-              </Link>
-            </div>
-            <div className="column">
-              <Link to="/news" className="nav-itemc nav-linkc">
-                News
-              </Link>
-            </div>
-            <div className="column">
-              <Link to="/career" className="nav-itemc nav-linkc">
-                Careers
-              </Link>
-            </div>
-            <div id="navButtonDiv" className="column-lg">
-              <Link to="/book">
-                <button className="nav-itemc nav-buttonc">BOOK A LAUNCH</button>
-              </Link>
-            </div>
-          </div>
-          <div className="iconc">
-            <div onClick={navBar}>
-              <i className="fa fa-bars fa-lg"></i>
-            </div>
-          </div>
-        </div>
-
+        <NavBarComponent></NavBarComponent>{" "}
         {/*********************************HOME BANNER***********************************************************************/}
-
         <div className="home__home-banner">
           <div className="home__banner-content">
             <img src={bannericon} className="home__banner-icon" />
@@ -140,9 +88,7 @@ class Home extends React.Component {
             </Link>
           </div>
         </div>
-
         {/*********************************AGNIBAAN TRAILER***********************************************************************/}
-
         <div className="home__second-section">
           <div className="home__second-content">
             <img src={satelite} className="home__second-section-icon" />
@@ -177,9 +123,7 @@ class Home extends React.Component {
             />
           </div>
         </div>
-
         {/*********************************FACTS & FIGURES***********************************************************************/}
-
         <div className="container-fluid home__third-section">
           <div className="home__third-content">
             <img src={quote} className="home__quote"></img>
@@ -262,9 +206,7 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
-
         {/*********************************BOOK MY LAUNCH TRAILER**********************************************************************/}
-
         <div className="home__fourth-section">
           <div className="home__fourth-head">
             <p className="home__mid-text">Ready To Launch ?</p>
@@ -487,16 +429,13 @@ class Home extends React.Component {
           </div>
           <img src={dots} className="form-back" />
         </div>
-
         {/* <div className="home__fifth-section">
           <p className="home__fifth-content">I am curious</p>
           <p className="home__fifth-section-link">
             <a>If you have a question, please reach out.</a>
           </p>
         </div> */}
-
         {/*********************************MODAL AFTER CLICKING THE FORM BUTTON***********************************************************************/}
-
         <div className="home__custom-modal-out">
           <div className="home__custom-modal-outer">
             <div className="home__custom-modal">
@@ -685,7 +624,6 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
-
         <div className="footer">
           <div className="container-fluid">
             <div className="row">
@@ -787,17 +725,17 @@ class Home extends React.Component {
                     Terms, Conditions and Privacy Policy
                   </p>
                   <div className="footer-social-logos">
-                     <a
+                    <a
                       href="https://twitter.com/@agnikulcosmos"
                       target="_blank"
                     >
                       <i className="fa fa-twitter" aria-hidden="true"></i>
                     </a>
-                    <a
-                      href="https://instagram.com/agnikul/"
-                      target="_blank"
-                    >
-                      <i className="fa fa-lg fa-lg fa-instagram" aria-hidden="true"></i>
+                    <a href="https://instagram.com/agnikul/" target="_blank">
+                      <i
+                        className="fa fa-lg fa-lg fa-instagram"
+                        aria-hidden="true"
+                      ></i>
                     </a>
                     <a
                       href="https://www.linkedin.com/company/agnikul-cosmos/"

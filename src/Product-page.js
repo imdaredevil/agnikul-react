@@ -28,6 +28,8 @@ import fourthFirst from "./images/products/Scroll3_Lower.png";
 
 import { Link } from "react-router-dom";
 
+
+
 function Product() {
   Init(); // function to initialize animations and swipers
 
@@ -44,9 +46,14 @@ function Product() {
               <img className="logo" src={log} />
             </Link>
           </div>
-          <div className="column">
+          <div className="column-sm">
             <Link to="/about" className="nav-itemc nav-linkc">
               About
+            </Link>
+          </div>
+          <div className="column-md">
+            <Link to="/tech" className="nav-itemc nav-linkc">
+              Engineering
             </Link>
           </div>
           <div className="column">
@@ -54,17 +61,13 @@ function Product() {
               Products
             </Link>
           </div>
-          {/* <div className="column-md">
-            <Link to="/launch-sites" className="nav-itemc nav-linkc">
-              Launch Sites
-            </Link>
-          </div> */}
-          <div className="column">
+
+          <div className="column-sm">
             <Link to="/team" className="nav-itemc nav-linkc">
               Team
             </Link>
           </div>
-          <div className="column">
+          <div className="column-sm">
             <Link to="/news" className="nav-itemc nav-linkc">
               News
             </Link>

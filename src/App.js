@@ -14,7 +14,8 @@ const BookComplete = lazy(() => import('./BookComplete-page'));
 const Launch = lazy(() => import('./Launch-page'));
 const Product = lazy(() => import('./Product-page'));
 const Career = lazy(() => import('./Career-page'));
-const News = lazy(() => import('./News-page'));
+const News = lazy(() => import("./News-page"));
+const Tech = lazy(() => import("./Tech-page"));
 
 
 function load() {
@@ -30,16 +31,17 @@ const App = () => (
   <Router>
     <Suspense fallback={load()}>
       <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route path="/load" component={load}/>
-        <Route path="/about" component={About}/>
-        <Route path="/team" component={Team}/>
-        <Route path="/book" component={Book}/>
-        <Route path="/book-complete" component={BookComplete}/>
-        <Route path="/launch-sites" component={Launch}/>
-        <Route path="/products" component={Product}/>
-        <Route path="/career" component={Career}/>
-        <Route path="/news" component={News}/>
+        <Route exact path="/" component={Home} />
+        <Route path="/load" component={load} />
+        <Route path="/about" component={About} />
+        <Route path="/team" component={Team} />
+        <Route path="/book" component={Book} />
+        <Route path="/book-complete" component={BookComplete} />
+        <Route path="/launch-sites" component={Launch} />
+        <Route path="/products" component={Product} />
+        <Route path="/career" component={Career} />
+        <Route path="/news" component={News} />
+        <Route path="/tech" component={Tech} />
       </Switch>
     </Suspense>
   </Router>

@@ -1,7 +1,7 @@
 /* ********TECH HEADING************ */
 .tech__section-head {
     font-family: "Poppins Bold";
-    font-size: 42px;
+    font-size: 36px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -9,13 +9,13 @@
     letter-spacing: normal;
     text-align: center;
     color: #252526;
-    margin: 0;
+    margin-top: 3%;
 }
 
 .tech__section-head-text {
-    padding: 0% 23.3%;
+    padding: 0% 16%;
     font-family: "Poppins Regular";
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -25,108 +25,65 @@
     color: rgba(33, 56, 66, 0.6);
 }
 
-/* *****************TECH SLIDES***************** */
-
-.techs{
-    margin-top: 0%;
-    padding-bottom: 5%;
-    display: flex;
+.tech__heading {
+    font-family: "Poppins Bold";
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #4d533c;
+    margin-bottom: 2%;
 }
 
-.tech-swiper {
-    width: 100%;
-    padding-top: 5%;
-}
-
-.tech-swiper .swiper-wrapper {
-    width: 90%;
-}
-
-.tech-swiper-slide {
-    width: 500px !important;
-}
-
-.tech-slide-content {
-    margin: 5%;
-    padding: 2.5% 13% 2.5% 13%;
-}
-
-.tech-slide-img {
-    width: 100%;
-    height: 50%;
-    margin-bottom: 5%;
-    object-fit: fill;
-    border-radius: 13px;
-    border-radius: 13px;
-}
-
-.tech-slide-head {
-     font-family: "Poppins Bold";
+.tech__text {
+   font-family: "Poppins Regular";
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal
-}
-
-.tech-slide-text {
-    font-family: "Poppins Regular";
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 18px;
-    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.75;
     letter-spacing: normal;
+    color: rgba(33, 56, 66, 0.6);
     text-align: justify;
 }
 
-.tech-swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
-    border-radius: 50%;
-    transform: rotate(45deg);
+.tech__text a {
+    color: #328e4b;
+    text-decoration: underline !important;
 }
 
-.tech-swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet.hidden-bullet {
-    background-color: rgba(255, 255, 255, 0);
-    display: none;
+.tech__row {
+    margin: 5.5% 0%;
 }
 
-.tech-swiper-pagination .swiper-pagination-bullet-active {
-    opacity: 1;
-    background: #4d8c52;
+.tech__row__reverse {
+    flex-direction: row-reverse;
 }
 
-.tech-swiper-button-next,
-.tech-swiper-button-prev {
-    width: 32px !important;
-    height: 32px !important;
-    top: 30% !important;
+.tech__image {
+    object-fit: contain;
+    width: 82.5%;
 }
 
-.tech-swiper-button-next::after,
-.tech-swiper-button-prev::after {
-    font-weight: 1000;
-    font-size: 32px !important;
-    color: black;
+.tech__techs {
+    padding: 0% 5% !important;
 }
 
 @media screen and (max-width: 768px) {
-   
-    .tech-slide-head{
+    .tech__text, .tech__section-head-text  {
         font-size: 14px;
+        padding: 0% 3%;
     }
-    .tech-slide-content {
-        margin: 5% 10%;
-        padding: 0% 15% 5% 15%;
-        height: auto;
+    .tech__heading,.tech__section-head {
+        font-size: 16px;
+        text-align: center;
     }
-    .tech-slide-img {
-        width: 100%;
-        height: 40%;
+    .tech__row__reverse {
+        flex-direction: row;
     }
-    .tech-swiper-button-next::after,
-    .tech-swiper-button-prev::after {
-        font-size: 20px !important;
+    .tech__techs {
+        padding: 0% 0% !important;
     }
 }

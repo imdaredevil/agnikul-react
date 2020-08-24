@@ -14,6 +14,8 @@ import satya from "./images/about/advisors/Satya.jpg";
 import sekar from "./images/about/advisors/Shekar.jpg";
 
 
+import NavBarComponent from "./navbar";
+
 import { Link } from "react-router-dom";
 
 function Team() {
@@ -22,59 +24,7 @@ function Team() {
   return (
     <div className="body">
       {/* ***************NAVBAR******************* */}
-      <div className="navBar">
-        <div
-          className="topnav row justify-content-around align-items-baseline"
-          id="myTopnav"
-        >
-          <div className="column-lg nav-brandc">
-            <Link to="/">
-              <img className="logo" src={log} />
-            </Link>
-          </div>
-          <div className="column">
-            <Link to="/about" className="nav-itemc nav-linkc">
-              About
-            </Link>
-          </div>
-          <div className="column">
-            <Link to="/products" className="nav-itemc nav-linkc">
-              Products
-            </Link>
-          </div>
-          {/* <div className="column-md">
-            <Link to="/launch-sites" className="nav-itemc nav-linkc">
-              Launch Sites
-            </Link>
-          </div> */}
-          <div className="column">
-            <Link to="/team" className="nav-itemc nav-linkc active">
-              Team
-            </Link>
-          </div>
-          <div className="column">
-            <Link to="/news" className="nav-itemc nav-linkc">
-              News
-            </Link>
-          </div>
-          <div className="column">
-            <Link to="/career" className="nav-itemc nav-linkc">
-              Careers
-            </Link>
-          </div>
-          <div id="navButtonDiv" className="column-lg">
-            <Link to="/book">
-              <button className="nav-itemc nav-buttonc">BOOK A LAUNCH</button>
-            </Link>
-          </div>
-        </div>
-        <div className="iconc">
-          <div onClick={navBar}>
-            <i className="fa fa-bars fa-lg"></i>
-          </div>
-        </div>
-      </div>
-
+      <NavBarComponent></NavBarComponent>{" "}
       {/* *************** TEAM BANNER ********************* */}
       {/*
       If we want to add a member, add the photo in public/images folder. 
@@ -151,9 +101,7 @@ function Team() {
           </div>
         </div>
       </div>
-
       {/* *************** FOUNDING TEAM ********************* */}
-
       <div className="team__second-section">
         <div className="team__second-content">
           <h3 className="team__second-section-heading">Founding Team</h3>
@@ -164,9 +112,7 @@ function Team() {
           </p>
         </div>
       </div>
-
       {/* *************** FOUNDER CARDS ********************* */}
-
       <div className="team__third-section container-fluid">
         <div className="row justify-content-center founders">
           <div className="col-sm founder-card">
@@ -233,9 +179,7 @@ function Team() {
           </div>
         </div>
       </div>
-
       {/* *************** ADVISORS ********************* */}
-
       <div className="team__fourth-section">
         <p className="team__section-head">Advisors</p>
 
@@ -305,7 +249,6 @@ function Team() {
           </div>
         </div>
       </div>
-
       {/* ****************FOOTER AND MODAL FOR PRIVACY POLICY****************** */}
       <div className="custom-modal-out">
         <div className="custom-modal-outer">
@@ -467,7 +410,6 @@ function Team() {
           </div>
         </div>
       </div>
-
       <div className="footer">
         <div className="container-fluid">
           <div className="row">

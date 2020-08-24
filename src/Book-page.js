@@ -7,6 +7,8 @@ import Init from "./js/book";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 
+import NavBarComponent from './navbar';
+
 import flag from "./images/form-icons/launch-location.png";
 import orbit from "./images/form-icons/orbital-inclination.png";
 import payload from "./images/form-icons/payload-mass.png";
@@ -191,60 +193,8 @@ ValidateEmail(mail)
     return (
       <div className="body">
         {/* ***************NAVBAR******************* */}
-        <div className="navBar">
-          <div
-            className="topnav row justify-content-around align-items-baseline"
-            id="myTopnav"
-          >
-            <div className="column-lg nav-brandc">
-              <Link to="/">
-                <img className="logo" src={log} />
-              </Link>
-            </div>
-            <div className="column">
-              <Link to="/about" className="nav-itemc nav-linkc">
-                About
-              </Link>
-            </div>
-            <div className="column">
-              <Link to="/products" className="nav-itemc nav-linkc">
-                Products
-              </Link>
-            </div>
-            {/* <div className="column-md">
-              <Link to="/launch-sites" className="nav-itemc nav-linkc">
-                Launch Sites
-              </Link>
-            </div> */}
-            <div className="column">
-              <Link to="/team" className="nav-itemc nav-linkc">
-                Team
-              </Link>
-            </div>
-            <div className="column">
-              <Link to="/news" className="nav-itemc nav-linkc">
-                News
-              </Link>
-            </div>
-            <div className="column">
-              <Link to="/career" className="nav-itemc nav-linkc">
-                Careers
-              </Link>
-            </div>
-            <div id="navButtonDiv" className="column-lg">
-              <button className="nav-itemc nav-buttonc">
-                <Link to="/book"> BOOK A LAUNCH</Link>
-              </button>
-            </div>
-          </div>
-          <div className="iconc">
-            <div onClick={navBar}>
-              <i className="fa fa-bars fa-lg"></i>
-            </div>
-          </div>
-        </div>
+        <NavBarComponent></NavBarComponent>{" "}
         {/*********************************BOOK MY LAUNCH FORM***********************************************************************/}
-
         <div className="book__overall-div">
           <p className="book__heading">Book your launch</p>
           <p className="book__head-text">
@@ -981,17 +931,17 @@ ValidateEmail(mail)
                     Terms, Conditions and Privacy Policy
                   </p>
                   <div className="footer-social-logos">
-                     <a
+                    <a
                       href="https://twitter.com/@agnikulcosmos"
                       target="_blank"
                     >
                       <i className="fa fa-twitter" aria-hidden="true"></i>
                     </a>
-                    <a
-                      href="https://instagram.com/agnikul/"
-                      target="_blank"
-                    >
-                      <i className="fa fa-lg fa-instagram" aria-hidden="true"></i>
+                    <a href="https://instagram.com/agnikul/" target="_blank">
+                      <i
+                        className="fa fa-lg fa-instagram"
+                        aria-hidden="true"
+                      ></i>
                     </a>
                     <a
                       href="https://www.linkedin.com/company/agnikul-cosmos/"
