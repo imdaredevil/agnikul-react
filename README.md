@@ -71,7 +71,7 @@ agnikul-react
 
 After cloning the repository, run:
 
-### 'npm instaal --save'
+### 'npm install --save'
 
 This will load all the libraries needed.
 
